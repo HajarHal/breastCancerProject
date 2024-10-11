@@ -1,0 +1,155 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+            <script src="lib/bindings/utils.js"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/dist/vis-network.min.css" integrity="sha512-WgxfT5LWjfszlPHXRmBWHkV2eceiWTOBvrKCNbdgDYTHrT2AeLCGbF4sZlZw3UMN3WtL0tGUoIAKsu8mllg/XA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/vis-network.min.js" integrity="sha512-LnvoEWDFrqGHlHmDD2101OrLcbsfkrzoSpvtSQtxK3RMnRV0eOkhhBN2dXHKRrUU8p2DGRTk35n4O8nWSVe1mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+        
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+          crossorigin="anonymous"
+        />
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+          crossorigin="anonymous"
+        ></script>
+
+
+        <center>
+          <h1></h1>
+        </center>
+        <style type="text/css">
+
+             #mynetwork {
+                 width: 100%;
+                 height: 600px;
+                 background-color: #ffffff;
+                 border: 1px solid lightgray;
+                 position: relative;
+                 float: left;
+             }
+
+             
+
+             
+
+             
+        </style>
+    </head>
+
+
+    <body>
+        <div class="card" style="width: 100%">
+            
+            
+            <div id="mynetwork" class="card-body"></div>
+        </div>
+
+        
+        
+
+        <script type="text/javascript">
+
+              // initialize global variables.
+              var edges;
+              var nodes;
+              var allNodes;
+              var allEdges;
+              var nodeColors;
+              var originalNodes;
+              var network;
+              var container;
+              var options, data;
+              var filter = {
+                  item : '',
+                  property : '',
+                  value : []
+              };
+
+              
+
+              
+
+              // This method is responsible for drawing the graph, returns the drawn network
+              function drawGraph() {
+                  var container = document.getElementById('mynetwork');
+
+                  
+
+                  // parsing and collecting nodes and edges from the python
+                  nodes = new vis.DataSet([{"color": "lightblue", "id": "CA-15-3 Antigen", "label": "CA-15-3 Antigen", "shape": "dot", "size": 15, "title": "CA-15-3 Antigen"}, {"color": "lightblue", "id": "Female Breast Cancer", "label": "Female Breast Cancer", "shape": "dot", "size": 15, "title": "Female Breast Cancer"}, {"color": "lightblue", "id": "Prostate-Specific Antigen", "label": "Prostate-Specific Antigen", "shape": "dot", "size": 15, "title": "Prostate-Specific Antigen"}, {"color": "lightblue", "id": "Antigens", "label": "Antigens", "shape": "dot", "size": 15, "title": "Antigens"}, {"color": "lightblue", "id": "Neoantigen", "label": "Neoantigen", "shape": "dot", "size": 15, "title": "Neoantigen"}, {"color": "lightblue", "id": "Antigens, CD5", "label": "Antigens, CD5", "shape": "dot", "size": 15, "title": "Antigens, CD5"}, {"color": "lightblue", "id": "Carcinoembryonic Antigen|CEACAM5|CEACAM3|PSG2", "label": "Carcinoembryonic Antigen|CEACAM5|CEACAM3|PSG2", "shape": "dot", "size": 15, "title": "Carcinoembryonic Antigen|CEACAM5|CEACAM3|PSG2"}, {"color": "lightblue", "id": "Human Class I Antigens", "label": "Human Class I Antigens", "shape": "dot", "size": 15, "title": "Human Class I Antigens"}, {"color": "lightblue", "id": "Carcinoembryonic Antigen", "label": "Carcinoembryonic Antigen", "shape": "dot", "size": 15, "title": "Carcinoembryonic Antigen"}, {"color": "lightblue", "id": "Mucin-1 Antigen", "label": "Mucin-1 Antigen", "shape": "dot", "size": 15, "title": "Mucin-1 Antigen"}, {"color": "lightblue", "id": "CD31 Antigens", "label": "CD31 Antigens", "shape": "dot", "size": 15, "title": "CD31 Antigens"}, {"color": "lightblue", "id": "Human B-Lymphocyte Antigen CD20, human|MS4A1|KRT20", "label": "Human B-Lymphocyte Antigen CD20, human|MS4A1|KRT20", "shape": "dot", "size": 15, "title": "Human B-Lymphocyte Antigen CD20, human|MS4A1|KRT20"}, {"color": "lightblue", "id": "CA-125 Antigen", "label": "CA-125 Antigen", "shape": "dot", "size": 15, "title": "CA-125 Antigen"}, {"color": "lightblue", "id": "Immunotherapy", "label": "Immunotherapy", "shape": "dot", "size": 15, "title": "Immunotherapy"}, {"color": "lightblue", "id": "Radioimmunotherapy", "label": "Radioimmunotherapy", "shape": "dot", "size": 15, "title": "Radioimmunotherapy"}, {"color": "lightblue", "id": "Immune response", "label": "Immune response", "shape": "dot", "size": 15, "title": "Immune response"}, {"color": "lightblue", "id": "Carcinoembryonic Antigen|CEACAM5", "label": "Carcinoembryonic Antigen|CEACAM5", "shape": "dot", "size": 15, "title": "Carcinoembryonic Antigen|CEACAM5"}, {"color": "lightblue", "id": "serine repeat antigen, Plasmodium", "label": "serine repeat antigen, Plasmodium", "shape": "dot", "size": 15, "title": "serine repeat antigen, Plasmodium"}, {"color": "lightblue", "id": "Antigens, Viral", "label": "Antigens, Viral", "shape": "dot", "size": 15, "title": "Antigens, Viral"}, {"color": "lightblue", "id": "CD29 Antigen", "label": "CD29 Antigen", "shape": "dot", "size": 15, "title": "CD29 Antigen"}, {"color": "lightblue", "id": "Prophylactic immunotherapy", "label": "Prophylactic immunotherapy", "shape": "dot", "size": 15, "title": "Prophylactic immunotherapy"}, {"color": "lightblue", "id": "Antigens, Fos-Related|FOS", "label": "Antigens, Fos-Related|FOS", "shape": "dot", "size": 15, "title": "Antigens, Fos-Related|FOS"}, {"color": "lightblue", "id": "fos-related antigen 1|FOS", "label": "fos-related antigen 1|FOS", "shape": "dot", "size": 15, "title": "fos-related antigen 1|FOS"}, {"color": "lightblue", "id": "Antigen Processing", "label": "Antigen Processing", "shape": "dot", "size": 15, "title": "Antigen Processing"}, {"color": "lightblue", "id": "Proliferating Cell Nuclear Antigen", "label": "Proliferating Cell Nuclear Antigen", "shape": "dot", "size": 15, "title": "Proliferating Cell Nuclear Antigen"}, {"color": "lightblue", "id": "Human Platelet Antigens", "label": "Human Platelet Antigens", "shape": "dot", "size": 15, "title": "Human Platelet Antigens"}, {"color": "lightblue", "id": "HLA Class I Histocompatibility Antigen, Alpha Chain G", "label": "HLA Class I Histocompatibility Antigen, Alpha Chain G", "shape": "dot", "size": 15, "title": "HLA Class I Histocompatibility Antigen, Alpha Chain G"}, {"color": "lightblue", "id": "Tn antigen", "label": "Tn antigen", "shape": "dot", "size": 15, "title": "Tn antigen"}, {"color": "lightblue", "id": "Specific antigen", "label": "Specific antigen", "shape": "dot", "size": 15, "title": "Specific antigen"}, {"color": "lightblue", "id": "Ki antigen|PSME3", "label": "Ki antigen|PSME3", "shape": "dot", "size": 15, "title": "Ki antigen|PSME3"}, {"color": "lightblue", "id": "Histocompatibility Antigens", "label": "Histocompatibility Antigens", "shape": "dot", "size": 15, "title": "Histocompatibility Antigens"}, {"color": "lightblue", "id": "CD100 antigen|SEMA4D", "label": "CD100 antigen|SEMA4D", "shape": "dot", "size": 15, "title": "CD100 antigen|SEMA4D"}, {"color": "lightblue", "id": "Antigens, CD25", "label": "Antigens, CD25", "shape": "dot", "size": 15, "title": "Antigens, CD25"}, {"color": "lightblue", "id": "CD71 antigen", "label": "CD71 antigen", "shape": "dot", "size": 15, "title": "CD71 antigen"}, {"color": "lightblue", "id": "Factor VIII-Related Antigen", "label": "Factor VIII-Related Antigen", "shape": "dot", "size": 15, "title": "Factor VIII-Related Antigen"}, {"color": "lightblue", "id": "Small T-Antigen", "label": "Small T-Antigen", "shape": "dot", "size": 15, "title": "Small T-Antigen"}, {"color": "lightblue", "id": "CD29 Antigen|B3GNT2|B3GNTL1", "label": "CD29 Antigen|B3GNT2|B3GNTL1", "shape": "dot", "size": 15, "title": "CD29 Antigen|B3GNT2|B3GNTL1"}, {"color": "lightblue", "id": "Lymphocyte antigen CD82|CD82", "label": "Lymphocyte antigen CD82|CD82", "shape": "dot", "size": 15, "title": "Lymphocyte antigen CD82|CD82"}, {"color": "lightblue", "id": "Chemoimmunotherapy", "label": "Chemoimmunotherapy", "shape": "dot", "size": 15, "title": "Chemoimmunotherapy"}, {"color": "lightblue", "id": "Immunologic Factors", "label": "Immunologic Factors", "shape": "dot", "size": 15, "title": "Immunologic Factors"}]);
+                  edges = new vis.DataSet([{"color": "gray", "from": "CA-15-3 Antigen", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Prostate-Specific Antigen", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Antigens", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Neoantigen", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Antigens, CD5", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Carcinoembryonic Antigen|CEACAM5|CEACAM3|PSG2", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Human Class I Antigens", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Carcinoembryonic Antigen", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Mucin-1 Antigen", "to": "Female Breast Cancer"}, {"color": "gray", "from": "CD31 Antigens", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Human B-Lymphocyte Antigen CD20, human|MS4A1|KRT20", "to": "Female Breast Cancer"}, {"color": "gray", "from": "CA-125 Antigen", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Immunotherapy", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Radioimmunotherapy", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Immune response", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Carcinoembryonic Antigen|CEACAM5", "to": "Female Breast Cancer"}, {"color": "gray", "from": "serine repeat antigen, Plasmodium", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Antigens, Viral", "to": "Female Breast Cancer"}, {"color": "gray", "from": "CD29 Antigen", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Prophylactic immunotherapy", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Antigens, Fos-Related|FOS", "to": "Female Breast Cancer"}, {"color": "gray", "from": "fos-related antigen 1|FOS", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Antigen Processing", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Proliferating Cell Nuclear Antigen", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Human Platelet Antigens", "to": "Female Breast Cancer"}, {"color": "gray", "from": "HLA Class I Histocompatibility Antigen, Alpha Chain G", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Tn antigen", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Specific antigen", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Ki antigen|PSME3", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Histocompatibility Antigens", "to": "Female Breast Cancer"}, {"color": "gray", "from": "CD100 antigen|SEMA4D", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Antigens, CD25", "to": "Female Breast Cancer"}, {"color": "gray", "from": "CD71 antigen", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Factor VIII-Related Antigen", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Small T-Antigen", "to": "Female Breast Cancer"}, {"color": "gray", "from": "CD29 Antigen|B3GNT2|B3GNTL1", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Lymphocyte antigen CD82|CD82", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Chemoimmunotherapy", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Immunologic Factors", "to": "Female Breast Cancer"}]);
+
+                  nodeColors = {};
+                  allNodes = nodes.get({ returnType: "Object" });
+                  for (nodeId in allNodes) {
+                    nodeColors[nodeId] = allNodes[nodeId].color;
+                  }
+                  allEdges = edges.get({ returnType: "Object" });
+                  // adding nodes and edges to the graph
+                  data = {nodes: nodes, edges: edges};
+
+                  var options = {
+    "configure": {
+        "enabled": false
+    },
+    "edges": {
+        "color": {
+            "inherit": true
+        },
+        "smooth": {
+            "enabled": true,
+            "type": "dynamic"
+        }
+    },
+    "interaction": {
+        "dragNodes": true,
+        "hideEdgesOnDrag": false,
+        "hideNodesOnDrag": false
+    },
+    "physics": {
+        "enabled": true,
+        "stabilization": {
+            "enabled": true,
+            "fit": true,
+            "iterations": 1000,
+            "onlyDynamicEdges": false,
+            "updateInterval": 50
+        }
+    }
+};
+
+                  
+
+
+                  
+
+                  network = new vis.Network(container, data, options);
+
+                  
+
+                  
+
+                  
+
+
+                  
+
+                  return network;
+
+              }
+              drawGraph();
+        </script>
+    </body>
+</html>

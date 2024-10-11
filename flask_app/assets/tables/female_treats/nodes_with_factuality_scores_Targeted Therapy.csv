@@ -1,0 +1,130 @@
+title,factuality_score
+trastuzumab|ERBB2,0.1928072
+Female Breast Cancer,0.1928072
+trastuzumab,0.1928072
+lapatinib,0.0419580
+trastuzumab,0.0419580
+antiangiogenesis therapy,0.1928072
+lapatinib,0.1928072
+bevacizumab,0.0419580
+Herceptin,0.1928072
+Herceptin,0.0419580
+bevacizumab,0.1928072
+trastuzumab,0.0129870
+Herceptin,0.0379620
+trastuzumab,0.0379620
+antiangiogenesis therapy,0.0419580
+trastuzumab,0.0099900
+lapatinib,0.0379620
+bevacizumab,0.0379620
+trastuzumab,0.0109890
+bevacizumab,0.0109890
+ado-trastuzumab emtansine,0.1928072
+trastuzumab,0.0089910
+Targeted Therapy,0.0289710
+bevacizumab,0.0289710
+ado-trastuzumab emtansine|DMPK|IGHD1-7,0.0089910
+trastuzumab,0.0059940
+lapatinib,0.0289710
+bevacizumab,0.0019980
+Targeted Therapy,0.0439560
+ado-trastuzumab emtansine|DMPK|IGHD1-7,0.0289710
+trastuzumab deruxtecan,0.0089910
+Targeted Therapy,0.1928072
+trastuzumab,0.0289710
+fam-trastuzumab deruxtecan-nxki,0.1928072
+Targeted Therapy Agent,0.0009990
+ado-trastuzumab emtansine,0.0089910
+Targeted Therapy,0.0089910
+Molecular Targeted Therapy,0.1928072
+lapatinib,0.0089910
+trastuzumab,0.0439560
+ado-trastuzumab emtansine,0.0289710
+Herceptin,0.0059940
+Bevacizumab/Paclitaxel,0.0289710
+Docetaxel/Trastuzumab,0.0289710
+Pertuzumab/Trastuzumab Regimen,0.0089910
+Bevacizumab/Paclitaxel,0.0019980
+Targeted Therapy Agent,0.0439560
+Targeted Therapy,0.0379620
+trastuzumab deruxtecan,0.0289710
+trastuzumab deruxtecan,0.0019980
+bevacizumab,0.0049950
+trastuzumab|ERBB2,0.0419580
+antiangiogenesis therapy,0.0439560
+Trastuzumab Biosimilar ABP 980|AOC1|SHBG,0.0089910
+Bevacizumab/Capecitabine,0.0019980
+bevacizumab,0.0089910
+trastuzumab,0.0000000
+trastuzumab,0.0139860
+ado-trastuzumab emtansine|DMPK|IGHD1-7,0.1928072
+AC Followed by Docetaxel/Trastuzumab Regimen,0.1928072
+Targeted Therapy Agent,0.0289710
+Eribulin/Trastuzumab Regimen,0.0289710
+trastuzumab,0.0009990
+Trastuzumab Regimen,0.1928072
+Capecitabine/Lapatinib Regimen,0.0089910
+Trastuzumab Regimen,0.0089910
+trastuzumab,0.0049950
+Targeted Therapy,0.0109890
+Bevacizumab Regimen,0.0019980
+Trastuzumab Regimen,0.0289710
+Targeted Therapy,0.0139860
+trastuzumab deruxtecan,0.1928072
+Targeted Therapy,0.0059940
+ado-trastuzumab emtansine,0.0059940
+antiangiogenesis therapy,0.0379620
+bevacizumab|VEGFA,0.1928072
+Herceptin,0.0089910
+Targeted Therapy,0.0000000
+lapatinib,0.0019980
+Trastuzumab/Nab-paclitaxel Regimen,0.0089910
+Paclitaxel/Trastuzumab,0.0089910
+Bevacizumab/Paclitaxel,0.0439560
+Trastuzumab Regimen,0.0079920
+Molecular Targeted Therapy,0.0289710
+Molecular Targeted Therapy,0.0439560
+Docetaxel/Trastuzumab Regimen,0.0089910
+Herceptin,0.0129870
+Herceptin,0.0099900
+Eribulin/Trastuzumab Regimen,0.0089910
+Bevacizumab Regimen,0.0289710
+lapatinib,0.0009990
+Anastrozole/Trastuzumab Regimen,0.0109890
+Docetaxel/Trastuzumab,0.0089910
+lapatinib,0.0439560
+Targeted Therapy Agent,0.0089910
+Paclitaxel/Trastuzumab Regimen,0.0289710
+trastuzumab deruxtecan,0.0439560
+Herceptin,0.0049950
+lapatinib,0.0109890
+trastuzumab|ERBB2,0.0379620
+bevacizumab,0.0009990
+Herceptin|EREG|ESR1,0.0419580
+Targeted Therapy Agent,0.1928072
+Capecitabine/Lapatinib Regimen,0.0289710
+Trastuzumab/Vinorelbine,0.0059940
+bevacizumab,0.0439560
+ado-trastuzumab emtansine,0.0009990
+lapatinib,0.0129870
+lapatinib,0.0099900
+Trastuzumab Regimen,0.0009990
+trastuzumab,0.0019980
+ADO-TRASTUZUMAB,0.0089910
+Targeted Therapy Agent,0.0059940
+Molecular Targeted Therapy,0.0000000
+Targeted Therapy,0.0019980
+Targeted Therapy Agent,0.0019980
+Lapatinib/Trastuzumab Regimen,0.0089910
+Paclitaxel/Trastuzumab,0.1928072
+Anastrozole/Trastuzumab Regimen,0.0089910
+Trastuzumab Biosimilar SB3,0.0089910
+Herceptin,0.0009990
+Current Therapy,0.0089910
+directive therapy,0.0089910
+Local Therapy,0.0089910
+Estrogen Therapy,0.0089910
+Molecular Target,0.0089910
+Targeted Toxins,0.1928072
+targeted prevention,0.1928072
+Radical therapy,0.0089910

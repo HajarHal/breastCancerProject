@@ -1,0 +1,250 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+            <script src="lib/bindings/utils.js"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/dist/vis-network.min.css" integrity="sha512-WgxfT5LWjfszlPHXRmBWHkV2eceiWTOBvrKCNbdgDYTHrT2AeLCGbF4sZlZw3UMN3WtL0tGUoIAKsu8mllg/XA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/vis-network.min.js" integrity="sha512-LnvoEWDFrqGHlHmDD2101OrLcbsfkrzoSpvtSQtxK3RMnRV0eOkhhBN2dXHKRrUU8p2DGRTk35n4O8nWSVe1mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+        
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+          crossorigin="anonymous"
+        />
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+          crossorigin="anonymous"
+        ></script>
+
+
+        <center>
+          <h1></h1>
+        </center>
+        <style type="text/css">
+
+             #mynetwork {
+                 width: 100%;
+                 height: 600px;
+                 background-color: #ffffff;
+                 border: 1px solid lightgray;
+                 position: relative;
+                 float: left;
+             }
+
+             
+             #loadingBar {
+                 position:absolute;
+                 top:0px;
+                 left:0px;
+                 width: 100%;
+                 height: 600px;
+                 background-color:rgba(200,200,200,0.8);
+                 -webkit-transition: all 0.5s ease;
+                 -moz-transition: all 0.5s ease;
+                 -ms-transition: all 0.5s ease;
+                 -o-transition: all 0.5s ease;
+                 transition: all 0.5s ease;
+                 opacity:1;
+             }
+
+             #bar {
+                 position:absolute;
+                 top:0px;
+                 left:0px;
+                 width:20px;
+                 height:20px;
+                 margin:auto auto auto auto;
+                 border-radius:11px;
+                 border:2px solid rgba(30,30,30,0.05);
+                 background: rgb(0, 173, 246); /* Old browsers */
+                 box-shadow: 2px 0px 4px rgba(0,0,0,0.4);
+             }
+
+             #border {
+                 position:absolute;
+                 top:10px;
+                 left:10px;
+                 width:500px;
+                 height:23px;
+                 margin:auto auto auto auto;
+                 box-shadow: 0px 0px 4px rgba(0,0,0,0.2);
+                 border-radius:10px;
+             }
+
+             #text {
+                 position:absolute;
+                 top:8px;
+                 left:530px;
+                 width:30px;
+                 height:50px;
+                 margin:auto auto auto auto;
+                 font-size:22px;
+                 color: #000000;
+             }
+
+             div.outerBorder {
+                 position:relative;
+                 top:400px;
+                 width:600px;
+                 height:44px;
+                 margin:auto auto auto auto;
+                 border:8px solid rgba(0,0,0,0.1);
+                 background: rgb(252,252,252); /* Old browsers */
+                 background: -moz-linear-gradient(top,  rgba(252,252,252,1) 0%, rgba(237,237,237,1) 100%); /* FF3.6+ */
+                 background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(252,252,252,1)), color-stop(100%,rgba(237,237,237,1))); /* Chrome,Safari4+ */
+                 background: -webkit-linear-gradient(top,  rgba(252,252,252,1) 0%,rgba(237,237,237,1) 100%); /* Chrome10+,Safari5.1+ */
+                 background: -o-linear-gradient(top,  rgba(252,252,252,1) 0%,rgba(237,237,237,1) 100%); /* Opera 11.10+ */
+                 background: -ms-linear-gradient(top,  rgba(252,252,252,1) 0%,rgba(237,237,237,1) 100%); /* IE10+ */
+                 background: linear-gradient(to bottom,  rgba(252,252,252,1) 0%,rgba(237,237,237,1) 100%); /* W3C */
+                 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfcfc', endColorstr='#ededed',GradientType=0 ); /* IE6-9 */
+                 border-radius:72px;
+                 box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+             }
+             
+
+             
+
+             
+        </style>
+    </head>
+
+
+    <body>
+        <div class="card" style="width: 100%">
+            
+            
+            <div id="mynetwork" class="card-body"></div>
+        </div>
+
+        
+            <div id="loadingBar">
+              <div class="outerBorder">
+                <div id="text">0%</div>
+                <div id="border">
+                  <div id="bar"></div>
+                </div>
+              </div>
+            </div>
+        
+        
+
+        <script type="text/javascript">
+
+              // initialize global variables.
+              var edges;
+              var nodes;
+              var allNodes;
+              var allEdges;
+              var nodeColors;
+              var originalNodes;
+              var network;
+              var container;
+              var options, data;
+              var filter = {
+                  item : '',
+                  property : '',
+                  value : []
+              };
+
+              
+
+              
+
+              // This method is responsible for drawing the graph, returns the drawn network
+              function drawGraph() {
+                  var container = document.getElementById('mynetwork');
+
+                  
+
+                  // parsing and collecting nodes and edges from the python
+                  nodes = new vis.DataSet([{"color": "lightblue", "id": "Fatty Acids, Omega-6", "label": "Fatty Acids, Omega-6", "shape": "dot", "size": 15, "title": "Fatty Acids, Omega-6"}, {"color": "lightblue", "id": "Female Breast Cancer", "label": "Female Breast Cancer", "shape": "dot", "size": 15, "title": "Female Breast Cancer"}, {"color": "lightblue", "id": "Polyunsaturated Fatty Acids", "label": "Polyunsaturated Fatty Acids", "shape": "dot", "size": 15, "title": "Polyunsaturated Fatty Acids"}, {"color": "lightblue", "id": "Solvents", "label": "Solvents", "shape": "dot", "size": 15, "title": "Solvents"}, {"color": "lightblue", "id": "Chemicals", "label": "Chemicals", "shape": "dot", "size": 15, "title": "Chemicals"}, {"color": "lightblue", "id": "Linoleic Acid", "label": "Linoleic Acid", "shape": "dot", "size": 15, "title": "Linoleic Acid"}, {"color": "lightblue", "id": "Fatty Acids", "label": "Fatty Acids", "shape": "dot", "size": 15, "title": "Fatty Acids"}, {"color": "lightblue", "id": "Cholera Toxin", "label": "Cholera Toxin", "shape": "dot", "size": 15, "title": "Cholera Toxin"}, {"color": "lightblue", "id": "alpha-latrotoxin receptor", "label": "alpha-latrotoxin receptor", "shape": "dot", "size": 15, "title": "alpha-latrotoxin receptor"}, {"color": "lightblue", "id": "Digitoxin", "label": "Digitoxin", "shape": "dot", "size": 15, "title": "Digitoxin"}, {"color": "lightblue", "id": "stearic acid", "label": "stearic acid", "shape": "dot", "size": 15, "title": "stearic acid"}, {"color": "lightblue", "id": "Fatty Acids, Essential", "label": "Fatty Acids, Essential", "shape": "dot", "size": 15, "title": "Fatty Acids, Essential"}, {"color": "lightblue", "id": "Butyric Acid", "label": "Butyric Acid", "shape": "dot", "size": 15, "title": "Butyric Acid"}, {"color": "lightblue", "id": "Phytic Acid", "label": "Phytic Acid", "shape": "dot", "size": 15, "title": "Phytic Acid"}, {"color": "lightblue", "id": "Fatty Acids, Omega-3", "label": "Fatty Acids, Omega-3", "shape": "dot", "size": 15, "title": "Fatty Acids, Omega-3"}, {"color": "lightblue", "id": "Docosahexaenoic Acids", "label": "Docosahexaenoic Acids", "shape": "dot", "size": 15, "title": "Docosahexaenoic Acids"}, {"color": "lightblue", "id": "Cytotoxin", "label": "Cytotoxin", "shape": "dot", "size": 15, "title": "Cytotoxin"}, {"color": "lightblue", "id": "Arachidonic Acid", "label": "Arachidonic Acid", "shape": "dot", "size": 15, "title": "Arachidonic Acid"}, {"color": "lightblue", "id": "Acids", "label": "Acids", "shape": "dot", "size": 15, "title": "Acids"}, {"color": "lightblue", "id": "Phytochemical", "label": "Phytochemical", "shape": "dot", "size": 15, "title": "Phytochemical"}, {"color": "lightblue", "id": "Ethacrynic Acid", "label": "Ethacrynic Acid", "shape": "dot", "size": 15, "title": "Ethacrynic Acid"}, {"color": "lightblue", "id": "zoledronic acid", "label": "zoledronic acid", "shape": "dot", "size": 15, "title": "zoledronic acid"}, {"color": "lightblue", "id": "lysophosphatidic acid", "label": "lysophosphatidic acid", "shape": "dot", "size": 15, "title": "lysophosphatidic acid"}, {"color": "lightblue", "id": "Sulfuric Acid Esters", "label": "Sulfuric Acid Esters", "shape": "dot", "size": 15, "title": "Sulfuric Acid Esters"}, {"color": "lightblue", "id": "Fatty Acids, Saturated", "label": "Fatty Acids, Saturated", "shape": "dot", "size": 15, "title": "Fatty Acids, Saturated"}, {"color": "lightblue", "id": "Folic Acid Deficiency", "label": "Folic Acid Deficiency", "shape": "dot", "size": 15, "title": "Folic Acid Deficiency"}, {"color": "lightblue", "id": "retinoic acid receptor beta 2", "label": "retinoic acid receptor beta 2", "shape": "dot", "size": 15, "title": "retinoic acid receptor beta 2"}, {"color": "lightblue", "id": "Ascorbic Acid", "label": "Ascorbic Acid", "shape": "dot", "size": 15, "title": "Ascorbic Acid"}, {"color": "lightblue", "id": "Trans Fatty Acids", "label": "Trans Fatty Acids", "shape": "dot", "size": 15, "title": "Trans Fatty Acids"}, {"color": "lightblue", "id": "gambogic acid", "label": "gambogic acid", "shape": "dot", "size": 15, "title": "gambogic acid"}, {"color": "lightblue", "id": "elaidic acid", "label": "elaidic acid", "shape": "dot", "size": 15, "title": "elaidic acid"}, {"color": "lightblue", "id": "hyaluronic acid", "label": "hyaluronic acid", "shape": "dot", "size": 15, "title": "hyaluronic acid"}, {"color": "lightblue", "id": "ursolic acid", "label": "ursolic acid", "shape": "dot", "size": 15, "title": "ursolic acid"}, {"color": "lightblue", "id": "omega-3 fatty acids", "label": "omega-3 fatty acids", "shape": "dot", "size": 15, "title": "omega-3 fatty acids"}, {"color": "lightblue", "id": "folic acid", "label": "folic acid", "shape": "dot", "size": 15, "title": "folic acid"}, {"color": "lightblue", "id": "2-mercaptoethanesulfonic acid", "label": "2-mercaptoethanesulfonic acid", "shape": "dot", "size": 15, "title": "2-mercaptoethanesulfonic acid"}, {"color": "lightblue", "id": "Hydroxy Acids", "label": "Hydroxy Acids", "shape": "dot", "size": 15, "title": "Hydroxy Acids"}, {"color": "lightblue", "id": "ascorbic acid", "label": "ascorbic acid", "shape": "dot", "size": 15, "title": "ascorbic acid"}, {"color": "lightblue", "id": "Compound V", "label": "Compound V", "shape": "dot", "size": 15, "title": "Compound V"}, {"color": "lightblue", "id": "Organic Chemicals", "label": "Organic Chemicals", "shape": "dot", "size": 15, "title": "Organic Chemicals"}, {"color": "lightblue", "id": "Glutamic Acid", "label": "Glutamic Acid", "shape": "dot", "size": 15, "title": "Glutamic Acid"}, {"color": "lightblue", "id": "retinoic acid receptor alpha", "label": "retinoic acid receptor alpha", "shape": "dot", "size": 15, "title": "retinoic acid receptor alpha"}, {"color": "lightblue", "id": "Epoxy Compounds", "label": "Epoxy Compounds", "shape": "dot", "size": 15, "title": "Epoxy Compounds"}, {"color": "lightblue", "id": "Oleic Acid", "label": "Oleic Acid", "shape": "dot", "size": 15, "title": "Oleic Acid"}, {"color": "lightblue", "id": "Lead compound", "label": "Lead compound", "shape": "dot", "size": 15, "title": "Lead compound"}, {"color": "lightblue", "id": "chrysophanic acid", "label": "chrysophanic acid", "shape": "dot", "size": 15, "title": "chrysophanic acid"}, {"color": "lightblue", "id": "Deoxycholic Acid", "label": "Deoxycholic Acid", "shape": "dot", "size": 15, "title": "Deoxycholic Acid"}, {"color": "lightblue", "id": "Sulfonylurea Compounds", "label": "Sulfonylurea Compounds", "shape": "dot", "size": 15, "title": "Sulfonylurea Compounds"}, {"color": "lightblue", "id": "ethylmalonic acid", "label": "ethylmalonic acid", "shape": "dot", "size": 15, "title": "ethylmalonic acid"}, {"color": "lightblue", "id": "Chemical Exposure", "label": "Chemical Exposure", "shape": "dot", "size": 15, "title": "Chemical Exposure"}, {"color": "lightblue", "id": "perfluorooctanoic acid", "label": "perfluorooctanoic acid", "shape": "dot", "size": 15, "title": "perfluorooctanoic acid"}, {"color": "lightblue", "id": "Long chain fatty acid", "label": "Long chain fatty acid", "shape": "dot", "size": 15, "title": "Long chain fatty acid"}, {"color": "lightblue", "id": "Fatty-acid synthase", "label": "Fatty-acid synthase", "shape": "dot", "size": 15, "title": "Fatty-acid synthase"}, {"color": "lightblue", "id": "Acidosis", "label": "Acidosis", "shape": "dot", "size": 15, "title": "Acidosis"}, {"color": "lightblue", "id": "Volatile Organic Compounds", "label": "Volatile Organic Compounds", "shape": "dot", "size": 15, "title": "Volatile Organic Compounds"}, {"color": "lightblue", "id": "Organic solvent product", "label": "Organic solvent product", "shape": "dot", "size": 15, "title": "Organic solvent product"}, {"color": "lightblue", "id": "ellagic acid", "label": "ellagic acid", "shape": "dot", "size": 15, "title": "ellagic acid"}, {"color": "lightblue", "id": "hexanoic acid", "label": "hexanoic acid", "shape": "dot", "size": 15, "title": "hexanoic acid"}, {"color": "lightblue", "id": "gamma-aminobutyric acid", "label": "gamma-aminobutyric acid", "shape": "dot", "size": 15, "title": "gamma-aminobutyric acid"}, {"color": "lightblue", "id": "Phytochemicals", "label": "Phytochemicals", "shape": "dot", "size": 15, "title": "Phytochemicals"}, {"color": "lightblue", "id": "Benzoic Acid", "label": "Benzoic Acid", "shape": "dot", "size": 15, "title": "Benzoic Acid"}, {"color": "lightblue", "id": "Folic acid supplementation", "label": "Folic acid supplementation", "shape": "dot", "size": 15, "title": "Folic acid supplementation"}, {"color": "lightblue", "id": "alpha-Linolenic Acid", "label": "alpha-Linolenic Acid", "shape": "dot", "size": 15, "title": "alpha-Linolenic Acid"}, {"color": "lightblue", "id": "Fatty Acids, Unsaturated", "label": "Fatty Acids, Unsaturated", "shape": "dot", "size": 15, "title": "Fatty Acids, Unsaturated"}, {"color": "lightblue", "id": "amsonic acid", "label": "amsonic acid", "shape": "dot", "size": 15, "title": "amsonic acid"}, {"color": "lightblue", "id": "20-hydroxy-5,8,11,14-eicosatetraenoic acid", "label": "20-hydroxy-5,8,11,14-eicosatetraenoic acid", "shape": "dot", "size": 15, "title": "20-hydroxy-5,8,11,14-eicosatetraenoic acid"}, {"color": "lightblue", "id": "Folic Acid", "label": "Folic Acid", "shape": "dot", "size": 15, "title": "Folic Acid"}, {"color": "lightblue", "id": "Chlorogenic Acid", "label": "Chlorogenic Acid", "shape": "dot", "size": 15, "title": "Chlorogenic Acid"}, {"color": "lightblue", "id": "Thioctic Acid", "label": "Thioctic Acid", "shape": "dot", "size": 15, "title": "Thioctic Acid"}, {"color": "lightblue", "id": "Fatty acid glycerol esters", "label": "Fatty acid glycerol esters", "shape": "dot", "size": 15, "title": "Fatty acid glycerol esters"}, {"color": "lightblue", "id": "betulinic acid", "label": "betulinic acid", "shape": "dot", "size": 15, "title": "betulinic acid"}, {"color": "lightblue", "id": "gamma-linolenic acid", "label": "gamma-linolenic acid", "shape": "dot", "size": 15, "title": "gamma-linolenic acid"}, {"color": "lightblue", "id": "Crotoxin", "label": "Crotoxin", "shape": "dot", "size": 15, "title": "Crotoxin"}, {"color": "lightblue", "id": "Polyunsaturated fatty acid intake", "label": "Polyunsaturated fatty acid intake", "shape": "dot", "size": 15, "title": "Polyunsaturated fatty acid intake"}, {"color": "lightblue", "id": "Lactic acid dehydrogenase isoenzyme 5", "label": "Lactic acid dehydrogenase isoenzyme 5", "shape": "dot", "size": 15, "title": "Lactic acid dehydrogenase isoenzyme 5"}, {"color": "lightblue", "id": "perfluorooctane sulfonic acid", "label": "perfluorooctane sulfonic acid", "shape": "dot", "size": 15, "title": "perfluorooctane sulfonic acid"}, {"color": "lightblue", "id": "Sulfonic Acids", "label": "Sulfonic Acids", "shape": "dot", "size": 15, "title": "Sulfonic Acids"}, {"color": "lightblue", "id": "boswellic acid", "label": "boswellic acid", "shape": "dot", "size": 15, "title": "boswellic acid"}, {"color": "lightblue", "id": "Sulfhydryl Compounds", "label": "Sulfhydryl Compounds", "shape": "dot", "size": 15, "title": "Sulfhydryl Compounds"}, {"color": "lightblue", "id": "obeticholic acid", "label": "obeticholic acid", "shape": "dot", "size": 15, "title": "obeticholic acid"}, {"color": "lightblue", "id": "4-aminohippuric acid", "label": "4-aminohippuric acid", "shape": "dot", "size": 15, "title": "4-aminohippuric acid"}, {"color": "lightblue", "id": "Fatty Acids, Monounsaturated", "label": "Fatty Acids, Monounsaturated", "shape": "dot", "size": 15, "title": "Fatty Acids, Monounsaturated"}, {"color": "lightblue", "id": "Eicosapentaenoic Acid", "label": "Eicosapentaenoic Acid", "shape": "dot", "size": 15, "title": "Eicosapentaenoic Acid"}, {"color": "lightblue", "id": "Palmitic Acid", "label": "Palmitic Acid", "shape": "dot", "size": 15, "title": "Palmitic Acid"}, {"color": "lightblue", "id": "N-6 fatty acid intake", "label": "N-6 fatty acid intake", "shape": "dot", "size": 15, "title": "N-6 fatty acid intake"}, {"color": "lightblue", "id": "Compound Q", "label": "Compound Q", "shape": "dot", "size": 15, "title": "Compound Q"}, {"color": "lightblue", "id": "Linoleic Acids, Conjugated", "label": "Linoleic Acids, Conjugated", "shape": "dot", "size": 15, "title": "Linoleic Acids, Conjugated"}, {"color": "lightblue", "id": "Gallic acid", "label": "Gallic acid", "shape": "dot", "size": 15, "title": "Gallic acid"}, {"color": "lightblue", "id": "Endotoxins", "label": "Endotoxins", "shape": "dot", "size": 15, "title": "Endotoxins"}, {"color": "lightblue", "id": "Cadmium Compounds", "label": "Cadmium Compounds", "shape": "dot", "size": 15, "title": "Cadmium Compounds"}, {"color": "lightblue", "id": "palmitoleic acid", "label": "palmitoleic acid", "shape": "dot", "size": 15, "title": "palmitoleic acid"}, {"color": "lightblue", "id": "Ellagic Acid", "label": "Ellagic Acid", "shape": "dot", "size": 15, "title": "Ellagic Acid"}, {"color": "lightblue", "id": "mannuronic acid", "label": "mannuronic acid", "shape": "dot", "size": 15, "title": "mannuronic acid"}, {"color": "lightblue", "id": "gamma-Linolenic Acid", "label": "gamma-Linolenic Acid", "shape": "dot", "size": 15, "title": "gamma-Linolenic Acid"}, {"color": "lightblue", "id": "Valproic Acid", "label": "Valproic Acid", "shape": "dot", "size": 15, "title": "Valproic Acid"}, {"color": "lightblue", "id": "glycyrrhetinic acid", "label": "glycyrrhetinic acid", "shape": "dot", "size": 15, "title": "glycyrrhetinic acid"}, {"color": "lightblue", "id": "N-Acetylneuraminic Acid", "label": "N-Acetylneuraminic Acid", "shape": "dot", "size": 15, "title": "N-Acetylneuraminic Acid"}, {"color": "lightblue", "id": "of 3-(4-(4-((1-(2-chlorophenyl)ethoxy)carbonyl amino)-3-methyl-5-isoxazolyl) benzylsulfanyl) propanoic acid", "label": "of 3-(4-(4-((1-(2-chlorophenyl)ethoxy)carbonyl amino)-3-methyl-5-isoxazolyl) benzylsulfanyl) propanoic acid", "shape": "dot", "size": 15, "title": "of 3-(4-(4-((1-(2-chlorophenyl)ethoxy)carbonyl amino)-3-methyl-5-isoxazolyl) benzylsulfanyl) propanoic acid"}, {"color": "lightblue", "id": "Aminolevulinic Acid", "label": "Aminolevulinic Acid", "shape": "dot", "size": 15, "title": "Aminolevulinic Acid"}, {"color": "lightblue", "id": "2-cyano-3,12-dioxoolean-1,9-dien-28-oic acid", "label": "2-cyano-3,12-dioxoolean-1,9-dien-28-oic acid", "shape": "dot", "size": 15, "title": "2-cyano-3,12-dioxoolean-1,9-dien-28-oic acid"}, {"color": "lightblue", "id": "Dicarboxylic Acids", "label": "Dicarboxylic Acids", "shape": "dot", "size": 15, "title": "Dicarboxylic Acids"}, {"color": "lightblue", "id": "Platinum Compounds", "label": "Platinum Compounds", "shape": "dot", "size": 15, "title": "Platinum Compounds"}, {"color": "lightblue", "id": "perfluorononanoic acid", "label": "perfluorononanoic acid", "shape": "dot", "size": 15, "title": "perfluorononanoic acid"}, {"color": "lightblue", "id": "Dietary Fatty Acid", "label": "Dietary Fatty Acid", "shape": "dot", "size": 15, "title": "Dietary Fatty Acid"}, {"color": "lightblue", "id": "oleanolic acid", "label": "oleanolic acid", "shape": "dot", "size": 15, "title": "oleanolic acid"}, {"color": "lightblue", "id": "Caffeic Acid Phenethyl Ester", "label": "Caffeic Acid Phenethyl Ester", "shape": "dot", "size": 15, "title": "Caffeic Acid Phenethyl Ester"}, {"color": "lightblue", "id": "Fatty Acids, Nonesterified", "label": "Fatty Acids, Nonesterified", "shape": "dot", "size": 15, "title": "Fatty Acids, Nonesterified"}, {"color": "lightblue", "id": "N-3 fatty acid intake", "label": "N-3 fatty acid intake", "shape": "dot", "size": 15, "title": "N-3 fatty acid intake"}, {"color": "lightblue", "id": "Hydroxamic Acids", "label": "Hydroxamic Acids", "shape": "dot", "size": 15, "title": "Hydroxamic Acids"}, {"color": "lightblue", "id": "Immunotoxins", "label": "Immunotoxins", "shape": "dot", "size": 15, "title": "Immunotoxins"}, {"color": "lightblue", "id": "usnic acid", "label": "usnic acid", "shape": "dot", "size": 15, "title": "usnic acid"}, {"color": "lightblue", "id": "Folic Acid Antagonists", "label": "Folic Acid Antagonists", "shape": "dot", "size": 15, "title": "Folic Acid Antagonists"}, {"color": "lightblue", "id": "Cacodylic Acid", "label": "Cacodylic Acid", "shape": "dot", "size": 15, "title": "Cacodylic Acid"}, {"color": "lightblue", "id": "Poly-L-lactic acid", "label": "Poly-L-lactic acid", "shape": "dot", "size": 15, "title": "Poly-L-lactic acid"}, {"color": "lightblue", "id": "aflatoxin B1", "label": "aflatoxin B1", "shape": "dot", "size": 15, "title": "aflatoxin B1"}, {"color": "lightblue", "id": "hydroxybenzoic acid", "label": "hydroxybenzoic acid", "shape": "dot", "size": 15, "title": "hydroxybenzoic acid"}, {"color": "lightblue", "id": "Toxin", "label": "Toxin", "shape": "dot", "size": 15, "title": "Toxin"}, {"color": "lightblue", "id": "12-Hydroxy-5,8,10,14-eicosatetraenoic Acid", "label": "12-Hydroxy-5,8,10,14-eicosatetraenoic Acid", "shape": "dot", "size": 15, "title": "12-Hydroxy-5,8,10,14-eicosatetraenoic Acid"}, {"color": "lightblue", "id": "sterculic acid", "label": "sterculic acid", "shape": "dot", "size": 15, "title": "sterculic acid"}, {"color": "lightblue", "id": "Aflatoxin B1", "label": "Aflatoxin B1", "shape": "dot", "size": 15, "title": "Aflatoxin B1"}, {"color": "lightblue", "id": "mead acid", "label": "mead acid", "shape": "dot", "size": 15, "title": "mead acid"}, {"color": "lightblue", "id": "cyclic compound", "label": "cyclic compound", "shape": "dot", "size": 15, "title": "cyclic compound"}, {"color": "lightblue", "id": "caffeic acid phenethyl ester", "label": "caffeic acid phenethyl ester", "shape": "dot", "size": 15, "title": "caffeic acid phenethyl ester"}, {"color": "lightblue", "id": "O-(glucuronic acid 2-sulfate)-(1--3)-O-(2,5)-andydrotalitol 6-sulfate", "label": "O-(glucuronic acid 2-sulfate)-(1--3)-O-(2,5)-andydrotalitol 6-sulfate", "shape": "dot", "size": 15, "title": "O-(glucuronic acid 2-sulfate)-(1--3)-O-(2,5)-andydrotalitol 6-sulfate"}, {"color": "lightblue", "id": "Myristic Acid", "label": "Myristic Acid", "shape": "dot", "size": 15, "title": "Myristic Acid"}, {"color": "lightblue", "id": "fatty acid amide hydrolase", "label": "fatty acid amide hydrolase", "shape": "dot", "size": 15, "title": "fatty acid amide hydrolase"}, {"color": "lightblue", "id": "glutamic acid", "label": "glutamic acid", "shape": "dot", "size": 15, "title": "glutamic acid"}]);
+                  edges = new vis.DataSet([{"color": "gray", "from": "Fatty Acids, Omega-6", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Polyunsaturated Fatty Acids", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Solvents", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Chemicals", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Linoleic Acid", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Fatty Acids", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Cholera Toxin", "to": "Female Breast Cancer"}, {"color": "gray", "from": "alpha-latrotoxin receptor", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Digitoxin", "to": "Female Breast Cancer"}, {"color": "gray", "from": "stearic acid", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Fatty Acids, Essential", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Butyric Acid", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Phytic Acid", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Fatty Acids, Omega-3", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Docosahexaenoic Acids", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Cytotoxin", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Arachidonic Acid", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Acids", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Phytochemical", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Ethacrynic Acid", "to": "Female Breast Cancer"}, {"color": "gray", "from": "zoledronic acid", "to": "Female Breast Cancer"}, {"color": "gray", "from": "lysophosphatidic acid", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Sulfuric Acid Esters", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Fatty Acids, Saturated", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Folic Acid Deficiency", "to": "Female Breast Cancer"}, {"color": "gray", "from": "retinoic acid receptor beta 2", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Ascorbic Acid", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Trans Fatty Acids", "to": "Female Breast Cancer"}, {"color": "gray", "from": "gambogic acid", "to": "Female Breast Cancer"}, {"color": "gray", "from": "elaidic acid", "to": "Female Breast Cancer"}, {"color": "gray", "from": "hyaluronic acid", "to": "Female Breast Cancer"}, {"color": "gray", "from": "ursolic acid", "to": "Female Breast Cancer"}, {"color": "gray", "from": "omega-3 fatty acids", "to": "Female Breast Cancer"}, {"color": "gray", "from": "folic acid", "to": "Female Breast Cancer"}, {"color": "gray", "from": "2-mercaptoethanesulfonic acid", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Hydroxy Acids", "to": "Female Breast Cancer"}, {"color": "gray", "from": "ascorbic acid", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Compound V", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Organic Chemicals", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Glutamic Acid", "to": "Female Breast Cancer"}, {"color": "gray", "from": "retinoic acid receptor alpha", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Epoxy Compounds", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Oleic Acid", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Lead compound", "to": "Female Breast Cancer"}, {"color": "gray", "from": "chrysophanic acid", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Deoxycholic Acid", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Sulfonylurea Compounds", "to": "Female Breast Cancer"}, {"color": "gray", "from": "ethylmalonic acid", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Chemical Exposure", "to": "Female Breast Cancer"}, {"color": "gray", "from": "perfluorooctanoic acid", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Long chain fatty acid", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Fatty-acid synthase", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Acidosis", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Volatile Organic Compounds", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Organic solvent product", "to": "Female Breast Cancer"}, {"color": "gray", "from": "ellagic acid", "to": "Female Breast Cancer"}, {"color": "gray", "from": "hexanoic acid", "to": "Female Breast Cancer"}, {"color": "gray", "from": "gamma-aminobutyric acid", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Phytochemicals", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Benzoic Acid", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Folic acid supplementation", "to": "Female Breast Cancer"}, {"color": "gray", "from": "alpha-Linolenic Acid", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Fatty Acids, Unsaturated", "to": "Female Breast Cancer"}, {"color": "gray", "from": "amsonic acid", "to": "Female Breast Cancer"}, {"color": "gray", "from": "20-hydroxy-5,8,11,14-eicosatetraenoic acid", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Folic Acid", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Chlorogenic Acid", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Thioctic Acid", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Fatty acid glycerol esters", "to": "Female Breast Cancer"}, {"color": "gray", "from": "betulinic acid", "to": "Female Breast Cancer"}, {"color": "gray", "from": "gamma-linolenic acid", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Crotoxin", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Polyunsaturated fatty acid intake", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Lactic acid dehydrogenase isoenzyme 5", "to": "Female Breast Cancer"}, {"color": "gray", "from": "perfluorooctane sulfonic acid", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Sulfonic Acids", "to": "Female Breast Cancer"}, {"color": "gray", "from": "boswellic acid", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Sulfhydryl Compounds", "to": "Female Breast Cancer"}, {"color": "gray", "from": "obeticholic acid", "to": "Female Breast Cancer"}, {"color": "gray", "from": "4-aminohippuric acid", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Fatty Acids, Monounsaturated", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Eicosapentaenoic Acid", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Palmitic Acid", "to": "Female Breast Cancer"}, {"color": "gray", "from": "N-6 fatty acid intake", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Compound Q", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Linoleic Acids, Conjugated", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Gallic acid", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Endotoxins", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Cadmium Compounds", "to": "Female Breast Cancer"}, {"color": "gray", "from": "palmitoleic acid", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Ellagic Acid", "to": "Female Breast Cancer"}, {"color": "gray", "from": "mannuronic acid", "to": "Female Breast Cancer"}, {"color": "gray", "from": "gamma-Linolenic Acid", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Valproic Acid", "to": "Female Breast Cancer"}, {"color": "gray", "from": "glycyrrhetinic acid", "to": "Female Breast Cancer"}, {"color": "gray", "from": "N-Acetylneuraminic Acid", "to": "Female Breast Cancer"}, {"color": "gray", "from": "of 3-(4-(4-((1-(2-chlorophenyl)ethoxy)carbonyl amino)-3-methyl-5-isoxazolyl) benzylsulfanyl) propanoic acid", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Aminolevulinic Acid", "to": "Female Breast Cancer"}, {"color": "gray", "from": "2-cyano-3,12-dioxoolean-1,9-dien-28-oic acid", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Dicarboxylic Acids", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Platinum Compounds", "to": "Female Breast Cancer"}, {"color": "gray", "from": "perfluorononanoic acid", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Dietary Fatty Acid", "to": "Female Breast Cancer"}, {"color": "gray", "from": "oleanolic acid", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Caffeic Acid Phenethyl Ester", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Fatty Acids, Nonesterified", "to": "Female Breast Cancer"}, {"color": "gray", "from": "N-3 fatty acid intake", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Hydroxamic Acids", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Immunotoxins", "to": "Female Breast Cancer"}, {"color": "gray", "from": "usnic acid", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Folic Acid Antagonists", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Cacodylic Acid", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Poly-L-lactic acid", "to": "Female Breast Cancer"}, {"color": "gray", "from": "aflatoxin B1", "to": "Female Breast Cancer"}, {"color": "gray", "from": "hydroxybenzoic acid", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Toxin", "to": "Female Breast Cancer"}, {"color": "gray", "from": "12-Hydroxy-5,8,10,14-eicosatetraenoic Acid", "to": "Female Breast Cancer"}, {"color": "gray", "from": "sterculic acid", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Aflatoxin B1", "to": "Female Breast Cancer"}, {"color": "gray", "from": "mead acid", "to": "Female Breast Cancer"}, {"color": "gray", "from": "cyclic compound", "to": "Female Breast Cancer"}, {"color": "gray", "from": "caffeic acid phenethyl ester", "to": "Female Breast Cancer"}, {"color": "gray", "from": "O-(glucuronic acid 2-sulfate)-(1--3)-O-(2,5)-andydrotalitol 6-sulfate", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Myristic Acid", "to": "Female Breast Cancer"}, {"color": "gray", "from": "fatty acid amide hydrolase", "to": "Female Breast Cancer"}, {"color": "gray", "from": "glutamic acid", "to": "Female Breast Cancer"}]);
+
+                  nodeColors = {};
+                  allNodes = nodes.get({ returnType: "Object" });
+                  for (nodeId in allNodes) {
+                    nodeColors[nodeId] = allNodes[nodeId].color;
+                  }
+                  allEdges = edges.get({ returnType: "Object" });
+                  // adding nodes and edges to the graph
+                  data = {nodes: nodes, edges: edges};
+
+                  var options = {
+    "configure": {
+        "enabled": false
+    },
+    "edges": {
+        "color": {
+            "inherit": true
+        },
+        "smooth": {
+            "enabled": true,
+            "type": "dynamic"
+        }
+    },
+    "interaction": {
+        "dragNodes": true,
+        "hideEdgesOnDrag": false,
+        "hideNodesOnDrag": false
+    },
+    "physics": {
+        "enabled": true,
+        "stabilization": {
+            "enabled": true,
+            "fit": true,
+            "iterations": 1000,
+            "onlyDynamicEdges": false,
+            "updateInterval": 50
+        }
+    }
+};
+
+                  
+
+
+                  
+
+                  network = new vis.Network(container, data, options);
+
+                  
+
+                  
+
+                  
+
+
+                  
+                      network.on("stabilizationProgress", function(params) {
+                          document.getElementById('loadingBar').removeAttribute("style");
+                          var maxWidth = 496;
+                          var minWidth = 20;
+                          var widthFactor = params.iterations/params.total;
+                          var width = Math.max(minWidth,maxWidth * widthFactor);
+                          document.getElementById('bar').style.width = width + 'px';
+                          document.getElementById('text').innerHTML = Math.round(widthFactor*100) + '%';
+                      });
+                      network.once("stabilizationIterationsDone", function() {
+                          document.getElementById('text').innerHTML = '100%';
+                          document.getElementById('bar').style.width = '496px';
+                          document.getElementById('loadingBar').style.opacity = 0;
+                          // really clean the dom element
+                          setTimeout(function () {document.getElementById('loadingBar').style.display = 'none';}, 500);
+                      });
+                  
+
+                  return network;
+
+              }
+              drawGraph();
+        </script>
+    </body>
+</html>

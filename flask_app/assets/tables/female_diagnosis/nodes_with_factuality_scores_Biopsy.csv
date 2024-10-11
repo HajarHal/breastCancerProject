@@ -1,0 +1,1570 @@
+title,factuality_score
+Biopsy,0.2177822
+Female Breast Cancer,0.2177822
+Core needle biopsy,0.0139860
+Needle biopsy procedure,0.0509491
+Sentinel Lymph Node Biopsy,0.2177822
+Biopsy,0.0269730
+Fine needle aspiration biopsy,0.2177822
+Core needle biopsy,0.2177822
+Transbronchial lung biopsy,0.0139860
+Fine needle aspiration biopsy,0.0509491
+Biopsy,0.0389610
+Needle biopsy procedure,0.2177822
+Drill biopsy,0.2177822
+Biopsy,0.0139860
+Excision biopsy,0.2177822
+Surgical biopsy,0.2177822
+Excision biopsy,0.0139860
+Core needle biopsy,0.0269730
+Fine needle aspiration biopsy,0.0269730
+Sentinel Lymph Node Biopsy,0.0389610
+Excision biopsy,0.0389610
+Biopsy,0.0509491
+Fine needle aspiration biopsy,0.0139860
+Biopsy,0.0059940
+Excision biopsy,0.0049950
+Core needle biopsy,0.0389610
+Incisional biopsy - action,0.0139860
+Core needle biopsy,0.0509491
+Sentinel Lymph Node Biopsy,0.0509491
+Incisional biopsy - action,0.0389610
+Needle biopsy procedure,0.0269730
+Fine needle aspiration biopsy,0.0049950
+Puncture biopsy,0.0019980
+Sentinel Lymph Node Biopsy,0.0029970
+Liquid Biopsy,0.0029970
+Sentinel Lymph Node Biopsy,0.0009990
+Image-Guided Biopsy,0.0389610
+Core needle biopsy,0.0029970
+Liquid Biopsy,0.0059940
+Biopsy,0.0049950
+Core needle biopsy,0.0089910
+Sentinel Lymph Node Biopsy,0.0059940
+Sentinel Lymph Node Biopsy,0.0019980
+Biopsy,0.0179820
+Vacuum assisted biopsy,0.0389610
+Endoscopic biopsy,0.0139860
+Incisional biopsy - action,0.2177822
+Puncture biopsy,0.0389610
+Sentinel Lymph Node Biopsy,0.0269730
+Core needle biopsy,0.0019980
+Needle biopsy procedure,0.0139860
+Core needle biopsy,0.0059940
+Surgical biopsy,0.0389610
+Needle biopsy procedure,0.0389610
+Sentinel Lymph Node Biopsy,0.0139860
+Liquid Biopsy,0.2177822
+MRI guided biopsy,0.0049950
+Liquid Biopsy,0.0209790
+Biopsy,0.0000000
+Sentinel Lymph Node Biopsy,0.0089910
+Vacuum assisted biopsy,0.2177822
+Core needle biopsy,0.0179820
+Bone marrow biopsy,0.2177822
+Excision biopsy,0.0509491
+Puncture biopsy,0.2177822
+Fine needle aspiration biopsy,0.0389610
+Trucut biopsy,0.2177822
+Puncture biopsy,0.0509491
+Fine needle aspiration biopsy,0.0059940
+Core needle biopsy,0.0049950
+Biopsy of breast,0.0389610
+Biopsy,0.0029970
+Liquid Biopsy,0.0049950
+Fine needle aspiration biopsy,0.0019980
+Needle biopsy procedure,0.0179820
+Needle biopsy procedure,0.0059940
+Endoscopic biopsy,0.0509491
+Orbital biopsy,0.0269730
+Surgical biopsy,0.0139860
+Muscle biopsy,0.0139860
+Surgical biopsy,0.0509491
+Biopsy of ovary,0.0269730
+Surgical biopsy,0.0269730
+Punch biopsy (procedure),0.0089910
+Bone marrow biopsy,0.0209790
+Biopsy,0.0209790
+Biopsy sampling,0.2177822
+Needle biopsy procedure,0.0019980
+Biopsy of prostate,0.0389610
+Excision biopsy,0.0269730
+Sentinel Lymph Node Biopsy,0.0049950
+Biopsy,0.0069930
+Fine needle aspiration of breast,0.2177822
+MRI guided biopsy,0.0389610
+Biopsy of skin procedure,0.0209790
+Bone marrow biopsy,0.0139860
+Incisional biopsy - action,0.0269730
+Puncture biopsy,0.0139860
+Biopsy of skin procedure,0.0059940
+Punch biopsy (procedure),0.0389610
+Biopsy of skin procedure,0.2177822
+Orbital biopsy,0.0509491
+Biopsy of skin procedure,0.0139860
+Biopsy,0.0019980
+Incisional biopsy - action,0.0509491
+Biopsy,0.0089910
+Needle biopsy procedure,0.0089910
+Punch biopsy (procedure),0.2177822
+Biopsy of skin procedure,0.0509491
+buccal smear biopsy procedure,0.2177822
+Laparoscopy with biopsy,0.0509491
+Biopsy of skin procedure,0.0269730
+Needle biopsy procedure,0.0049950
+Excision biopsy,0.0089910
+Core needle biopsy,0.0000000
+Percutaneous Breast Biopsy,0.0389610
+Microlaryngoscopy,0.0509491
+Early Diagnosis,0.2177822
+"Spectrum Analysis, Raman",0.2177822
+Assay,0.0139860
+Author,0.0139860
+Immunohistochemistry,0.2177822
+Author,0.2177822
+Magnetic Resonance Imaging,0.2177822
+"Toxicology screen, general",0.0389610
+Microarray Analysis,0.2177822
+CK2,0.2177822
+Cytokeratin-8 Staining Method,0.0029970
+HIGH SENSITIVITY,0.0139860
+Scanning,0.2177822
+Correlation Study,0.0509491
+IMMUNOHISTOCHEMICAL,0.0139860
+Immunohistochemistry,0.0509491
+Medical pathologist,0.2177822
+single cell analysis,0.2177822
+radiologist,0.2177822
+Treatment Protocols,0.2177822
+Nurses,0.2177822
+Enzyme-Linked Immunosorbent Assay,0.0509491
+Physicians,0.2177822
+Mucin-1 Staining Method,0.2177822
+Fluorescence Spectroscopy,0.2177822
+Radioisotope scan of lymphatic system,0.2177822
+Research Personnel,0.2177822
+Liver Function Tests,0.2177822
+Cell marker,0.2177822
+Medical Imaging,0.2177822
+Immunohistochemistry,0.0389610
+IMMUNOHISTOCHEMICAL,0.0509491
+Total protein measurement,0.2177822
+diagnostic procedure,0.2177822
+Autoantibody response,0.2177822
+Polymerase Chain Reaction,0.2177822
+Image analysis,0.0389610
+Liquid Chromatography Mass Spectrometry,0.2177822
+Assay,0.2177822
+Densitometry,0.2177822
+Radiometry,0.2177822
+Activated clotting time measurement,0.2177822
+thermography,0.2177822
+Sample analysis,0.0509491
+Flow Cytometry,0.0509491
+In Situ Hybridization,0.0139860
+Surgeon,0.2177822
+Assay,0.0509491
+Lymphocyte Count,0.2177822
+Radionuclide Imaging,0.2177822
+Ultrasonography,0.2177822
+Molecular Diagnosis,0.0059940
+Plasma prolactin,0.2177822
+rapid technique,0.2177822
+disease stage,0.2177822
+Research Personnel,0.0509491
+In Situ Hybridization,0.0509491
+Anti-thyroid antibody measurement,0.0509491
+In Situ Hybridization,0.0269730
+Diagnostic Imaging,0.2177822
+Author,0.0509491
+"Glucose-6-phosphate dehydrogenase measurement, quantitative",0.2177822
+Immunofluorescence,0.0139860
+Soft Agar Assay,0.2177822
+Morphometric analysis,0.2177822
+Morphometric analysis,0.0509491
+Histocytochemistry,0.0509491
+Immunoblotting,0.2177822
+Immunocytochemistry,0.2177822
+Radionuclide Imaging,0.0509491
+Flow Cytometry,0.2177822
+Enzyme Immunoassay,0.2177822
+Antibody to islet cells of pancreas measurement,0.2177822
+Diaphanography,0.0509491
+Plasma oestradiol,0.2177822
+Estradiol measurement,0.2177822
+IMMUNOHISTOCHEMICAL,0.2177822
+Diagnostic Neoplasm Staging,0.2177822
+Galactography,0.2177822
+Clinical Research,0.2177822
+Spectrum Analysis,0.2177822
+Palpation,0.2177822
+Enzyme Immunoassay,0.0509491
+IMMUNOHISTOCHEMICAL,0.0269730
+Morphometric analysis,0.0269730
+Analysis,0.0509491
+Lymphography,0.2177822
+Chromatography,0.2177822
+Magnetic Resonance Imaging,0.0509491
+Radioimmunoassay,0.0069930
+Cell Culture Techniques,0.2177822
+Microscopy,0.2177822
+Adsorption,0.2177822
+Histocytochemistry,0.2177822
+Sensitivity test,0.0139860
+Radioisotope scan of lymphatic system,0.0509491
+Image analysis,0.2177822
+Immunoperoxidase Techniques,0.2177822
+"Preservation, Biological",0.2177822
+Lipids measurement,0.2177822
+Protein profiling,0.2177822
+Diagnostic radiologist,0.2177822
+CALCULATION,0.2177822
+thermography,0.0069930
+mutation analysis,0.2177822
+Flow Cytometry,0.0000000
+DNA analysis,0.0509491
+Clinical Research,0.0059940
+Cytometry,0.0509491
+Antigen assay,0.2177822
+Ultrasonography,0.0059940
+Differential Diagnosis,0.0509491
+"Spectroscopy, Nuclear Magnetic Resonance",0.0509491
+Immunoradiometric Assays,0.2177822
+Cytodiagnosis,0.2177822
+Immunohistochemistry,0.0269730
+Transillumination,0.2177822
+Case-Control Studies,0.2177822
+mutation analysis,0.0509491
+Image analysis,0.0509491
+Clinical Trials Data Monitoring Committees,0.2177822
+Polymerase Chain Reaction,0.0509491
+Breast thermography,0.2177822
+Cytogenetic procedure,0.2177822
+friend,0.2177822
+HIGH SENSITIVITY,0.2177822
+Family,0.2177822
+Ultrasonography,0.0049950
+Fluorescent in Situ Hybridization,0.0509491
+Endosonography,0.0049950
+"Blotting, Western",0.2177822
+HIGH SENSITIVITY,0.0389610
+Enzyme-Linked Immunosorbent Assay,0.2177822
+Magnetic Resonance Imaging,0.0389610
+Breast Self-Examination,0.0059940
+Technologist NOS,0.2177822
+Clinicians,0.2177822
+Pre-surgery evaluation,0.2177822
+"Microscopy, Immunoelectron",0.0269730
+Magnetic Resonance Imaging,0.0059940
+Chromosome Mapping,0.2177822
+Scanning,0.0509491
+Chromogenic in situ Hybridization,0.0509491
+logistic regression analysis,0.2177822
+Osteopontin Staining Method,0.0389610
+Research Personnel,0.0389610
+Electrophoresis,0.2177822
+"Toxicology screen, general",0.2177822
+Neutralising antibodies,0.2177822
+Assay,0.0389610
+"Spectrometry, Mass, Electrospray Ionization",0.2177822
+Cancer Diagnosis,0.2177822
+Validation,0.2177822
+Health Personnel,0.2177822
+Microscopy,0.0389610
+Immunocytochemistry,0.0509491
+chromatin immunoprecipitation,0.2177822
+Immunohistochemistry,0.0139860
+Genotype determination,0.2177822
+DNA analysis,0.0139860
+Gene Expression Profiling,0.2177822
+"Spectrum Analysis, Mass",0.2177822
+Dot Immunoblotting,0.2177822
+Medical oncologist,0.2177822
+Dilution,0.2177822
+Weighing patient,0.0139860
+Medical pathologist,0.0389610
+"Microscopy, Electron, Scanning",0.2177822
+Computed Tomographic Colonography,0.2177822
+Liquid Chromatography,0.2177822
+Metabolic analysis,0.2177822
+breast cancer diagnosis,0.0269730
+Prostate specific antigen measurement,0.2177822
+Diffusion Magnetic Resonance Imaging,0.2177822
+Health Personnel,0.0139860
+Blood cadmium measurement,0.0269730
+Author,0.0389610
+Ultrasonography,0.0139860
+DNA analysis,0.2177822
+Differential white blood cell count procedure,0.2177822
+Sequence Analysis,0.2177822
+"Tomography, Optical",0.2177822
+Western Blot,0.2177822
+Reader,0.2177822
+Activated clotting time measurement,0.0059940
+athlete,0.2177822
+Actor,0.2177822
+Magnetic Resonance Spectroscopy,0.2177822
+2D Polyacrylamide Gel Electrophoresis,0.2177822
+Western Blot,0.0139860
+simulation,0.2177822
+Cell hybridization,0.2177822
+tomography,0.2177822
+Western Blot,0.0269730
+Immunoassay,0.2177822
+Magnetic Resonance Imaging,0.0049950
+Histology Procedure,0.2177822
+Sentinel Lymph Node Mapping,0.0389610
+Mucin-1 Staining Method,0.0509491
+Ultrasonography,0.0509491
+Fluorescent in Situ Hybridization,0.0389610
+Sentinel Lymph Node Mapping,0.0269730
+diagnostic procedure,0.0509491
+Functional assessment,0.2177822
+endoscopy,0.2177822
+Cytokeratin-14 Staining Method,0.0389610
+Polymerase Chain Reaction,0.0059940
+Polymerase chain reaction analysis,0.2177822
+Reporter,0.2177822
+Laser Scanning Cytometry,0.2177822
+Primary Care Physicians,0.2177822
+Flow Cytometry,0.0269730
+Author,0.0059940
+Immunophenotyping,0.0139860
+Beck depression inventory,0.2177822
+Diagnostic tests,0.0139860
+Tumor Burden,0.0139860
+Immunohistochemistry,0.0059940
+Administrators,0.2177822
+Differential Diagnosis,0.2177822
+Fluorescent in Situ Hybridization,0.0269730
+Sentinel Lymph Node Mapping,0.2177822
+Serologic tests,0.2177822
+Chest CT,0.2177822
+Serum estradiol measurement,0.2177822
+Immunodiagnosis,0.2177822
+Cell marker,0.0389610
+Ultrasonography,0.0269730
+Diagnostic tests,0.0269730
+Tumor Burden,0.2177822
+Chest imaging,0.0389610
+genetic analysis,0.0059940
+Mucin-2 Staining Method,0.2177822
+Serum selenium,0.2177822
+Immunophenotyping,0.2177822
+Enzyme-Linked Immunosorbent Assay,0.0269730
+student,0.2177822
+Computed Tomographic Colonography,0.0389610
+Endoscopy of nose,0.0139860
+Cell marker,0.0049950
+tomography,0.0389610
+Nucleic acid assay,0.0139860
+IMMUNOHISTOCHEMICAL,0.0059940
+Triple test,0.0509491
+Androgens measurement,0.2177822
+Stereo microscopy,0.2177822
+Cell hybridization,0.0139860
+Magnetic Resonance Imaging,0.0139860
+Measurement of serum lipid level,0.2177822
+Molecular Diagnosis,0.2177822
+Breast Cancer Surveillance Consortium,0.0269730
+"Interview, Psychological",0.2177822
+Air steward,0.2177822
+"Diagnosis, Fluoroscopic",0.2177822
+Blood typing procedure,0.2177822
+Minimum Inhibitory Concentration measurement,0.0509491
+Magnetic Resonance Imaging,0.0269730
+Gene Expression Profiling,0.0509491
+Gene Expression Profiling,0.0269730
+DNA stability,0.2177822
+"Tomography, Emission-Computed",0.0269730
+clonality,0.2177822
+breast cancer diagnosis,0.0139860
+Quantitative Microscopy,0.0389610
+Nucleic acid assay,0.2177822
+Microarray Analysis,0.0139860
+Body mass index procedure,0.2177822
+COMPUTED,0.2177822
+Medical practitioners NOS,0.2177822
+"Computerized tomography, 3 dimensional reconstruction",0.2177822
+Medical Imaging,0.0389610
+Differential Diagnosis,0.0139860
+Caregiver,0.2177822
+Computed Tomographic Colonography,0.0139860
+Culture Techniques,0.2177822
+Digital Image Analysis,0.0059940
+Medical Imaging,0.0269730
+Immunohistochemistry,0.0089910
+Gene Expression Profiling,0.0029970
+Pathology procedure,0.2177822
+Fluorescent Antibody Technique,0.0179820
+PET/CT scan,0.0029970
+BRCA Mutation Analysis,0.0179820
+one-step nucleic acid amplification,0.2177822
+"Spectroscopy, Fourier Transform Infrared",0.2177822
+Psychometrics,0.2177822
+Diagnosis,0.2177822
+College of American Pathologists,0.0089910
+Assay,0.0179820
+Quantitative PCR analysis,0.0179820
+Western Blotting,0.2177822
+Computer Assisted Diagnosis,0.2177822
+Lactate dehydrogenase measurement,0.0209790
+Diffusion weighted imaging,0.2177822
+Gene Expression Profiling,0.0179820
+S-Phase Fraction,0.2177822
+Cell Count,0.2177822
+Diagnosis,0.0019980
+Assay,0.0049950
+Single-Cell Analysis,0.2177822
+Medical pathologist,0.0179820
+Cell Count,0.0179820
+Microwave Imaging,0.2177822
+Breast Cancer Surveillance Consortium,0.0179820
+Optical Imaging,0.2177822
+Assessment: Cognition,0.0029970
+Magnetic Resonance Imaging,0.0009990
+Biomarker Analysis,0.0019980
+Breast Cancer Type 1 Susceptibility Protein Measurement,0.2177822
+Breast Cancer Type 1 Susceptibility Protein Measurement,0.0009990
+Ki67 Measurement,0.2177822
+Diagnosis,0.0089910
+thermal imaging,0.2177822
+Magnetic resonance imaging of breast,0.0179820
+Dermatologist,0.0509491
+Body mass index procedure,0.0059940
+Ultrasonography,0.0209790
+tomosynthesis,0.2177822
+Microscopy,0.0059940
+Ultrasonography,0.0179820
+Laboratory Procedures,0.2177822
+Diagnosis,0.0389610
+Methionine measurement,0.0179820
+Breast Cancer Type 1 Susceptibility Protein Measurement,0.0179820
+Multiparametric Magnetic Resonance Imaging,0.2177822
+Diffusion weighted imaging,0.0000000
+Diffusion weighted imaging,0.0389610
+Lymphangiography,0.2177822
+Clinician,0.2177822
+Ultrasonography,0.0389610
+Magnetic resonance imaging of breast,0.0089910
+Formalin-Fixed Paraffin-Embedded,0.0179820
+Parametric Image,0.0019980
+Laboratory Procedures,0.0049950
+High-B-Value Diffusion-Weighted Imaging,0.2177822
+Breast Cancer Type 1 Susceptibility Protein Measurement,0.0049950
+Transient elastography,0.2177822
+Single-Cell Analysis,0.0509491
+Cell phenotype determination procedure,0.2177822
+Microscopy,0.0509491
+Magnetic Resonance Imaging,0.0029970
+Magnetic resonance imaging of breast,0.0000000
+Colorimetric Cell Viability Assay,0.2177822
+Fibrinogen to Albumin Ratio Measurement,0.0179820
+Assay,0.0059940
+Upstaging,0.0389610
+Ki67 Measurement,0.0179820
+Immunohistochemistry,0.0019980
+Magnetic Resonance Imaging,0.0179820
+PET/CT scan,0.0019980
+FDG-Positron Emission Tomography and Computed Tomography Scan,0.0049950
+Research Personnel,0.0029970
+Assay,0.0029970
+Subtyping,0.0179820
+Ki67 Measurement,0.0089910
+Magnetic resonance imaging of breast,0.0019980
+radiologist,0.0049950
+Magnetic Resonance Imaging,0.0089910
+Diffusion weighted imaging,0.0019980
+Immunophenotyping,0.0179820
+"Ultrasonography, Mammary",0.2177822
+Diagnosis,0.0179820
+"Spectrometry, Mass, Matrix-Assisted Laser Desorption-Ionization",0.0179820
+Study,0.2177822
+Electrocorticogram,0.2177822
+Early Diagnosis,0.0179820
+Laboratory Procedures,0.0059940
+Ultrasonography,0.0089910
+Health Personnel,0.0059940
+Microarray Analysis,0.0059940
+Biomarker Analysis,0.0059940
+Breast Cancer Type 1 Susceptibility Protein Measurement,0.0000000
+Computed Tomography (CT) of Liver,0.2177822
+"Spectroscopy, Fourier Transform Infrared",0.0389610
+Fecal analysis procedure,0.0179820
+Diagnosis,0.0069930
+Magnetic Resonance Imaging,0.0019980
+Fibrin-fibrinogen split products assay,0.2177822
+Diagnosis,0.0059940
+fMRI,0.2177822
+Infrared Thermography,0.2177822
+Immunophenotyping,0.0039960
+Multiparametric Magnetic Resonance Imaging,0.0000000
+Absolute Reticulocyte Count,0.0389610
+Single-Cell Analysis,0.0179820
+Immunohistochemistry,0.0179820
+Magnetic resonance imaging of breast,0.2177822
+Cell Count,0.0059940
+Cytometry,0.2177822
+Mass Spectrometry,0.0179820
+Laboratory Procedures,0.0509491
+Imaging Techniques,0.2177822
+Research Personnel,0.0209790
+Volume Measurement,0.2177822
+PET/CT scan,0.2177822
+Platelet hematocrit measurement,0.0029970
+Ultrasonography,0.0029970
+Photoacoustic Imaging,0.2177822
+T2 (Observed)-Weighted Imaging,0.0179820
+Subtyping,0.2177822
+Radionuclide Imaging,0.0139860
+clonality,0.0049950
+mutation analysis,0.0049950
+Immunoprecipitation,0.2177822
+Immunofluorescence,0.0269730
+Cytokeratin-18 Staining Method,0.2177822
+Logistic Regression,0.2177822
+Hair zinc,0.2177822
+Homocysteine level,0.2177822
+Iodine uptake,0.2177822
+DERIVED,0.2177822
+Functional Imaging,0.2177822
+White Blood Cell Count procedure,0.2177822
+angiogram,0.2177822
+Xeroradiography,0.2177822
+"Spectrum Analysis, Raman",0.0389610
+Diagnostic Neoplasm Staging,0.0509491
+Immunocytochemistry,0.0269730
+Estrogen receptor assay (ERA),0.2177822
+"Spectrum Analysis, Raman",0.0139860
+"Cloning, Molecular",0.0509491
+Microdissection,0.2177822
+Immunoperoxidase Techniques,0.0049950
+Image analysis,0.0139860
+Nucleic acid assay,0.0509491
+Mediastinoscopy,0.2177822
+Ultrasonography,0.0019980
+Surgeon,0.0509491
+Estrogen receptor assay (ERA),0.0509491
+Progesterone receptor assay,0.2177822
+histological diagnosis,0.0389610
+Early Diagnosis,0.0389610
+DNA chemical synthesis,0.2177822
+General Practitioners,0.2177822
+Diaphanography,0.2177822
+Clinical Trials,0.0389610
+histological diagnosis,0.2177822
+Carbohydrate antigen 549 measurement,0.2177822
+Radioimmunodetection,0.2177822
+Spectrometry,0.2177822
+Lymphography,0.0509491
+Venography - procedure,0.2177822
+thermography,0.0509491
+Radioisotope scan of bone,0.2177822
+"Chromatography, Affinity",0.0509491
+Mucin-1 Staining Method,0.0139860
+Mucin-2 Staining Method,0.0389610
+Optical Methods,0.2177822
+DIRECT ASSAY,0.0139860
+Surgeon,0.0059940
+Sequence Determinations,0.2177822
+Estrogen measurement,0.0139860
+Voluntary Workers,0.2177822
+Skeletal X-ray,0.2177822
+Pilot,0.2177822
+Nuclear medicine procedure,0.2177822
+Research Personnel,0.0139860
+Mucin-2 Staining Method,0.0139860
+Woman,0.2177822
+mutation analysis,0.0389610
+Mucin-1 Staining Method,0.0389610
+Hormone measurement,0.0509491
+Creatinine clearance measurement,0.0509491
+Cell Count,0.0389610
+Oncologist,0.2177822
+WORK UP,0.2177822
+Histocytochemistry,0.0389610
+"Tomography, Spiral Computed",0.0059940
+small angle X ray scattering,0.2177822
+immunological status,0.2177822
+Plasma insulin,0.2177822
+HIGH SENSITIVITY,0.0049950
+high throughput analysis,0.2177822
+Exploration with a probe,0.2177822
+Hepatitis B virus DNA assay,0.2177822
+Plasma estradiol measurement,0.2177822
+Weighing patient,0.2177822
+Gene Expression Profiling,0.0139860
+"Spectrum Analysis, Mass",0.0139860
+Abdomen scan,0.0139860
+molecular imaging,0.2177822
+Patients,0.0389610
+Pathologist evaluation,0.2177822
+Insulin-like growth factor binding protein 3 level,0.2177822
+Plain x-ray,0.2177822
+Morphometric analysis,0.0139860
+Laboratory studies,0.2177822
+Cell marker,0.0269730
+HIGH SENSITIVITY,0.0269730
+Clinicians,0.0509491
+CD4/CD8 ratio procedure,0.2177822
+Provider,0.2177822
+AIDS diagnosis,0.2177822
+mutation analysis,0.0139860
+Medical oncologist,0.0139860
+"Microscopy, Confocal",0.2177822
+Immunology profile,0.0059940
+Hemoglobin measurement,0.2177822
+"Tomography, Emission-Computed",0.0139860
+IMMUNOHISTOCHEMICAL,0.0389610
+Hospital specialist,0.2177822
+Lymph Node Mapping,0.2177822
+HercepTest,0.2177822
+intravital microscopy,0.2177822
+Diagnostic tests,0.2177822
+Patients,0.2177822
+Estimator,0.2177822
+BREAST.FINE NEEDLE,0.2177822
+Nurses,0.0059940
+Palpation,0.0389610
+Clinical Trials,0.2177822
+"Toxicology screen, general",0.0269730
+Histology Procedure,0.0389610
+Diagnostic Neoplasm Staging,0.0269730
+Autopsy,0.0509491
+Immunophenotyping,0.0389610
+Analysis,0.2177822
+Cancer antigen 27.29,0.0139860
+tomography,0.0049950
+Osteopontin Staining Method,0.0139860
+Cytokeratin-14 Staining Method,0.0509491
+breast cancer diagnosis,0.2177822
+"Tomography, Ultrasonic",0.2177822
+Diagnostic radiologic examination,0.0139860
+Scanning,0.0139860
+Pulmonary function tests,0.2177822
+Molecular Diagnostic Testing,0.2177822
+fluorodeoxyglucose positron emission tomography,0.0269730
+Teacher,0.0269730
+Amino acid level,0.2177822
+Multimodal Imaging,0.0019980
+Cell marker,0.0509491
+Positron-Emission Tomography,0.0139860
+"Microscopy, Scanning Tunneling",0.2177822
+Sodium measurement,0.2177822
+HIGH SENSITIVITY,0.0509491
+rapid diagnosis,0.2177822
+proteomic profiling,0.0059940
+"Sequence Analysis, RNA",0.0269730
+Author,0.0049950
+Endocrine studies,0.0139860
+Social Aspects of Cancer,0.0059940
+Principal Investigator,0.2177822
+Attending,0.2177822
+Bone density scan,0.2177822
+Examination of breast,0.0389610
+Sodium measurement,0.0139860
+Computed Tomographic Colonography,0.0509491
+explanation,0.2177822
+Cell marker,0.0139860
+breast cancer diagnosis,0.0389610
+Histology Procedure,0.0269730
+Gynecologist,0.2177822
+Author,0.0269730
+Estimator,0.0389610
+X-Ray Computed Tomography,0.2177822
+Hematocrit procedure,0.2177822
+"Spectroscopy, Near-Infrared",0.2177822
+Interview,0.2177822
+Early Diagnosis,0.0139860
+"Toxicology screen, general",0.0509491
+Steroid hormone measurement,0.2177822
+Professional guide,0.2177822
+tailor,0.2177822
+Multimodal Imaging,0.2177822
+Cone-Beam Computed Tomography,0.2177822
+scholar,0.2177822
+Cytological Techniques,0.0509491
+Positron Emission Tomography and Magnetic Resonance Imaging,0.0059940
+Mammogram - symptomatic,0.0089910
+saliva analysis,0.0000000
+Cytological Techniques,0.2177822
+Diagnosis,0.0029970
+professional occupation status,0.2177822
+Computer Assisted Diagnosis,0.0389610
+nipple discharge cytology,0.2177822
+Clinician,0.0049950
+Author,0.0179820
+Differential panel,0.0179820
+Transient elastography,0.0089910
+Scientific Study,0.2177822
+"Spectrum Analysis, Raman",0.0509491
+Positron-Emission Tomography,0.0019980
+Immunohistochemistry,0.0009990
+Assay of volatiles,0.2177822
+Chest CT,0.0029970
+Western Blot,0.0179820
+Magnetic Resonance Spectroscopy,0.0389610
+Positron-Emission Tomography,0.0059940
+Serum gamma-glutamyl transferase measurement,0.2177822
+Alpha tumour necrosis factor measurement,0.0049950
+Cell Count,0.0089910
+Real-Time Polymerase Chain Reaction,0.0179820
+Magnetic Resonance Imaging,0.0209790
+Ki67 Measurement,0.0029970
+Chemokine (C-X3-C Motif) Ligand 1 Measurement,0.2177822
+Activation Analysis,0.2177822
+Pre-surgery evaluation,0.0029970
+Scientific Study,0.0509491
+electrical impedance tomography,0.2177822
+Medical practitioner,0.2177822
+Dual-Energy X-Ray Absorptiometry,0.2177822
+Tumor Burden,0.0209790
+Microarray Analysis,0.0179820
+Pre-surgery evaluation,0.0089910
+Pathologic Examination,0.0049950
+Epidermal Growth Factor Receptor Measurement,0.0179820
+Conventional Imaging,0.0089910
+Reverse Transcriptase Polymerase Chain Reaction,0.2177822
+fluid aspiration,0.2177822
+Breast Self-Examination,0.0509491
+Ki67 Measurement,0.0389610
+Work-up,0.2177822
+"Ultrasonography, Mammary",0.0029970
+Superb microvascular imaging,0.2177822
+Health Personnel,0.0000000
+Nuclear magnetic resonance imaging brain,0.0059940
+"Diagnosis, clinical",0.2177822
+Observation - diagnostic procedure,0.0059940
+Modeling,0.2177822
+Epidermal Growth Factor Receptor Measurement,0.0059940
+Complete Blood Count,0.0000000
+Breast Imaging Reporting and Data System,0.2177822
+Formalin-Fixed Paraffin-Embedded,0.2177822
+Biological Assay,0.2177822
+Monocyte Chemotactic Protein 1 Measurement,0.0059940
+Clinician,0.0179820
+Cell Count,0.0029970
+Vasoactive intestinal polypeptide measurement,0.2177822
+Oncologists,0.2177822
+Cryopreservation,0.2177822
+Computational analysis,0.0179820
+Ultrasonography,0.0069930
+Mutation Detection,0.0179820
+Blood glucose measurement,0.2177822
+Hematoxylin and eosin stain method,0.0389610
+Immunohistochemistry,0.0049950
+Androgens measurement,0.0269730
+breast imaging studies,0.2177822
+Cytokeratin-18 Staining Method,0.0000000
+Medical pathologist,0.0509491
+Polymerase Chain Reaction,0.0389610
+Plasma oestrogen,0.2177822
+X-Ray Computed Tomography,0.0139860
+Calcium measurement,0.0509491
+Assay,0.0009990
+Cytogenetic procedure,0.0509491
+"Cloning, Molecular",0.2177822
+Serum prolactin,0.2177822
+Electron Microscopy,0.2177822
+Woman,0.0389610
+Electron Microscopy,0.0509491
+Professional Organization or Group,0.2177822
+Antibody to islet cells of pancreas measurement,0.0509491
+Immunodiffusion,0.0509491
+Karyometry,0.0029970
+Silver Staining,0.0389610
+Fluoroscopy,0.2177822
+Lymphocyte subset measurement,0.2177822
+Plasma lipid measurement,0.2177822
+"Spectroscopy, Nuclear Magnetic Resonance",0.2177822
+"Ultrasonography, Interventional",0.2177822
+Magnetic Resonance Imaging,0.0069930
+Antigen test,0.2177822
+Fractionation,0.0139860
+Hormone measurement,0.2177822
+Venography - procedure,0.0509491
+Serum prolactin,0.0509491
+Cell Count,0.0509491
+Medical Imaging,0.0509491
+Histology Procedure,0.0509491
+"Toxicology screen, general",0.0000000
+Polarographic measurement,0.0509491
+tissue processing,0.2177822
+CALCULATION,0.0509491
+Leukocyte Adherence Inhibition Test,0.2177822
+Zinc measurement,0.0139860
+Research Personnel,0.0009990
+Serum C reactive protein level,0.2177822
+Hematology procedure,0.2177822
+Mutagenicity Tests,0.2177822
+Image Cytometry,0.0389610
+PO2 measurement,0.0509491
+HercepTest,0.0509491
+Triple test,0.2177822
+"Tomography, Emission-Computed, Single-Photon",0.0509491
+Breast Cancer Surveillance Consortium,0.2177822
+Prostate specific antigen measurement,0.0509491
+Mucin-1 Staining Method,0.0049950
+Cytotoxicity assay,0.2177822
+HercepTest,0.0269730
+Parathyroid scintigraphy,0.2177822
+Provider,0.0389610
+Physical activity assessment,0.2177822
+Fluorescent in Situ Hybridization,0.0139860
+Author,0.0009990
+Oncology Group,0.2177822
+Molecular Diagnosis,0.0389610
+High density lipoprotein measurement,0.2177822
+radiologist,0.0509491
+Faculty,0.2177822
+Research Personnel,0.0059940
+molecular imaging,0.0509491
+TELOMERE ANALYSIS,0.2177822
+"Sequence Analysis, DNA",0.2177822
+Cancer Diagnosis,0.0269730
+Serum testosterone measurement,0.2177822
+"Blood Count, Complete",0.0269730
+Flow Cytometry,0.0139860
+DNA ploidy analysis,0.2177822
+Immunoblot Analysis,0.0269730
+mutation analysis,0.0269730
+Serum protein profile,0.2177822
+"Blood Count, Complete",0.2177822
+Breast Cancer Surveillance Consortium,0.0389610
+Surgeon,0.0389610
+Assay,0.0269730
+Diffusion weighted imaging,0.0509491
+Primary Care Physicians,0.0059940
+Author,0.0029970
+Tissue Fixation,0.2177822
+Flow Cytometry,0.0069930
+Serum estradiol measurement,0.0509491
+Subrenal Capsule Assay,0.2177822
+HIGH SENSITIVITY,0.0059940
+Radionuclide Imaging,0.0389610
+"Tomography, Optical",0.0269730
+Cell marker,0.0059940
+Immunohistochemistry,0.0069930
+histological diagnosis,0.0509491
+Infertility study,0.2177822
+Histocytochemistry,0.0269730
+Clinical Trials Cooperative Group,0.2177822
+"Tomography, Spiral Computed",0.2177822
+"Blotting, Western",0.0269730
+Vascular assessment,0.2177822
+Staff,0.2177822
+Employee,0.2177822
+tomography,0.0029970
+Mass Fragmentography,0.2177822
+Immunofluorescence,0.2177822
+Drug measurement,0.0139860
+Immunoblot Analysis,0.2177822
+Clinical Research,0.0389610
+Statistician,0.2177822
+Maker NOS,0.2177822
+Family investigation,0.2177822
+MRI of breast,0.2177822
+Body mass index procedure,0.0139860
+Perfusion Magnetic Resonance Imaging,0.2177822
+environmental factors,0.2177822
+Statistical Analysis,0.2177822
+"Oxygen measurement, partial pressure, arterial",0.2177822
+Microarray Analysis,0.0269730
+"Tomography, Emission-Computed",0.0059940
+Oncologist,0.0139860
+Radiation therapist,0.2177822
+Whole Body Imaging,0.0269730
+Medical Imaging,0.0139860
+Paraffin Embedding,0.2177822
+Biological Assay,0.0509491
+Transmission imaging,0.2177822
+CD4/CD8 ratio procedure,0.0389610
+Immunoassay method,0.2177822
+X-Ray Computed Tomography,0.0029970
+Chemokine (C-X-C Motif) Ligand 10 Measurement,0.0179820
+Airway Resistance Test,0.2177822
+Western Blotting,0.0179820
+High sensitivity,0.2177822
+Diffuse Optical Tomography,0.2177822
+Oncologists,0.0179820
+Pathologic Examination,0.0019980
+Blood Vessel Density,0.0000000
+Axillary Reverse Mapping,0.2177822
+BRCA Mutation Analysis,0.0000000
+Diagnostic Neoplasm Staging,0.0059940
+Complete Blood Count,0.2177822
+serum Fatty acid level,0.2177822
+High-Throughput Nucleotide Sequencing,0.2177822
+Ki67 Measurement,0.0019980
+Noninvasive Prenatal Testing,0.2177822
+methodological quality,0.2177822
+Physicians,0.0209790
+Estimated Glomerular Filtration Rate,0.0179820
+Chest imaging,0.2177822
+Magnetic resonance imaging of breast,0.0389610
+Diagnosis,0.0209790
+Glomerular Filtration Rate,0.0139860
+thermography,0.0389610
+Fas Cell Surface Death Receptor Measurement,0.0179820
+Risk Analysis,0.0000000
+Cardiac monitoring,0.0209790
+PET/CT scan,0.0209790
+PET/CT scan,0.0049950
+Observation - diagnostic procedure,0.2177822
+Observation - diagnostic procedure,0.0049950
+Cytokeratin 19 Fragment 21-1 Measurement,0.2177822
+Elasticity Imaging Techniques,0.0089910
+Lymphangiography,0.0209790
+Magnetic Resonance Imaging,0.0000000
+Nested Case-Control Studies,0.2177822
+Diffusion Kurtosis Imaging,0.2177822
+Subtyping,0.0209790
+Foundation for the Accreditation of Cellular Therapy,0.0179820
+Physicians,0.0179820
+Biomarker Analysis,0.2177822
+Practitioner,0.2177822
+Immunoenzyme Procedure,0.0000000
+High resolution,0.0179820
+Epidermal Growth Factor Receptor Measurement,0.2177822
+Mutagenesis Procedure,0.0179820
+"Spectrum Analysis, Raman",0.0089910
+PD-L1 IHC 22C3 PharmDx,0.0179820
+Image quality analysis,0.2177822
+Radionuclide Imaging,0.0209790
+Flow Cytometry,0.0179820
+Conventional Imaging,0.2177822
+Traditional Healer,0.2177822
+Clinical Decision-Making,0.2177822
+Risk Analysis,0.0049950
+Cell Migration Assays,0.2177822
+Cell Count,0.0069930
+Single-Cell Analysis,0.0209790
+Molecular Imaging,0.0059940
+Staining Intensity,0.0179820
+Magnetic Resonance Imaging,0.0039960
+"Ultrasonography, Mammary",0.0089910
+Polysomnography,0.2177822
+Breast scan,0.2177822
+Breast Cancer Type 1 Susceptibility Protein Measurement,0.0019980
+Photon Counting Computed Tomography,0.2177822
+Immunofluorescence,0.0509491
+Paraffin Embedding,0.0139860
+Endoscopy of stomach,0.0139860
+Polymerase Chain Reaction,0.0139860
+Clinical Research,0.0139860
+"Centrifugation, Density Gradient",0.2177822
+Staining method,0.2177822
+"Cortisol measurement, free, urine",0.2177822
+Autoradiography,0.2177822
+Histology Procedure,0.0069930
+Gel Electrophoresis,0.2177822
+Cytometry,0.0269730
+"Electrophoresis, Agar Gel",0.0509491
+Physical breast examination,0.0509491
+Immunologic Tests,0.2177822
+Immunoperoxidase Techniques,0.0509491
+"Immune complex assay, Raji cell",0.0139860
+Cytophotometry,0.0509491
+Radioimmunoassay,0.0509491
+Calcium measurement,0.0139860
+Carcinoembryonic antigen measurement,0.2177822
+Periodic acid Schiff stain method,0.2177822
+"Estrogen measurement, urine",0.2177822
+Fractionation,0.2177822
+"Radiography, Thoracic",0.2177822
+Sex hormone binding globulin measurement,0.2177822
+Radioligand Assay,0.2177822
+G-Banding,0.0269730
+Tumor marker measurement,0.0139860
+Blood albumin,0.2177822
+Insurance broker,0.0389610
+Serum copper,0.2177822
+"Autoradiography, Quantitative",0.0509491
+Chromosome Mapping,0.0509491
+Polymerase Chain Reaction,0.0009990
+Staining method,0.0509491
+Reverse Transcriptase Polymerase Chain Reaction,0.0269730
+Oncology Group,0.0139860
+"Immunoassay, quantitative",0.2177822
+Metyrapone test,0.2177822
+Transillumination,0.0509491
+Free thyroxine index test,0.0139860
+Author,0.0069930
+Lymphocyte Count,0.0139860
+Polymerase chain reaction analysis,0.0009990
+In Situ Hybridization,0.0389610
+Clinical Research,0.0509491
+"Spectrometry, Mass, Matrix-Assisted Laser Desorption-Ionization",0.2177822
+Sampling of lymph nodes NOS,0.2177822
+Artist,0.2177822
+DNA ploidy analysis,0.0509491
+Clinical oncologist,0.2177822
+Electrophoresis,0.0139860
+Serum vitamin D measurement,0.2177822
+Insulin measurement,0.2177822
+Urine level measurement,0.2177822
+Differential Diagnosis,0.0059940
+tomography,0.0139860
+Breath Tests,0.2177822
+research,0.2177822
+Eosinophil count procedure,0.2177822
+Monocyte count procedure,0.2177822
+Homologous Recombination,0.2177822
+Smooth Muscle Actin Staining Method,0.2177822
+Routine chest X-ray,0.2177822
+Quantitative Reverse Transcriptase PCR,0.0389610
+"Diagnosis, Computer-Assisted",0.0509491
+disease stage,0.0509491
+"Blood Count, Complete",0.0049950
+Plasma prolactin measurement,0.2177822
+Symptom checklist,0.2177822
+member,0.2177822
+DNA analysis,0.0389610
+Mucin-2 Staining Method,0.0509491
+Computed radiography,0.2177822
+Diffusion Magnetic Resonance Imaging,0.0269730
+Co-Immunoprecipitation,0.2177822
+Radionuclide Imaging,0.0269730
+Polymerase Chain Reaction,0.0049950
+Woman,0.0269730
+Magnetic Resonance Spectroscopy,0.0269730
+Latex Fixation Tests,0.2177822
+Physicist,0.2177822
+Plasma arginine measurement,0.2177822
+QUICK METHOD,0.0269730
+"Physicians, Women",0.2177822
+Body mass index procedure,0.0269730
+Breast surgeon,0.2177822
+Creatinine clearance measurement,0.2177822
+Diffusion weighted imaging,0.0139860
+Clinical Decision-Making,0.0179820
+Microarray Analysis,0.0509491
+Family Study,0.2177822
+Immune Checkpoint Functional Assay,0.0039960
+Coculture Techniques,0.2177822
+Study,0.0389610
+Gene Expression Profiling,0.0089910
+Matrix-Assisted Laser Desorption/Ionization-Time of Flight Mass Spectrometry,0.2177822
+Quantitative Reverse Transcriptase PCR,0.2177822
+Body mass index procedure,0.0179820
+Iron binding capacity measurement,0.0389610
+radiologist,0.0389610
+Ki67 Measurement,0.0509491
+S-Phase Fraction,0.0089910
+Multiparametric Magnetic Resonance Imaging,0.0029970
+Diagnostic Neoplasm Staging,0.0179820
+Cell phenotype determination procedure,0.0179820
+Molecular Imaging,0.0179820
+Monocyte Chemotactic Protein 1 Measurement,0.2177822
+Breast Imaging Reporting and Data System,0.0179820
+Terahertz Imaging,0.2177822
+Cell Count,0.0209790
+Cytological Techniques,0.0389610
+Patients,0.0019980
+New Target Lesion Identification,0.2177822
+Near-Infrared Fluorescence Imaging,0.0089910
+Wire-Guided Localization,0.2177822
+Circulating Tumor Cell Count,0.0059940
+Diffusion weighted imaging,0.0029970
+Psychometrics,0.0029970
+Functional assessment,0.0209790
+Body mass index procedure,0.0049950
+Cell Count,0.0019980
+Measurement of serum amino acid level,0.0179820
+thermal imaging,0.0029970
+Diagnosis,0.0000000
+Gene Expression Profiling,0.0389610
+Single Photon Emission Computed Tomography Computed Tomography,0.0209790
+Prospective Studies,0.2177822
+Point-of-Care Testing,0.0000000
+Medical pathologist,0.0089910
+"Alpha-1-fetoprotein measurement, serum",0.0029970
+FDG-Positron Emission Tomography,0.0059940
+Sonographer,0.2177822
+Conventional Imaging,0.0019980
+Ultrasonic Diagnosis,0.2177822
+Cell Count,0.0000000
+Diffusion weighted imaging,0.0089910
+Survivors,0.2177822
+Immunophenotyping,0.0059940
+Tumor Burden,0.0179820
+Automated count,0.0179820
+screen techniques,0.2177822
+Complete Blood Count,0.0049950
+"Microscopy, Fluorescence",0.2177822
+Vitamin measurement,0.2177822
+mutation analysis,0.0059940
+Scientist,0.2177822
+Fibrinogen assay,0.0139860
+enzyme linked immunospot assay,0.0389610
+"Tomography, X-Ray",0.2177822
+Early Diagnosis,0.0509491
+Engineer,0.2177822
+proteomic profiling,0.2177822
+Study Section,0.0389610
+Oral Glucose Tolerance Test,0.2177822
+"Oxygen measurement, partial pressure, arterial",0.0509491
+Plasma thyroid stimulating hormone,0.2177822
+Tissue culture,0.2177822
+Whole Body Imaging,0.2177822
+Semen liquefaction,0.0069930
+"Copper measurement, serum",0.2177822
+northern hybridization,0.2177822
+Calcium measurement,0.2177822
+Surveys,0.2177822
+Plasma alkaline phosphatase NOS,0.2177822
+"Sequence Analysis, DNA",0.0009990
+Plasma zinc measurement,0.0139860
+breast cancer diagnosis,0.0049950
+Autopsy,0.2177822
+Lymphocyte subset measurement,0.0509491
+Serial scanning,0.2177822
+Image Cytometry,0.2177822
+Infrared photography,0.0509491
+Blood count,0.2177822
+Film Dosimetry,0.0509491
+Mucin-1 Staining Method,0.0269730
+Writer,0.2177822
+Microdissection,0.0509491
+Cell Separation,0.0509491
+Immunology procedure,0.2177822
+Image Cytometry,0.0269730
+Autoradiography,0.0509491
+Sensitivity test,0.2177822
+Zinc measurement,0.2177822
+Medical oncologist,0.0389610
+Chromosome analysis,0.0509491
+Histocytochemistry,0.0139860
+mutation analysis,0.0009990
+Restriction fragment length polymorphism analysis,0.0509491
+Endocrine function test,0.2177822
+Obstetrician,0.2177822
+Radioisotope scan of bone,0.0139860
+Research Personnel,0.0269730
+Microdissection,0.0389610
+Immunoassay,0.0509491
+fiber optic microscopy,0.2177822
+Gene Expression Profiling,0.0059940
+TELOMERE ANALYSIS,0.0139860
+Medical pathologist,0.0269730
+Sample analysis,0.2177822
+Biotinylation,0.2177822
+Observers,0.2177822
+blood flow measurement,0.2177822
+Urine ratio,0.2177822
+MICROSCOPIC COUNT,0.2177822
+Scanning,0.0389610
+Free prostate-specific antigen,0.2177822
+"Tomography, Optical",0.0509491
+Anesthesiologist,0.0509491
+MANUAL COUNT,0.2177822
+Albumin/Globulin ratio,0.2177822
+Tumor Burden,0.0509491
+"Blotting, Western",0.0509491
+Tumor Burden,0.0269730
+Histocytochemistry,0.0069930
+Image analysis,0.0269730
+Case Manager,0.2177822
+genetic analysis,0.0509491
+Body mass index procedure,0.0389610
+"Diagnosis, Computer-Assisted",0.2177822
+Immunology profile,0.2177822
+"Image analysis, quantitative",0.0059940
+Light microscopy,0.2177822
+Quantitative Reverse Transcriptase PCR,0.0179820
+Intravital Microscopy,0.2177822
+Radioisotope scan of bone,0.0000000
+Echocardiography,0.2177822
+Diagnostic tests,0.0389610
+"Ethics Committees, Research",0.0089910
+Functional assessment,0.0049950
+internal-external locus of control scale,0.0179820
+Ki67 Measurement,0.0059940
+chromatin immunoprecipitation,0.0179820
+Seeding,0.0179820
+tomography,0.0209790
+Microscopy,0.0000000
+Estimated Glomerular Filtration Rate,0.2177822
+PET/CT scan,0.0179820
+Platelet Count measurement,0.0179820
+serum estrogen,0.2177822
+Therapeutic evaluation,0.2177822
+High-B-Value Diffusion-Weighted Imaging,0.0089910
+Coculture Techniques,0.0059940
+Cell Count,0.0049950
+Transmission Electron Microscopy,0.2177822
+Polymerase chain reaction analysis,0.0049950
+Observation - diagnostic procedure,0.0179820
+Surgeon,0.0029970
+Assay,0.0019980
+"Spectrum Analysis, Raman",0.0049950
+Red Blood Cell Count measurement,0.0059940
+Superb microvascular imaging,0.0089910
+Workers,0.2177822
+Optical Imaging,0.0179820
+Ki67 Measurement,0.0049950
+Diagnosis,0.0049950
+Conventional Imaging,0.0049950
+Decalcification Technique,0.0209790
+Immunoenzyme Procedure,0.0389610
+Positron Emission Tomography and Magnetic Resonance Imaging,0.0049950
+Plasminogen measurement,0.0179820
+Subtyping,0.0059940
+Microbial susceptibility tests,0.0179820
+Gene Expression Analysis,0.2177822
+Subtyping,0.0049950
+Dental Assistants,0.0209790
+Gene Expression Profiling,0.0019980
+Foundation for the Accreditation of Cellular Therapy,0.2177822
+Chemical Exchange Saturation Transfer Magnetic Resonance Imaging,0.2177822
+Cell Separation,0.2177822
+Laboratory Procedures,0.0029970
+Diffusion Tensor Imaging,0.0179820
+CA 15-3 measurement,0.2177822
+Chemosensitivity Assay,0.2177822
+Organism type determination procedure,0.2177822
+Chromosome Banding,0.2177822
+Low ionic strength saline,0.0509491
+"Toxicology screen, general",0.0139860
+Indirect Immunofluorescence,0.2177822
+Serum oestrogen,0.2177822
+Image Cytometry,0.0509491
+Serum zinc,0.2177822
+Bone Marrow Examination,0.2177822
+IMMUNOHISTOCHEMICAL,0.0049950
+Carbohydrate antigen 549 measurement,0.0509491
+Enzyme Tests,0.2177822
+Light microscopy,0.0389610
+Dermatoglyphics,0.2177822
+Internist,0.2177822
+"Radiography, Thoracic",0.0509491
+Serum cholinesterase,0.2177822
+Tumor Stem Cell Assay,0.2177822
+Research Design,0.2177822
+Bone marrow scintigraphy,0.2177822
+Karyotype determination procedure,0.0509491
+Radioisotope study of liver,0.0509491
+Copper measurement,0.2177822
+Breast X-ray,0.2177822
+Chromosome analysis,0.2177822
+southern hybridization,0.0509491
+Quantitative Microscopy,0.2177822
+tomography,0.0509491
+comparative genomic analysis,0.0509491
+Immunophenotyping,0.0509491
+Tissue culture,0.0509491
+Free thyroxine index test,0.2177822
+comparative genomic analysis,0.2177822
+Ultrasonic guidance procedure,0.0269730
+Cell phenotype determination procedure,0.0059940
+Testing,0.2177822
+Quantitative sensory test,0.2177822
+"Protein concentration, test strip measurement",0.2177822
+Polymerase Chain Reaction,0.0269730
+tissue processing,0.0509491
+"Ethics Committees, Research",0.0269730
+Cytology procedure,0.0139860
+infrared spectroscopy,0.2177822
+RNA Analysis,0.2177822
+Focus Groups,0.2177822
+Professional Organization or Group,0.0509491
+comparative genomic analysis,0.0019980
+Beta Catenin Staining Method,0.0509491
+"Spectrometry, Mass, Electrospray Ionization",0.0139860
+X-Ray Diffraction,0.2177822
+Analysis,0.0389610
+MANUAL COUNT,0.0269730
+Pseudothrombocytopenia,0.2177822
+IMMUNOHISTOCHEMICAL,0.0069930
+Sentinel Lymph Node Mapping,0.0509491
+Lymph Node Mapping,0.0269730
+Silver Staining,0.2177822
+Whole-Body Scintigraphy,0.2177822
+Mammogram - localization,0.0389610
+Immunoblotting,0.0059940
+General surgeon,0.2177822
+"Faculty, Medical",0.0029970
+radiologist,0.0269730
+Drug measurement,0.2177822
+Polymerase chain reaction analysis,0.0269730
+Differential Diagnosis,0.0389610
+Immunoradiometry,0.2177822
+diagnostic procedure,0.0389610
+Mucin-2 Staining Method,0.0049950
+Surgeon,0.0269730
+Fluorescent in Situ Hybridization,0.0069930
+Cancer Diagnosis,0.0009990
+"Imaging, Three-Dimensional",0.2177822
+Diagnostic Imaging,0.0049950
+Multiphoton Microscopy,0.0509491
+Scientific Study,0.0179820
+BRCA Mutation Analysis,0.2177822
+Real-Time Polymerase Chain Reaction,0.2177822
+Estimated Glomerular Filtration Rate,0.0019980
+Assay,0.0069930
+Ultrasonography,0.0000000
+Breast Cancer Type 1 Susceptibility Protein Measurement,0.0059940
+Patients,0.0209790
+Colorimetric Cell Viability Assay,0.0179820
+Elasticity Imaging Techniques,0.2177822
+MRI brain procedure,0.0139860
+Tumor Burden,0.0089910
+Alanine measurement,0.2177822
+Diagnostic Imaging,0.0029970
+"Tomography, Emission-Computed",0.0209790
+Ultrafast MRI,0.0179820
+Attendants -- group,0.2177822
+Lymphocyte to C-Reactive Protein Ratio Measurement,0.2177822
+Subtyping,0.0089910
+Consensus Clustering,0.0179820
+Absolute lymphocyte count,0.0209790
+medical diagnosis,0.2177822
+Immunophenotyping,0.0209790
+CA 125 measurement,0.0179820
+tomography,0.0059940
+X-Ray Computed Tomography,0.0019980
+FDG-Positron Emission Tomography,0.0049950
+Positron-Emission Tomography,0.0049950
+Conventional Imaging,0.0209790
+Work-up,0.0019980
+Ki67 Measurement,0.0209790
+Examination of breast,0.0019980
+Protein Expression Analysis,0.0049950
+community leader,0.2177822
+Multiphoton Microscopy,0.0389610
+"Physical Therapist - Electrophysiology, Clinical",0.2177822
+Diagnostic assessment,0.2177822
+Biochemical test,0.2177822
+Image Cytometry,0.0049950
+Physicians,0.0389610
+Scintiphotography,0.0509491
+Radioisotope scan of bone,0.0509491
+Progesterone measurement,0.2177822
+Nucleic acid analysis,0.2177822
+Indium Scan,0.0509491
+Radioimmunoassay,0.2177822
+Gel Electrophoresis,0.0509491
+HEART STUDY,0.2177822
+Carcinoembryonic antigen measurement,0.0139860
+Cell Culture Techniques,0.0139860
+"Microscopy, Confocal, Laser Scanning",0.2177822
+Geneticist,0.2177822
+Physicians,0.0509491
+Western Blot,0.0509491
+Glomerular Filtration Rate,0.0389610
+Diagnostic assessment,0.0509491
+enzyme linked immunospot assay,0.2177822
+"Microscopy, Video",0.0139860
+Liquid Chromatography Mass Spectrometry,0.0389610
+Policy Makers,0.0139860
+Spectrum Analysis,0.0139860
+Pharmacokinetic study,0.2177822
+"Tomography, Optical Coherence",0.0049950
+Miller,0.2177822
+"Transport Media,",0.2177822
+"Blood Count, Complete",0.0389610
+Microscopic observation,0.0389610
+D-lactate measurement,0.2177822
+Light microscopy,0.0509491
+Human papillomavirus DNA detection,0.0009990
+fluorodeoxyglucose positron emission tomography,0.0139860
+Immunohistochemistry,0.0000000
+Morphometric analysis,0.0069930
+Sampling of lymph nodes NOS,0.0139860
+Consultant,0.0509491
+Clinicians,0.0389610
+Karyotype determination procedure,0.0139860
+Cytokeratin-14 Staining Method,0.0269730
+Interleukin level,0.2177822
+"Image analysis, quantitative",0.2177822
+Plastic surgeon,0.2177822
+"Tomography, Optical Coherence",0.2177822
+spatial data analysis,0.2177822
+neuroimaging,0.0139860
+C-reactive protein measurement,0.2177822
+Chest physician,0.2177822
+Exercise stress test,0.0139860
+diagnostic procedure,0.0269730
+Community Workers,0.2177822
+Smooth Muscle Actin Staining Method,0.0269730
+Nucleic acid assay,0.0389610
+Activated clotting time measurement,0.0509491
+Electrophoretic Mobility Shift Assay,0.2177822
+Family member,0.2177822
+"Blotting, Western",0.0139860
+Occupational physician,0.2177822
+Diagnosis,0.0509491
+Sequence Analysis,0.0179820
+Image Study,0.0029970
+Immunohistochemistry,0.0209790
+Assay,0.0000000
+Radioisotope scan of bone,0.0209790
+Prosigna Breast Cancer Prognostic Gene Signature Assay,0.2177822
+Near-Infrared Fluorescence Imaging,0.2177822
+Magnetic resonance imaging of breast,0.0059940
+Complement C1q binding,0.0179820
+Autoradiography,0.0389610
+Microarray Analysis,0.0019980
+Oncologists,0.0029970
+3D COMPUTERIZED TOMOGRAPHY,0.2177822
+Chemokine (C-X-C Motif) Ligand 10 Measurement,0.0389610
+radiologist,0.0179820
+High resolution,0.2177822
+Microarray Analysis,0.0389610
+Mutagenesis Procedure,0.0209790
+MRI Scans,0.0209790
+Immunoglobulin G Subclass 4 Measurement,0.0179820
+Oncologists,0.0019980
+DNA Maintenance,0.0179820
+heart study,0.0059940
+Seeding,0.0209790
+Orbital B scan,0.2177822
+Alpha tumour necrosis factor measurement,0.0179820
+"Microscopy, Atomic Force",0.2177822
+Assay,0.0089910
+Immunologic Techniques,0.2177822
+Laboratory Procedures,0.0179820
+Computer assisted method,0.2177822
+Embedding,0.2177822
+Cell function assay,0.2177822
+Ki67 Measurement,0.0000000
+Whole body bone imaging (procedure),0.2177822
+Biological Assay,0.0059940
+High resolution,0.0509491
+CA 125 measurement,0.2177822
+Plasma lipid measurement,0.0179820
+Reflection illumination,0.2177822
+Author,0.0000000
+PET/CT scan,0.0059940
+Nurses,0.0179820
+Merging,0.2177822
+Image Study,0.0089910
+Magnetic resonance imaging of breast,0.0029970
+Differential panel,0.0209790
+Spinal Puncture,0.2177822
+CA 19-9 measurement,0.0049950
+"Tomography, Emission-Computed",0.0509491
+Serum protein electrophoresis,0.0509491
+Serum prolactin measurement,0.2177822
+RAPID TEST,0.2177822
+Study Section,0.0139860
+Neutralization,0.2177822
+Steroid activity,0.2177822
+Immunoblotting,0.0509491
+Plasma calcitonin level,0.2177822
+Serum selenium measurement,0.2177822
+Physical assessment,0.2177822
+Densitometry,0.0509491
+C1q binding assay,0.2177822
+Morphometric analysis,0.0029970
+Serum ferritin measurement,0.0509491
+End Point,0.2177822
+Serum cholesterol measurement,0.0509491
+thermography,0.0139860
+Microscopy,0.0049950
+southern hybridization,0.0139860
+Specimen collection,0.2177822
+Serum riboflavine measurement,0.2177822
+two-dimensional electrophoresis,0.2177822
+Morphometric analysis,0.0389610
+"Protein concentration, test strip measurement",0.0269730
+Radiographic imaging,0.2177822
+comparative genomic analysis,0.0139860
+Prostate specific antigen measurement,0.0139860
+Tumor marker measurement,0.2177822
+Comparative Genomic Hybridization,0.0509491
+Anti-SS-B antibody,0.2177822
+"Electrophoresis, Polyacrylamide Gel",0.2177822
+Reverse Transcriptase Polymerase Chain Reaction,0.0509491
+Multimodal Imaging,0.0139860
+"Spectrum Analysis, Mass",0.0389610
+Sequence Analysis,0.0389610
+Mean cell hemoglobin measurement,0.2177822
+Tissue Array Analysis,0.2177822
+Health Personnel,0.0269730
+Committee Members,0.2177822
+Reader,0.0029970
+Family investigation,0.0269730
+Dermatoglyphics,0.0509491
+Interferometry,0.2177822
+Midwife,0.0059940
+Cytokeratin-8 Staining Method,0.0389610
+Enzyme-Linked Immunosorbent Assay,0.0139860
+American,0.2177822
+Spectrum Analysis,0.0509491
+single cell analysis,0.0509491
+Examination of breast,0.0509491
+Pharmacokinetic study,0.0139860
+Cytophotometry,0.2177822
+Oncologist,0.0509491
+Autoantibody measurement,0.0389610
+Diffusion weighted imaging,0.0269730
+Clinicians,0.0059940
+Diffusion Magnetic Resonance Imaging,0.0139860
+endoscopy,0.0139860
+Employer,0.2177822
+Tumor Burden,0.0389610
+"Ultrasonography, Mammary",0.0509491
+univariate analysis,0.2177822
+Random Allocation,0.2177822
+Nuclear magnetic resonance imaging whole body,0.2177822
+Clinical Research,0.0049950
+WORK UP,0.0389610
+Breast Self-Examination,0.0269730
+medical specialist,0.2177822
+Cell Count,0.0269730
+Nutrition Assessment,0.2177822
+The Cancer Genome Atlas,0.2177822
+Caregiver,0.0000000
+Differential panel,0.2177822
+Fatty Liver Index,0.2177822
+Infrared spectroscopy,0.2177822
+Complete Blood Count,0.0089910
+tomography,0.0000000
+Author,0.0089910
+Reporter (occupation),0.0179820
+Laboratory Procedures,0.0389610
+Pyrosequencing,0.0089910
+Arginine measurement,0.2177822
+Mammogram - symptomatic,0.2177822
+Red Cell Fatty Acid Profile,0.2177822
+Laboratory Procedures,0.0209790
+Monocyte count procedure,0.0029970
+Electrophysiology studies,0.0509491
+Quantitative PCR analysis,0.0059940
+T4 free measurement,0.2177822
+Fluorescent Antibody Technique,0.0029970
+Laparoscopy,0.2177822
+Red cell distribution width determination,0.2177822
+Chef,0.0069930
+Gate-keeper,0.0179820
+Data Collection,0.0000000
+Nucleic acid sequencing,0.0049950
+Clinician,0.0209790
+Body mass index procedure,0.0089910
+Mass Spectrometry,0.2177822
+Transient elastography,0.0029970
+Sulfate measurement,0.0179820
+Study,0.0509491
+Leukemia Inhibitory Factor Measurement,0.2177822
+Radioisotopic Labeling (lab procedure),0.2177822
+Multimodal Imaging,0.0089910
+Fluorescence Imaging,0.2177822
+Restriction Spectrum Imaging,0.2177822
+"Tomography, Emission-Computed",0.0049950
+Electroporation,0.0059940
+Pegylation,0.0179820
+Serum Triglyceride Measurement,0.0179820
+Statistical Technique,0.0179820
+Methionine measurement,0.2177822
+Diffuse Optical Imaging,0.2177822
+Clinician,0.0029970
+Substance Abuse Detection,0.0179820
+Classic tomography,0.0209790
+Work-up,0.0089910
+Optical Imaging,0.0049950
+Patient Navigators,0.2177822
+Ultrafast MRI,0.0389610
+Diagnostic Imaging,0.0179820
+Transient elastography,0.0059940
+Multiparametric Magnetic Resonance Imaging,0.0039960

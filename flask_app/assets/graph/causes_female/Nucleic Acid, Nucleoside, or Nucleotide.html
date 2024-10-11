@@ -1,0 +1,155 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+            <script src="lib/bindings/utils.js"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/dist/vis-network.min.css" integrity="sha512-WgxfT5LWjfszlPHXRmBWHkV2eceiWTOBvrKCNbdgDYTHrT2AeLCGbF4sZlZw3UMN3WtL0tGUoIAKsu8mllg/XA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/vis-network.min.js" integrity="sha512-LnvoEWDFrqGHlHmDD2101OrLcbsfkrzoSpvtSQtxK3RMnRV0eOkhhBN2dXHKRrUU8p2DGRTk35n4O8nWSVe1mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+        
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+          crossorigin="anonymous"
+        />
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+          crossorigin="anonymous"
+        ></script>
+
+
+        <center>
+          <h1></h1>
+        </center>
+        <style type="text/css">
+
+             #mynetwork {
+                 width: 100%;
+                 height: 600px;
+                 background-color: #ffffff;
+                 border: 1px solid lightgray;
+                 position: relative;
+                 float: left;
+             }
+
+             
+
+             
+
+             
+        </style>
+    </head>
+
+
+    <body>
+        <div class="card" style="width: 100%">
+            
+            
+            <div id="mynetwork" class="card-body"></div>
+        </div>
+
+        
+        
+
+        <script type="text/javascript">
+
+              // initialize global variables.
+              var edges;
+              var nodes;
+              var allNodes;
+              var allEdges;
+              var nodeColors;
+              var originalNodes;
+              var network;
+              var container;
+              var options, data;
+              var filter = {
+                  item : '',
+                  property : '',
+                  value : []
+              };
+
+              
+
+              
+
+              // This method is responsible for drawing the graph, returns the drawn network
+              function drawGraph() {
+                  var container = document.getElementById('mynetwork');
+
+                  
+
+                  // parsing and collecting nodes and edges from the python
+                  nodes = new vis.DataSet([{"color": "lightblue", "id": "MicroRNAs", "label": "MicroRNAs", "shape": "dot", "size": 15, "title": "MicroRNAs"}, {"color": "lightblue", "id": "Female Breast Cancer", "label": "Female Breast Cancer", "shape": "dot", "size": 15, "title": "Female Breast Cancer"}, {"color": "lightblue", "id": "oxoguanine glycosylase 1, human", "label": "oxoguanine glycosylase 1, human", "shape": "dot", "size": 15, "title": "oxoguanine glycosylase 1, human"}, {"color": "lightblue", "id": "Single Nucleotide Polymorphism", "label": "Single Nucleotide Polymorphism", "shape": "dot", "size": 15, "title": "Single Nucleotide Polymorphism"}, {"color": "lightblue", "id": "DNA, Mitochondrial", "label": "DNA, Mitochondrial", "shape": "dot", "size": 15, "title": "DNA, Mitochondrial"}, {"color": "lightblue", "id": "RNA", "label": "RNA", "shape": "dot", "size": 15, "title": "RNA"}, {"color": "lightblue", "id": "Antisense RNA", "label": "Antisense RNA", "shape": "dot", "size": 15, "title": "Antisense RNA"}, {"color": "lightblue", "id": "Amino Acyl-tRNA Synthetases|TRNA", "label": "Amino Acyl-tRNA Synthetases|TRNA", "shape": "dot", "size": 15, "title": "Amino Acyl-tRNA Synthetases|TRNA"}, {"color": "lightblue", "id": "DNA Adducts", "label": "DNA Adducts", "shape": "dot", "size": 15, "title": "DNA Adducts"}, {"color": "lightblue", "id": "DNA", "label": "DNA", "shape": "dot", "size": 15, "title": "DNA"}, {"color": "lightblue", "id": "DNA Damage", "label": "DNA Damage", "shape": "dot", "size": 15, "title": "DNA Damage"}, {"color": "lightblue", "id": "Oligonucleotides, Antisense", "label": "Oligonucleotides, Antisense", "shape": "dot", "size": 15, "title": "Oligonucleotides, Antisense"}, {"color": "lightblue", "id": "Nicotinamide adenine dinucleotide (NAD)", "label": "Nicotinamide adenine dinucleotide (NAD)", "shape": "dot", "size": 15, "title": "Nicotinamide adenine dinucleotide (NAD)"}, {"color": "lightblue", "id": "RNA, Untranslated", "label": "RNA, Untranslated", "shape": "dot", "size": 15, "title": "RNA, Untranslated"}, {"color": "lightblue", "id": "Small Nucleolar RNA", "label": "Small Nucleolar RNA", "shape": "dot", "size": 15, "title": "Small Nucleolar RNA"}, {"color": "lightblue", "id": "RNA, Messenger", "label": "RNA, Messenger", "shape": "dot", "size": 15, "title": "RNA, Messenger"}, {"color": "lightblue", "id": "DNAJB4", "label": "DNAJB4", "shape": "dot", "size": 15, "title": "DNAJB4"}, {"color": "lightblue", "id": "DNAJC2", "label": "DNAJC2", "shape": "dot", "size": 15, "title": "DNAJC2"}, {"color": "lightblue", "id": "RNA, circular", "label": "RNA, circular", "shape": "dot", "size": 15, "title": "RNA, circular"}, {"color": "lightblue", "id": "DNA topoisomerase II alpha|TOP2A", "label": "DNA topoisomerase II alpha|TOP2A", "shape": "dot", "size": 15, "title": "DNA topoisomerase II alpha|TOP2A"}, {"color": "lightblue", "id": "DNA Repair", "label": "DNA Repair", "shape": "dot", "size": 15, "title": "DNA Repair"}, {"color": "lightblue", "id": "RNA metabolic process", "label": "RNA metabolic process", "shape": "dot", "size": 15, "title": "RNA metabolic process"}, {"color": "lightblue", "id": "DNA Motifs", "label": "DNA Motifs", "shape": "dot", "size": 15, "title": "DNA Motifs"}, {"color": "lightblue", "id": "Mirn124a microRNA, human", "label": "Mirn124a microRNA, human", "shape": "dot", "size": 15, "title": "Mirn124a microRNA, human"}, {"color": "lightblue", "id": "ribonucleotide reductase M2|RRM2", "label": "ribonucleotide reductase M2|RRM2", "shape": "dot", "size": 15, "title": "ribonucleotide reductase M2|RRM2"}, {"color": "lightblue", "id": "Alternative Splicing", "label": "Alternative Splicing", "shape": "dot", "size": 15, "title": "Alternative Splicing"}, {"color": "lightblue", "id": "RNA, Circular", "label": "RNA, Circular", "shape": "dot", "size": 15, "title": "RNA, Circular"}, {"color": "lightblue", "id": "O(6)-Methylguanine-DNA Methyltransferase", "label": "O(6)-Methylguanine-DNA Methyltransferase", "shape": "dot", "size": 15, "title": "O(6)-Methylguanine-DNA Methyltransferase"}, {"color": "lightblue", "id": "RNA, Small Interfering", "label": "RNA, Small Interfering", "shape": "dot", "size": 15, "title": "RNA, Small Interfering"}, {"color": "lightblue", "id": "RNA, Long Untranslated", "label": "RNA, Long Untranslated", "shape": "dot", "size": 15, "title": "RNA, Long Untranslated"}, {"color": "lightblue", "id": "pre-miRNA", "label": "pre-miRNA", "shape": "dot", "size": 15, "title": "pre-miRNA"}, {"color": "lightblue", "id": "Allele-Specific Oligonucleotide", "label": "Allele-Specific Oligonucleotide", "shape": "dot", "size": 15, "title": "Allele-Specific Oligonucleotide"}, {"color": "lightblue", "id": "O(6)-Methylguanine-DNA Methyltransferase|MGMT", "label": "O(6)-Methylguanine-DNA Methyltransferase|MGMT", "shape": "dot", "size": 15, "title": "O(6)-Methylguanine-DNA Methyltransferase|MGMT"}, {"color": "lightblue", "id": "Oligoribonucleotides", "label": "Oligoribonucleotides", "shape": "dot", "size": 15, "title": "Oligoribonucleotides"}, {"color": "lightblue", "id": "Maternal history", "label": "Maternal history", "shape": "dot", "size": 15, "title": "Maternal history"}, {"color": "lightblue", "id": "Oligonucleotides", "label": "Oligonucleotides", "shape": "dot", "size": 15, "title": "Oligonucleotides"}, {"color": "lightblue", "id": "Nucleotides", "label": "Nucleotides", "shape": "dot", "size": 15, "title": "Nucleotides"}, {"color": "lightblue", "id": "Transfer RNA", "label": "Transfer RNA", "shape": "dot", "size": 15, "title": "Transfer RNA"}, {"color": "lightblue", "id": "DNA, Complementary", "label": "DNA, Complementary", "shape": "dot", "size": 15, "title": "DNA, Complementary"}, {"color": "lightblue", "id": "Oligonucleotide Arrays", "label": "Oligonucleotide Arrays", "shape": "dot", "size": 15, "title": "Oligonucleotide Arrays"}, {"color": "lightblue", "id": "Maternal Mortality", "label": "Maternal Mortality", "shape": "dot", "size": 15, "title": "Maternal Mortality"}, {"color": "lightblue", "id": "MicroRNA 205-5p", "label": "MicroRNA 205-5p", "shape": "dot", "size": 15, "title": "MicroRNA 205-5p"}, {"color": "lightblue", "id": "Cell-Free DNA", "label": "Cell-Free DNA", "shape": "dot", "size": 15, "title": "Cell-Free DNA"}, {"color": "lightblue", "id": "ectonucleotide pyrophosphatase phosphodiesterase 1", "label": "ectonucleotide pyrophosphatase phosphodiesterase 1", "shape": "dot", "size": 15, "title": "ectonucleotide pyrophosphatase phosphodiesterase 1"}, {"color": "lightblue", "id": "Polynucleotide Adenylyltransferase", "label": "Polynucleotide Adenylyltransferase", "shape": "dot", "size": 15, "title": "Polynucleotide Adenylyltransferase"}, {"color": "lightblue", "id": "cDNA Library", "label": "cDNA Library", "shape": "dot", "size": 15, "title": "cDNA Library"}, {"color": "lightblue", "id": "DNA biosynthesis", "label": "DNA biosynthesis", "shape": "dot", "size": 15, "title": "DNA biosynthesis"}, {"color": "lightblue", "id": "ral Guanine Nucleotide Exchange Factor|RALGDS", "label": "ral Guanine Nucleotide Exchange Factor|RALGDS", "shape": "dot", "size": 15, "title": "ral Guanine Nucleotide Exchange Factor|RALGDS"}, {"color": "lightblue", "id": "RNA, Satellite", "label": "RNA, Satellite", "shape": "dot", "size": 15, "title": "RNA, Satellite"}, {"color": "lightblue", "id": "Maternal status", "label": "Maternal status", "shape": "dot", "size": 15, "title": "Maternal status"}, {"color": "lightblue", "id": "RNASEL", "label": "RNASEL", "shape": "dot", "size": 15, "title": "RNASEL"}, {"color": "lightblue", "id": "RNA I", "label": "RNA I", "shape": "dot", "size": 15, "title": "RNA I"}, {"color": "lightblue", "id": "RNA Interference", "label": "RNA Interference", "shape": "dot", "size": 15, "title": "RNA Interference"}, {"color": "lightblue", "id": "Thymine", "label": "Thymine", "shape": "dot", "size": 15, "title": "Thymine"}, {"color": "lightblue", "id": "Ribosomal RNA", "label": "Ribosomal RNA", "shape": "dot", "size": 15, "title": "Ribosomal RNA"}, {"color": "lightblue", "id": "DNA Minor Groove Binding Agent", "label": "DNA Minor Groove Binding Agent", "shape": "dot", "size": 15, "title": "DNA Minor Groove Binding Agent"}, {"color": "lightblue", "id": "thioguanine", "label": "thioguanine", "shape": "dot", "size": 15, "title": "thioguanine"}, {"color": "lightblue", "id": "DNA Methyltransferase Inhibitor", "label": "DNA Methyltransferase Inhibitor", "shape": "dot", "size": 15, "title": "DNA Methyltransferase Inhibitor"}, {"color": "lightblue", "id": "RNA, Small Untranslated", "label": "RNA, Small Untranslated", "shape": "dot", "size": 15, "title": "RNA, Small Untranslated"}, {"color": "lightblue", "id": "mRNA Precursor", "label": "mRNA Precursor", "shape": "dot", "size": 15, "title": "mRNA Precursor"}, {"color": "lightblue", "id": "Circulating MicroRNA", "label": "Circulating MicroRNA", "shape": "dot", "size": 15, "title": "Circulating MicroRNA"}, {"color": "lightblue", "id": "8-Oxoguanine DNA Glycosylase", "label": "8-Oxoguanine DNA Glycosylase", "shape": "dot", "size": 15, "title": "8-Oxoguanine DNA Glycosylase"}, {"color": "lightblue", "id": "8-hydroxyguanine", "label": "8-hydroxyguanine", "shape": "dot", "size": 15, "title": "8-hydroxyguanine"}, {"color": "lightblue", "id": "ATP phosphohydrolase|DNAH8", "label": "ATP phosphohydrolase|DNAH8", "shape": "dot", "size": 15, "title": "ATP phosphohydrolase|DNAH8"}, {"color": "lightblue", "id": "ribonucleotide reductase M2", "label": "ribonucleotide reductase M2", "shape": "dot", "size": 15, "title": "ribonucleotide reductase M2"}, {"color": "lightblue", "id": "Nicotinate-nucleotide pyrophosphorylase (carboxylating)", "label": "Nicotinate-nucleotide pyrophosphorylase (carboxylating)", "shape": "dot", "size": 15, "title": "Nicotinate-nucleotide pyrophosphorylase (carboxylating)"}, {"color": "lightblue", "id": "mRNA editing", "label": "mRNA editing", "shape": "dot", "size": 15, "title": "mRNA editing"}, {"color": "lightblue", "id": "DNA Breaks, Double-Stranded", "label": "DNA Breaks, Double-Stranded", "shape": "dot", "size": 15, "title": "DNA Breaks, Double-Stranded"}, {"color": "lightblue", "id": "MicroRNA 367-3p", "label": "MicroRNA 367-3p", "shape": "dot", "size": 15, "title": "MicroRNA 367-3p"}, {"color": "lightblue", "id": "Dinucleotide Repeats", "label": "Dinucleotide Repeats", "shape": "dot", "size": 15, "title": "Dinucleotide Repeats"}, {"color": "lightblue", "id": "RNase P", "label": "RNase P", "shape": "dot", "size": 15, "title": "RNase P"}, {"color": "lightblue", "id": "internal risk factors", "label": "internal risk factors", "shape": "dot", "size": 15, "title": "internal risk factors"}, {"color": "lightblue", "id": "DNA Polymerase I", "label": "DNA Polymerase I", "shape": "dot", "size": 15, "title": "DNA Polymerase I"}, {"color": "lightblue", "id": "Small RNA", "label": "Small RNA", "shape": "dot", "size": 15, "title": "Small RNA"}, {"color": "lightblue", "id": "8-oxoguanine-DNA glycosylase, human", "label": "8-oxoguanine-DNA glycosylase, human", "shape": "dot", "size": 15, "title": "8-oxoguanine-DNA glycosylase, human"}, {"color": "lightblue", "id": "Alternative Therapies", "label": "Alternative Therapies", "shape": "dot", "size": 15, "title": "Alternative Therapies"}, {"color": "lightblue", "id": "DNA Methyltransferase", "label": "DNA Methyltransferase", "shape": "dot", "size": 15, "title": "DNA Methyltransferase"}, {"color": "lightblue", "id": "DNA, Double-Stranded", "label": "DNA, Double-Stranded", "shape": "dot", "size": 15, "title": "DNA, Double-Stranded"}, {"color": "lightblue", "id": "DNA, Single-Stranded", "label": "DNA, Single-Stranded", "shape": "dot", "size": 15, "title": "DNA, Single-Stranded"}, {"color": "lightblue", "id": "MicroRNA 335-5p", "label": "MicroRNA 335-5p", "shape": "dot", "size": 15, "title": "MicroRNA 335-5p"}, {"color": "lightblue", "id": "Piwi-Interacting RNA", "label": "Piwi-Interacting RNA", "shape": "dot", "size": 15, "title": "Piwi-Interacting RNA"}, {"color": "lightblue", "id": "Primary MicroRNA", "label": "Primary MicroRNA", "shape": "dot", "size": 15, "title": "Primary MicroRNA"}, {"color": "lightblue", "id": "DNA Binding Agent", "label": "DNA Binding Agent", "shape": "dot", "size": 15, "title": "DNA Binding Agent"}, {"color": "lightblue", "id": "DNA, Catalytic", "label": "DNA, Catalytic", "shape": "dot", "size": 15, "title": "DNA, Catalytic"}, {"color": "lightblue", "id": "Markers, DNA", "label": "Markers, DNA", "shape": "dot", "size": 15, "title": "Markers, DNA"}, {"color": "lightblue", "id": "Tetranucleotide Repeats", "label": "Tetranucleotide Repeats", "shape": "dot", "size": 15, "title": "Tetranucleotide Repeats"}, {"color": "lightblue", "id": "DNAJA3", "label": "DNAJA3", "shape": "dot", "size": 15, "title": "DNAJA3"}, {"color": "lightblue", "id": "Epstein-Barr virus DNA", "label": "Epstein-Barr virus DNA", "shape": "dot", "size": 15, "title": "Epstein-Barr virus DNA"}, {"color": "lightblue", "id": "DNAJC27", "label": "DNAJC27", "shape": "dot", "size": 15, "title": "DNAJC27"}, {"color": "lightblue", "id": "MicroRNA 19B", "label": "MicroRNA 19B", "shape": "dot", "size": 15, "title": "MicroRNA 19B"}, {"color": "lightblue", "id": "RNA Polymerase I|ERVW-4", "label": "RNA Polymerase I|ERVW-4", "shape": "dot", "size": 15, "title": "RNA Polymerase I|ERVW-4"}, {"color": "lightblue", "id": "Serine-tRNA Ligase|TRNA", "label": "Serine-tRNA Ligase|TRNA", "shape": "dot", "size": 15, "title": "Serine-tRNA Ligase|TRNA"}, {"color": "lightblue", "id": "MicroRNA 1246", "label": "MicroRNA 1246", "shape": "dot", "size": 15, "title": "MicroRNA 1246"}, {"color": "lightblue", "id": "LONG INTERGENIC NONCODING RNA PINKY|PNKY", "label": "LONG INTERGENIC NONCODING RNA PINKY|PNKY", "shape": "dot", "size": 15, "title": "LONG INTERGENIC NONCODING RNA PINKY|PNKY"}]);
+                  edges = new vis.DataSet([{"color": "gray", "from": "MicroRNAs", "to": "Female Breast Cancer"}, {"color": "gray", "from": "oxoguanine glycosylase 1, human", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Single Nucleotide Polymorphism", "to": "Female Breast Cancer"}, {"color": "gray", "from": "DNA, Mitochondrial", "to": "Female Breast Cancer"}, {"color": "gray", "from": "RNA", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Antisense RNA", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Amino Acyl-tRNA Synthetases|TRNA", "to": "Female Breast Cancer"}, {"color": "gray", "from": "DNA Adducts", "to": "Female Breast Cancer"}, {"color": "gray", "from": "DNA", "to": "Female Breast Cancer"}, {"color": "gray", "from": "DNA Damage", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Oligonucleotides, Antisense", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Nicotinamide adenine dinucleotide (NAD)", "to": "Female Breast Cancer"}, {"color": "gray", "from": "RNA, Untranslated", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Small Nucleolar RNA", "to": "Female Breast Cancer"}, {"color": "gray", "from": "RNA, Messenger", "to": "Female Breast Cancer"}, {"color": "gray", "from": "DNAJB4", "to": "Female Breast Cancer"}, {"color": "gray", "from": "DNAJC2", "to": "Female Breast Cancer"}, {"color": "gray", "from": "RNA, circular", "to": "Female Breast Cancer"}, {"color": "gray", "from": "DNA topoisomerase II alpha|TOP2A", "to": "Female Breast Cancer"}, {"color": "gray", "from": "DNA Repair", "to": "Female Breast Cancer"}, {"color": "gray", "from": "RNA metabolic process", "to": "Female Breast Cancer"}, {"color": "gray", "from": "DNA Motifs", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Mirn124a microRNA, human", "to": "Female Breast Cancer"}, {"color": "gray", "from": "ribonucleotide reductase M2|RRM2", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Alternative Splicing", "to": "Female Breast Cancer"}, {"color": "gray", "from": "RNA, Circular", "to": "Female Breast Cancer"}, {"color": "gray", "from": "O(6)-Methylguanine-DNA Methyltransferase", "to": "Female Breast Cancer"}, {"color": "gray", "from": "RNA, Small Interfering", "to": "Female Breast Cancer"}, {"color": "gray", "from": "RNA, Long Untranslated", "to": "Female Breast Cancer"}, {"color": "gray", "from": "pre-miRNA", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Allele-Specific Oligonucleotide", "to": "Female Breast Cancer"}, {"color": "gray", "from": "O(6)-Methylguanine-DNA Methyltransferase|MGMT", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Oligoribonucleotides", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Maternal history", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Oligonucleotides", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Nucleotides", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Transfer RNA", "to": "Female Breast Cancer"}, {"color": "gray", "from": "DNA, Complementary", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Oligonucleotide Arrays", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Maternal Mortality", "to": "Female Breast Cancer"}, {"color": "gray", "from": "MicroRNA 205-5p", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Cell-Free DNA", "to": "Female Breast Cancer"}, {"color": "gray", "from": "ectonucleotide pyrophosphatase phosphodiesterase 1", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Polynucleotide Adenylyltransferase", "to": "Female Breast Cancer"}, {"color": "gray", "from": "cDNA Library", "to": "Female Breast Cancer"}, {"color": "gray", "from": "DNA biosynthesis", "to": "Female Breast Cancer"}, {"color": "gray", "from": "ral Guanine Nucleotide Exchange Factor|RALGDS", "to": "Female Breast Cancer"}, {"color": "gray", "from": "RNA, Satellite", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Maternal status", "to": "Female Breast Cancer"}, {"color": "gray", "from": "RNASEL", "to": "Female Breast Cancer"}, {"color": "gray", "from": "RNA I", "to": "Female Breast Cancer"}, {"color": "gray", "from": "RNA Interference", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Thymine", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Ribosomal RNA", "to": "Female Breast Cancer"}, {"color": "gray", "from": "DNA Minor Groove Binding Agent", "to": "Female Breast Cancer"}, {"color": "gray", "from": "thioguanine", "to": "Female Breast Cancer"}, {"color": "gray", "from": "DNA Methyltransferase Inhibitor", "to": "Female Breast Cancer"}, {"color": "gray", "from": "RNA, Small Untranslated", "to": "Female Breast Cancer"}, {"color": "gray", "from": "mRNA Precursor", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Circulating MicroRNA", "to": "Female Breast Cancer"}, {"color": "gray", "from": "8-Oxoguanine DNA Glycosylase", "to": "Female Breast Cancer"}, {"color": "gray", "from": "8-hydroxyguanine", "to": "Female Breast Cancer"}, {"color": "gray", "from": "ATP phosphohydrolase|DNAH8", "to": "Female Breast Cancer"}, {"color": "gray", "from": "ribonucleotide reductase M2", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Nicotinate-nucleotide pyrophosphorylase (carboxylating)", "to": "Female Breast Cancer"}, {"color": "gray", "from": "mRNA editing", "to": "Female Breast Cancer"}, {"color": "gray", "from": "DNA Breaks, Double-Stranded", "to": "Female Breast Cancer"}, {"color": "gray", "from": "MicroRNA 367-3p", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Dinucleotide Repeats", "to": "Female Breast Cancer"}, {"color": "gray", "from": "RNase P", "to": "Female Breast Cancer"}, {"color": "gray", "from": "internal risk factors", "to": "Female Breast Cancer"}, {"color": "gray", "from": "DNA Polymerase I", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Small RNA", "to": "Female Breast Cancer"}, {"color": "gray", "from": "8-oxoguanine-DNA glycosylase, human", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Alternative Therapies", "to": "Female Breast Cancer"}, {"color": "gray", "from": "DNA Methyltransferase", "to": "Female Breast Cancer"}, {"color": "gray", "from": "DNA, Double-Stranded", "to": "Female Breast Cancer"}, {"color": "gray", "from": "DNA, Single-Stranded", "to": "Female Breast Cancer"}, {"color": "gray", "from": "MicroRNA 335-5p", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Piwi-Interacting RNA", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Primary MicroRNA", "to": "Female Breast Cancer"}, {"color": "gray", "from": "DNA Binding Agent", "to": "Female Breast Cancer"}, {"color": "gray", "from": "DNA, Catalytic", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Markers, DNA", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Tetranucleotide Repeats", "to": "Female Breast Cancer"}, {"color": "gray", "from": "DNAJA3", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Epstein-Barr virus DNA", "to": "Female Breast Cancer"}, {"color": "gray", "from": "DNAJC27", "to": "Female Breast Cancer"}, {"color": "gray", "from": "MicroRNA 19B", "to": "Female Breast Cancer"}, {"color": "gray", "from": "RNA Polymerase I|ERVW-4", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Serine-tRNA Ligase|TRNA", "to": "Female Breast Cancer"}, {"color": "gray", "from": "MicroRNA 1246", "to": "Female Breast Cancer"}, {"color": "gray", "from": "LONG INTERGENIC NONCODING RNA PINKY|PNKY", "to": "Female Breast Cancer"}]);
+
+                  nodeColors = {};
+                  allNodes = nodes.get({ returnType: "Object" });
+                  for (nodeId in allNodes) {
+                    nodeColors[nodeId] = allNodes[nodeId].color;
+                  }
+                  allEdges = edges.get({ returnType: "Object" });
+                  // adding nodes and edges to the graph
+                  data = {nodes: nodes, edges: edges};
+
+                  var options = {
+    "configure": {
+        "enabled": false
+    },
+    "edges": {
+        "color": {
+            "inherit": true
+        },
+        "smooth": {
+            "enabled": true,
+            "type": "dynamic"
+        }
+    },
+    "interaction": {
+        "dragNodes": true,
+        "hideEdgesOnDrag": false,
+        "hideNodesOnDrag": false
+    },
+    "physics": {
+        "enabled": true,
+        "stabilization": {
+            "enabled": true,
+            "fit": true,
+            "iterations": 1000,
+            "onlyDynamicEdges": false,
+            "updateInterval": 50
+        }
+    }
+};
+
+                  
+
+
+                  
+
+                  network = new vis.Network(container, data, options);
+
+                  
+
+                  
+
+                  
+
+
+                  
+
+                  return network;
+
+              }
+              drawGraph();
+        </script>
+    </body>
+</html>

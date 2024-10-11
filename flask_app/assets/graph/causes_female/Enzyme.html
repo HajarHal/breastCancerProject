@@ -1,0 +1,155 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+            <script src="lib/bindings/utils.js"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/dist/vis-network.min.css" integrity="sha512-WgxfT5LWjfszlPHXRmBWHkV2eceiWTOBvrKCNbdgDYTHrT2AeLCGbF4sZlZw3UMN3WtL0tGUoIAKsu8mllg/XA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/vis-network.min.js" integrity="sha512-LnvoEWDFrqGHlHmDD2101OrLcbsfkrzoSpvtSQtxK3RMnRV0eOkhhBN2dXHKRrUU8p2DGRTk35n4O8nWSVe1mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+        
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+          crossorigin="anonymous"
+        />
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+          crossorigin="anonymous"
+        ></script>
+
+
+        <center>
+          <h1></h1>
+        </center>
+        <style type="text/css">
+
+             #mynetwork {
+                 width: 100%;
+                 height: 600px;
+                 background-color: #ffffff;
+                 border: 1px solid lightgray;
+                 position: relative;
+                 float: left;
+             }
+
+             
+
+             
+
+             
+        </style>
+    </head>
+
+
+    <body>
+        <div class="card" style="width: 100%">
+            
+            
+            <div id="mynetwork" class="card-body"></div>
+        </div>
+
+        
+        
+
+        <script type="text/javascript">
+
+              // initialize global variables.
+              var edges;
+              var nodes;
+              var allNodes;
+              var allEdges;
+              var nodeColors;
+              var originalNodes;
+              var network;
+              var container;
+              var options, data;
+              var filter = {
+                  item : '',
+                  property : '',
+                  value : []
+              };
+
+              
+
+              
+
+              // This method is responsible for drawing the graph, returns the drawn network
+              function drawGraph() {
+                  var container = document.getElementById('mynetwork');
+
+                  
+
+                  // parsing and collecting nodes and edges from the python
+                  nodes = new vis.DataSet([{"color": "lightblue", "id": "Topoisomerase", "label": "Topoisomerase", "shape": "dot", "size": 15, "title": "Topoisomerase"}, {"color": "lightblue", "id": "Female Breast Cancer", "label": "Female Breast Cancer", "shape": "dot", "size": 15, "title": "Female Breast Cancer"}, {"color": "lightblue", "id": "Enzymes", "label": "Enzymes", "shape": "dot", "size": 15, "title": "Enzymes"}, {"color": "lightblue", "id": "Aromatase", "label": "Aromatase", "shape": "dot", "size": 15, "title": "Aromatase"}, {"color": "lightblue", "id": "Topoisomerase Inhibitors", "label": "Topoisomerase Inhibitors", "shape": "dot", "size": 15, "title": "Topoisomerase Inhibitors"}, {"color": "lightblue", "id": "Angiotensin-Converting Enzyme Inhibitors", "label": "Angiotensin-Converting Enzyme Inhibitors", "shape": "dot", "size": 15, "title": "Angiotensin-Converting Enzyme Inhibitors"}, {"color": "lightblue", "id": "Aromatase|CYP19A1", "label": "Aromatase|CYP19A1", "shape": "dot", "size": 15, "title": "Aromatase|CYP19A1"}, {"color": "lightblue", "id": "Ubiquitin-Conjugating Enzymes", "label": "Ubiquitin-Conjugating Enzymes", "shape": "dot", "size": 15, "title": "Ubiquitin-Conjugating Enzymes"}, {"color": "lightblue", "id": "Serine Protease", "label": "Serine Protease", "shape": "dot", "size": 15, "title": "Serine Protease"}, {"color": "lightblue", "id": "Enzyme variant", "label": "Enzyme variant", "shape": "dot", "size": 15, "title": "Enzyme variant"}, {"color": "lightblue", "id": "coenzyme Q10", "label": "coenzyme Q10", "shape": "dot", "size": 15, "title": "coenzyme Q10"}, {"color": "lightblue", "id": "repair enzyme", "label": "repair enzyme", "shape": "dot", "size": 15, "title": "repair enzyme"}, {"color": "lightblue", "id": "Deubiquitinating Enzymes", "label": "Deubiquitinating Enzymes", "shape": "dot", "size": 15, "title": "Deubiquitinating Enzymes"}, {"color": "lightblue", "id": "angiotensin converting enzyme 2", "label": "angiotensin converting enzyme 2", "shape": "dot", "size": 15, "title": "angiotensin converting enzyme 2"}, {"color": "lightblue", "id": "Protease Inhibitor", "label": "Protease Inhibitor", "shape": "dot", "size": 15, "title": "Protease Inhibitor"}, {"color": "lightblue", "id": "Isoenzymes", "label": "Isoenzymes", "shape": "dot", "size": 15, "title": "Isoenzymes"}, {"color": "lightblue", "id": "methylcobalamin-coenzyme M methyltransferase|EREG|ESR1", "label": "methylcobalamin-coenzyme M methyltransferase|EREG|ESR1", "shape": "dot", "size": 15, "title": "methylcobalamin-coenzyme M methyltransferase|EREG|ESR1"}, {"color": "lightblue", "id": "SH Protease", "label": "SH Protease", "shape": "dot", "size": 15, "title": "SH Protease"}, {"color": "lightblue", "id": "Alkaline phosphatase isoenzyme", "label": "Alkaline phosphatase isoenzyme", "shape": "dot", "size": 15, "title": "Alkaline phosphatase isoenzyme"}, {"color": "lightblue", "id": "Protease Inhibitors", "label": "Protease Inhibitors", "shape": "dot", "size": 15, "title": "Protease Inhibitors"}, {"color": "lightblue", "id": "beta-site APP cleaving enzyme 1", "label": "beta-site APP cleaving enzyme 1", "shape": "dot", "size": 15, "title": "beta-site APP cleaving enzyme 1"}]);
+                  edges = new vis.DataSet([{"color": "gray", "from": "Topoisomerase", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Enzymes", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Aromatase", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Topoisomerase Inhibitors", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Angiotensin-Converting Enzyme Inhibitors", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Aromatase|CYP19A1", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Ubiquitin-Conjugating Enzymes", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Serine Protease", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Enzyme variant", "to": "Female Breast Cancer"}, {"color": "gray", "from": "coenzyme Q10", "to": "Female Breast Cancer"}, {"color": "gray", "from": "repair enzyme", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Deubiquitinating Enzymes", "to": "Female Breast Cancer"}, {"color": "gray", "from": "angiotensin converting enzyme 2", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Protease Inhibitor", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Isoenzymes", "to": "Female Breast Cancer"}, {"color": "gray", "from": "methylcobalamin-coenzyme M methyltransferase|EREG|ESR1", "to": "Female Breast Cancer"}, {"color": "gray", "from": "SH Protease", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Alkaline phosphatase isoenzyme", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Protease Inhibitors", "to": "Female Breast Cancer"}, {"color": "gray", "from": "beta-site APP cleaving enzyme 1", "to": "Female Breast Cancer"}]);
+
+                  nodeColors = {};
+                  allNodes = nodes.get({ returnType: "Object" });
+                  for (nodeId in allNodes) {
+                    nodeColors[nodeId] = allNodes[nodeId].color;
+                  }
+                  allEdges = edges.get({ returnType: "Object" });
+                  // adding nodes and edges to the graph
+                  data = {nodes: nodes, edges: edges};
+
+                  var options = {
+    "configure": {
+        "enabled": false
+    },
+    "edges": {
+        "color": {
+            "inherit": true
+        },
+        "smooth": {
+            "enabled": true,
+            "type": "dynamic"
+        }
+    },
+    "interaction": {
+        "dragNodes": true,
+        "hideEdgesOnDrag": false,
+        "hideNodesOnDrag": false
+    },
+    "physics": {
+        "enabled": true,
+        "stabilization": {
+            "enabled": true,
+            "fit": true,
+            "iterations": 1000,
+            "onlyDynamicEdges": false,
+            "updateInterval": 50
+        }
+    }
+};
+
+                  
+
+
+                  
+
+                  network = new vis.Network(container, data, options);
+
+                  
+
+                  
+
+                  
+
+
+                  
+
+                  return network;
+
+              }
+              drawGraph();
+        </script>
+    </body>
+</html>

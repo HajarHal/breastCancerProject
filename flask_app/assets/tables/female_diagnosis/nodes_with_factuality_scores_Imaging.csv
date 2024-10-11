@@ -1,0 +1,146 @@
+title,factuality_score
+Mammography,0.2177822
+Female Breast Cancer,0.2177822
+Mammography,0.0509491
+Mammography,0.0019980
+Xeromammography,0.2177822
+Mammography,0.0389610
+Doppler Ultrasound,0.2177822
+Digital mammography,0.2177822
+Mammography,0.0000000
+Mammography,0.0269730
+Scintimammography,0.2177822
+Mammography,0.0209790
+Contrast enhanced spectral mammography,0.2177822
+Color doppler ultrasound,0.2177822
+Digital Mammography,0.0389610
+Digital Mammography,0.2177822
+Contrast-Enhanced Mammography,0.2177822
+Contrast-Enhanced Ultrasound,0.2177822
+Ultrasound-Guided Core Biopsy,0.0389610
+B mode ultrasound,0.2177822
+Mammography,0.0139860
+Mammography,0.0059940
+Mammography,0.0049950
+Contrast enhanced spectral mammography,0.0089910
+Mammography,0.0089910
+Ultrasound guided biopsy,0.2177822
+Digital Mammography,0.0509491
+Biopsy of lymph node using ultrasound guidance,0.0029970
+Contrast-Enhanced Mammography,0.0389610
+Scintimammography,0.0019980
+Color doppler ultrasound,0.0089910
+Breast Imaging Reporting and Data System Mammography,0.2177822
+Digital mammography,0.0389610
+Ultrasound Tomography,0.2177822
+Mammography,0.0179820
+Xeromammography,0.0509491
+Film screen mammography,0.2177822
+Doppler Ultrasound,0.0509491
+Doppler Ultrasound,0.0139860
+Digital mammography,0.0509491
+Ultrasound examination,0.2177822
+Positron Emission Mammography,0.2177822
+Contrast enhanced spectral mammography,0.0179820
+Digital Mammography,0.0089910
+Mammography,0.0029970
+Contrast-Enhanced Ultrasound,0.0089910
+Contrast-Enhanced Ultrasound,0.0009990
+Mammography,0.0069930
+Contrast-Enhanced Ultrasound,0.0000000
+Xeromammography,0.0019980
+Bilateral mammography,0.2177822
+Doppler Ultrasound,0.0269730
+Ultrasound examination,0.0389610
+Digital mammography,0.0019980
+Contrast enhanced spectral mammography,0.0389610
+Positron Emission Mammography,0.0089910
+Specimen mammography,0.0389610
+Contrast-Enhanced Ultrasound,0.0179820
+Ultrasound elastography,0.0179820
+B mode ultrasound,0.0089910
+Ultrasound examination,0.0139860
+Contrast-Enhanced Mammography,0.0019980
+Ultrasound-Guided Fine-Needle Aspiration,0.2177822
+Contrast-Enhanced Ultrasound,0.0029970
+Positron-Emission Tomography,0.2177822
+Fluorescent in Situ Hybridization,0.2177822
+fluorodeoxyglucose positron emission tomography,0.2177822
+Cytology examination,0.2177822
+Self-Examination,0.2177822
+Breast Self-Examination,0.2177822
+Examination of breast,0.2177822
+Diagnostic radiologic examination,0.2177822
+fluorodeoxyglucose positron emission tomography,0.0059940
+"Tomography, Emission-Computed",0.2177822
+"Tomography, Emission-Computed, Single-Photon",0.2177822
+In Situ Hybridization,0.2177822
+Positron-Emission Tomography,0.0139860
+"Tomography, Emission-Computed",0.0389610
+Dynamic Contrast-Enhanced Magnetic Resonance Imaging,0.2177822
+Contrast-enhanced Magnetic Resonance Imaging,0.2177822
+Digital Breast Tomosynthesis,0.0089910
+Pathologic Examination,0.0389610
+FDG-Positron Emission Tomography and Computed Tomography Scan,0.0059940
+Digital Breast Tomosynthesis,0.2177822
+Dynamic Contrast-Enhanced Magnetic Resonance Imaging,0.0089910
+FDG-Positron Emission Tomography,0.0209790
+Dynamic Contrast-Enhanced Magnetic Resonance Imaging,0.0179820
+Positron-Emission Tomography,0.0179820
+Contrast-enhanced Magnetic Resonance Imaging,0.0389610
+Digital Image Analysis,0.2177822
+Digital Image Analysis,0.0179820
+Diagnostic radiologic examination,0.0509491
+"Ultrasonography, Doppler, Color",0.0509491
+Positron-Emission Tomography,0.0509491
+fluorodeoxyglucose positron emission tomography,0.0509491
+Diagnostic radiologic examination,0.0389610
+fluorodeoxyglucose positron emission tomography,0.0389610
+"Ultrasonography, Doppler, Color",0.2177822
+FDG-Positron Emission Tomography and Computed Tomography Scan,0.0000000
+Contrast used,0.0179820
+Positron-Emission Tomography,0.0089910
+Transient elastography,0.0179820
+"Tomography, Emission-Computed",0.0029970
+Digital Image Analysis,0.0089910
+Dynamic Contrast-Enhanced Magnetic Resonance Imaging,0.0000000
+Positron-Emission Tomography,0.0029970
+Chromogenic in situ Hybridization,0.2177822
+Digital slit-beam radiograph,0.2177822
+Computed Tomography with Contrast,0.2177822
+Pathologic Examination,0.2177822
+Positron Emission Tomography and Magnetic Resonance Imaging,0.2177822
+"Tomography, Emission-Computed",0.0000000
+Dynamic Contrast-Enhanced Magnetic Resonance Imaging,0.0509491
+"Ultrasonography, Doppler",0.0139860
+FDG-Positron Emission Tomography and Computed Tomography Scan,0.0209790
+FLT-Positron Emission Tomography,0.0209790
+Dynamic Contrast-Enhanced Magnetic Resonance Imaging,0.0019980
+"Microscopy, Phase-Contrast",0.2177822
+Digital Breast Tomosynthesis,0.0389610
+Dynamic Contrast-Enhanced Magnetic Resonance Imaging,0.0059940
+"Angiography, Digital Subtraction",0.2177822
+"Ultrasonography, Doppler",0.2177822
+Intravenous digital subtraction angiography,0.2177822
+Surface Enhanced Laser Desorption Ionization Mass Spectrometry,0.2177822
+fluorodeoxyglucose positron emission tomography,0.0139860
+Positron Emission Tomography and Magnetic Resonance Imaging,0.0179820
+"Tomography, Emission-Computed",0.0179820
+Pathologic Examination,0.0179820
+"Tomography, Emission-Computed, Single-Photon",0.0179820
+Contrast used,0.0059940
+Positron-Emission Tomography,0.0019980
+"Microscopy, Phase-Contrast",0.0509491
+FDG-Positron Emission Tomography and Computed Tomography Scan,0.0019980
+Positron Emission Tomography and Magnetic Resonance Imaging,0.0209790
+Dynamic Contrast-Enhanced Magnetic Resonance Imaging,0.0029970
+Positron-Emission Tomography,0.0209790
+Dynamic Contrast-Enhanced Magnetic Resonance Imaging,0.0389610
+In Vivo Imaging,0.0179820
+Digital Breast Tomosynthesis,0.0509491
+FDG-Positron Emission Tomography and Computed Tomography Scan,0.2177822
+digital tomosynthesis,0.2177822
+Physical breast examination,0.2177822
+Phase contrast,0.2177822
+Positron-Emission Tomography,0.0000000
+FDG-Positron Emission Tomography,0.0019980

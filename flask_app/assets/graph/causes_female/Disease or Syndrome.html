@@ -1,0 +1,155 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+            <script src="lib/bindings/utils.js"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/dist/vis-network.min.css" integrity="sha512-WgxfT5LWjfszlPHXRmBWHkV2eceiWTOBvrKCNbdgDYTHrT2AeLCGbF4sZlZw3UMN3WtL0tGUoIAKsu8mllg/XA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/vis-network.min.js" integrity="sha512-LnvoEWDFrqGHlHmDD2101OrLcbsfkrzoSpvtSQtxK3RMnRV0eOkhhBN2dXHKRrUU8p2DGRTk35n4O8nWSVe1mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+        
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+          crossorigin="anonymous"
+        />
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+          crossorigin="anonymous"
+        ></script>
+
+
+        <center>
+          <h1></h1>
+        </center>
+        <style type="text/css">
+
+             #mynetwork {
+                 width: 100%;
+                 height: 600px;
+                 background-color: #ffffff;
+                 border: 1px solid lightgray;
+                 position: relative;
+                 float: left;
+             }
+
+             
+
+             
+
+             
+        </style>
+    </head>
+
+
+    <body>
+        <div class="card" style="width: 100%">
+            
+            
+            <div id="mynetwork" class="card-body"></div>
+        </div>
+
+        
+        
+
+        <script type="text/javascript">
+
+              // initialize global variables.
+              var edges;
+              var nodes;
+              var allNodes;
+              var allEdges;
+              var nodeColors;
+              var originalNodes;
+              var network;
+              var container;
+              var options, data;
+              var filter = {
+                  item : '',
+                  property : '',
+                  value : []
+              };
+
+              
+
+              
+
+              // This method is responsible for drawing the graph, returns the drawn network
+              function drawGraph() {
+                  var container = document.getElementById('mynetwork');
+
+                  
+
+                  // parsing and collecting nodes and edges from the python
+                  nodes = new vis.DataSet([{"color": "lightblue", "id": "Metabolic Diseases", "label": "Metabolic Diseases", "shape": "dot", "size": 15, "title": "Metabolic Diseases"}, {"color": "lightblue", "id": "Female Breast Cancer", "label": "Female Breast Cancer", "shape": "dot", "size": 15, "title": "Female Breast Cancer"}, {"color": "lightblue", "id": "Carrier of disorder", "label": "Carrier of disorder", "shape": "dot", "size": 15, "title": "Carrier of disorder"}, {"color": "lightblue", "id": "Disease", "label": "Disease", "shape": "dot", "size": 15, "title": "Disease"}, {"color": "lightblue", "id": "Klinefelter\u0027s Syndrome", "label": "Klinefelter\u0027s Syndrome", "shape": "dot", "size": 15, "title": "Klinefelter\u0027s Syndrome"}, {"color": "lightblue", "id": "Breast Diseases", "label": "Breast Diseases", "shape": "dot", "size": 15, "title": "Breast Diseases"}, {"color": "lightblue", "id": "Breast Fibrocystic Disease", "label": "Breast Fibrocystic Disease", "shape": "dot", "size": 15, "title": "Breast Fibrocystic Disease"}, {"color": "lightblue", "id": "Hereditary Diseases", "label": "Hereditary Diseases", "shape": "dot", "size": 15, "title": "Hereditary Diseases"}, {"color": "lightblue", "id": "Li-Fraumeni Syndrome", "label": "Li-Fraumeni Syndrome", "shape": "dot", "size": 15, "title": "Li-Fraumeni Syndrome"}, {"color": "lightblue", "id": "Thyroid Diseases", "label": "Thyroid Diseases", "shape": "dot", "size": 15, "title": "Thyroid Diseases"}, {"color": "lightblue", "id": "Metabolic syndrome", "label": "Metabolic syndrome", "shape": "dot", "size": 15, "title": "Metabolic syndrome"}, {"color": "lightblue", "id": "Hypertensive disease", "label": "Hypertensive disease", "shape": "dot", "size": 15, "title": "Hypertensive disease"}, {"color": "lightblue", "id": "Cardiovascular Diseases", "label": "Cardiovascular Diseases", "shape": "dot", "size": 15, "title": "Cardiovascular Diseases"}, {"color": "lightblue", "id": "Paget\u0027s Disease", "label": "Paget\u0027s Disease", "shape": "dot", "size": 15, "title": "Paget\u0027s Disease"}, {"color": "lightblue", "id": "Postmenopausal syndrome", "label": "Postmenopausal syndrome", "shape": "dot", "size": 15, "title": "Postmenopausal syndrome"}, {"color": "lightblue", "id": "Gross\u0027 disease", "label": "Gross\u0027 disease", "shape": "dot", "size": 15, "title": "Gross\u0027 disease"}, {"color": "lightblue", "id": "Depressive disorder", "label": "Depressive disorder", "shape": "dot", "size": 15, "title": "Depressive disorder"}, {"color": "lightblue", "id": "Migraine Disorders", "label": "Migraine Disorders", "shape": "dot", "size": 15, "title": "Migraine Disorders"}, {"color": "lightblue", "id": "Chronic inflammatory disorder", "label": "Chronic inflammatory disorder", "shape": "dot", "size": 15, "title": "Chronic inflammatory disorder"}, {"color": "lightblue", "id": "Tic disorder", "label": "Tic disorder", "shape": "dot", "size": 15, "title": "Tic disorder"}, {"color": "lightblue", "id": "Disease susceptibility", "label": "Disease susceptibility", "shape": "dot", "size": 15, "title": "Disease susceptibility"}, {"color": "lightblue", "id": "Syndrome", "label": "Syndrome", "shape": "dot", "size": 15, "title": "Syndrome"}, {"color": "lightblue", "id": "Bilateral Disease", "label": "Bilateral Disease", "shape": "dot", "size": 15, "title": "Bilateral Disease"}, {"color": "lightblue", "id": "Prune Belly Syndrome", "label": "Prune Belly Syndrome", "shape": "dot", "size": 15, "title": "Prune Belly Syndrome"}, {"color": "lightblue", "id": "Systemic Inflammatory Response Syndrome", "label": "Systemic Inflammatory Response Syndrome", "shape": "dot", "size": 15, "title": "Systemic Inflammatory Response Syndrome"}, {"color": "lightblue", "id": "Fetal valproate syndrome", "label": "Fetal valproate syndrome", "shape": "dot", "size": 15, "title": "Fetal valproate syndrome"}, {"color": "lightblue", "id": "Psychotic Disorders", "label": "Psychotic Disorders", "shape": "dot", "size": 15, "title": "Psychotic Disorders"}, {"color": "lightblue", "id": "Alzheimer\u0027s Disease", "label": "Alzheimer\u0027s Disease", "shape": "dot", "size": 15, "title": "Alzheimer\u0027s Disease"}, {"color": "lightblue", "id": "Hamartoma Syndrome, Multiple", "label": "Hamartoma Syndrome, Multiple", "shape": "dot", "size": 15, "title": "Hamartoma Syndrome, Multiple"}, {"color": "lightblue", "id": "Lhermitte-Duclos disease", "label": "Lhermitte-Duclos disease", "shape": "dot", "size": 15, "title": "Lhermitte-Duclos disease"}, {"color": "lightblue", "id": "Coronary heart disease", "label": "Coronary heart disease", "shape": "dot", "size": 15, "title": "Coronary heart disease"}, {"color": "lightblue", "id": "Behcet Syndrome", "label": "Behcet Syndrome", "shape": "dot", "size": 15, "title": "Behcet Syndrome"}, {"color": "lightblue", "id": "Ovarian Diseases", "label": "Ovarian Diseases", "shape": "dot", "size": 15, "title": "Ovarian Diseases"}, {"color": "lightblue", "id": "Gall Bladder Diseases", "label": "Gall Bladder Diseases", "shape": "dot", "size": 15, "title": "Gall Bladder Diseases"}, {"color": "lightblue", "id": "Little\u0027s Disease", "label": "Little\u0027s Disease", "shape": "dot", "size": 15, "title": "Little\u0027s Disease"}, {"color": "lightblue", "id": "Autoimmune Diseases", "label": "Autoimmune Diseases", "shape": "dot", "size": 15, "title": "Autoimmune Diseases"}, {"color": "lightblue", "id": "Responsive Disease", "label": "Responsive Disease", "shape": "dot", "size": 15, "title": "Responsive Disease"}, {"color": "lightblue", "id": "Crohn Disease", "label": "Crohn Disease", "shape": "dot", "size": 15, "title": "Crohn Disease"}, {"color": "lightblue", "id": "Disease Outcome", "label": "Disease Outcome", "shape": "dot", "size": 15, "title": "Disease Outcome"}, {"color": "lightblue", "id": "Cystic Breast Disease", "label": "Cystic Breast Disease", "shape": "dot", "size": 15, "title": "Cystic Breast Disease"}, {"color": "lightblue", "id": "Chronic Disease", "label": "Chronic Disease", "shape": "dot", "size": 15, "title": "Chronic Disease"}, {"color": "lightblue", "id": "Alcoholic Liver Diseases", "label": "Alcoholic Liver Diseases", "shape": "dot", "size": 15, "title": "Alcoholic Liver Diseases"}, {"color": "lightblue", "id": "disease stage", "label": "disease stage", "shape": "dot", "size": 15, "title": "disease stage"}, {"color": "lightblue", "id": "Acquired Immunodeficiency Syndrome", "label": "Acquired Immunodeficiency Syndrome", "shape": "dot", "size": 15, "title": "Acquired Immunodeficiency Syndrome"}, {"color": "lightblue", "id": "Rare Diseases", "label": "Rare Diseases", "shape": "dot", "size": 15, "title": "Rare Diseases"}, {"color": "lightblue", "id": "autoimmune thyroid disease", "label": "autoimmune thyroid disease", "shape": "dot", "size": 15, "title": "autoimmune thyroid disease"}, {"color": "lightblue", "id": "Periodontal Diseases", "label": "Periodontal Diseases", "shape": "dot", "size": 15, "title": "Periodontal Diseases"}, {"color": "lightblue", "id": "Polycystic Ovary Syndrome", "label": "Polycystic Ovary Syndrome", "shape": "dot", "size": 15, "title": "Polycystic Ovary Syndrome"}, {"color": "lightblue", "id": "disorder control (procedure)", "label": "disorder control (procedure)", "shape": "dot", "size": 15, "title": "disorder control (procedure)"}, {"color": "lightblue", "id": "Disease/diagnosis", "label": "Disease/diagnosis", "shape": "dot", "size": 15, "title": "Disease/diagnosis"}, {"color": "lightblue", "id": "Non-alcoholic Fatty Liver Disease", "label": "Non-alcoholic Fatty Liver Disease", "shape": "dot", "size": 15, "title": "Non-alcoholic Fatty Liver Disease"}, {"color": "lightblue", "id": "Lesch-Nyhan Syndrome", "label": "Lesch-Nyhan Syndrome", "shape": "dot", "size": 15, "title": "Lesch-Nyhan Syndrome"}, {"color": "lightblue", "id": "Hodgkin Disease", "label": "Hodgkin Disease", "shape": "dot", "size": 15, "title": "Hodgkin Disease"}, {"color": "lightblue", "id": "Parkinson Disease", "label": "Parkinson Disease", "shape": "dot", "size": 15, "title": "Parkinson Disease"}, {"color": "lightblue", "id": "Alport\u0027s syndrome", "label": "Alport\u0027s syndrome", "shape": "dot", "size": 15, "title": "Alport\u0027s syndrome"}, {"color": "lightblue", "id": "Disorder of pregnancy", "label": "Disorder of pregnancy", "shape": "dot", "size": 15, "title": "Disorder of pregnancy"}, {"color": "lightblue", "id": "Nance-Horan syndrome", "label": "Nance-Horan syndrome", "shape": "dot", "size": 15, "title": "Nance-Horan syndrome"}, {"color": "lightblue", "id": "intrauterine disorder", "label": "intrauterine disorder", "shape": "dot", "size": 15, "title": "intrauterine disorder"}, {"color": "lightblue", "id": "Acute infectious disease", "label": "Acute infectious disease", "shape": "dot", "size": 15, "title": "Acute infectious disease"}, {"color": "lightblue", "id": "Morbidity - disease rate", "label": "Morbidity - disease rate", "shape": "dot", "size": 15, "title": "Morbidity - disease rate"}, {"color": "lightblue", "id": "Sentinel node (disorder)", "label": "Sentinel node (disorder)", "shape": "dot", "size": 15, "title": "Sentinel node (disorder)"}, {"color": "lightblue", "id": "Mental disorders", "label": "Mental disorders", "shape": "dot", "size": 15, "title": "Mental disorders"}, {"color": "lightblue", "id": "postmenopausal syndrome", "label": "postmenopausal syndrome", "shape": "dot", "size": 15, "title": "postmenopausal syndrome"}, {"color": "lightblue", "id": "CONOTRUNCAL ANOMALY FACE SYNDROME", "label": "CONOTRUNCAL ANOMALY FACE SYNDROME", "shape": "dot", "size": 15, "title": "CONOTRUNCAL ANOMALY FACE SYNDROME"}, {"color": "lightblue", "id": "Renal tubular disorder", "label": "Renal tubular disorder", "shape": "dot", "size": 15, "title": "Renal tubular disorder"}, {"color": "lightblue", "id": "Poland Syndrome", "label": "Poland Syndrome", "shape": "dot", "size": 15, "title": "Poland Syndrome"}, {"color": "lightblue", "id": "Sleep Apnea Syndromes", "label": "Sleep Apnea Syndromes", "shape": "dot", "size": 15, "title": "Sleep Apnea Syndromes"}, {"color": "lightblue", "id": "advanced disease", "label": "advanced disease", "shape": "dot", "size": 15, "title": "advanced disease"}, {"color": "lightblue", "id": "Disease recurrence", "label": "Disease recurrence", "shape": "dot", "size": 15, "title": "Disease recurrence"}, {"color": "lightblue", "id": "nervous system disorder", "label": "nervous system disorder", "shape": "dot", "size": 15, "title": "nervous system disorder"}, {"color": "lightblue", "id": "Collagen Diseases", "label": "Collagen Diseases", "shape": "dot", "size": 15, "title": "Collagen Diseases"}, {"color": "lightblue", "id": "Nail-Patella Syndrome", "label": "Nail-Patella Syndrome", "shape": "dot", "size": 15, "title": "Nail-Patella Syndrome"}, {"color": "lightblue", "id": "AICARDI-GOUTIERES SYNDROME", "label": "AICARDI-GOUTIERES SYNDROME", "shape": "dot", "size": 15, "title": "AICARDI-GOUTIERES SYNDROME"}, {"color": "lightblue", "id": "Huntington Disease", "label": "Huntington Disease", "shape": "dot", "size": 15, "title": "Huntington Disease"}, {"color": "lightblue", "id": "Heart Diseases", "label": "Heart Diseases", "shape": "dot", "size": 15, "title": "Heart Diseases"}, {"color": "lightblue", "id": "Systemic disease", "label": "Systemic disease", "shape": "dot", "size": 15, "title": "Systemic disease"}, {"color": "lightblue", "id": "Stiff-Person Syndrome", "label": "Stiff-Person Syndrome", "shape": "dot", "size": 15, "title": "Stiff-Person Syndrome"}, {"color": "lightblue", "id": "Sweet\u0027s Syndrome", "label": "Sweet\u0027s Syndrome", "shape": "dot", "size": 15, "title": "Sweet\u0027s Syndrome"}, {"color": "lightblue", "id": "Superior Vena Cava Syndrome", "label": "Superior Vena Cava Syndrome", "shape": "dot", "size": 15, "title": "Superior Vena Cava Syndrome"}, {"color": "lightblue", "id": "Chronic Obstructive Airway Disease", "label": "Chronic Obstructive Airway Disease", "shape": "dot", "size": 15, "title": "Chronic Obstructive Airway Disease"}, {"color": "lightblue", "id": "Sleep Disorders, Circadian Rhythm", "label": "Sleep Disorders, Circadian Rhythm", "shape": "dot", "size": 15, "title": "Sleep Disorders, Circadian Rhythm"}, {"color": "lightblue", "id": "Menopausal syndrome", "label": "Menopausal syndrome", "shape": "dot", "size": 15, "title": "Menopausal syndrome"}, {"color": "lightblue", "id": "Lymphatic Diseases", "label": "Lymphatic Diseases", "shape": "dot", "size": 15, "title": "Lymphatic Diseases"}, {"color": "lightblue", "id": "Genital Diseases, Female", "label": "Genital Diseases, Female", "shape": "dot", "size": 15, "title": "Genital Diseases, Female"}, {"color": "lightblue", "id": "CNS disorder", "label": "CNS disorder", "shape": "dot", "size": 15, "title": "CNS disorder"}, {"color": "lightblue", "id": "Inflammatory disorder", "label": "Inflammatory disorder", "shape": "dot", "size": 15, "title": "Inflammatory disorder"}, {"color": "lightblue", "id": "Sleep Disorders", "label": "Sleep Disorders", "shape": "dot", "size": 15, "title": "Sleep Disorders"}, {"color": "lightblue", "id": "disorder control", "label": "disorder control", "shape": "dot", "size": 15, "title": "disorder control"}, {"color": "lightblue", "id": "Short Sleeper Syndrome", "label": "Short Sleeper Syndrome", "shape": "dot", "size": 15, "title": "Short Sleeper Syndrome"}, {"color": "lightblue", "id": "Primary Sj??gren\u0027s syndrome", "label": "Primary Sj??gren\u0027s syndrome", "shape": "dot", "size": 15, "title": "Primary Sj??gren\u0027s syndrome"}, {"color": "lightblue", "id": "Immunologic Deficiency Syndromes", "label": "Immunologic Deficiency Syndromes", "shape": "dot", "size": 15, "title": "Immunologic Deficiency Syndromes"}, {"color": "lightblue", "id": "Peutz-Jeghers Syndrome", "label": "Peutz-Jeghers Syndrome", "shape": "dot", "size": 15, "title": "Peutz-Jeghers Syndrome"}, {"color": "lightblue", "id": "Saethre-Chotzen Syndrome", "label": "Saethre-Chotzen Syndrome", "shape": "dot", "size": 15, "title": "Saethre-Chotzen Syndrome"}, {"color": "lightblue", "id": "Sequela of disorder", "label": "Sequela of disorder", "shape": "dot", "size": 15, "title": "Sequela of disorder"}, {"color": "lightblue", "id": "Circadian Rhythm Disorders", "label": "Circadian Rhythm Disorders", "shape": "dot", "size": 15, "title": "Circadian Rhythm Disorders"}, {"color": "lightblue", "id": "Chronic disease", "label": "Chronic disease", "shape": "dot", "size": 15, "title": "Chronic disease"}, {"color": "lightblue", "id": "Inflammatory Bowel Diseases", "label": "Inflammatory Bowel Diseases", "shape": "dot", "size": 15, "title": "Inflammatory Bowel Diseases"}]);
+                  edges = new vis.DataSet([{"color": "gray", "from": "Metabolic Diseases", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Carrier of disorder", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Disease", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Klinefelter\u0027s Syndrome", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Breast Diseases", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Breast Fibrocystic Disease", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Hereditary Diseases", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Li-Fraumeni Syndrome", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Thyroid Diseases", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Metabolic syndrome", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Hypertensive disease", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Cardiovascular Diseases", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Paget\u0027s Disease", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Postmenopausal syndrome", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Gross\u0027 disease", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Depressive disorder", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Migraine Disorders", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Chronic inflammatory disorder", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Tic disorder", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Disease susceptibility", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Syndrome", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Bilateral Disease", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Prune Belly Syndrome", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Systemic Inflammatory Response Syndrome", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Fetal valproate syndrome", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Psychotic Disorders", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Alzheimer\u0027s Disease", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Hamartoma Syndrome, Multiple", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Lhermitte-Duclos disease", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Coronary heart disease", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Behcet Syndrome", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Ovarian Diseases", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Gall Bladder Diseases", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Little\u0027s Disease", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Autoimmune Diseases", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Responsive Disease", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Crohn Disease", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Disease Outcome", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Cystic Breast Disease", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Chronic Disease", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Alcoholic Liver Diseases", "to": "Female Breast Cancer"}, {"color": "gray", "from": "disease stage", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Acquired Immunodeficiency Syndrome", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Rare Diseases", "to": "Female Breast Cancer"}, {"color": "gray", "from": "autoimmune thyroid disease", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Periodontal Diseases", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Polycystic Ovary Syndrome", "to": "Female Breast Cancer"}, {"color": "gray", "from": "disorder control (procedure)", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Disease/diagnosis", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Non-alcoholic Fatty Liver Disease", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Lesch-Nyhan Syndrome", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Hodgkin Disease", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Parkinson Disease", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Alport\u0027s syndrome", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Disorder of pregnancy", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Nance-Horan syndrome", "to": "Female Breast Cancer"}, {"color": "gray", "from": "intrauterine disorder", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Acute infectious disease", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Morbidity - disease rate", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Sentinel node (disorder)", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Mental disorders", "to": "Female Breast Cancer"}, {"color": "gray", "from": "postmenopausal syndrome", "to": "Female Breast Cancer"}, {"color": "gray", "from": "CONOTRUNCAL ANOMALY FACE SYNDROME", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Renal tubular disorder", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Poland Syndrome", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Sleep Apnea Syndromes", "to": "Female Breast Cancer"}, {"color": "gray", "from": "advanced disease", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Disease recurrence", "to": "Female Breast Cancer"}, {"color": "gray", "from": "nervous system disorder", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Collagen Diseases", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Nail-Patella Syndrome", "to": "Female Breast Cancer"}, {"color": "gray", "from": "AICARDI-GOUTIERES SYNDROME", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Huntington Disease", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Heart Diseases", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Systemic disease", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Stiff-Person Syndrome", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Sweet\u0027s Syndrome", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Superior Vena Cava Syndrome", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Chronic Obstructive Airway Disease", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Sleep Disorders, Circadian Rhythm", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Menopausal syndrome", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Lymphatic Diseases", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Genital Diseases, Female", "to": "Female Breast Cancer"}, {"color": "gray", "from": "CNS disorder", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Inflammatory disorder", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Sleep Disorders", "to": "Female Breast Cancer"}, {"color": "gray", "from": "disorder control", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Short Sleeper Syndrome", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Primary Sj??gren\u0027s syndrome", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Immunologic Deficiency Syndromes", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Peutz-Jeghers Syndrome", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Saethre-Chotzen Syndrome", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Sequela of disorder", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Circadian Rhythm Disorders", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Chronic disease", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Inflammatory Bowel Diseases", "to": "Female Breast Cancer"}]);
+
+                  nodeColors = {};
+                  allNodes = nodes.get({ returnType: "Object" });
+                  for (nodeId in allNodes) {
+                    nodeColors[nodeId] = allNodes[nodeId].color;
+                  }
+                  allEdges = edges.get({ returnType: "Object" });
+                  // adding nodes and edges to the graph
+                  data = {nodes: nodes, edges: edges};
+
+                  var options = {
+    "configure": {
+        "enabled": false
+    },
+    "edges": {
+        "color": {
+            "inherit": true
+        },
+        "smooth": {
+            "enabled": true,
+            "type": "dynamic"
+        }
+    },
+    "interaction": {
+        "dragNodes": true,
+        "hideEdgesOnDrag": false,
+        "hideNodesOnDrag": false
+    },
+    "physics": {
+        "enabled": true,
+        "stabilization": {
+            "enabled": true,
+            "fit": true,
+            "iterations": 1000,
+            "onlyDynamicEdges": false,
+            "updateInterval": 50
+        }
+    }
+};
+
+                  
+
+
+                  
+
+                  network = new vis.Network(container, data, options);
+
+                  
+
+                  
+
+                  
+
+
+                  
+
+                  return network;
+
+              }
+              drawGraph();
+        </script>
+    </body>
+</html>

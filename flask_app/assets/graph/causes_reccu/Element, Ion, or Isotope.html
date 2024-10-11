@@ -1,0 +1,155 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+            <script src="lib/bindings/utils.js"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/dist/vis-network.min.css" integrity="sha512-WgxfT5LWjfszlPHXRmBWHkV2eceiWTOBvrKCNbdgDYTHrT2AeLCGbF4sZlZw3UMN3WtL0tGUoIAKsu8mllg/XA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/vis-network.min.js" integrity="sha512-LnvoEWDFrqGHlHmDD2101OrLcbsfkrzoSpvtSQtxK3RMnRV0eOkhhBN2dXHKRrUU8p2DGRTk35n4O8nWSVe1mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+        
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+          crossorigin="anonymous"
+        />
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+          crossorigin="anonymous"
+        ></script>
+
+
+        <center>
+          <h1></h1>
+        </center>
+        <style type="text/css">
+
+             #mynetwork {
+                 width: 100%;
+                 height: 600px;
+                 background-color: #ffffff;
+                 border: 1px solid lightgray;
+                 position: relative;
+                 float: left;
+             }
+
+             
+
+             
+
+             
+        </style>
+    </head>
+
+
+    <body>
+        <div class="card" style="width: 100%">
+            
+            
+            <div id="mynetwork" class="card-body"></div>
+        </div>
+
+        
+        
+
+        <script type="text/javascript">
+
+              // initialize global variables.
+              var edges;
+              var nodes;
+              var allNodes;
+              var allEdges;
+              var nodeColors;
+              var originalNodes;
+              var network;
+              var container;
+              var options, data;
+              var filter = {
+                  item : '',
+                  property : '',
+                  value : []
+              };
+
+              
+
+              
+
+              // This method is responsible for drawing the graph, returns the drawn network
+              function drawGraph() {
+                  var container = document.getElementById('mynetwork');
+
+                  
+
+                  // parsing and collecting nodes and edges from the python
+                  nodes = new vis.DataSet([{"color": "lightblue", "id": "polyphenols", "label": "polyphenols", "shape": "dot", "size": 15, "title": "polyphenols"}, {"color": "lightblue", "id": "Recurrent Breast Cancer", "label": "Recurrent Breast Cancer", "shape": "dot", "size": 15, "title": "Recurrent Breast Cancer"}, {"color": "lightblue", "id": "Combined Modality Therapy", "label": "Combined Modality Therapy", "shape": "dot", "size": 15, "title": "Combined Modality Therapy"}, {"color": "lightblue", "id": "Diet", "label": "Diet", "shape": "dot", "size": 15, "title": "Diet"}, {"color": "lightblue", "id": "Anisotropy", "label": "Anisotropy", "shape": "dot", "size": 15, "title": "Anisotropy"}, {"color": "lightblue", "id": "adjuvant therapy", "label": "adjuvant therapy", "shape": "dot", "size": 15, "title": "adjuvant therapy"}, {"color": "lightblue", "id": "Levonorgestrel", "label": "Levonorgestrel", "shape": "dot", "size": 15, "title": "Levonorgestrel"}, {"color": "lightblue", "id": "Anesthesia procedures", "label": "Anesthesia procedures", "shape": "dot", "size": 15, "title": "Anesthesia procedures"}, {"color": "lightblue", "id": "Menstrual cycle", "label": "Menstrual cycle", "shape": "dot", "size": 15, "title": "Menstrual cycle"}, {"color": "lightblue", "id": "Analgesics", "label": "Analgesics", "shape": "dot", "size": 15, "title": "Analgesics"}, {"color": "lightblue", "id": "Pregnancy", "label": "Pregnancy", "shape": "dot", "size": 15, "title": "Pregnancy"}, {"color": "lightblue", "id": "Renin-angiotensin system inhibition", "label": "Renin-angiotensin system inhibition", "shape": "dot", "size": 15, "title": "Renin-angiotensin system inhibition"}, {"color": "lightblue", "id": "Inflammation", "label": "Inflammation", "shape": "dot", "size": 15, "title": "Inflammation"}, {"color": "lightblue", "id": "Untranslated Regions", "label": "Untranslated Regions", "shape": "dot", "size": 15, "title": "Untranslated Regions"}, {"color": "lightblue", "id": "Verbal", "label": "Verbal", "shape": "dot", "size": 15, "title": "Verbal"}, {"color": "lightblue", "id": "Positron-Emission Tomography", "label": "Positron-Emission Tomography", "shape": "dot", "size": 15, "title": "Positron-Emission Tomography"}, {"color": "lightblue", "id": "Bariatric Surgery", "label": "Bariatric Surgery", "shape": "dot", "size": 15, "title": "Bariatric Surgery"}, {"color": "lightblue", "id": "Carotenoids", "label": "Carotenoids", "shape": "dot", "size": 15, "title": "Carotenoids"}, {"color": "lightblue", "id": "Radionuclide Imaging", "label": "Radionuclide Imaging", "shape": "dot", "size": 15, "title": "Radionuclide Imaging"}, {"color": "lightblue", "id": "Composition", "label": "Composition", "shape": "dot", "size": 15, "title": "Composition"}, {"color": "lightblue", "id": "Alcohol consumption", "label": "Alcohol consumption", "shape": "dot", "size": 15, "title": "Alcohol consumption"}, {"color": "lightblue", "id": "Glucocorticoids", "label": "Glucocorticoids", "shape": "dot", "size": 15, "title": "Glucocorticoids"}, {"color": "lightblue", "id": "intraoperative radiotherapy", "label": "intraoperative radiotherapy", "shape": "dot", "size": 15, "title": "intraoperative radiotherapy"}, {"color": "lightblue", "id": "Co-morbid conditions", "label": "Co-morbid conditions", "shape": "dot", "size": 15, "title": "Co-morbid conditions"}, {"color": "lightblue", "id": "Mammaplasty", "label": "Mammaplasty", "shape": "dot", "size": 15, "title": "Mammaplasty"}, {"color": "lightblue", "id": "Detection", "label": "Detection", "shape": "dot", "size": 15, "title": "Detection"}, {"color": "lightblue", "id": "Sentinel Lymph Node Biopsy", "label": "Sentinel Lymph Node Biopsy", "shape": "dot", "size": 15, "title": "Sentinel Lymph Node Biopsy"}, {"color": "lightblue", "id": "Therapeutic procedure", "label": "Therapeutic procedure", "shape": "dot", "size": 15, "title": "Therapeutic procedure"}, {"color": "lightblue", "id": "Supplementation", "label": "Supplementation", "shape": "dot", "size": 15, "title": "Supplementation"}, {"color": "lightblue", "id": "cell invasion", "label": "cell invasion", "shape": "dot", "size": 15, "title": "cell invasion"}, {"color": "lightblue", "id": "Hydroxymethylglutaryl-CoA Reductase Inhibitors", "label": "Hydroxymethylglutaryl-CoA Reductase Inhibitors", "shape": "dot", "size": 15, "title": "Hydroxymethylglutaryl-CoA Reductase Inhibitors"}, {"color": "lightblue", "id": "tibolone", "label": "tibolone", "shape": "dot", "size": 15, "title": "tibolone"}, {"color": "lightblue", "id": "Cyclooxygenase 2 Inhibitors", "label": "Cyclooxygenase 2 Inhibitors", "shape": "dot", "size": 15, "title": "Cyclooxygenase 2 Inhibitors"}, {"color": "lightblue", "id": "Opioids", "label": "Opioids", "shape": "dot", "size": 15, "title": "Opioids"}, {"color": "lightblue", "id": "Digoxin", "label": "Digoxin", "shape": "dot", "size": 15, "title": "Digoxin"}, {"color": "lightblue", "id": "Aspirin", "label": "Aspirin", "shape": "dot", "size": 15, "title": "Aspirin"}, {"color": "lightblue", "id": "tomography", "label": "tomography", "shape": "dot", "size": 15, "title": "tomography"}, {"color": "lightblue", "id": "Systemic Therapy", "label": "Systemic Therapy", "shape": "dot", "size": 15, "title": "Systemic Therapy"}, {"color": "lightblue", "id": "Diet, Fat-Restricted", "label": "Diet, Fat-Restricted", "shape": "dot", "size": 15, "title": "Diet, Fat-Restricted"}, {"color": "lightblue", "id": "Cytochrome P-450 CYP2D6", "label": "Cytochrome P-450 CYP2D6", "shape": "dot", "size": 15, "title": "Cytochrome P-450 CYP2D6"}, {"color": "lightblue", "id": "Anesthesia, Conduction", "label": "Anesthesia, Conduction", "shape": "dot", "size": 15, "title": "Anesthesia, Conduction"}, {"color": "lightblue", "id": "Dietary Modification", "label": "Dietary Modification", "shape": "dot", "size": 15, "title": "Dietary Modification"}, {"color": "lightblue", "id": "Fruit", "label": "Fruit", "shape": "dot", "size": 15, "title": "Fruit"}]);
+                  edges = new vis.DataSet([{"color": "gray", "from": "polyphenols", "to": "Recurrent Breast Cancer"}, {"color": "gray", "from": "Combined Modality Therapy", "to": "Recurrent Breast Cancer"}, {"color": "gray", "from": "Diet", "to": "Recurrent Breast Cancer"}, {"color": "gray", "from": "Anisotropy", "to": "Recurrent Breast Cancer"}, {"color": "gray", "from": "adjuvant therapy", "to": "Recurrent Breast Cancer"}, {"color": "gray", "from": "Levonorgestrel", "to": "Recurrent Breast Cancer"}, {"color": "gray", "from": "Anesthesia procedures", "to": "Recurrent Breast Cancer"}, {"color": "gray", "from": "Menstrual cycle", "to": "Recurrent Breast Cancer"}, {"color": "gray", "from": "Analgesics", "to": "Recurrent Breast Cancer"}, {"color": "gray", "from": "Pregnancy", "to": "Recurrent Breast Cancer"}, {"color": "gray", "from": "Renin-angiotensin system inhibition", "to": "Recurrent Breast Cancer"}, {"color": "gray", "from": "Inflammation", "to": "Recurrent Breast Cancer"}, {"color": "gray", "from": "Untranslated Regions", "to": "Recurrent Breast Cancer"}, {"color": "gray", "from": "Verbal", "to": "Recurrent Breast Cancer"}, {"color": "gray", "from": "Positron-Emission Tomography", "to": "Recurrent Breast Cancer"}, {"color": "gray", "from": "Bariatric Surgery", "to": "Recurrent Breast Cancer"}, {"color": "gray", "from": "Carotenoids", "to": "Recurrent Breast Cancer"}, {"color": "gray", "from": "Radionuclide Imaging", "to": "Recurrent Breast Cancer"}, {"color": "gray", "from": "Composition", "to": "Recurrent Breast Cancer"}, {"color": "gray", "from": "Alcohol consumption", "to": "Recurrent Breast Cancer"}, {"color": "gray", "from": "Glucocorticoids", "to": "Recurrent Breast Cancer"}, {"color": "gray", "from": "intraoperative radiotherapy", "to": "Recurrent Breast Cancer"}, {"color": "gray", "from": "Co-morbid conditions", "to": "Recurrent Breast Cancer"}, {"color": "gray", "from": "Mammaplasty", "to": "Recurrent Breast Cancer"}, {"color": "gray", "from": "Detection", "to": "Recurrent Breast Cancer"}, {"color": "gray", "from": "Sentinel Lymph Node Biopsy", "to": "Recurrent Breast Cancer"}, {"color": "gray", "from": "Therapeutic procedure", "to": "Recurrent Breast Cancer"}, {"color": "gray", "from": "Supplementation", "to": "Recurrent Breast Cancer"}, {"color": "gray", "from": "cell invasion", "to": "Recurrent Breast Cancer"}, {"color": "gray", "from": "Hydroxymethylglutaryl-CoA Reductase Inhibitors", "to": "Recurrent Breast Cancer"}, {"color": "gray", "from": "tibolone", "to": "Recurrent Breast Cancer"}, {"color": "gray", "from": "Cyclooxygenase 2 Inhibitors", "to": "Recurrent Breast Cancer"}, {"color": "gray", "from": "Opioids", "to": "Recurrent Breast Cancer"}, {"color": "gray", "from": "Digoxin", "to": "Recurrent Breast Cancer"}, {"color": "gray", "from": "Aspirin", "to": "Recurrent Breast Cancer"}, {"color": "gray", "from": "tomography", "to": "Recurrent Breast Cancer"}, {"color": "gray", "from": "Systemic Therapy", "to": "Recurrent Breast Cancer"}, {"color": "gray", "from": "Diet, Fat-Restricted", "to": "Recurrent Breast Cancer"}, {"color": "gray", "from": "Cytochrome P-450 CYP2D6", "to": "Recurrent Breast Cancer"}, {"color": "gray", "from": "Anesthesia, Conduction", "to": "Recurrent Breast Cancer"}, {"color": "gray", "from": "Dietary Modification", "to": "Recurrent Breast Cancer"}, {"color": "gray", "from": "Fruit", "to": "Recurrent Breast Cancer"}]);
+
+                  nodeColors = {};
+                  allNodes = nodes.get({ returnType: "Object" });
+                  for (nodeId in allNodes) {
+                    nodeColors[nodeId] = allNodes[nodeId].color;
+                  }
+                  allEdges = edges.get({ returnType: "Object" });
+                  // adding nodes and edges to the graph
+                  data = {nodes: nodes, edges: edges};
+
+                  var options = {
+    "configure": {
+        "enabled": false
+    },
+    "edges": {
+        "color": {
+            "inherit": true
+        },
+        "smooth": {
+            "enabled": true,
+            "type": "dynamic"
+        }
+    },
+    "interaction": {
+        "dragNodes": true,
+        "hideEdgesOnDrag": false,
+        "hideNodesOnDrag": false
+    },
+    "physics": {
+        "enabled": true,
+        "stabilization": {
+            "enabled": true,
+            "fit": true,
+            "iterations": 1000,
+            "onlyDynamicEdges": false,
+            "updateInterval": 50
+        }
+    }
+};
+
+                  
+
+
+                  
+
+                  network = new vis.Network(container, data, options);
+
+                  
+
+                  
+
+                  
+
+
+                  
+
+                  return network;
+
+              }
+              drawGraph();
+        </script>
+    </body>
+</html>

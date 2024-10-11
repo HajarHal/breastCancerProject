@@ -1,0 +1,661 @@
+title,factuality_score
+Radiation therapy,0.1928072
+Female Breast Cancer,0.1928072
+Radiation therapy,0.0099900
+Radiosurgery,0.1928072
+Radiofrequency ablation,0.1928072
+Radiation therapy,0.0129870
+Estradiol,0.1928072
+Brachytherapy,0.1928072
+intraoperative radiotherapy,0.1928072
+"Radiotherapy, Targeted",0.1928072
+intraoperative radiotherapy,0.0129870
+Radiation therapy,0.0379620
+intraoperative radiotherapy,0.0379620
+X-Ray Therapy,0.1928072
+Radiopharmaceuticals,0.1928072
+"Radiotherapy, Intensity-Modulated",0.1928072
+"Radiotherapy, Adjuvant",0.1928072
+"Radiation Therapy, Lymphatic",0.1928072
+"Radiotherapy, Adjuvant",0.0079920
+External radiotherapy NOS,0.1928072
+Radiation therapy,0.0109890
+Radiation therapy,0.0419580
+Estradiol,0.0379620
+Megavoltage radiation therapy,0.0379620
+Cobalt 60 brachytherapy,0.0379620
+radioimmunoguided surgery,0.1928072
+Radiation therapy,0.0009990
+"Radiotherapy, Conformal",0.1928072
+Breast radiotherapies,0.1928072
+Stereotactic radiotherapy,0.1928072
+Radiotherapy planning,0.1928072
+Teleradiotherapy using electrons,0.1928072
+Radiation therapy,0.0000000
+Cobalt 60 brachytherapy,0.1928072
+Radiographic-therapeutic unit device,0.1928072
+Breast radiotherapies,0.0379620
+Radiofrequency Ablation Systems,0.0099900
+External radiotherapy NOS,0.0099900
+Teleradiotherapy procedure,0.0129870
+"Radiotherapy, Conformal",0.0379620
+Radiation therapy,0.0079920
+Ethinyl Estradiol,0.0419580
+Whole-Brain Radiotherapy,0.1928072
+External Beam Radiation Therapy,0.1928072
+Radionuclide therapy,0.1928072
+"Radiotherapy, Adjuvant",0.0009990
+"Radiotherapy, Adjuvant",0.0099900
+Radiation therapy,0.0049950
+External Beam Radiation Therapy,0.0129870
+Radiosurgery,0.0419580
+Teleradiotherapy procedure,0.1928072
+"Radiotherapy, Adjuvant",0.0129870
+"Radiotherapy, Image-Guided",0.1928072
+Therapeutic radiology procedure,0.1928072
+Radiotherapy planning,0.0059940
+estradiol,0.1928072
+Post-mastectomy radiotherapy,0.1928072
+Teleradiotherapy procedure,0.0059940
+Radioembolization,0.1928072
+post surgery radiation therapy,0.1928072
+Therapeutic radiology procedure,0.0089910
+Hypofractionated Radiation Therapy,0.1928072
+Intraoperative Radiation Therapy,0.1928072
+"Radiotherapy, Adjuvant",0.0059940
+Intraoperative Radiation Therapy,0.0059940
+Post-mastectomy radiotherapy,0.0379620
+Boost radiation therapy,0.1928072
+Magnetic Resonance-Guided Radiotherapy,0.1928072
+Post-mastectomy radiotherapy,0.0439560
+Adjuvant Radiation Therapy,0.1928072
+"Radiotherapy, Intensity-Modulated",0.0009990
+"Radiotherapy, Adjuvant",0.0379620
+External Beam Radiation Therapy,0.0009990
+Hypofractionated radiation therapy,0.1928072
+Neoadjuvant Radiotherapy,0.0009990
+Radiofrequency Ablation,0.1928072
+Stereotactic Body Radiotherapy,0.1928072
+post surgery radiation therapy,0.0289710
+Hypofractionated radiation therapy,0.0009990
+Stereotactic Ablative Radiotherapy,0.1928072
+post surgery radiation therapy,0.0009990
+Hypofractionated radiation therapy,0.0059940
+External Beam Radiation Therapy,0.0079920
+Stereotactic Body Radiotherapy,0.0019980
+Accelerated Radiation Therapy,0.0059940
+Accelerated Radiation Therapy,0.1928072
+Transarterial Radioembolization,0.0019980
+Conventional Radiotherapy,0.1928072
+post surgery radiation therapy,0.0000000
+Therapeutic radiology procedure,0.0379620
+post surgery radiation therapy,0.0379620
+Radioimmunotherapy,0.1928072
+Intraoperative Radiation Therapy,0.0129870
+Adjuvant Radiation Therapy,0.0129870
+Conventional Radiotherapy,0.0059940
+Stereotactic Body Radiation Therapy,0.0059940
+External Beam Radiation Therapy,0.0059940
+High dose brachytherapy (procedure),0.0059940
+Adjuvant Radiation Therapy,0.0439560
+"Radiosurgery, Stereotactic",0.0019980
+Breast Cancer Radiotherapy,0.1928072
+photon radiation therapy,0.1928072
+radioactive agent,0.1928072
+"Radiotherapy, Targeted",0.0129870
+Brachytherapy,0.0379620
+Interstitial brachytherapy,0.1928072
+estradiol 3-benzoate,0.1928072
+Radiofrequency ablation,0.0419580
+Breast radiotherapies,0.0099900
+Radioimmunotherapy,0.0419580
+Breast interstitial brachytherapy,0.1928072
+"Deep radiation therapy, 200-300 KVP",0.1928072
+Stereotactic radiotherapy,0.0419580
+Radiopharmaceuticals,0.0419580
+Adjuvant Radiation Therapy,0.0059940
+Stereotactic Ablative Radiotherapy,0.0059940
+Radiopharmaceuticals,0.0379620
+Whole brain radiation therapy,0.1928072
+Radiotherapy fractionation,0.1928072
+estradiol,0.0089910
+Interstitial Radiation Therapy,0.0059940
+post surgery radiation therapy,0.0129870
+Stereotactic Body Radiotherapy,0.0289710
+Interstitial Radiation Therapy,0.1928072
+post surgery radiation therapy,0.0439560
+Neoadjuvant Radiotherapy,0.1928072
+ethinyl estradiol,0.1928072
+Radiotherapy fractionation,0.0129870
+Radioimmunoguided surgery,0.1928072
+"Radiosurgery, Stereotactic",0.1928072
+Therapeutic radiology procedure,0.0059940
+Therapeutic radiology procedure,0.0129870
+Interstitial Radiation Therapy,0.0019980
+Surface Radiotherapy,0.1928072
+Stereotactic Body Radiation Therapy,0.1928072
+Intensity modulated radiation therapy plan,0.1928072
+Boost radiation therapy (procedure),0.1928072
+"Radiotherapy Systems, Linear Accelerator",0.1928072
+Intraoperative Radiation Therapy,0.0009990
+estradiol,0.0139860
+"Radiotherapy, Intensity-Modulated",0.0059940
+Infrared radiation therapy,0.1928072
+cancer radioimmunotherapy,0.1928072
+Electron radiation therapy,0.0099900
+radiosensitization,0.0379620
+X-Ray Therapy,0.0049950
+Teleradiotherapy procedure,0.0379620
+Estradiol Antagonists,0.0379620
+External Beam Radiation Therapy,0.0379620
+External radiotherapy NOS,0.0379620
+Photon radiation therapy,0.1928072
+Brachytherapy implant,0.1928072
+Radioimmunoconjugates,0.0419580
+Gamma Knife Radiosurgery,0.1928072
+Electron radiation therapy,0.1928072
+"Radiotherapy, Intensity-Modulated",0.0419580
+Brachytherapy,0.0129870
+Breast external beam radiation therapy,0.1928072
+Whole-Brain Radiotherapy,0.0419580
+"Radiotherapy, Adjuvant",0.0419580
+Breast Cancer Radiotherapy,0.0000000
+Adjuvant Radiation Therapy,0.0139860
+Hypofractionated Radiation Therapy,0.0059940
+"Radiotherapy, Conformal",0.0059940
+Surface Guided Radiation Therapy,0.1928072
+Intra-operative electron radiation therapy,0.0059940
+Boost radiation therapy,0.0009990
+"Radiotherapy, Adjuvant",0.0019980
+"Radiosurgery, Stereotactic",0.0059940
+Carbon Ion Radiotherapy,0.0059940
+Gamma Knife Radiosurgery,0.0379620
+Estradiol,0.0419580
+Ethinyl Estradiol,0.0379620
+Radiosurgery,0.0000000
+2-methoxyestradiol,0.0379620
+radioimmunoguided surgery,0.0379620
+Radiolabeled Monoclonal Antibodies,0.0379620
+Radiofrequency ablation,0.0099900
+Estradiol,0.0099900
+Radiosurgery,0.0379620
+intraoperative radiotherapy,0.0099900
+Radiofrequency ablation,0.0379620
+[V]Radiotherapy session,0.1928072
+Breast Cancer Radiotherapy,0.0009990
+Cancer Radiotherapy treatment planning,0.1928072
+post surgery radiation therapy,0.0059940
+Breast Cancer Radiotherapy,0.0059940
+"Radiotherapy, Targeted",0.0059940
+Post-mastectomy radiotherapy,0.0000000
+estradiol,0.0289710
+Whole brain radiation therapy,0.0439560
+Radiofrequency Ablation,0.0059940
+spatially fractionated radiation therapy,0.1928072
+Hypofractionated radiation therapy,0.0079920
+Radiofrequency Ablation,0.0019980
+Radiosensitization,0.1928072
+Radiotherapy fractionation,0.0059940
+Carbon Ion Radiotherapy,0.0439560
+Neoadjuvant Radiotherapy,0.0439560
+Combined radiotherapy,0.1928072
+Involved-Field Radiation Therapy,0.1928072
+Hypofractionated radiation therapy,0.0129870
+Therapeutic radiology procedure,0.0439560
+Hypofractionated whole breast radiation therapy,0.1928072
+Stereotactic Body Radiotherapy,0.0089910
+Post-mastectomy radiotherapy,0.0009990
+Radiosurgery,0.0059940
+"Radiotherapy, Adjuvant",0.0000000
+"Radiotherapy, Adjuvant",0.0439560
+"Radiotherapy Systems, Cobalt",0.1928072
+High dose brachytherapy,0.1928072
+Ethinyl Estradiol,0.1928072
+Teleradiotherapy using electrons,0.0419580
+Megavoltage radiation therapy,0.1928072
+Teleradiotherapy procedure,0.0099900
+External Beam Radiation Therapy,0.0099900
+radiosensitization,0.1928072
+Radioimmunotherapy,0.0379620
+Radiation therapy management,0.1928072
+Boost radiation therapy,0.0059940
+Post-mastectomy radiotherapy,0.0059940
+Therapeutic radiology procedure,0.0079920
+Palliative Radiation Therapy,0.1928072
+Whole brain radiation therapy,0.0289710
+Radioimmunotherapy,0.0289710
+Post-mastectomy radiotherapy,0.0289710
+"Radiotherapy, Targeted",0.0009990
+Yttrium-90 Microsphere Radioembolization,0.0019980
+Surface Radiotherapy,0.0019980
+Interstitial Radiation Therapy,0.0439560
+Radioembolization,0.0289710
+"Radiotherapy, Intensity-Modulated",0.0289710
+Brachytherapy,0.0059940
+spinal Radiosurgery,0.0289710
+Radiation therapy administration,0.1928072
+2-methoxyestradiol,0.1928072
+Radionuclide therapy,0.0419580
+Radiotherapy planning,0.0009990
+Brachytherapy device,0.1928072
+Brachytherapy,0.0099900
+"Radiotherapy, Targeted",0.0099900
+Carbon Ion Radiotherapy,0.1928072
+Adjuvant Radiation Therapy,0.0009990
+Yttrium-90 Microsphere Radioembolization,0.0289710
+Boost radiation therapy,0.0099900
+Boost radiation therapy (procedure),0.0059940
+Radiosensitization,0.0439560
+post surgery radiation therapy,0.0079920
+"Radiosurgery, Stereotactic",0.0089910
+"Radiotherapy, Adjuvant",0.0089910
+"Radiosurgery, Stereotactic",0.0439560
+17 alpha-ethinyl-3-isopropylsulfonyloxyestradiol,0.0419580
+Combined radiotherapy NOS,0.1928072
+X-Ray Therapy,0.0379620
+Brachytherapy device,0.0419580
+Gamma Knife Radiosurgery,0.0099900
+Whole-Brain Radiotherapy,0.0379620
+Brachytherapy,0.0079920
+Breast Cancer Radiotherapy,0.0129870
+Radiosensitization,0.0089910
+Limited Radiation Therapy,0.1928072
+"Radiotherapy, Adjuvant",0.0289710
+Brachytherapy implant,0.0379620
+Free estradiol,0.1928072
+Radiotherapy planning,0.0379620
+Peptide Receptor Radionuclide Therapy,0.0009990
+cancer radiation therapy,0.0099900
+"Radiosurgery, Stereotactic",0.0139860
+Adjuvant Radiation Therapy,0.0000000
+cancer radiation therapy,0.1928072
+Active Breathing Coordinator-Mediated Radiation Therapy,0.0009990
+Radioimmunotherapy,0.0439560
+Therapeutic radiology procedure,0.0009990
+Hypofractionated Image-Guided Radiation Therapy,0.1928072
+High dose brachytherapy (procedure),0.1928072
+Stereotactic Ablative Radiotherapy,0.0289710
+Therapeutic procedure,0.1928072
+Therapeutic procedure,0.0419580
+Combined Modality Therapy,0.0419580
+Combined Modality Therapy,0.1928072
+Systemic Therapy,0.1928072
+Therapeutic Intervention,0.1928072
+Systemic Therapy,0.0419580
+Oestrogen therapy,0.1928072
+Therapeutic procedure,0.0379620
+Therapeutic procedure,0.0099900
+Combination Drug Therapy,0.1928072
+radiation immunosuppression,0.0379620
+Combined Modality Therapy,0.0099900
+"Laser Therapy, Low-Level",0.1928072
+Proton therapy,0.1928072
+Local Therapy,0.1928072
+Therapeutic Corynebacterium Parvum,0.1928072
+Cell Therapy,0.1928072
+Ovarian ablation,0.1928072
+Conservative therapy,0.1928072
+Systemic Therapy,0.0379620
+Therapeutic procedure,0.0129870
+Ablation,0.0129870
+Medical therapy,0.1928072
+Combined Modality Therapy,0.0379620
+Therapeutic procedure,0.0109890
+Combination Drug Therapy,0.0379620
+Monoclonal Antibody Therapy,0.0419580
+Antioestrogen therapy,0.1928072
+Cognitive Therapy,0.1928072
+Monoclonal Antibody Therapy,0.1928072
+Ovarian ablation,0.0419580
+Radiation-Sensitizing Agents,0.1928072
+Systemic Therapy,0.0109890
+therapeutic use,0.1928072
+Secondary prevention,0.1928072
+Local Therapy,0.0379620
+GLUCOCORTICOID THERAPY,0.1928072
+Therapeutic procedure,0.0049950
+"Scanning Systems, Gamma Camera, Mobile",0.1928072
+Therapeutic procedure,0.0000000
+Imaging Device,0.1928072
+Antiandrogen therapy,0.1928072
+Ablation,0.0419580
+Neutron Capture Therapy,0.1928072
+Combined Modality Therapy,0.0009990
+Vaccine Therapy,0.1928072
+Granulocyte-macrophage colony stimulating factor therapy,0.1928072
+Ablation,0.1928072
+Combined Modality Therapy,0.0079920
+Electric Stimulation Therapy,0.1928072
+Physical therapy,0.1928072
+Systemic Therapy,0.0099900
+Therapeutic procedure,0.0009990
+Combination Drug Therapy,0.0099900
+Therapeutic immunosuppression,0.1928072
+Sex Therapy,0.0000000
+Procedure on axilla,0.1928072
+Respiratory Therapy,0.1928072
+Therapeutic tactile stimulation,0.1928072
+Stereotactic device,0.1928072
+Steroid therapy,0.1928072
+"Therapy, Relaxation",0.1928072
+Behavior Therapy,0.1928072
+breast implant procedure,0.1928072
+Ultrasonic Therapy,0.1928072
+T cell therapy,0.1928072
+Art Therapy,0.1928072
+Drain device,0.1928072
+Therapeutic regimen,0.1928072
+Lipid-lowering therapy,0.1928072
+Therapeutic procedure,0.0439560
+pump (device),0.1928072
+Physical therapy exercises,0.1928072
+Intensity-Modulated Proton Therapy,0.1928072
+Cancer Therapeutic Procedure,0.0439560
+Breast Cancer Therapeutic Procedure,0.1928072
+Rehabilitation therapy,0.1928072
+Systemic Therapy,0.0439560
+Cancer Therapeutic Procedure,0.0289710
+Whole Breast Irradiation,0.0059940
+Systemic Therapy,0.0089910
+Photothermal Therapy,0.0289710
+Combined Modality Therapy,0.0439560
+Current Therapy,0.0439560
+Acceptance and Commitment Therapy,0.1928072
+Local Therapy,0.0000000
+Photothermal Therapy,0.0439560
+Adrenergic beta-Antagonists,0.0059940
+neoplasm therapy,0.0439560
+Therapeutic procedure,0.0059940
+Proton Therapy,0.1928072
+Radiation dose,0.0059940
+Breast Therapy,0.1928072
+Cancer Therapeutic Procedure,0.1928072
+Volumetric-Modulated Arc Therapy,0.0009990
+Tace,0.0019980
+Systemic Therapy,0.0059940
+Photothermal Therapy,0.1928072
+Current Therapy,0.0019980
+Pencil Beam Scanning,0.1928072
+Hepatectomy,0.0019980
+Leukocyte Therapy,0.1928072
+Volumetric-Modulated Arc Therapy,0.0059940
+removal technique,0.0019980
+Therapeutic procedure,0.0089910
+Systemic Therapy,0.0289710
+Image-Guided Therapy,0.0439560
+Breast Cancer Therapeutic Procedure,0.0089910
+First line treatment,0.0059940
+therapeutic autologous dendritic cells,0.1928072
+Combined Modality Therapy,0.0289710
+Radiation dose,0.1928072
+Volumetric-Modulated Arc Therapy,0.1928072
+Systemic Therapy,0.0000000
+Previous and Current Therapy,0.1928072
+systems therapy,0.1928072
+novel AODU treatment method,0.0019980
+Educational therapy,0.1928072
+Tumour treating fields therapy,0.0439560
+BPS,0.0019980
+Medical therapy,0.0109890
+Radiation education,0.1928072
+Therapeutic procedure,0.0289710
+Boron Neutron Capture Therapy,0.0439560
+Combination Drug Therapy,0.0059940
+Gamma Cameras,0.1928072
+Salvage Therapy,0.1928072
+Ablation,0.0079920
+Existential therapy,0.1928072
+Ovarian ablation,0.0379620
+Therapeutic procedure,0.0079920
+Combined Modality Therapy,0.0109890
+Ablation,0.0379620
+"Laser Therapy, Low-Level",0.0379620
+Guide device,0.1928072
+Psychiatric therapeutic procedure,0.1928072
+Cytokine therapy,0.1928072
+High-energy beam therapy NOS,0.0379620
+nursing therapy,0.1928072
+psychopharmacological therapy,0.1928072
+Cell Therapy,0.0419580
+Ultraviolet Therapy,0.1928072
+gamma-tocotrienol,0.1928072
+Maintenance therapy,0.1928072
+Therapeutic regimen,0.0379620
+Local Therapy,0.0419580
+internal radiation,0.1928072
+Thrombolytic Therapy,0.1928072
+thermal ablation therapy,0.0419580
+Erbium:YAG laser device,0.1928072
+Cognitive Therapy,0.0099900
+Current Therapy,0.1928072
+Bisphosphonate therapy,0.1928072
+treatment guideline,0.0059940
+Therapeutic Device,0.0009990
+Retrieval - procedure,0.0289710
+Local Therapy,0.0059940
+Therapeutic procedure,0.0139860
+Combined Modality Therapy,0.0019980
+disorder control (procedure),0.0289710
+Therapeutic regimen,0.0059940
+Zoledronic acid therapy,0.0009990
+therapeutic autologous dendritic cells,0.0089910
+Deep Inspiration Breath Hold,0.0019980
+Breast Cancer Therapeutic Procedure,0.0289710
+directive therapy,0.0439560
+Breast Cancer Therapeutic Procedure,0.0439560
+Interventional procedure,0.0059940
+directive therapy,0.1928072
+Cancer Therapeutic Procedure,0.0000000
+Metabolic therapy,0.1928072
+Concomitant Therapy,0.1928072
+Cancer Therapeutic Procedure,0.0089910
+directive therapy,0.0289710
+Atrial Ablation,0.1928072
+Combined Modality Therapy,0.0089910
+Combined Modality Therapy,0.0139860
+Antibiotic Lock Therapy,0.1928072
+Interventional procedure,0.0289710
+Proton Therapy,0.0009990
+Immune checkpoint inhibitor therapy,0.1928072
+Chimeric Antigen Receptor T-Cell Therapy,0.0289710
+Secondary Prevention,0.1928072
+Proton Therapy,0.0289710
+Rehabilitation therapy,0.0000000
+ezetimibe,0.0019980
+therapeutic use,0.0099900
+Androgen therapy,0.1928072
+Combined Modality Therapy,0.0049950
+Focused Ultrasound Therapy,0.1928072
+Cell Therapy,0.0379620
+Medical therapy,0.0379620
+Conservative therapy,0.0099900
+Carbon dioxide laser device,0.1928072
+Microwave Therapy,0.1928072
+Low Dose Radiation,0.1928072
+Imaging Device,0.0099900
+Intravenous therapy,0.0419580
+internal radiation,0.0419580
+Therapeutic Intervention,0.0049950
+Ablation,0.0049950
+Therapeutic vaccine,0.0419580
+Zoledronic acid therapy,0.1928072
+Symptom control (regime/therapy),0.0000000
+Radiation dose,0.0019980
+Disease management program (regime/therapy),0.1928072
+therapeutic autologous dendritic cells,0.0379620
+Hyperbaric oxygenation therapy,0.0289710
+Charts (device),0.1928072
+Electroconvulsive Therapy,0.0439560
+therapeutic processes,0.1928072
+Therapeutic Drug Monitoring,0.1928072
+Local Therapy,0.0019980
+Maintenance therapy,0.0289710
+Previous and Current Therapy,0.0439560
+cyclocreatine,0.0019980
+Acceptance and Commitment Therapy,0.0059940
+Intensity-Modulated Proton Therapy,0.0109890
+dabigatran,0.0019980
+Cognitive behavioral therapy for insomnia,0.1928072
+Early Therapy,0.0000000
+Physical therapy exercises,0.0289710
+Breast external beam irradiation,0.0000000
+Early Therapy,0.0289710
+Local Therapy,0.0289710
+Vaginal Therapy,0.1928072
+Mammaplasty,0.0019980
+Current Therapy,0.0129870
+catheter device,0.1928072
+Ablation,0.0439560
+neoplasm therapy,0.1928072
+High intensity focused ultrasound,0.1928072
+Systemic Therapy,0.0009990
+Antibody Therapy,0.1928072
+"Wig, device",0.1928072
+Basis,0.0019980
+Image-Guided Therapy,0.1928072
+iron chelation therapy,0.1928072
+Therapeutic Abortion,0.1928072
+Consolidation Therapy,0.1928072
+Rehabilitation therapy,0.0099900
+Radiation-Sensitizing Agents,0.0379620
+intraperitoneal therapy,0.1928072
+Cobalt 60 teletherapy,0.0379620
+"Laser Therapy, Low-Level",0.0129870
+antibody therapy,0.1928072
+Therapeutic vaccine,0.1928072
+Music Therapy,0.1928072
+gamma-Tocopherol,0.1928072
+Conservative therapy,0.0129870
+Antioestrogen therapy,0.0129870
+Applicator - device,0.1928072
+Therapeutic Touch,0.1928072
+Therapeutic Intervention,0.0419580
+Endometrial ablation,0.1928072
+Linear accelerator electrons procedure,0.1928072
+Eye Movement Desensitization Therapy,0.1928072
+Systemic Therapy,0.0129870
+Breast Cancer Therapeutic Procedure,0.0000000
+Hand therapy,0.1928072
+Fourth-Line Therapy,0.1928072
+Local Therapy,0.0439560
+Radiation dose,0.0379620
+Chimeric Antigen Receptor T-Cell Therapy,0.1928072
+Intravenous therapy,0.0289710
+Constriction procedure,0.0289710
+Ovarian ablation,0.0289710
+Laser ablation,0.0089910
+"Therapeutic procedure, one or more areas, each 15 minutes; massage, including effleurage, petrissage and/or tapotement (stroking, compression, percussion)",0.1928072
+hydroxychloroquine,0.0019980
+Breast Cancer Therapeutic Procedure,0.0059940
+Therapeutic immunosuppression,0.0289710
+Therapeutic Intervention,0.0289710
+Expression procedure,0.0059940
+letrozole,0.0019980
+Exploration procedure,0.0019980
+Ovarian ablation,0.0089910
+systems therapy,0.0379620
+Thoracoplasty,0.0019980
+Antiandrogen therapy,0.0439560
+autophagy inhibition therapy,0.0439560
+Traditional therapy,0.0439560
+Therapeutic Corynebacterium Parvum,0.0419580
+Cobalt 60 teletherapy,0.1928072
+Radiation-Sensitizing Agents,0.0129870
+Brain natriuretic peptide,0.1928072
+Antiplatelet therapy,0.1928072
+immune checkpoint inhibitor therapy,0.1928072
+Recombinant Interferon-gamma,0.1928072
+High-Intensity Interval Training,0.1928072
+early identification,0.1928072
+"Binder, device",0.1928072
+aquatic Exercise Therapy,0.0099900
+Bridge Therapy,0.1928072
+Antibodies,0.0059940
+Exploration procedure,0.0289710
+Natural Killer Cell Therapy,0.1928072
+Mirror movements therapy,0.1928072
+therapeutic autologous dendritic cells,0.0289710
+Monoclonal Antibody Therapy,0.0439560
+leukocyte therapy,0.1928072
+Whole-Body Irradiation,0.1928072
+Collapse Therapy,0.1928072
+Androgen therapy,0.0379620
+multimodality cancer therapy,0.1928072
+Procedure on axilla,0.0379620
+Vascular Access Device Placement,0.1928072
+Intravenous therapy,0.1928072
+Systems therapy,0.1928072
+Stereotactic ablation,0.1928072
+Proton Therapy,0.0439560
+Current Therapy,0.0289710
+Focused ultrasound ablation using magnetic resonance imaging guidance,0.1928072
+Breast external beam irradiation,0.1928072
+Therapeutic regimen,0.0289710
+Combination Drug Therapy,0.0009990
+early/brief intervention/therapy (treatment),0.1928072
+Combination Drug Therapy,0.0289710
+gamma-linolenic acid,0.1928072
+Ablation,0.0059940
+Interventional procedure,0.0089910
+Combined Modality Therapy,0.0129870
+Therapeutic immunosuppression,0.0009990
+Ablation,0.0019980
+Complex Decongestive Therapy,0.1928072
+Enzyme Therapy,0.0439560
+Cancer Therapeutic Procedure,0.0109890
+Therapeutic Drug Monitoring,0.0289710
+Maintenance therapy,0.0439560
+Gamma Irradiation,0.1928072
+Intensity-Modulated Proton Therapy,0.0059940
+"Catheter guide wire, device",0.1928072
+Therapeutic immunosuppression,0.0379620
+interferon therapy,0.1928072
+Strontium 89 therapy,0.1928072
+Radium therapy,0.1928072
+gamma-Linolenic Acid,0.1928072
+Problem solving therapy,0.1928072
+Laughter Therapy,0.1928072
+Dance Therapy,0.1928072
+cDNA Microarray device,0.0099900
+Ablation,0.0099900
+Stereotactic ablation,0.0419580
+Intensity-Modulated Proton Therapy,0.0009990
+Nitric oxide therapy,0.1928072
+"Embolization, Therapeutic",0.1928072
+Type of bridge device,0.1928072
+Extracorporeal Shockwave Therapy,0.1928072
+Hyperbaric oxygenation therapy,0.1928072
+Infertility therapy,0.1928072
+Beam Radiation,0.1928072
+Antibody Therapy,0.0019980
+Magnet Therapy,0.1928072
+Emodin,0.0019980
+systems therapy,0.0289710
+Breast Therapy,0.0059940
+Therapeutic Intervention,0.0439560
+Combination Drug Therapy,0.0089910
+Boron Neutron Capture Therapy,0.1928072
+Therapeutic Intervention,0.0099900
+differentiation therapy,0.1928072
+"Antiretroviral Therapy, Highly Active",0.1928072
+"Retractor, device",0.0099900
+Recombinant Interferon-gamma|IFNG,0.1928072
+isotope therapy,0.1928072
+high-LET neutron therapy,0.1928072
+Music Therapy,0.0099900
+Combination Drug Therapy,0.0049950
+tumor necrosis factor therapy,0.1928072
+Recombinant Interferon-gamma|IFNG,0.0379620
+Acceptance and Commitment Therapy,0.0289710
+Long-term drug therapy,0.1928072
+Therapeutic procedure,0.0019980
+Combined Modality Therapy,0.0059940
+Antibody-Drug Conjugate Therapy,0.1928072
+taurine,0.0019980
+Photothermal Therapy,0.0019980
+Micelles,0.0019980
+Differentiation Therapy,0.0439560
+Procedure on spinal cord (procedure),0.0019980
+kalkitoxin,0.0019980
+Radiation-Sensitizing Agents,0.0019980
+Ozone therapy,0.1928072

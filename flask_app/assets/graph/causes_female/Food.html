@@ -1,0 +1,155 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+            <script src="lib/bindings/utils.js"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/dist/vis-network.min.css" integrity="sha512-WgxfT5LWjfszlPHXRmBWHkV2eceiWTOBvrKCNbdgDYTHrT2AeLCGbF4sZlZw3UMN3WtL0tGUoIAKsu8mllg/XA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/vis-network.min.js" integrity="sha512-LnvoEWDFrqGHlHmDD2101OrLcbsfkrzoSpvtSQtxK3RMnRV0eOkhhBN2dXHKRrUU8p2DGRTk35n4O8nWSVe1mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+        
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+          crossorigin="anonymous"
+        />
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+          crossorigin="anonymous"
+        ></script>
+
+
+        <center>
+          <h1></h1>
+        </center>
+        <style type="text/css">
+
+             #mynetwork {
+                 width: 100%;
+                 height: 600px;
+                 background-color: #ffffff;
+                 border: 1px solid lightgray;
+                 position: relative;
+                 float: left;
+             }
+
+             
+
+             
+
+             
+        </style>
+    </head>
+
+
+    <body>
+        <div class="card" style="width: 100%">
+            
+            
+            <div id="mynetwork" class="card-body"></div>
+        </div>
+
+        
+        
+
+        <script type="text/javascript">
+
+              // initialize global variables.
+              var edges;
+              var nodes;
+              var allNodes;
+              var allEdges;
+              var nodeColors;
+              var originalNodes;
+              var network;
+              var container;
+              var options, data;
+              var filter = {
+                  item : '',
+                  property : '',
+                  value : []
+              };
+
+              
+
+              
+
+              // This method is responsible for drawing the graph, returns the drawn network
+              function drawGraph() {
+                  var container = document.getElementById('mynetwork');
+
+                  
+
+                  // parsing and collecting nodes and edges from the python
+                  nodes = new vis.DataSet([{"color": "lightblue", "id": "Vitamin D", "label": "Vitamin D", "shape": "dot", "size": 15, "title": "Vitamin D"}, {"color": "lightblue", "id": "Female Breast Cancer", "label": "Female Breast Cancer", "shape": "dot", "size": 15, "title": "Female Breast Cancer"}, {"color": "lightblue", "id": "Vitamin A", "label": "Vitamin A", "shape": "dot", "size": 15, "title": "Vitamin A"}, {"color": "lightblue", "id": "Food", "label": "Food", "shape": "dot", "size": 15, "title": "Food"}, {"color": "lightblue", "id": "Vitamin C intake", "label": "Vitamin C intake", "shape": "dot", "size": 15, "title": "Vitamin C intake"}, {"color": "lightblue", "id": "Egg Food Product", "label": "Egg Food Product", "shape": "dot", "size": 15, "title": "Egg Food Product"}, {"color": "lightblue", "id": "vitamin analog", "label": "vitamin analog", "shape": "dot", "size": 15, "title": "vitamin analog"}, {"color": "lightblue", "id": "Micronutrients", "label": "Micronutrients", "shape": "dot", "size": 15, "title": "Micronutrients"}, {"color": "lightblue", "id": "Nutrients", "label": "Nutrients", "shape": "dot", "size": 15, "title": "Nutrients"}, {"color": "lightblue", "id": "Vitamins", "label": "Vitamins", "shape": "dot", "size": 15, "title": "Vitamins"}, {"color": "lightblue", "id": "Vitamin D3 Receptor", "label": "Vitamin D3 Receptor", "shape": "dot", "size": 15, "title": "Vitamin D3 Receptor"}, {"color": "lightblue", "id": "Vitamin E", "label": "Vitamin E", "shape": "dot", "size": 15, "title": "Vitamin E"}, {"color": "lightblue", "id": "Vitamin D intake", "label": "Vitamin D intake", "shape": "dot", "size": 15, "title": "Vitamin D intake"}, {"color": "lightblue", "id": "Vitamin intake", "label": "Vitamin intake", "shape": "dot", "size": 15, "title": "Vitamin intake"}, {"color": "lightblue", "id": "Soy Foods", "label": "Soy Foods", "shape": "dot", "size": 15, "title": "Soy Foods"}, {"color": "lightblue", "id": "Vitamin B 12", "label": "Vitamin B 12", "shape": "dot", "size": 15, "title": "Vitamin B 12"}, {"color": "lightblue", "id": "Low glycemic index food", "label": "Low glycemic index food", "shape": "dot", "size": 15, "title": "Low glycemic index food"}, {"color": "lightblue", "id": "25-hydroxyvitamin D", "label": "25-hydroxyvitamin D", "shape": "dot", "size": 15, "title": "25-hydroxyvitamin D"}, {"color": "lightblue", "id": "Vitamin D Deficiency", "label": "Vitamin D Deficiency", "shape": "dot", "size": 15, "title": "Vitamin D Deficiency"}, {"color": "lightblue", "id": "Vitamin A intake", "label": "Vitamin A intake", "shape": "dot", "size": 15, "title": "Vitamin A intake"}, {"color": "lightblue", "id": "vitamin A", "label": "vitamin A", "shape": "dot", "size": 15, "title": "vitamin A"}, {"color": "lightblue", "id": "Rich food", "label": "Rich food", "shape": "dot", "size": 15, "title": "Rich food"}, {"color": "lightblue", "id": "Vitamin B6", "label": "Vitamin B6", "shape": "dot", "size": 15, "title": "Vitamin B6"}, {"color": "lightblue", "id": "Vitamin D3 Receptor|VDR", "label": "Vitamin D3 Receptor|VDR", "shape": "dot", "size": 15, "title": "Vitamin D3 Receptor|VDR"}, {"color": "lightblue", "id": "Fatty food", "label": "Fatty food", "shape": "dot", "size": 15, "title": "Fatty food"}, {"color": "lightblue", "id": "Convenience food", "label": "Convenience food", "shape": "dot", "size": 15, "title": "Convenience food"}, {"color": "lightblue", "id": "Vitamin B Complex", "label": "Vitamin B Complex", "shape": "dot", "size": 15, "title": "Vitamin B Complex"}, {"color": "lightblue", "id": "Organic Food", "label": "Organic Food", "shape": "dot", "size": 15, "title": "Organic Food"}, {"color": "lightblue", "id": "vitamin supplement", "label": "vitamin supplement", "shape": "dot", "size": 15, "title": "vitamin supplement"}, {"color": "lightblue", "id": "food product", "label": "food product", "shape": "dot", "size": 15, "title": "food product"}, {"color": "lightblue", "id": "D Vitamin", "label": "D Vitamin", "shape": "dot", "size": 15, "title": "D Vitamin"}, {"color": "lightblue", "id": "Convenience food intake", "label": "Convenience food intake", "shape": "dot", "size": 15, "title": "Convenience food intake"}, {"color": "lightblue", "id": "High fiber food", "label": "High fiber food", "shape": "dot", "size": 15, "title": "High fiber food"}, {"color": "lightblue", "id": "Vitamin B6 intake", "label": "Vitamin B6 intake", "shape": "dot", "size": 15, "title": "Vitamin B6 intake"}, {"color": "lightblue", "id": "Food, Preserved", "label": "Food, Preserved", "shape": "dot", "size": 15, "title": "Food, Preserved"}, {"color": "lightblue", "id": "Food Habits", "label": "Food Habits", "shape": "dot", "size": 15, "title": "Food Habits"}, {"color": "lightblue", "id": "Vitamin D3 24-Hydroxylase|CYP24A1", "label": "Vitamin D3 24-Hydroxylase|CYP24A1", "shape": "dot", "size": 15, "title": "Vitamin D3 24-Hydroxylase|CYP24A1"}, {"color": "lightblue", "id": "Food, Organic", "label": "Food, Organic", "shape": "dot", "size": 15, "title": "Food, Organic"}, {"color": "lightblue", "id": "Fast Foods", "label": "Fast Foods", "shape": "dot", "size": 15, "title": "Fast Foods"}, {"color": "lightblue", "id": "Seafood", "label": "Seafood", "shape": "dot", "size": 15, "title": "Seafood"}, {"color": "lightblue", "id": "Vitamin D Analog", "label": "Vitamin D Analog", "shape": "dot", "size": 15, "title": "Vitamin D Analog"}, {"color": "lightblue", "id": "Vitamin B12 intake", "label": "Vitamin B12 intake", "shape": "dot", "size": 15, "title": "Vitamin B12 intake"}, {"color": "lightblue", "id": "Fermented Foods", "label": "Fermented Foods", "shape": "dot", "size": 15, "title": "Fermented Foods"}, {"color": "lightblue", "id": "Raw Foods", "label": "Raw Foods", "shape": "dot", "size": 15, "title": "Raw Foods"}, {"color": "lightblue", "id": "Food antioxidant", "label": "Food antioxidant", "shape": "dot", "size": 15, "title": "Food antioxidant"}, {"color": "lightblue", "id": "dihydroxy-vitamin D3", "label": "dihydroxy-vitamin D3", "shape": "dot", "size": 15, "title": "dihydroxy-vitamin D3"}, {"color": "lightblue", "id": "Vitamin B2 intake", "label": "Vitamin B2 intake", "shape": "dot", "size": 15, "title": "Vitamin B2 intake"}, {"color": "lightblue", "id": "Mineralocorticoid Receptor|DHCR24", "label": "Mineralocorticoid Receptor|DHCR24", "shape": "dot", "size": 15, "title": "Mineralocorticoid Receptor|DHCR24"}, {"color": "lightblue", "id": "Smoked food", "label": "Smoked food", "shape": "dot", "size": 15, "title": "Smoked food"}, {"color": "lightblue", "id": "High glycemic index food", "label": "High glycemic index food", "shape": "dot", "size": 15, "title": "High glycemic index food"}, {"color": "lightblue", "id": "Minerals", "label": "Minerals", "shape": "dot", "size": 15, "title": "Minerals"}, {"color": "lightblue", "id": "Desire for food", "label": "Desire for food", "shape": "dot", "size": 15, "title": "Desire for food"}, {"color": "lightblue", "id": "vitamin E", "label": "vitamin E", "shape": "dot", "size": 15, "title": "vitamin E"}, {"color": "lightblue", "id": "High energy food", "label": "High energy food", "shape": "dot", "size": 15, "title": "High energy food"}, {"color": "lightblue", "id": "Vitamin E intake", "label": "Vitamin E intake", "shape": "dot", "size": 15, "title": "Vitamin E intake"}, {"color": "lightblue", "id": "Vitamin B1 Intake", "label": "Vitamin B1 Intake", "shape": "dot", "size": 15, "title": "Vitamin B1 Intake"}, {"color": "lightblue", "id": "CALCIUM/VITAMIN D", "label": "CALCIUM/VITAMIN D", "shape": "dot", "size": 15, "title": "CALCIUM/VITAMIN D"}]);
+                  edges = new vis.DataSet([{"color": "gray", "from": "Vitamin D", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Vitamin A", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Food", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Vitamin C intake", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Egg Food Product", "to": "Female Breast Cancer"}, {"color": "gray", "from": "vitamin analog", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Micronutrients", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Nutrients", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Vitamins", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Vitamin D3 Receptor", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Vitamin E", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Vitamin D intake", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Vitamin intake", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Soy Foods", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Vitamin B 12", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Low glycemic index food", "to": "Female Breast Cancer"}, {"color": "gray", "from": "25-hydroxyvitamin D", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Vitamin D Deficiency", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Vitamin A intake", "to": "Female Breast Cancer"}, {"color": "gray", "from": "vitamin A", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Rich food", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Vitamin B6", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Vitamin D3 Receptor|VDR", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Fatty food", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Convenience food", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Vitamin B Complex", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Organic Food", "to": "Female Breast Cancer"}, {"color": "gray", "from": "vitamin supplement", "to": "Female Breast Cancer"}, {"color": "gray", "from": "food product", "to": "Female Breast Cancer"}, {"color": "gray", "from": "D Vitamin", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Convenience food intake", "to": "Female Breast Cancer"}, {"color": "gray", "from": "High fiber food", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Vitamin B6 intake", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Food, Preserved", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Food Habits", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Vitamin D3 24-Hydroxylase|CYP24A1", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Food, Organic", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Fast Foods", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Seafood", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Vitamin D Analog", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Vitamin B12 intake", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Fermented Foods", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Raw Foods", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Food antioxidant", "to": "Female Breast Cancer"}, {"color": "gray", "from": "dihydroxy-vitamin D3", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Vitamin B2 intake", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Mineralocorticoid Receptor|DHCR24", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Smoked food", "to": "Female Breast Cancer"}, {"color": "gray", "from": "High glycemic index food", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Minerals", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Desire for food", "to": "Female Breast Cancer"}, {"color": "gray", "from": "vitamin E", "to": "Female Breast Cancer"}, {"color": "gray", "from": "High energy food", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Vitamin E intake", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Vitamin B1 Intake", "to": "Female Breast Cancer"}, {"color": "gray", "from": "CALCIUM/VITAMIN D", "to": "Female Breast Cancer"}]);
+
+                  nodeColors = {};
+                  allNodes = nodes.get({ returnType: "Object" });
+                  for (nodeId in allNodes) {
+                    nodeColors[nodeId] = allNodes[nodeId].color;
+                  }
+                  allEdges = edges.get({ returnType: "Object" });
+                  // adding nodes and edges to the graph
+                  data = {nodes: nodes, edges: edges};
+
+                  var options = {
+    "configure": {
+        "enabled": false
+    },
+    "edges": {
+        "color": {
+            "inherit": true
+        },
+        "smooth": {
+            "enabled": true,
+            "type": "dynamic"
+        }
+    },
+    "interaction": {
+        "dragNodes": true,
+        "hideEdgesOnDrag": false,
+        "hideNodesOnDrag": false
+    },
+    "physics": {
+        "enabled": true,
+        "stabilization": {
+            "enabled": true,
+            "fit": true,
+            "iterations": 1000,
+            "onlyDynamicEdges": false,
+            "updateInterval": 50
+        }
+    }
+};
+
+                  
+
+
+                  
+
+                  network = new vis.Network(container, data, options);
+
+                  
+
+                  
+
+                  
+
+
+                  
+
+                  return network;
+
+              }
+              drawGraph();
+        </script>
+    </body>
+</html>

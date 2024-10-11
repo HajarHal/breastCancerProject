@@ -1,0 +1,250 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+            <script src="lib/bindings/utils.js"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/dist/vis-network.min.css" integrity="sha512-WgxfT5LWjfszlPHXRmBWHkV2eceiWTOBvrKCNbdgDYTHrT2AeLCGbF4sZlZw3UMN3WtL0tGUoIAKsu8mllg/XA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/vis-network.min.js" integrity="sha512-LnvoEWDFrqGHlHmDD2101OrLcbsfkrzoSpvtSQtxK3RMnRV0eOkhhBN2dXHKRrUU8p2DGRTk35n4O8nWSVe1mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+        
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+          crossorigin="anonymous"
+        />
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+          crossorigin="anonymous"
+        ></script>
+
+
+        <center>
+          <h1></h1>
+        </center>
+        <style type="text/css">
+
+             #mynetwork {
+                 width: 100%;
+                 height: 600px;
+                 background-color: #ffffff;
+                 border: 1px solid lightgray;
+                 position: relative;
+                 float: left;
+             }
+
+             
+             #loadingBar {
+                 position:absolute;
+                 top:0px;
+                 left:0px;
+                 width: 100%;
+                 height: 600px;
+                 background-color:rgba(200,200,200,0.8);
+                 -webkit-transition: all 0.5s ease;
+                 -moz-transition: all 0.5s ease;
+                 -ms-transition: all 0.5s ease;
+                 -o-transition: all 0.5s ease;
+                 transition: all 0.5s ease;
+                 opacity:1;
+             }
+
+             #bar {
+                 position:absolute;
+                 top:0px;
+                 left:0px;
+                 width:20px;
+                 height:20px;
+                 margin:auto auto auto auto;
+                 border-radius:11px;
+                 border:2px solid rgba(30,30,30,0.05);
+                 background: rgb(0, 173, 246); /* Old browsers */
+                 box-shadow: 2px 0px 4px rgba(0,0,0,0.4);
+             }
+
+             #border {
+                 position:absolute;
+                 top:10px;
+                 left:10px;
+                 width:500px;
+                 height:23px;
+                 margin:auto auto auto auto;
+                 box-shadow: 0px 0px 4px rgba(0,0,0,0.2);
+                 border-radius:10px;
+             }
+
+             #text {
+                 position:absolute;
+                 top:8px;
+                 left:530px;
+                 width:30px;
+                 height:50px;
+                 margin:auto auto auto auto;
+                 font-size:22px;
+                 color: #000000;
+             }
+
+             div.outerBorder {
+                 position:relative;
+                 top:400px;
+                 width:600px;
+                 height:44px;
+                 margin:auto auto auto auto;
+                 border:8px solid rgba(0,0,0,0.1);
+                 background: rgb(252,252,252); /* Old browsers */
+                 background: -moz-linear-gradient(top,  rgba(252,252,252,1) 0%, rgba(237,237,237,1) 100%); /* FF3.6+ */
+                 background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(252,252,252,1)), color-stop(100%,rgba(237,237,237,1))); /* Chrome,Safari4+ */
+                 background: -webkit-linear-gradient(top,  rgba(252,252,252,1) 0%,rgba(237,237,237,1) 100%); /* Chrome10+,Safari5.1+ */
+                 background: -o-linear-gradient(top,  rgba(252,252,252,1) 0%,rgba(237,237,237,1) 100%); /* Opera 11.10+ */
+                 background: -ms-linear-gradient(top,  rgba(252,252,252,1) 0%,rgba(237,237,237,1) 100%); /* IE10+ */
+                 background: linear-gradient(to bottom,  rgba(252,252,252,1) 0%,rgba(237,237,237,1) 100%); /* W3C */
+                 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfcfc', endColorstr='#ededed',GradientType=0 ); /* IE6-9 */
+                 border-radius:72px;
+                 box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+             }
+             
+
+             
+
+             
+        </style>
+    </head>
+
+
+    <body>
+        <div class="card" style="width: 100%">
+            
+            
+            <div id="mynetwork" class="card-body"></div>
+        </div>
+
+        
+            <div id="loadingBar">
+              <div class="outerBorder">
+                <div id="text">0%</div>
+                <div id="border">
+                  <div id="bar"></div>
+                </div>
+              </div>
+            </div>
+        
+        
+
+        <script type="text/javascript">
+
+              // initialize global variables.
+              var edges;
+              var nodes;
+              var allNodes;
+              var allEdges;
+              var nodeColors;
+              var originalNodes;
+              var network;
+              var container;
+              var options, data;
+              var filter = {
+                  item : '',
+                  property : '',
+                  value : []
+              };
+
+              
+
+              
+
+              // This method is responsible for drawing the graph, returns the drawn network
+              function drawGraph() {
+                  var container = document.getElementById('mynetwork');
+
+                  
+
+                  // parsing and collecting nodes and edges from the python
+                  nodes = new vis.DataSet([{"color": "lightblue", "id": "Estrogens", "label": "Estrogens", "shape": "dot", "size": 15, "title": "Estrogens"}, {"color": "lightblue", "id": "Female Breast Cancer", "label": "Female Breast Cancer", "shape": "dot", "size": 15, "title": "Female Breast Cancer"}, {"color": "lightblue", "id": "Hormones", "label": "Hormones", "shape": "dot", "size": 15, "title": "Hormones"}, {"color": "lightblue", "id": "Medroxyprogesterone 17-Acetate", "label": "Medroxyprogesterone 17-Acetate", "shape": "dot", "size": 15, "title": "Medroxyprogesterone 17-Acetate"}, {"color": "lightblue", "id": "Phytoestrogens", "label": "Phytoestrogens", "shape": "dot", "size": 15, "title": "Phytoestrogens"}, {"color": "lightblue", "id": "Hormone replacement therapy", "label": "Hormone replacement therapy", "shape": "dot", "size": 15, "title": "Hormone replacement therapy"}, {"color": "lightblue", "id": "Endocrine therapy", "label": "Endocrine therapy", "shape": "dot", "size": 15, "title": "Endocrine therapy"}, {"color": "lightblue", "id": "Progesterone", "label": "Progesterone", "shape": "dot", "size": 15, "title": "Progesterone"}, {"color": "lightblue", "id": "Estrogens, Synthetic", "label": "Estrogens, Synthetic", "shape": "dot", "size": 15, "title": "Estrogens, Synthetic"}, {"color": "lightblue", "id": "Sex Hormone-Binding Globulin", "label": "Sex Hormone-Binding Globulin", "shape": "dot", "size": 15, "title": "Sex Hormone-Binding Globulin"}, {"color": "lightblue", "id": "Testosterone", "label": "Testosterone", "shape": "dot", "size": 15, "title": "Testosterone"}, {"color": "lightblue", "id": "Steroid hormone", "label": "Steroid hormone", "shape": "dot", "size": 15, "title": "Steroid hormone"}, {"color": "lightblue", "id": "Estrogen Antagonists", "label": "Estrogen Antagonists", "shape": "dot", "size": 15, "title": "Estrogen Antagonists"}, {"color": "lightblue", "id": "Aromatase Inhibitors", "label": "Aromatase Inhibitors", "shape": "dot", "size": 15, "title": "Aromatase Inhibitors"}, {"color": "lightblue", "id": "Thyroid Hormones", "label": "Thyroid Hormones", "shape": "dot", "size": 15, "title": "Thyroid Hormones"}, {"color": "lightblue", "id": "Gonadotropin-Releasing Hormone Analog", "label": "Gonadotropin-Releasing Hormone Analog", "shape": "dot", "size": 15, "title": "Gonadotropin-Releasing Hormone Analog"}, {"color": "lightblue", "id": "Receptors, Progesterone", "label": "Receptors, Progesterone", "shape": "dot", "size": 15, "title": "Receptors, Progesterone"}, {"color": "lightblue", "id": "steroid hormone receptor", "label": "steroid hormone receptor", "shape": "dot", "size": 15, "title": "steroid hormone receptor"}, {"color": "lightblue", "id": "Somatotropin-Releasing Hormone", "label": "Somatotropin-Releasing Hormone", "shape": "dot", "size": 15, "title": "Somatotropin-Releasing Hormone"}, {"color": "lightblue", "id": "Oestrogen deficiency", "label": "Oestrogen deficiency", "shape": "dot", "size": 15, "title": "Oestrogen deficiency"}, {"color": "lightblue", "id": "Conjugated Equine Estrogens", "label": "Conjugated Equine Estrogens", "shape": "dot", "size": 15, "title": "Conjugated Equine Estrogens"}, {"color": "lightblue", "id": "Oestrogen increased", "label": "Oestrogen increased", "shape": "dot", "size": 15, "title": "Oestrogen increased"}, {"color": "lightblue", "id": "Progestogen hormone therapy", "label": "Progestogen hormone therapy", "shape": "dot", "size": 15, "title": "Progestogen hormone therapy"}, {"color": "lightblue", "id": "ESTROGEN USE", "label": "ESTROGEN USE", "shape": "dot", "size": 15, "title": "ESTROGEN USE"}, {"color": "lightblue", "id": "Estrogenic", "label": "Estrogenic", "shape": "dot", "size": 15, "title": "Estrogenic"}, {"color": "lightblue", "id": "Progestational Hormones, Synthetic", "label": "Progestational Hormones, Synthetic", "shape": "dot", "size": 15, "title": "Progestational Hormones, Synthetic"}, {"color": "lightblue", "id": "progesterone, micronized", "label": "progesterone, micronized", "shape": "dot", "size": 15, "title": "progesterone, micronized"}, {"color": "lightblue", "id": "Oestrogen therapy", "label": "Oestrogen therapy", "shape": "dot", "size": 15, "title": "Oestrogen therapy"}, {"color": "lightblue", "id": "Hormone Receptor", "label": "Hormone Receptor", "shape": "dot", "size": 15, "title": "Hormone Receptor"}, {"color": "lightblue", "id": "Placental Hormones", "label": "Placental Hormones", "shape": "dot", "size": 15, "title": "Placental Hormones"}, {"color": "lightblue", "id": "progesterone analog", "label": "progesterone analog", "shape": "dot", "size": 15, "title": "progesterone analog"}, {"color": "lightblue", "id": "Endocrine Disruptors", "label": "Endocrine Disruptors", "shape": "dot", "size": 15, "title": "Endocrine Disruptors"}, {"color": "lightblue", "id": "progesterone receptor positive", "label": "progesterone receptor positive", "shape": "dot", "size": 15, "title": "progesterone receptor positive"}, {"color": "lightblue", "id": "progesterone", "label": "progesterone", "shape": "dot", "size": 15, "title": "progesterone"}, {"color": "lightblue", "id": "Receptors, Progesterone|PGR", "label": "Receptors, Progesterone|PGR", "shape": "dot", "size": 15, "title": "Receptors, Progesterone|PGR"}, {"color": "lightblue", "id": "Gonadal Steroid Hormones", "label": "Gonadal Steroid Hormones", "shape": "dot", "size": 15, "title": "Gonadal Steroid Hormones"}, {"color": "lightblue", "id": "Endocrine substance", "label": "Endocrine substance", "shape": "dot", "size": 15, "title": "Endocrine substance"}, {"color": "lightblue", "id": "Estrogenic effect", "label": "Estrogenic effect", "shape": "dot", "size": 15, "title": "Estrogenic effect"}, {"color": "lightblue", "id": "Estrogen hormone therapy", "label": "Estrogen hormone therapy", "shape": "dot", "size": 15, "title": "Estrogen hormone therapy"}, {"color": "lightblue", "id": "Progesterone Receptor Status", "label": "Progesterone Receptor Status", "shape": "dot", "size": 15, "title": "Progesterone Receptor Status"}, {"color": "lightblue", "id": "Nuclear Hormone Receptors", "label": "Nuclear Hormone Receptors", "shape": "dot", "size": 15, "title": "Nuclear Hormone Receptors"}, {"color": "lightblue", "id": "mullerian-inhibiting hormone", "label": "mullerian-inhibiting hormone", "shape": "dot", "size": 15, "title": "mullerian-inhibiting hormone"}, {"color": "lightblue", "id": "Blood hormone levels", "label": "Blood hormone levels", "shape": "dot", "size": 15, "title": "Blood hormone levels"}, {"color": "lightblue", "id": "Medroxyprogesterone", "label": "Medroxyprogesterone", "shape": "dot", "size": 15, "title": "Medroxyprogesterone"}, {"color": "lightblue", "id": "Environmental Estrogen", "label": "Environmental Estrogen", "shape": "dot", "size": 15, "title": "Environmental Estrogen"}, {"color": "lightblue", "id": "Growth Hormone Receptor|GHR", "label": "Growth Hormone Receptor|GHR", "shape": "dot", "size": 15, "title": "Growth Hormone Receptor|GHR"}, {"color": "lightblue", "id": "estrogens", "label": "estrogens", "shape": "dot", "size": 15, "title": "estrogens"}, {"color": "lightblue", "id": "Anti-Mullerian Hormone Receptor Type II, Human|AMHR2", "label": "Anti-Mullerian Hormone Receptor Type II, Human|AMHR2", "shape": "dot", "size": 15, "title": "Anti-Mullerian Hormone Receptor Type II, Human|AMHR2"}, {"color": "lightblue", "id": "Hormone Therapy", "label": "Hormone Therapy", "shape": "dot", "size": 15, "title": "Hormone Therapy"}, {"color": "lightblue", "id": "Exogenous hormones", "label": "Exogenous hormones", "shape": "dot", "size": 15, "title": "Exogenous hormones"}, {"color": "lightblue", "id": "Estrogen Replacement Therapy", "label": "Estrogen Replacement Therapy", "shape": "dot", "size": 15, "title": "Estrogen Replacement Therapy"}, {"color": "lightblue", "id": "pregnancy hormones", "label": "pregnancy hormones", "shape": "dot", "size": 15, "title": "pregnancy hormones"}, {"color": "lightblue", "id": "Estrogens, Catechol", "label": "Estrogens, Catechol", "shape": "dot", "size": 15, "title": "Estrogens, Catechol"}, {"color": "lightblue", "id": "Increased estrogen level", "label": "Increased estrogen level", "shape": "dot", "size": 15, "title": "Increased estrogen level"}, {"color": "lightblue", "id": "Free testosterone", "label": "Free testosterone", "shape": "dot", "size": 15, "title": "Free testosterone"}, {"color": "lightblue", "id": "Endocrine System Diseases", "label": "Endocrine System Diseases", "shape": "dot", "size": 15, "title": "Endocrine System Diseases"}, {"color": "lightblue", "id": "Antioestrogen therapy", "label": "Antioestrogen therapy", "shape": "dot", "size": 15, "title": "Antioestrogen therapy"}, {"color": "lightblue", "id": "Hormone use", "label": "Hormone use", "shape": "dot", "size": 15, "title": "Hormone use"}, {"color": "lightblue", "id": "testosterone", "label": "testosterone", "shape": "dot", "size": 15, "title": "testosterone"}, {"color": "lightblue", "id": "medroxyprogesterone acetate", "label": "medroxyprogesterone acetate", "shape": "dot", "size": 15, "title": "medroxyprogesterone acetate"}, {"color": "lightblue", "id": "response to hormone stimulus", "label": "response to hormone stimulus", "shape": "dot", "size": 15, "title": "response to hormone stimulus"}, {"color": "lightblue", "id": "Steroidal Estrogen", "label": "Steroidal Estrogen", "shape": "dot", "size": 15, "title": "Steroidal Estrogen"}, {"color": "lightblue", "id": "Total estrogens", "label": "Total estrogens", "shape": "dot", "size": 15, "title": "Total estrogens"}, {"color": "lightblue", "id": "progesterone receptor negative", "label": "progesterone receptor negative", "shape": "dot", "size": 15, "title": "progesterone receptor negative"}, {"color": "lightblue", "id": "Receptors, Progesterone|EREG|ESR1", "label": "Receptors, Progesterone|EREG|ESR1", "shape": "dot", "size": 15, "title": "Receptors, Progesterone|EREG|ESR1"}, {"color": "lightblue", "id": "Estrogens, Conjugated (USP)", "label": "Estrogens, Conjugated (USP)", "shape": "dot", "size": 15, "title": "Estrogens, Conjugated (USP)"}, {"color": "lightblue", "id": "Hormone Receptor Positive Breast Carcinoma", "label": "Hormone Receptor Positive Breast Carcinoma", "shape": "dot", "size": 15, "title": "Hormone Receptor Positive Breast Carcinoma"}, {"color": "lightblue", "id": "Melanocyte stimulating hormone", "label": "Melanocyte stimulating hormone", "shape": "dot", "size": 15, "title": "Melanocyte stimulating hormone"}, {"color": "lightblue", "id": "reproductive hormone", "label": "reproductive hormone", "shape": "dot", "size": 15, "title": "reproductive hormone"}, {"color": "lightblue", "id": "estrogens, conjugated (USP)", "label": "estrogens, conjugated (USP)", "shape": "dot", "size": 15, "title": "estrogens, conjugated (USP)"}, {"color": "lightblue", "id": "Follicle Stimulating Hormone", "label": "Follicle Stimulating Hormone", "shape": "dot", "size": 15, "title": "Follicle Stimulating Hormone"}, {"color": "lightblue", "id": "Hormone manipulation", "label": "Hormone manipulation", "shape": "dot", "size": 15, "title": "Hormone manipulation"}, {"color": "lightblue", "id": "Estrogen Replacements", "label": "Estrogen Replacements", "shape": "dot", "size": 15, "title": "Estrogen Replacements"}, {"color": "lightblue", "id": "Postmenopausal Hormone Replacement Therapy", "label": "Postmenopausal Hormone Replacement Therapy", "shape": "dot", "size": 15, "title": "Postmenopausal Hormone Replacement Therapy"}, {"color": "lightblue", "id": "Antihormone", "label": "Antihormone", "shape": "dot", "size": 15, "title": "Antihormone"}, {"color": "lightblue", "id": "Progesterone level", "label": "Progesterone level", "shape": "dot", "size": 15, "title": "Progesterone level"}, {"color": "lightblue", "id": "Thyroid Hormone Receptor Alpha-1", "label": "Thyroid Hormone Receptor Alpha-1", "shape": "dot", "size": 15, "title": "Thyroid Hormone Receptor Alpha-1"}, {"color": "lightblue", "id": "Estrogen effect", "label": "Estrogen effect", "shape": "dot", "size": 15, "title": "Estrogen effect"}, {"color": "lightblue", "id": "Hormone Receptor Positive", "label": "Hormone Receptor Positive", "shape": "dot", "size": 15, "title": "Hormone Receptor Positive"}, {"color": "lightblue", "id": "estrogen use", "label": "estrogen use", "shape": "dot", "size": 15, "title": "estrogen use"}, {"color": "lightblue", "id": "Corticotropin-Releasing Hormone", "label": "Corticotropin-Releasing Hormone", "shape": "dot", "size": 15, "title": "Corticotropin-Releasing Hormone"}, {"color": "lightblue", "id": "sex hormone-binding globulin receptor", "label": "sex hormone-binding globulin receptor", "shape": "dot", "size": 15, "title": "sex hormone-binding globulin receptor"}, {"color": "lightblue", "id": "Progesterone increased", "label": "Progesterone increased", "shape": "dot", "size": 15, "title": "Progesterone increased"}, {"color": "lightblue", "id": "Adrenal Cortex Hormones", "label": "Adrenal Cortex Hormones", "shape": "dot", "size": 15, "title": "Adrenal Cortex Hormones"}, {"color": "lightblue", "id": "HORMONE REPLACEMENT", "label": "HORMONE REPLACEMENT", "shape": "dot", "size": 15, "title": "HORMONE REPLACEMENT"}, {"color": "lightblue", "id": "ESTROGEN+PROGESTERONE RECEPTOR", "label": "ESTROGEN+PROGESTERONE RECEPTOR", "shape": "dot", "size": 15, "title": "ESTROGEN+PROGESTERONE RECEPTOR"}, {"color": "lightblue", "id": "Thyrotropin-Releasing Hormone", "label": "Thyrotropin-Releasing Hormone", "shape": "dot", "size": 15, "title": "Thyrotropin-Releasing Hormone"}, {"color": "lightblue", "id": "Gonadal Hormones", "label": "Gonadal Hormones", "shape": "dot", "size": 15, "title": "Gonadal Hormones"}, {"color": "lightblue", "id": "Hormone Receptor Test", "label": "Hormone Receptor Test", "shape": "dot", "size": 15, "title": "Hormone Receptor Test"}, {"color": "lightblue", "id": "progesterone receptor B|EREG|ESR1", "label": "progesterone receptor B|EREG|ESR1", "shape": "dot", "size": 15, "title": "progesterone receptor B|EREG|ESR1"}, {"color": "lightblue", "id": "Thyroid Hormone Receptor Beta", "label": "Thyroid Hormone Receptor Beta", "shape": "dot", "size": 15, "title": "Thyroid Hormone Receptor Beta"}, {"color": "lightblue", "id": "Bioavailable testosterone", "label": "Bioavailable testosterone", "shape": "dot", "size": 15, "title": "Bioavailable testosterone"}, {"color": "lightblue", "id": "Testosterone Propionate", "label": "Testosterone Propionate", "shape": "dot", "size": 15, "title": "Testosterone Propionate"}, {"color": "lightblue", "id": "Growth Hormone Receptor", "label": "Growth Hormone Receptor", "shape": "dot", "size": 15, "title": "Growth Hormone Receptor"}, {"color": "lightblue", "id": "parathyroid hormone", "label": "parathyroid hormone", "shape": "dot", "size": 15, "title": "parathyroid hormone"}, {"color": "lightblue", "id": "hormone response element", "label": "hormone response element", "shape": "dot", "size": 15, "title": "hormone response element"}, {"color": "lightblue", "id": "Endocrine Surgical Procedures", "label": "Endocrine Surgical Procedures", "shape": "dot", "size": 15, "title": "Endocrine Surgical Procedures"}, {"color": "lightblue", "id": "Hormone level abnormal", "label": "Hormone level abnormal", "shape": "dot", "size": 15, "title": "Hormone level abnormal"}, {"color": "lightblue", "id": "Endocrine Gland Neoplasms", "label": "Endocrine Gland Neoplasms", "shape": "dot", "size": 15, "title": "Endocrine Gland Neoplasms"}, {"color": "lightblue", "id": "Estrogen-progestin preparation", "label": "Estrogen-progestin preparation", "shape": "dot", "size": 15, "title": "Estrogen-progestin preparation"}, {"color": "lightblue", "id": "PTH-Parathyroid hormone level result", "label": "PTH-Parathyroid hormone level result", "shape": "dot", "size": 15, "title": "PTH-Parathyroid hormone level result"}]);
+                  edges = new vis.DataSet([{"color": "gray", "from": "Estrogens", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Hormones", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Medroxyprogesterone 17-Acetate", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Phytoestrogens", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Hormone replacement therapy", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Endocrine therapy", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Progesterone", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Estrogens, Synthetic", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Sex Hormone-Binding Globulin", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Testosterone", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Steroid hormone", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Estrogen Antagonists", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Aromatase Inhibitors", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Thyroid Hormones", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Gonadotropin-Releasing Hormone Analog", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Receptors, Progesterone", "to": "Female Breast Cancer"}, {"color": "gray", "from": "steroid hormone receptor", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Somatotropin-Releasing Hormone", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Oestrogen deficiency", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Conjugated Equine Estrogens", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Oestrogen increased", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Progestogen hormone therapy", "to": "Female Breast Cancer"}, {"color": "gray", "from": "ESTROGEN USE", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Estrogenic", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Progestational Hormones, Synthetic", "to": "Female Breast Cancer"}, {"color": "gray", "from": "progesterone, micronized", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Oestrogen therapy", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Hormone Receptor", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Placental Hormones", "to": "Female Breast Cancer"}, {"color": "gray", "from": "progesterone analog", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Endocrine Disruptors", "to": "Female Breast Cancer"}, {"color": "gray", "from": "progesterone receptor positive", "to": "Female Breast Cancer"}, {"color": "gray", "from": "progesterone", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Receptors, Progesterone|PGR", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Gonadal Steroid Hormones", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Endocrine substance", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Estrogenic effect", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Estrogen hormone therapy", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Progesterone Receptor Status", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Nuclear Hormone Receptors", "to": "Female Breast Cancer"}, {"color": "gray", "from": "mullerian-inhibiting hormone", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Blood hormone levels", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Medroxyprogesterone", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Environmental Estrogen", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Growth Hormone Receptor|GHR", "to": "Female Breast Cancer"}, {"color": "gray", "from": "estrogens", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Anti-Mullerian Hormone Receptor Type II, Human|AMHR2", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Hormone Therapy", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Exogenous hormones", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Estrogen Replacement Therapy", "to": "Female Breast Cancer"}, {"color": "gray", "from": "pregnancy hormones", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Estrogens, Catechol", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Increased estrogen level", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Free testosterone", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Endocrine System Diseases", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Antioestrogen therapy", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Hormone use", "to": "Female Breast Cancer"}, {"color": "gray", "from": "testosterone", "to": "Female Breast Cancer"}, {"color": "gray", "from": "medroxyprogesterone acetate", "to": "Female Breast Cancer"}, {"color": "gray", "from": "response to hormone stimulus", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Steroidal Estrogen", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Total estrogens", "to": "Female Breast Cancer"}, {"color": "gray", "from": "progesterone receptor negative", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Receptors, Progesterone|EREG|ESR1", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Estrogens, Conjugated (USP)", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Hormone Receptor Positive Breast Carcinoma", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Melanocyte stimulating hormone", "to": "Female Breast Cancer"}, {"color": "gray", "from": "reproductive hormone", "to": "Female Breast Cancer"}, {"color": "gray", "from": "estrogens, conjugated (USP)", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Follicle Stimulating Hormone", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Hormone manipulation", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Estrogen Replacements", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Postmenopausal Hormone Replacement Therapy", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Antihormone", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Progesterone level", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Thyroid Hormone Receptor Alpha-1", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Estrogen effect", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Hormone Receptor Positive", "to": "Female Breast Cancer"}, {"color": "gray", "from": "estrogen use", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Corticotropin-Releasing Hormone", "to": "Female Breast Cancer"}, {"color": "gray", "from": "sex hormone-binding globulin receptor", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Progesterone increased", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Adrenal Cortex Hormones", "to": "Female Breast Cancer"}, {"color": "gray", "from": "HORMONE REPLACEMENT", "to": "Female Breast Cancer"}, {"color": "gray", "from": "ESTROGEN+PROGESTERONE RECEPTOR", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Thyrotropin-Releasing Hormone", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Gonadal Hormones", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Hormone Receptor Test", "to": "Female Breast Cancer"}, {"color": "gray", "from": "progesterone receptor B|EREG|ESR1", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Thyroid Hormone Receptor Beta", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Bioavailable testosterone", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Testosterone Propionate", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Growth Hormone Receptor", "to": "Female Breast Cancer"}, {"color": "gray", "from": "parathyroid hormone", "to": "Female Breast Cancer"}, {"color": "gray", "from": "hormone response element", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Endocrine Surgical Procedures", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Hormone level abnormal", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Endocrine Gland Neoplasms", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Estrogen-progestin preparation", "to": "Female Breast Cancer"}, {"color": "gray", "from": "PTH-Parathyroid hormone level result", "to": "Female Breast Cancer"}]);
+
+                  nodeColors = {};
+                  allNodes = nodes.get({ returnType: "Object" });
+                  for (nodeId in allNodes) {
+                    nodeColors[nodeId] = allNodes[nodeId].color;
+                  }
+                  allEdges = edges.get({ returnType: "Object" });
+                  // adding nodes and edges to the graph
+                  data = {nodes: nodes, edges: edges};
+
+                  var options = {
+    "configure": {
+        "enabled": false
+    },
+    "edges": {
+        "color": {
+            "inherit": true
+        },
+        "smooth": {
+            "enabled": true,
+            "type": "dynamic"
+        }
+    },
+    "interaction": {
+        "dragNodes": true,
+        "hideEdgesOnDrag": false,
+        "hideNodesOnDrag": false
+    },
+    "physics": {
+        "enabled": true,
+        "stabilization": {
+            "enabled": true,
+            "fit": true,
+            "iterations": 1000,
+            "onlyDynamicEdges": false,
+            "updateInterval": 50
+        }
+    }
+};
+
+                  
+
+
+                  
+
+                  network = new vis.Network(container, data, options);
+
+                  
+
+                  
+
+                  
+
+
+                  
+                      network.on("stabilizationProgress", function(params) {
+                          document.getElementById('loadingBar').removeAttribute("style");
+                          var maxWidth = 496;
+                          var minWidth = 20;
+                          var widthFactor = params.iterations/params.total;
+                          var width = Math.max(minWidth,maxWidth * widthFactor);
+                          document.getElementById('bar').style.width = width + 'px';
+                          document.getElementById('text').innerHTML = Math.round(widthFactor*100) + '%';
+                      });
+                      network.once("stabilizationIterationsDone", function() {
+                          document.getElementById('text').innerHTML = '100%';
+                          document.getElementById('bar').style.width = '496px';
+                          document.getElementById('loadingBar').style.opacity = 0;
+                          // really clean the dom element
+                          setTimeout(function () {document.getElementById('loadingBar').style.display = 'none';}, 500);
+                      });
+                  
+
+                  return network;
+
+              }
+              drawGraph();
+        </script>
+    </body>
+</html>

@@ -1,0 +1,4253 @@
+title,factuality_score
+Adriamycin,0.1928072
+Female Breast Cancer,0.1928072
+Doxorubicin,0.1928072
+Cytotoxic agent,0.1928072
+Cyclophosphamide,0.0419580
+Liposomal Doxorubicin,0.1928072
+Anthracyclines,0.0419580
+"Chemotherapy, Adjuvant",0.1928072
+Postoperative chemotherapy,0.1928072
+high-dose chemotherapy,0.0419580
+Chemoprevention,0.1928072
+Chemopreventive Agent,0.1928072
+Chemotherapy-Oncologic Procedure,0.1928072
+Chemotherapeutic agent,0.1928072
+Pre-operative chemotherapy,0.1928072
+Epirubicin,0.1928072
+Cytotoxic Chemotherapy,0.1928072
+Cyclophosphamide,0.1928072
+Cytotoxic agent,0.0419580
+Combination Chemotherapy,0.1928072
+Adriamycin,0.0419580
+Ifosfamide,0.1928072
+Etoposide,0.0419580
+Doxorubicin,0.0419580
+high-dose chemotherapy,0.1928072
+Fluorouracil,0.1928072
+Combination Chemotherapy,0.0379620
+Chemotherapeutic agent,0.0419580
+Epirubicin,0.0099900
+Combination Chemotherapy,0.0419580
+Fluorouracil,0.0419580
+Epirubicin,0.0419580
+high-dose chemotherapy,0.0109890
+Taxol,0.0419580
+cyclophosphamide/fluorouracil/methotrexate protocol,0.1928072
+"Chemotherapy, Adjuvant",0.0099900
+Ifosfamide,0.0419580
+Cytotoxic Chemotherapy,0.0419580
+Cisplatin,0.1928072
+Fluorouracil,0.0379620
+Etoposide,0.0079920
+"Chemotherapy, Adjuvant",0.0379620
+Chemotherapy-Oncologic Procedure,0.0419580
+Mitoxantrone,0.1928072
+Methotrexate,0.0419580
+Methotrexate,0.1928072
+CYCLOPHOSPHAMIDE TREATMENT,0.1928072
+Vincristine,0.0419580
+cyclophosphamide/fluorouracil/methotrexate protocol,0.0379620
+Mitoxantrone,0.0419580
+Cyclophosphamide,0.0079920
+cyclophosphamide/fluorouracil,0.1928072
+Cisplatin,0.0379620
+Cisplatin,0.0419580
+Postoperative chemotherapy,0.0379620
+Carboplatin,0.1928072
+bendamustine,0.0379620
+cyclophosphamide/fluorouracil/methotrexate/prednisone/tamoxifen protocol,0.1928072
+Chlorambucil,0.0419580
+Adriamycin,0.0379620
+cyclophosphamide/doxorubicin/prednisone/teniposide protocol,0.0419580
+Regional Chemotherapy,0.1928072
+Mitoxantrone,0.0379620
+Methotrexate,0.0379620
+Vincristine,0.1928072
+"Chemotherapy, Adjuvant",0.0109890
+Cyclophosphamide,0.0379620
+Cyclophosphamide,0.0109890
+Carboplatin,0.0419580
+cyclophosphamide/doxorubicin/prednisone/teniposide protocol,0.1928072
+High-Dose Chemotherapy with Autologous Stem Cell Transplant,0.0419580
+Taxol,0.1928072
+Anthracyclines,0.1928072
+Intrathecal Chemotherapy,0.1928072
+Cytotoxic agent,0.0109890
+CHEMOTHERAPY CYCLOPHOSPHAMIDE,0.0099900
+Methotrexate,0.0099900
+high-dose chemotherapy,0.0379620
+Photochemotherapy,0.0379620
+Thalidomide,0.1928072
+Etoposide,0.1928072
+Thalidomide,0.0419580
+Radiochemotherapy NOS,0.1928072
+Photochemotherapy,0.1928072
+Oral chemotherapy,0.1928072
+cisplatin liposomal,0.1928072
+Intravenous chemotherapy,0.1928072
+Cyclophosphamide,0.0099900
+cisplatin/doxorubicin/mitomycin protocol,0.1928072
+Doxorubicin,0.0379620
+adriamycinol,0.1928072
+Epirubicin,0.0379620
+chemosensitization/potentiation,0.1928072
+Doxorubicin,0.0099900
+CHEMOTHERAPY CYCLOPHOSPHAMIDE,0.1928072
+cyclophosphamide/doxorubicin/fluorouracil protocol,0.1928072
+Oral chemotherapy,0.0419580
+Epirubicin,0.0079920
+Cytotoxic Chemotherapy,0.0099900
+"Chemotherapy, Adjuvant",0.0059940
+doxorubicin,0.1928072
+Chemo-radiotherapy,0.0059940
+etoposide,0.0289710
+Cytotoxic agent (product),0.1928072
+"Chemotherapy, Adjuvant",0.0089910
+cyclophosphamide,0.1928072
+doxorubicin liposome,0.1928072
+"Chemotherapy, Adjuvant",0.0439560
+low-dose chemotherapy,0.0289710
+Chemotherapy cycle,0.0009990
+cisplatin,0.0439560
+Postoperative chemotherapy,0.0099900
+Neoadjuvant Chemotherapy,0.0439560
+Neoadjuvant Chemotherapy,0.0009990
+doxorubicin,0.0439560
+Neoadjuvant Chemotherapy,0.1928072
+Neoadjuvant Chemotherapy,0.0379620
+"Chemotherapy, Adjuvant",0.0079920
+doxorubicin liposome,0.0289710
+Neoadjuvant Chemotherapy,0.0079920
+epirubicin,0.0439560
+carboplatin,0.0439560
+Neoadjuvant Chemotherapy,0.0099900
+Systemic Chemotherapy,0.1928072
+cyclophosphamide,0.0009990
+Chemotherapy Regimen,0.0019980
+Photochemotherapy,0.0439560
+Docetaxel/Cyclophosphamide,0.1928072
+cisplatin,0.1928072
+Neoadjuvant Chemotherapy,0.0029970
+Carboplatin/Paclitaxel,0.0089910
+Transarterial Chemoembolization,0.0009990
+"Chemotherapy, Adjuvant",0.0009990
+cyclophosphamide,0.0019980
+capecitabine/cyclophosphamide,0.0289710
+Cytotoxic Chemotherapy,0.0439560
+Epirubicin Regimen,0.1928072
+Neoadjuvant Chemotherapy,0.0089910
+Neoadjuvant Chemotherapy,0.0059940
+doxorubicin,0.0009990
+fluorouracil,0.1928072
+Cyclophosphamide Regimen,0.1928072
+Anthracyclines,0.0439560
+Dose-dense Chemotherapy,0.1928072
+doxorubicin,0.0289710
+Neoadjuvant Chemoradiotherapy,0.0009990
+doxorubicin,0.0129870
+carboplatin,0.1928072
+Chemoimmunotherapy,0.0439560
+doxorubicin liposome,0.0089910
+Radiation therapy following chemotherapy,0.1928072
+Metronomic Chemotherapy,0.1928072
+Neoadjuvant Chemotherapy,0.0139860
+Chemotherapy Regimen,0.0439560
+Carboplatin/Etoposide/Melphalan Regimen,0.0009990
+vincristine,0.1928072
+Pre-operative chemotherapy,0.0439560
+"Chemoradiotherapy, Adjuvant",0.1928072
+Chemoembolization,0.0289710
+Dose-dense Chemotherapy,0.0439560
+Dose-dense Chemotherapy,0.0089910
+cyclophosphamide,0.0089910
+carmustine/cytarabine/etoposide/melphalan regimen,0.1928072
+carboplatin,0.0089910
+high-dose chemotherapy,0.0099900
+4'-deoxydoxorubicin,0.1928072
+cyclophosphamide/fluorouracil/methotrexate/prednisone protocol,0.0419580
+cyclophosphamide/fluorouracil/methotrexate/prednisone protocol,0.1928072
+cyclophosphamide/fluorouracil,0.0099900
+Chemotherapy-Oncologic Procedure,0.0109890
+Cytotoxic Chemotherapy,0.0379620
+Anthracyclines,0.0379620
+Doxorubicin,0.0109890
+Liposomal Doxorubicin,0.0419580
+Chemotherapeutic agent,0.0009990
+Chemopreventive Agent,0.0419580
+Cisplatin,0.0009990
+CHEMOTHERAPY DOXORUBICIN,0.1928072
+high-dose chemotherapy,0.0079920
+"Chemotherapy, Adjuvant",0.0419580
+Methotrexate,0.0109890
+Chemotherapy-Oncologic Procedure,0.0099900
+Myeloablative Chemotherapy,0.1928072
+Taxol,0.0379620
+Chemotherapy-Oncologic Procedure,0.0379620
+Carboplatin,0.0000000
+Doxorubicin Hydrochloride,0.1928072
+1-hexylcarbamoyl-5-fluorouracil,0.1928072
+BR96-doxorubicin immunoconjugate,0.0419580
+Fluorouracil,0.0109890
+Epirubicin,0.0109890
+Taxol,0.0439560
+doxorubicin liposome,0.0439560
+Cytotoxic Chemotherapy,0.0289710
+"Chemotherapy, Adjuvant",0.0000000
+Cyclophosphamide/Epirubicin,0.0439560
+cyclophosphamide,0.0079920
+Carboplatin/Paclitaxel,0.0439560
+doxorubicin,0.0109890
+Anthracyclines,0.0289710
+Cyclophosphamide Regimen,0.0289710
+Cyclophosphamide therapy,0.0289710
+carboplatin,0.0019980
+Chemotherapy Regimen,0.1928072
+Anthracyclines,0.0009990
+Neoadjuvant Chemotherapy,0.0000000
+cyclophosphamide,0.0439560
+Carboplatin/Paclitaxel/Trastuzumab Regimen,0.1928072
+Neoadjuvant Chemotherapy,0.0109890
+Liposomal Doxorubicin Regimen,0.1928072
+Antineoplastic Combined Chemotherapy Protocols,0.1928072
+Chemotherapy Drugs Adminstered,0.1928072
+cyclophosphamide,0.0139860
+bendamustine,0.1928072
+bendamustine,0.0289710
+Chemotherapy cycle,0.1928072
+Neoadjuvant Chemotherapy,0.0019980
+Chemoimmunotherapy,0.1928072
+Chemotherapy Regimen,0.0089910
+epirubicin,0.1928072
+fluorouracil,0.0059940
+Anthracyclines,0.0059940
+carboplatin/gemcitabine,0.0439560
+fluorouracil,0.0019980
+Chemoradiotherapy,0.1928072
+Chemoprevention,0.0000000
+Metronomic Chemotherapy,0.0289710
+doxorubicin liposome,0.0019980
+doxorubicin,0.0099900
+"Chemotherapy, Adjuvant",0.0139860
+doxorubicin-HPMA conjugate,0.1928072
+Fluorouracil,0.0079920
+doxorubicin-heparin,0.1928072
+Carboplatin,0.0099900
+Chlorambucil,0.1928072
+1-(phenoxycarbonyloxymethyl)-5-fluorouracil,0.1928072
+Cisplatin,0.0109890
+Fluorouracil,0.0099900
+cyclophosphamide/fluorouracil,0.0419580
+cyclophosphamide/fluorouracil/methotrexate protocol,0.0419580
+Doxorubicin Hydrochloride,0.0419580
+cisplatin/cyclophosphamide/doxorubicin/etoposide chemotherapy protocol,0.1928072
+bendamustine,0.0419580
+Chemotherapy cycle,0.0379620
+Vincristine Sulfate,0.1928072
+Chemoembolisation,0.1928072
+Chemotherapeutic agent,0.0099900
+Chemotherapy-Oncologic Procedure,0.0000000
+Etoposide,0.0379620
+doxorubicin/fluorouracil/mitomycin protocol,0.1928072
+fluorouracil/leucovorin calcium/mitoxantrone,0.0379620
+Vincristine,0.0379620
+Intrathecal Chemotherapy,0.0419580
+Cisplatin,0.0079920
+Chemoembolisation,0.0419580
+Pre-operative chemotherapy,0.0009990
+Pre-operative chemotherapy,0.0089910
+Chemo-radiotherapy,0.1928072
+cyclophosphamide,0.0059940
+epirubicin,0.0019980
+fluorouracil,0.0009990
+cisplatin,0.0379620
+doxorubicin,0.0379620
+Chemotherapy Regimen,0.0289710
+Systemic Chemotherapy,0.0439560
+Pre-operative chemotherapy,0.0099900
+doxorubicin liposome,0.0079920
+Electrochemotherapy,0.1928072
+cyclophosphamide/doxorubicin protocol,0.0000000
+epirubicin,0.0059940
+doxorubicin,0.0000000
+Cyclophosphamide therapy,0.1928072
+Gemcitabine-Taxol Regimen,0.0289710
+Concurrent Chemotherapy,0.1928072
+Anthracyclines,0.0089910
+Cyclophosphamide/Paclitaxel,0.1928072
+etoposide,0.0439560
+High Dose Chemotherapy,0.0439560
+methotrexate,0.1928072
+fluorouracil,0.0439560
+Metronomic Chemotherapy,0.0019980
+Combination Chemotherapy,0.0109890
+cyclophosphamide/fluorouracil/methotrexate protocol,0.0099900
+Fluorouracil,0.0049950
+Regional Chemotherapy,0.0379620
+Doxorubicin,0.0079920
+Epirubicin Hydrochloride,0.1928072
+Mitoxantrone Hydrochloride,0.1928072
+Myeloablative Chemotherapy,0.0379620
+Carboplatin/Paclitaxel,0.0019980
+cyclophosphamide,0.0379620
+cyclophosphamide,0.0000000
+Oral chemotherapy,0.0289710
+Antineoplastic Combined Chemotherapy Protocols,0.0439560
+doxorubicin liposome,0.0099900
+Chemoradiotherapy,0.0439560
+Carboplatin/Paclitaxel,0.1928072
+Dose-dense Chemotherapy,0.0059940
+cyclophosphamide/methotrexate/prednisone/vincristine protocol,0.1928072
+cyclophosphamide,0.0289710
+carboplatin,0.0289710
+Anthracyclines,0.0099900
+Concurrent Chemotherapy,0.0439560
+Chemotherapy Regimen,0.0059940
+Chemoembolization,0.1928072
+doxorubicin,0.0019980
+"Chemotherapy, Adjuvant",0.0049950
+Epirubicin Injectable Solution,0.1928072
+Anthracyclines,0.0109890
+Ifosfamide,0.0099900
+Pre-operative chemotherapy,0.0079920
+4'-deoxydoxorubicin,0.0419580
+Photochemotherapy,0.0419580
+"Chemotherapy, Adjuvant",0.0129870
+Hepatic arterial infusion chemotherapy,0.0289710
+"Chemotherapy, single agent",0.0289710
+High Dose Chemotherapy,0.1928072
+Cytotoxic Chemotherapy,0.0059940
+Preoperative Chemotherapy,0.0009990
+Metronomic Chemotherapy,0.0439560
+Adriamycin,0.0439560
+cyclophosphamide/doxorubicin protocol,0.1928072
+Myelosuppressive Chemotherapy,0.0289710
+doxorubicin,0.0089910
+Oral chemotherapy,0.0019980
+carboplatin,0.0009990
+Postoperative chemotherapy,0.0439560
+Myelosuppressive Chemotherapy,0.1928072
+Photochemotherapy,0.0139860
+Carboplatin,0.0379620
+chemoprotection,0.1928072
+Ifosfamide,0.0379620
+cyclophosphamide/doxorubicin protocol,0.0419580
+cyclophosphamide/doxorubicin/fluorouracil protocol,0.0419580
+4'-deoxy-4'-iododoxorubicin,0.0419580
+Miscellaneous Chemoprotective Agent,0.0419580
+Adriamycin,0.0099900
+Cisplatin,0.0000000
+etoposide phosphate,0.1928072
+Chemotherapy Regimen,0.0009990
+Adriamycin,0.0009990
+Chemotherapy Regimen,0.0000000
+Doxorubicin Regimen,0.0439560
+bendamustine,0.0019980
+Postoperative chemotherapy,0.0139860
+doxorubicin,0.0079920
+methotrexate,0.0439560
+Neoadjuvant Chemotherapy,0.0129870
+"Chemotherapy, single agent",0.0089910
+Photochemotherapy,0.0289710
+High Dose Chemotherapy,0.0079920
+Systemic Chemotherapy,0.0059940
+Postoperative chemotherapy,0.0049950
+Radiochemotherapy NOS,0.0049950
+chemoprotection,0.0419580
+Combination Chemotherapy,0.0079920
+Chlorambucil,0.0379620
+Taxol,0.0099900
+Chemoprevention,0.0419580
+Chemotherapy cycle,0.0099900
+Oral chemotherapy,0.0379620
+Chemotherapy-Oncologic Procedure,0.0079920
+Doxorubicin,0.0129870
+cyclophosphamide/fluorouracil,0.0379620
+Regional Chemotherapy,0.0419580
+Chemotherapy care education,0.1928072
+Cytotoxic Chemotherapy,0.0079920
+Anthracyclines,0.0000000
+Lyso-Thermosensitive Liposome Doxorubicin,0.0000000
+Cisplatin/Gemcitabine,0.0439560
+fluorouracil,0.0139860
+Hepatic arterial infusion chemotherapy,0.1928072
+cyclophosphamide,0.0129870
+cyclophosphamide/doxorubicin protocol,0.0089910
+Neoadjuvant Chemoradiotherapy,0.0109890
+Chemotherapy cycle,0.0419580
+Methotrexate,0.0079920
+Photochemotherapy,0.0109890
+Etoposide,0.0099900
+Chemopreventive Agent,0.0379620
+Adriamycin,0.0109890
+Cytotoxic agent,0.0379620
+Chemotherapeutic agent,0.0379620
+Adriamycin,0.0079920
+Chemoprevention,0.0379620
+Miscellaneous Chemoprotective Agent,0.1928072
+Intravenous chemotherapy,0.0419580
+cyclophosphamide/doxorubicin/fluorouracil protocol,0.0379620
+Liposomal Doxorubicin,0.0379620
+Doxorubicin,0.0009990
+vincristine liposomal,0.0419580
+Chemotherapy,0.1928072
+Cytotoxic Chemotherapy,0.0019980
+cyclophosphamide,0.0099900
+Neoadjuvant Chemotherapy,0.0289710
+doxorubicin,0.0139860
+Biochemotherapy,0.0059940
+Adriamycin-Cytoxan Regimen,0.1928072
+epirubicin,0.0139860
+"Chemotherapy, Adjuvant",0.0019980
+Chemopreventive Agent,0.0129870
+doxorubicin hydrochloride liposome,0.0000000
+Antineoplastic Chemotherapy Protocols,0.1928072
+Intravenous chemotherapy,0.0009990
+anastrozole,0.1928072
+ERBB2 gene|ERBB2,0.1928072
+antagonists,0.1928072
+Tannic Acid,0.1928072
+docetaxel,0.0419580
+UCN 01,0.0419580
+taxane,0.0419580
+Selective Estrogen Receptor Modulators,0.1928072
+Prolactin|PRL,0.1928072
+Treatment Protocols,0.1928072
+everolimus,0.0419580
+mesylate,0.0419580
+Toremifene,0.0419580
+Taxanes,0.1928072
+halichondrin B,0.0419580
+Screening mammography,0.1928072
+Toremifene,0.1928072
+Molecular Target,0.1928072
+soy protein isolate,0.1928072
+pertuzumab,0.0419580
+Paclitaxel,0.1928072
+taxane,0.1928072
+bortezomib,0.1928072
+Hydroxychloroquine,0.1928072
+Estrogen Antagonists,0.1928072
+Placebos,0.0419580
+educational intervention,0.1928072
+Agent,0.1928072
+"EPIDERMAL GROWTH FACTOR, HUMAN",0.1928072
+Detection,0.1928072
+resveratrol,0.1928072
+Cancer Treatment,0.1928072
+Oleic Acid,0.1928072
+amrubicin,0.0419580
+zoledronic acid,0.0419580
+deguelin,0.1928072
+exemestane,0.1928072
+intervention program,0.1928072
+Pharmacologic Substance,0.1928072
+"2,5-dichloro-4-bromophenol",0.1928072
+zoledronic acid,0.1928072
+Ovarian Stimulation,0.1928072
+Gonadotropins,0.1928072
+Treatment Protocols,0.0419580
+Paclitaxel,0.0419580
+Thioridazine,0.1928072
+Breast Cancer Treatment,0.1928072
+capecitabine,0.0419580
+fluoropyrimidine,0.0419580
+Vaccination,0.0419580
+Sirolimus (substance),0.1928072
+Supplementation,0.1928072
+Simvastatin,0.0109890
+peer intervention,0.1928072
+docetaxel,0.1928072
+Anti-Progestin,0.1928072
+Prolactin,0.1928072
+Topoisomerase 1 inhibitor,0.0419580
+"7,3'-dihydroxy-4'-methoxyisoflavone",0.1928072
+letrozole,0.1928072
+mTOR Inhibitor,0.1928072
+piperine,0.1928072
+artemisinine,0.1928072
+Diphosphonates,0.1928072
+Induced Hyperthermia,0.1928072
+Mammaplasty,0.1928072
+Leuprolide,0.1928072
+Endostatins,0.1928072
+Agent,0.0419580
+Vinca Alkaloids,0.1928072
+Metformin,0.1928072
+plasmepsin II,0.1928072
+Taxanes,0.0419580
+ixabepilone,0.0419580
+Retinoids,0.1928072
+artesunate,0.1928072
+capecitabine,0.1928072
+resistance education,0.1928072
+Prevention,0.1928072
+everolimus,0.1928072
+small molecule,0.1928072
+Disulfiram,0.1928072
+Curcumin,0.1928072
+pertuzumab,0.1928072
+Lead compound,0.1928072
+hepatic arterial infusion,0.1928072
+Advance,0.1928072
+Therapeutic agent (substance),0.1928072
+Berberine,0.1928072
+"2,2'-azino-di-(3-ethylbenzothiazoline)-6-sulfonic acid",0.1928072
+Dalteparin,0.0419580
+17-Ketosteroids,0.1928072
+Vaccination,0.1928072
+trichostatin A,0.1928072
+Antimetabolites,0.0419580
+Leukapheresis,0.1928072
+Tubulin Binding Agent,0.0419580
+Transsphenoidal hypophysectomy,0.0419580
+gemcitabine,0.1928072
+Induction,0.1928072
+Fadrozole Monohydrochloride,0.1928072
+Interferon-beta,0.1928072
+Mitomycin,0.1928072
+Epidermal Growth Factor Receptor|EGFR,0.1928072
+Bilateral adrenalectomy,0.0419580
+amidronate,0.1928072
+Intramedullary Nailing,0.1928072
+Leucovorin,0.0419580
+Antibodies,0.0419580
+chloroquine diphosphate,0.1928072
+Amino Acids,0.1928072
+Docosahexaenoic Acids,0.1928072
+Fenretinide,0.1928072
+Filgrastim,0.1928072
+vinorelbine,0.0419580
+Hypophysectomy,0.1928072
+Taxoids,0.0419580
+Treatment Protocols,0.0379620
+Adrenalectomy,0.0419580
+Hypophysectomy,0.0419580
+Melphalan|PAM,0.1928072
+G207,0.1928072
+Trifluoperazine,0.0419580
+Levamisole,0.1928072
+Hormones,0.1928072
+Mitomycin,0.0419580
+Masteril,0.1928072
+dietary intervention,0.1928072
+edatrexate,0.1928072
+rhizoxin,0.1928072
+Clodronate,0.1928072
+epigallocatechin gallate,0.1928072
+Succinates,0.1928072
+antitumor agent,0.1928072
+Folic Acid,0.1928072
+METHYLATE,0.1928072
+Nolvadex,0.0419580
+Prodrugs,0.1928072
+Argipressin,0.1928072
+Placebos,0.1928072
+BLUE DYE,0.1928072
+Guide device,0.0419580
+Premarin,0.1928072
+Boards,0.1928072
+Ovariectomy,0.1928072
+PS-K,0.1928072
+Aspiration-action,0.1928072
+fluoropyrimidine,0.1928072
+Intra-Arterial Infusions,0.0109890
+Carmustine,0.1928072
+Melatonin,0.1928072
+bisantrene,0.0419580
+Mitolactol,0.1928072
+Citrate,0.0419580
+disorder control,0.1928072
+Radicals (chemistry),0.1928072
+Corticotropin|POMC,0.1928072
+CGS-16949A,0.0419580
+"Contraceptives, Oral",0.1928072
+Vindesine,0.0419580
+Dextran,0.1928072
+dihydroxy-vitamin D3,0.1928072
+Aminoglutethimide,0.1928072
+prednisolone,0.1928072
+Implants,0.1928072
+Pirarubicin,0.1928072
+formestane,0.1928072
+Serum cortisol,0.1928072
+mepitiostane,0.1928072
+artery infusion,0.1928072
+Polyamines,0.1928072
+Aclarubicin,0.1928072
+Antipyrine,0.1928072
+Dexamethasone,0.0419580
+Progesterone,0.1928072
+Testosterone,0.1928072
+Combination Drug Therapy,0.0419580
+Estrogen Antagonists,0.0419580
+CGS-16949A,0.1928072
+Dopamine,0.1928072
+Dipyridamole,0.0419580
+agonists,0.1928072
+chlorozotocin,0.1928072
+treatment method,0.1928072
+particle,0.1928072
+Mitogens,0.1928072
+Steroids,0.1928072
+Oral contraception,0.1928072
+Aminoglutethimide,0.0419580
+Thiotepa,0.1928072
+vorozole,0.1928072
+Adrenalectomy,0.1928072
+Dehydroepiandrosterone Sulfate,0.1928072
+Castration,0.1928072
+Alendronate,0.1928072
+Ftorafur,0.1928072
+Serpins,0.1928072
+Free thyroxin,0.1928072
+Prednisone,0.1928072
+Calcitonin,0.1928072
+CAP combination,0.0419580
+Etiocholanolone,0.1928072
+alpha 1-Antitrypsin,0.1928072
+Amsacrine,0.1928072
+oxaliplatin,0.1928072
+Alternative Therapies,0.1928072
+Androstenedione,0.1928072
+Sterically Stabilized Liposome,0.0419580
+Dietary Modification,0.1928072
+Idarubicin,0.1928072
+Vitamin E,0.1928072
+vinorelbine,0.1928072
+pemetrexed,0.1928072
+Isoflavones,0.1928072
+Iodine-131,0.1928072
+Goserelin,0.0419580
+RC 160,0.0419580
+Somatomedins,0.1928072
+Histone Deacetylase Inhibitor,0.1928072
+Frame,0.1928072
+gusperimus,0.0419580
+Urokinase|PLAU|PRAP1,0.1928072
+Hemibody Irradiation,0.0419580
+Gossypol,0.0419580
+gemcitabine,0.0419580
+"Oncologic procedure, NOS",0.1928072
+Paclitaxel,0.0379620
+camptothecin-11,0.0419580
+anthrapyrazole,0.1928072
+Triiodothyronine,0.1928072
+Pericardiocentesis,0.1928072
+triphenylethylene,0.1928072
+Thiobarbituric Acid Reactive Substances,0.0379620
+Peptichemio,0.1928072
+OK-432,0.1928072
+Oxidants,0.1928072
+Melphalan,0.1928072
+Interferon-beta,0.0419580
+Ibuprofen,0.1928072
+docetaxel,0.0109890
+Urokinase|PLG,0.1928072
+Treatment Protocols,0.0109890
+Beta Carotene,0.1928072
+Futraful,0.1928072
+Stimulator,0.1928072
+Interferon-alpha,0.0419580
+Toremifene,0.0099900
+Ovarian ablation,0.0099900
+Imidazole,0.0419580
+Estrogen Antagonists,0.0379620
+CEF regimen,0.1928072
+Antioxidants,0.1928072
+"Antibodies, Bispecific",0.0419580
+ukrain,0.1928072
+Melphalan,0.0419580
+TRYPSIN,0.0000000
+Reinfusion,0.1928072
+azetepa,0.1928072
+capecitabine,0.0379620
+Analog,0.0379620
+2-cyclopentyl-5-(5-isoquinolylsulfonyl)-6-nitro-1H-benzo(D)imidazole,0.1928072
+Computer Aided Detection Systems,0.1928072
+Blood Component Removal,0.0099900
+Scalp cooling,0.1928072
+LU 103793|BCAM,0.0419580
+Xeloda,0.0419580
+Continuous infusion,0.1928072
+Sterically Stabilized Liposome,0.1928072
+Hepatectomy,0.0419580
+fulvestrant,0.1928072
+Intra-Arterial Infusions,0.1928072
+vinorelbine,0.0109890
+miltefosine,0.1928072
+ZD1839,0.1928072
+doxifluridine,0.1928072
+exemestane,0.0419580
+Irrigation,0.1928072
+"Antibodies, Bispecific",0.1928072
+Androgens,0.1928072
+Estrogenic,0.1928072
+Doxil,0.0419580
+intradermal injection,0.1928072
+Diphosphonates,0.0419580
+Ibandronate,0.1928072
+gefitinib,0.1928072
+Gonadal Steroid Hormones,0.1928072
+Urokinase,0.1928072
+Pharmacological Treatment,0.1928072
+Abraxane,0.0419580
+"Hip Replacement, Total",0.0419580
+Treatment Guidelines,0.1928072
+butein,0.1928072
+Taxotere,0.0419580
+Carotenoids,0.1928072
+cabergoline,0.0419580
+667 coumate,0.1928072
+Histone Deacetylase,0.1928072
+Methylene blue,0.1928072
+Phytate,0.1928072
+Paclitaxel,0.0109890
+Mitogen-Activated Protein Kinase Inhibitor,0.1928072
+Epothilones,0.1928072
+Anti-Anxiety Agents,0.0419580
+Leptin|LEP,0.1928072
+arsenic trioxide,0.1928072
+Psychosocial care,0.1928072
+breast cancer prevention,0.1928072
+Tretinoin,0.1928072
+Estrogen Receptor Modulators,0.1928072
+Molecular Target,0.0419580
+Automation Systems,0.1928072
+Sitosterol,0.1928072
+letrozole,0.0419580
+Tumor Antigens,0.1928072
+Alternative medicine preparation,0.1928072
+Protein-tyrosine kinase inhibitor,0.0419580
+Pituitary Hormones,0.1928072
+Erythropoietin|EPO,0.0419580
+Goserelin,0.1928072
+Sulfhydryl Compounds,0.1928072
+"Exercise, Aerobic",0.1928072
+ixabepilone,0.1928072
+nimesulide,0.1928072
+Proteasome inhibitor,0.1928072
+Reflexology,0.1928072
+FAVOR,0.1928072
+Thrombin,0.1928072
+Hormones,0.0099900
+Centchroman,0.1928072
+Contraceptive methods,0.1928072
+Adrenergic Antagonists,0.1928072
+Glycol,0.1928072
+Chondroitin Sulfates,0.1928072
+Epothilones,0.0419580
+Epidermal growth factor receptor inhibitor,0.1928072
+Antiemetics,0.1928072
+Tissue Expanders,0.1928072
+Cannabinoids,0.1928072
+"2,3-bis(3'-hydroxybenzyl)butyrolactone",0.1928072
+Melatonin,0.0419580
+tetramethylpyrazine,0.1928072
+phenethyl isothiocyanate,0.1928072
+Pain management,0.0419580
+Gold,0.1928072
+Heparin,0.0419580
+cetrorelix,0.1928072
+oxaliplatin,0.0419580
+scriptaid,0.1928072
+protoporphyrin IX,0.1928072
+Microscope,0.1928072
+Vitamin D,0.1928072
+fulvestrant,0.0419580
+Avastin,0.1928072
+methylselenic acid,0.1928072
+Cordycepin,0.1928072
+Superoxide Dismutase,0.1928072
+Relate,0.1928072
+dihydroxyacetone sulfate,0.1928072
+treatment method,0.0419580
+Recombinant Erythropoietin|EREG|ESR1,0.1928072
+sorafenib,0.1928072
+sorafenib,0.0419580
+duloxetine,0.1928072
+Innovative Therapies,0.0419580
+curdione,0.1928072
+autohypnosis,0.1928072
+Analog,0.1928072
+gemcitabine,0.0379620
+PD 0332991,0.1928072
+resistin|RETN,0.1928072
+Polymers,0.1928072
+venlafaxine,0.1928072
+dehydroepiandrosterone,0.1928072
+ERBB2 gene|ERBB2,0.0419580
+pristimerin,0.1928072
+polyetheretherketone,0.1928072
+Paraffin,0.1928072
+Environmental Estrogen,0.1928072
+pegfilgrastim,0.1928072
+Polysaccharides,0.1928072
+sphingosine 1-phosphate,0.0419580
+Insulin|INS,0.1928072
+Anthracycline Antibiotics,0.1928072
+lobaplatin,0.1928072
+suberoylanilide hydroxamic acid,0.1928072
+Recombinant Transforming Growth Factor-Beta 1,0.1928072
+Hydrocortisone,0.1928072
+baicalein,0.1928072
+Compete,0.1928072
+lenograstim,0.1928072
+Glucose,0.1928072
+Dental Implants,0.1928072
+Ivermectin,0.1928072
+osthol,0.0419580
+Carglumic acid,0.1928072
+RAD 001,0.1928072
+cancer rehabilitation,0.1928072
+Prodrugs,0.0419580
+Digoxin,0.1928072
+tipifarnib,0.0419580
+Caloric Restriction,0.1928072
+Sensors,0.1928072
+Fertility care,0.1928072
+Erianin,0.1928072
+Lactate,0.1928072
+Hyaluronic Acid,0.0419580
+Drug Combinations,0.1928072
+Spiritual Therapies,0.1928072
+fraxetin,0.1928072
+gambogic acid,0.1928072
+Therapeutic agent (substance),0.0419580
+Clozapine,0.1928072
+Thyroid Hormones,0.1928072
+Chitosan,0.1928072
+oridonin,0.1928072
+human leukocyte interferon|IFNA1,0.1928072
+perfluoropentane,0.1928072
+Mammaplasty,0.0109890
+heme 1,0.1928072
+Physical restraint equipment,0.1928072
+Breast neoplasm screening,0.1928072
+Preservative free ingredient,0.1928072
+beta-lapachone,0.1928072
+Femara,0.1928072
+Oncolytic Virotherapy,0.1928072
+Benzodiazepines,0.1928072
+arzoxifene,0.1928072
+ferrocene,0.1928072
+Emotional support,0.1928072
+Detection,0.0419580
+Saline,0.0419580
+catechol,0.1928072
+Epidermal growth factor receptor inhibitor,0.0419580
+peer intervention,0.0419580
+Tocotrienols,0.0419580
+puerarin,0.1928072
+Ibandronate,0.0419580
+Benzimidazoles,0.1928072
+Estriol,0.1928072
+ORALIT,0.1928072
+"Linoleic Acids, Conjugated",0.1928072
+Fluorodeoxyglucose F18,0.1928072
+Navelbine,0.1928072
+reboxetine,0.1928072
+Enzymes,0.1928072
+Vitamins,0.1928072
+Mammaplasty,0.0079920
+Melphalan,0.0379620
+cancer care,0.1928072
+Gonadorelin|GNRH1,0.1928072
+Tegafur,0.0419580
+Leucovorin,0.1928072
+Vinca Alkaloids,0.0419580
+Termination of pregnancy,0.1928072
+letrozole 2.5 MG,0.1928072
+Repositioning,0.1928072
+rituximab,0.0419580
+VP-16,0.0419580
+ibandronic acid,0.1928072
+Prophylactic treatment,0.0419580
+OGX-011,0.0419580
+erlotinib,0.1928072
+5-aza-2'-deoxycytidine,0.1928072
+mesylate,0.1928072
+"Rehabilitation, physical",0.1928072
+Microbubbles,0.1928072
+Bombesin Antagonist,0.1928072
+Sponges,0.1928072
+Inosine,0.1928072
+Induction of neuromuscular blockade,0.1928072
+Blood Transfusion,0.1928072
+Agent,0.0379620
+Bilateral oophorectomy,0.0419580
+Ondansetron,0.1928072
+Induction,0.0419580
+vinorelbine,0.0379620
+Cyclosporine,0.1928072
+troglitazone,0.0419580
+tibolone,0.1928072
+Collimator,0.1928072
+R115777,0.1928072
+Folic Acid Antagonists,0.0419580
+Indocyanine Green,0.1928072
+SSM,0.1928072
+Bupropion,0.1928072
+celecoxib,0.0419580
+PET protocol,0.1928072
+Triptorelin,0.1928072
+Agent,0.0109890
+Symptom Management,0.1928072
+PHYSICAL PERFORMANCE,0.0099900
+Choline,0.1928072
+Systemic Therapy,0.0099900
+Multivitamin preparation,0.1928072
+bortezomib,0.0419580
+Dolasetron,0.1928072
+triciribine,0.1928072
+"Cam, topical lotion",0.1928072
+2-(4-morpholinoanilino)-6-cyclohexylaminopurine,0.1928072
+Selective Estrogen Receptor Modulators,0.0419580
+Folate,0.1928072
+gefitinib,0.0419580
+Antiperspirants,0.1928072
+Charts,0.1928072
+B mode ultrasound,0.0079920
+imatinib,0.0419580
+"Nanotubes, Carbon",0.1928072
+celecoxib,0.1928072
+orlistat,0.1928072
+olanzapine,0.1928072
+Contraception counseling,0.1928072
+Advance,0.0419580
+Imaging Techniques,0.1928072
+Biological treatment,0.0419580
+vinflunine,0.1928072
+Thyrotropin,0.1928072
+Carnitine,0.1928072
+amsonic acid,0.1928072
+Genistein,0.1928072
+Dexamethasone,0.1928072
+tetrathiomolybdate,0.1928072
+Thiotepa,0.0419580
+Acetylcysteine,0.1928072
+Leads,0.1928072
+Gastrin|GAST,0.1928072
+Recombinant human granulocyte colony stimulating factor,0.0419580
+Etidronate,0.1928072
+CYTOKERATINS,0.1928072
+Probes,0.1928072
+Copper,0.1928072
+Weight maintenance regimen,0.1928072
+FEC protocol,0.1928072
+POMEGRANATE FRUIT EXTRACT,0.1928072
+docetaxel,0.0079920
+Massage,0.1928072
+Freund's Adjuvant,0.1928072
+Pleurodesis,0.0419580
+Metformin,0.0419580
+lobaplatin,0.0419580
+Liposomes,0.1928072
+Active Ingredients,0.1928072
+Muscular strength development exercise,0.1928072
+Hill Brand 2 of Fluocinolone Acetonide,0.1928072
+Stress management,0.1928072
+Recombinant Transforming Growth Factor-Beta 1|TGFB1,0.1928072
+aprepitant,0.1928072
+Amitriptyline,0.1928072
+Paclitaxel,0.0079920
+Dexrazoxane,0.0099900
+Operation on liver,0.0419580
+Inositol,0.1928072
+"Phantoms, Imaging",0.1928072
+Zea mays preparation,0.1928072
+docetaxel,0.0099900
+Dietary Supplementation,0.1928072
+temozolomide,0.1928072
+Iron,0.1928072
+irinotecan,0.0419580
+Prevention,0.0419580
+pertuzumab,0.0109890
+daidzein,0.1928072
+bicalutamide,0.1928072
+Fluimucil|XK|NLRP1,0.1928072
+pemetrexed,0.0419580
+Mammaplasty,0.0419580
+Camellia sinensis extract,0.0099900
+"Breast Prosthesis, Internal",0.1928072
+Oxytocin,0.1928072
+RPI.4610,0.0419580
+Neulasta,0.1928072
+steviol,0.1928072
+tegafur-uracil,0.1928072
+Clinical Treatment,0.1928072
+Pigment,0.1928072
+Hypnosis,0.1928072
+Communication interventions,0.1928072
+Aspirin,0.1928072
+INHIBIN,0.1928072
+Morphine,0.1928072
+Caelyx,0.1928072
+Augmentation mammoplasty,0.1928072
+Fadrozole,0.0419580
+maspin|SERPINB5,0.1928072
+Psychosocial care,0.0419580
+Pain management,0.1928072
+Moxifloxacin hydrochloride,0.1928072
+Epidermal Growth Factor Receptor,0.1928072
+Retreatment,0.1928072
+zoledronic acid,0.0079920
+Cholecalciferol,0.1928072
+anastrozole,0.0419580
+osthol,0.1928072
+Agent,0.0129870
+Hyaluronic Acid,0.1928072
+erlotinib,0.0419580
+Antimetastatic Agent,0.1928072
+Protein-tyrosine kinase inhibitor,0.1928072
+Citrates,0.1928072
+lingzhi,0.0419580
+Cations,0.1928072
+Metric,0.1928072
+"Drugs, Investigational",0.1928072
+mind-body interventions,0.1928072
+stepholidine,0.1928072
+cepharanthine,0.1928072
+Opioids,0.1928072
+Luteolin,0.1928072
+Proanthocyanidins,0.0419580
+Health education - diet,0.1928072
+Antibiotic Prophylaxis,0.1928072
+"1-(2,4-dichlorobenzyl)indazole-3-carbohydrazide",0.0439560
+everolimus,0.0089910
+Mechlorethamine,0.1928072
+Probes,0.0419580
+systemic administration,0.0089910
+Operation on breast,0.1928072
+verapamil,0.1928072
+Ascorbic Acid,0.0419580
+Lesion Localization Wires,0.0000000
+Tubulin Modulators,0.0289710
+Thoracoplasty,0.1928072
+capecitabine,0.0089910
+Lipids,0.0439560
+EndoTAG-1,0.0439560
+taxane,0.0289710
+Taxanes,0.0289710
+tao hong si wu decoction,0.1928072
+opium alkaloids and derivative combination cough suppressants,0.1928072
+Antibodies,0.1928072
+atezolizumab,0.1928072
+paclitaxel,0.0009990
+Placebos,0.0439560
+paclitaxel,0.1928072
+Adjuvant Analgesic,0.1928072
+eribulin,0.0289710
+everolimus,0.0289710
+Micelles,0.1928072
+atezolizumab,0.0289710
+zoledronic acid,0.0139860
+eribulin mesylate,0.0289710
+pertuzumab,0.0089910
+Abraxane,0.1928072
+130-nm albumin-bound paclitaxel,0.0289710
+dasatinib,0.0089910
+EC Breast Regimen,0.1928072
+paclitaxel,0.0089910
+First line treatment,0.1928072
+denosumab,0.1928072
+glycine,0.1928072
+CTCb regimen,0.0289710
+removal technique,0.1928072
+Genetic Counseling,0.0000000
+exemestane,0.0139860
+Taxanes,0.0019980
+palbociclib,0.1928072
+Fertility Preservation,0.1928072
+novel AODU treatment method,0.1928072
+decitabine,0.0439560
+Prescription Drugs,0.1928072
+eribulin,0.0439560
+EC Breast Regimen,0.0009990
+pentoxifylline,0.1928072
+Pgp Inhibitor HM30181AK,0.0289710
+palbociclib,0.0289710
+epidermal growth factor,0.1928072
+Polysaccharides,0.0139860
+removal technique,0.0000000
+pembrolizumab,0.0439560
+Jinqi,0.1928072
+sativan,0.0439560
+Detection,0.0000000
+"2-(4-chlorophenyl)-1-(4-(7-hydroxy-5-methyl-6,7-dihydro-5H-cyclopenta(d)pyrimidin-4-yl)piperazin-1-yl)-3-(isopropylamino)propan-1-one",0.0439560
+Immobilization,0.1928072
+letrozole,0.0139860
+removal technique,0.0009990
+shogaol,0.1928072
+First line treatment,0.0089910
+Liposomes,0.0439560
+First line treatment,0.0289710
+pirarubicin,0.1928072
+Treatment Protocols,0.0439560
+stattic,0.1928072
+quercetin,0.0139860
+chitosan,0.0289710
+Duration,0.1928072
+First line treatment,0.0439560
+mannose,0.1928072
+Dose-dense AC Regimen,0.0079920
+Whole Breast Irradiation,0.1928072
+Single Agent Therapy,0.1928072
+Tucatinib,0.0089910
+Nanosomal Docetaxel Lipid Suspension,0.0439560
+aspirin,0.0439560
+triclocarban,0.1928072
+Proteasome inhibitor,0.0439560
+vinorelbine,0.0439560
+Fulvestrant/Palbociclib Regimen,0.0000000
+acetazolamide,0.0439560
+Operation on breast,0.0289710
+Agent,0.0289710
+palbociclib,0.0089910
+capivasertib,0.0289710
+ribociclib,0.0139860
+Triterpenes,0.1928072
+rosmarinic acid,0.0439560
+neratinib,0.0089910
+systemic administration,0.1928072
+Probes,0.0439560
+vinorelbine,0.0289710
+Everolimus/Exemestane Regimen,0.0289710
+Irreversible Electroporation,0.0439560
+abemaciclib,0.1928072
+Adrenergic beta-Antagonists,0.0089910
+capecitabine,0.0289710
+Screening for malignant neoplasm of breast,0.1928072
+10-gingerol,0.0439560
+ibandronate,0.1928072
+Treatment Protocols,0.0289710
+palbociclib,0.0019980
+Everolimus/Exemestane Regimen,0.0089910
+Conventional Treatment,0.1928072
+neratinib,0.1928072
+Genetic Counseling,0.0289710
+Atezolizumab/Nab-paclitaxel Regimen,0.0439560
+Hydrogel,0.1928072
+Agent,0.0439560
+novel AODU treatment method,0.0289710
+alpelisib,0.0289710
+ambrisentan,0.0289710
+Selective Estrogen Receptor Down Regulator,0.0139860
+arctigenin,0.1928072
+abiraterone,0.1928072
+Basis,0.0439560
+talazoparib,0.0019980
+Basis,0.1928072
+Hepatitis B Surface Antigens,0.1928072
+ferric oxide,0.1928072
+BARRIER,0.1928072
+novel AODU treatment method,0.0439560
+130-nm albumin-bound paclitaxel,0.0439560
+"Analgesics, Opioid",0.0439560
+Selective Estrogen Receptor Modulators,0.0139860
+olaparib,0.0289710
+alpelisib,0.1928072
+usnic acid,0.1928072
+Medical Devices,0.1928072
+sirolimus,0.1928072
+sunitinib,0.1928072
+Adoptive Transfer,0.1928072
+Phosphatidylinositide 3-Kinase Inhibitor,0.0439560
+gemcitabine,0.0439560
+130-nm albumin-bound paclitaxel,0.0019980
+Phytochemicals,0.1928072
+Primary operation,0.1928072
+docetaxel,0.0289710
+capecitabine,0.0439560
+Anthracycline Antibiotics,0.0289710
+Genetic Counseling,0.1928072
+Molecular Target,0.0439560
+talazoparib,0.1928072
+oxaliplatin,0.0439560
+galactose,0.1928072
+acetylcysteine,0.0439560
+Conventional Treatment,0.0439560
+Phosphatidylinositide 3-Kinase Inhibitor,0.1928072
+tempol,0.1928072
+Drug Repositioning,0.0439560
+"Therapies, Investigational",0.0089910
+abemaciclib,0.0289710
+elacestrant,0.0089910
+Dose-dense AC Regimen,0.0439560
+Antibody-Drug Conjugates,0.1928072
+Precision Medicine,0.0139860
+digoxin,0.0289710
+Anthracycline Antibiotics,0.0439560
+Psychosocial Intervention,0.1928072
+cannabitriol,0.1928072
+"Antibodies, Bispecific",0.0439560
+eupafolin,0.1928072
+Innovative Therapies,0.1928072
+Ketogenic Diet,0.1928072
+Endotracheal tube,0.1928072
+morin,0.0089910
+Primary operation,0.0289710
+Operation on breast,0.0059940
+Yoga,0.1928072
+Single Agent Therapy,0.0289710
+docetaxel,0.0019980
+removal technique,0.0089910
+pembrolizumab,0.0289710
+sacituzumab govitecan-hziy,0.0439560
+postoperative rehabilitation,0.1928072
+Second line treatment,0.0089910
+Precision Medicine,0.1928072
+Microwave destruction - action,0.1928072
+apigenin,0.0139860
+"Condoms, Male",0.1928072
+carbamazepine,0.0439560
+Hook,0.1928072
+Alisertib,0.0289710
+Flavonoids,0.0439560
+Stellate ganglion neurolysis,0.0289710
+docetaxel,0.0439560
+fluorescein,0.1928072
+atezolizumab,0.0439560
+ribociclib,0.0089910
+Antibody-Drug Conjugates,0.0439560
+calcifediol,0.0099900
+fulvestrant,0.0089910
+selinexor,0.0439560
+dasatinib,0.0439560
+paclitaxel,0.0439560
+tissue markers,0.1928072
+veliparib,0.0289710
+Precision Medicine,0.0439560
+metformin,0.1928072
+nedaplatin,0.0289710
+apple extract,0.0439560
+Agent,0.0089910
+Biosimilars,0.0089910
+"Therapies, Investigational",0.0439560
+Therapeutic regimen,0.0089910
+Ganetespib,0.0089910
+Microspheres,0.0289710
+Extraction,0.1928072
+Peptides,0.1928072
+Treatment Protocols,0.0089910
+abemaciclib,0.0439560
+Tubulin Binding Agent,0.1928072
+Drug Combinations,0.0439560
+Capsaicin,0.1928072
+Aminolevulinic Acid,0.1928072
+Histone deacetylase inhibitor,0.1928072
+Structural Modifier,0.0439560
+Polysaccharides,0.0289710
+oral supplement,0.1928072
+fulvestrant,0.0289710
+abemaciclib,0.0139860
+oleanolic acid,0.1928072
+Histone deacetylase inhibitor,0.0439560
+paclitaxel,0.0019980
+abemaciclib,0.0089910
+Single Agent Therapy,0.0439560
+IBL-302,0.1928072
+taxane,0.0439560
+Treatment Protocols,0.0059940
+chlorodihydroxypyridine/potassium oxonate/tegafur,0.0439560
+ribociclib,0.0289710
+orteronel,0.0289710
+Metastasectomy,0.0000000
+Poly I-C,0.0439560
+AKT Inhibitor,0.0019980
+navitoclax,0.0439560
+fulvestrant,0.0019980
+Pulmonary Metastasectomy,0.0289710
+Combination Drug Therapy,0.0439560
+Cold Plasma,0.1928072
+pertuzumab,0.0289710
+Mcl-1 Inhibitor,0.1928072
+apatinib,0.0289710
+paclitaxel liposome,0.1928072
+curcumin,0.1928072
+stattic,0.0439560
+Oral Medication,0.1928072
+Controlled ovarian stimulation,0.1928072
+FTY-720,0.0089910
+Metric (substance),0.1928072
+vinorelbine,0.0089910
+Detection,0.0139860
+ginsenoside Rg2,0.1928072
+taxane,0.0139860
+docetaxel,0.0029970
+Plastic operation on the breast,0.1928072
+resveratrol,0.0439560
+novel AODU treatment method,0.0089910
+Selective Estrogen Receptor Modulators,0.0059940
+Mammaplasty,0.0089910
+Placebos,0.0089910
+Protein-tyrosine kinase inhibitor,0.0089910
+tetrahydrodiferuloylmethane,0.0439560
+ergocalciferol,0.1928072
+docetaxel,0.0089910
+fulvestrant,0.0139860
+Transcutaneous Electric Nerve Stimulation,0.1928072
+Camptothecin,0.1928072
+Thermal techniques,0.1928072
+ganciclovir,0.1928072
+Epidermal growth factor receptor inhibitor (product),0.0089910
+sacituzumab govitecan,0.0439560
+TAC Regimen,0.0089910
+VP-16,0.0089910
+crizotinib,0.1928072
+STING Agonist,0.0439560
+E7389 Liposomal Formulation,0.0289710
+Endurance Training,0.1928072
+Triterpenoid saponins,0.1928072
+fondaparinux,0.1928072
+Biosimilars,0.1928072
+quercetin,0.1928072
+Influenza virus vaccine,0.1928072
+Histone deacetylase inhibitor,0.0289710
+130-nm albumin-bound paclitaxel,0.1928072
+Retreatments,0.0089910
+goserelin,0.1928072
+Mammaplasty,0.0099900
+vandetanib,0.0439560
+curcumol,0.0439560
+lobaplatin,0.0439560
+Luteolin,0.0439560
+Extraction,0.0000000
+beta sitosterol,0.1928072
+Single Agent Therapy,0.0139860
+chitosan,0.1928072
+Coordination Complexes,0.1928072
+eribulin,0.1928072
+pyrotinib,0.0089910
+"N',N''-diacetylspermine",0.0439560
+apatinib,0.0019980
+pembrolizumab,0.0089910
+Second line treatment,0.0289710
+ferumoxides,0.1928072
+Pessaries,0.1928072
+toremifene,0.1928072
+olaparib,0.0439560
+Anti-HER2 Monoclonal Antibody|ERBB2,0.0089910
+gonadorelin,0.0289710
+melatonin,0.1928072
+"3,3'-diindolylmethane",0.0439560
+taxane,0.0089910
+chitosan,0.0439560
+Lead compound,0.0439560
+Salpingo-oophorectomy,0.0439560
+caffeic acid,0.1928072
+anlotinib,0.0289710
+"Diet, Mediterranean",0.1928072
+hyaluronic acid,0.1928072
+Exercise on prescription,0.1928072
+Dalpiciclib,0.1928072
+Chalcone,0.1928072
+ribociclib,0.0000000
+tanespimycin,0.1928072
+Prehabilitation,0.1928072
+neratinib,0.0289710
+naringenin,0.1928072
+protodioscin,0.0439560
+arginine,0.1928072
+tucatinib,0.0089910
+Antibody-Drug Conjugates,0.0089910
+Coordination Complexes,0.0139860
+AKT Inhibitor,0.1928072
+removal technique,0.0289710
+vinorelbine,0.0009990
+Phytochemicals,0.0000000
+Definitive Treatment,0.1928072
+Ultrasound destruction,0.0439560
+edetic acid,0.0289710
+Particle,0.1928072
+Antibiotics,0.0439560
+Lipid Nanoparticles,0.1928072
+paclitaxel liposome,0.0000000
+pertuzumab,0.0099900
+Pogostone,0.1928072
+Selective Estrogen Receptor Down Regulator,0.1928072
+hydrogen peroxide,0.1928072
+Selective Estrogen Receptor Down Regulator,0.0289710
+letrozole,0.0289710
+adrenergic block,0.0439560
+ribociclib,0.0019980
+prevention through information dissemination,0.1928072
+First line treatment,0.0139860
+gingerol,0.1928072
+anlotinib,0.0439560
+benzothiophene,0.1928072
+"1-((2-((2-chloropyridin-4yl)amino)-4'-(cyclopropylmethyl)-(4,5'-bipyrimidin)-2'-yl)amino)-2-methylpropan-2-ol",0.1928072
+betulinic acid,0.1928072
+paclitaxel,0.0289710
+Family support,0.1928072
+Sesquiterpenes,0.1928072
+nebivolol,0.1928072
+urelumab,0.1928072
+Depression screen,0.1928072
+durvalumab,0.0019980
+letrozole,0.0089910
+apatinib,0.0439560
+curcumin,0.0439560
+gefitinib,0.0289710
+etravirine,0.0439560
+Mammaplasty,0.0009990
+interferon type II,0.1928072
+simvastatin,0.0289710
+osimertinib,0.0439560
+eribulin,0.0019980
+taxane,0.0019980
+zinc pyrithione,0.0439560
+Anti-HER2 Monoclonal Antibody|ERBB2,0.0289710
+belinostat,0.1928072
+camrelizumab,0.0439560
+"Tubes, Blood Collection",0.0089910
+medical treatment method,0.1928072
+Ginsenosides,0.1928072
+olaparib,0.1928072
+pyrotinib,0.1928072
+Letrozole/Palbociclib Regimen,0.0089910
+"3,3',4,5'-tetrahydroxystilbene",0.0439560
+Screening for malignant neoplasm of breast,0.0079920
+soluplus,0.1928072
+Lasofoxifene,0.0289710
+Mammaplasty,0.0289710
+Single Agent Therapy,0.0089910
+polyphenols,0.1928072
+Drug Combinations,0.0289710
+margetuximab,0.0089910
+Scanning Systems,0.1928072
+Camptothecin,0.0439560
+natural polymers,0.1928072
+Today,0.1928072
+thymoquinone,0.1928072
+sacituzumab govitecan,0.0289710
+crystal healing,0.1928072
+Clinical Treatment,0.0289710
+gold,0.1928072
+sacituzumab govitecan,0.0019980
+Estrogen Antagonists,0.0019980
+Chk1 Inhibitor,0.0439560
+scalpel,0.1928072
+cabazitaxel,0.0439560
+Protac,0.1928072
+Silicone implant,0.1928072
+Antibody-Drug Conjugates,0.0289710
+Scalp cooling system,0.1928072
+Therapeutic regimen,0.0439560
+adalimumab,0.1928072
+Naloxone,0.1928072
+-plasty,0.1928072
+Granisetron,0.1928072
+Verteporfin,0.0419580
+paricalcitol,0.0419580
+Avastin,0.0419580
+Morinda citrifolia extract,0.1928072
+Hemodialysis,0.1928072
+Topotecan,0.1928072
+cetuximab,0.1928072
+Adenosine Triphosphate,0.0419580
+Repositioning,0.0419580
+Hydrate,0.1928072
+Alkylphosphocholine Compound,0.0419580
+dihydroquinghaosu,0.1928072
+oleuropein,0.1928072
+patent blue violet,0.1928072
+cucurbitacin B,0.1928072
+CATHEPSIN D|CTSD,0.1928072
+fludarabine,0.1928072
+Detection,0.0099900
+Paclitaxel,0.0049950
+Plasminogen Activator Inhibitor 1,0.1928072
+Iodine,0.1928072
+pterostilbene,0.1928072
+Binder,0.1928072
+diindolylmethane,0.1928072
+health risk assessment,0.1928072
+Granulocyte colony stimulating factor prophylaxis,0.1928072
+ICRF-159,0.0419580
+Regulators,0.1928072
+Apigenin,0.1928072
+EGF-genistein,0.1928072
+Laparotomy,0.1928072
+Drug Combinations,0.0419580
+Nafoxidine,0.1928072
+Transethmoidal hypophysectomy,0.1928072
+"1,4-dioxin",0.1928072
+Ovariectomy,0.0109890
+Methylnitrosourea,0.1928072
+Danazol,0.1928072
+Carbidopa+levodopa,0.1928072
+Castration,0.0379620
+Cytembena,0.1928072
+Vinblastine,0.0419580
+Fadrozole,0.1928072
+Idarubicin,0.0419580
+piritrexim,0.0419580
+safflower yellow,0.1928072
+Cytadren,0.1928072
+Mesna,0.0419580
+Carbogen Breathing,0.0379620
+lonidamine,0.0419580
+Mitomycin,0.0379620
+bleomycetin,0.1928072
+doxifluridine,0.0419580
+Bisoprolol,0.1928072
+TNP 470,0.1928072
+Biomedical Monitors,0.0109890
+Biological treatment,0.1928072
+Aclarubicin,0.0419580
+WR-2721,0.0419580
+Interferon Type II,0.1928072
+Endopeptidases,0.1928072
+Mitolactol,0.0419580
+Gonadorelin|GNRH1,0.0419580
+agonists,0.0419580
+R-38486,0.1928072
+Tryptophan,0.1928072
+Prednimustine,0.0419580
+Vindesine,0.1928072
+Cytoxan,0.1928072
+Menogaril,0.0419580
+Spectacle telescope,0.1928072
+Exposure technique,0.1928072
+Immunoglobulins,0.1928072
+Hydrocortisone,0.0419580
+Pirarubicin,0.0419580
+Interferon-alpha,0.1928072
+Flutamide,0.1928072
+Oral contraception,0.0379620
+formestane,0.0419580
+Treatment Protocols,0.0099900
+Interferons,0.1928072
+Combination Drug Therapy,0.0109890
+Cortisone,0.0419580
+Catheterization,0.0109890
+Vitamin A,0.0099900
+Peplomycin,0.1928072
+Flutamide,0.0099900
+Levamisole,0.0099900
+Hormones,0.0419580
+SMS 201-995|SMS,0.1928072
+Hyaluronan,0.1928072
+Prednisone,0.0419580
+Implantable venous access port,0.1928072
+Menogaril,0.1928072
+Leukovorin rescue,0.0419580
+Gonadorelin,0.0419580
+Furosemide,0.0419580
+Spermidine,0.1928072
+blastolysin,0.1928072
+Filgrastim,0.0419580
+Castration,0.0099900
+Androgens,0.0419580
+"Ether, Ethyl",0.1928072
+"Fracture Fixation, Internal",0.0419580
+Vaccination,0.0099900
+human leukocyte interferon,0.1928072
+diaziquone,0.0419580
+Gonadorelin,0.1928072
+5-ethynyluracil,0.1928072
+Relaxation,0.1928072
+lenograstim,0.0109890
+Estrogen Replacements,0.1928072
+Ethanol,0.1928072
+Erythropoietin|EPO,0.1928072
+Erythropoietin|EPO,0.0099900
+Vitamin supplementation,0.0419580
+Detectors,0.1928072
+Faslodex,0.1928072
+Zinc Oxide,0.1928072
+Epidermal Growth Factor|EGF,0.1928072
+Anthracycline Antibiotics,0.0419580
+Irinotecan hydrochloride,0.0419580
+Melphalan,0.0099900
+Xeloda,0.1928072
+Non-oral contraceptive,0.1928072
+Ospemifene,0.1928072
+Thioguanine,0.0419580
+Streptokinase,0.1928072
+hydroxy-methyl-ellipticinium,0.1928072
+Bombesin,0.1928072
+Fiber,0.1928072
+TETROFOSMIN,0.1928072
+Indole Alkaloids,0.1928072
+Basin,0.1928072
+Detection,0.0109890
+Mistletoe preparation,0.1928072
+Tegafur,0.1928072
+Heterocyclic Amines,0.1928072
+Sodium Bicarbonate,0.1928072
+Methylprednisolone,0.0419580
+Farnesyl Transferase Inhibitor,0.1928072
+Erythrocyte Transfusion,0.1928072
+Somatomedins,0.0419580
+DaunoXome,0.0419580
+Goserelin|EREG|ESR1,0.1928072
+Nucleoside Analogs,0.0419580
+Alkylphosphocholine Compound,0.1928072
+EM 800,0.1928072
+ecteinascidin 743,0.1928072
+Fixation of pendulous breast,0.1928072
+"Abortion, Induced",0.1928072
+antitumor agent,0.0419580
+FK228,0.1928072
+Medical counseling NOS,0.1928072
+Tumor destruction,0.1928072
+"Markers, Bone",0.0419580
+Myocet,0.0419580
+vinorelbine,0.0099900
+Taxotere,0.1928072
+related compounds,0.1928072
+Closure by wire,0.0419580
+Relaxin,0.1928072
+Paclitaxel,0.0009990
+VEGF gene|VEGFA,0.0419580
+Insulin,0.1928072
+Fatigue management,0.1928072
+zoledronate,0.1928072
+Arsenal,0.1928072
+Folk Remedies,0.1928072
+Sequential Treatment,0.1928072
+Iressa,0.1928072
+Sterically Stabilized Liposome,0.0379620
+fluorophore,0.1928072
+Chronotherapy,0.1928072
+Radium,0.1928072
+"Administration, Oral",0.1928072
+Dextrorphan,0.1928072
+Cotinine,0.1928072
+Primary Prevention,0.1928072
+Eno,0.1928072
+Lactams,0.1928072
+Thermographs,0.1928072
+CCI 779,0.1928072
+Molecular Target,0.0379620
+roscovitine,0.1928072
+Cilengitide,0.0419580
+LBH589,0.1928072
+kinase inhibitor,0.1928072
+mTOR Inhibitor,0.0419580
+atorvastatin,0.1928072
+Diphenhydramine,0.1928072
+Lignans,0.1928072
+Symptom control,0.1928072
+Phosphorylcholine,0.1928072
+Phytotherapy,0.1928072
+prohibitin|PHB,0.1928072
+sphingosine 1-phosphate,0.1928072
+TEC regimen,0.1928072
+Copolymer,0.1928072
+gemcitabine,0.0009990
+Adrenergic beta-Antagonists,0.1928072
+"Insulin, injectable",0.1928072
+glyceollin,0.1928072
+Leptin,0.1928072
+Tace,0.1928072
+Calcitriol,0.1928072
+Estrogen Receptors,0.1928072
+hyperthermia treatment,0.1928072
+Topoisomerase 1 inhibitor,0.1928072
+Esophagectomy,0.1928072
+disorder control,0.0419580
+Estrogen Antagonists,0.0099900
+erbB-2 Receptor|ERBB2,0.1928072
+lenalidomide,0.1928072
+desflurane,0.1928072
+Erythropoietin,0.0419580
+Clomiphene,0.1928072
+Mifepristone,0.1928072
+azaspirane,0.1928072
+corrigendum,0.1928072
+fisetin,0.1928072
+Structural modification,0.1928072
+Headlights,0.1928072
+Molecular Target,0.0109890
+3-bromoacetoxyandrostan-17-one,0.1928072
+delta-tocopherol,0.1928072
+ginsenoside Rh4,0.1928072
+plumbagin,0.1928072
+isoliquiritigenin,0.1928072
+Phototherapy,0.1928072
+pyridine,0.1928072
+"Heparin, Low-Molecular-Weight",0.0419580
+15alpha-methoxypuupehenol,0.1928072
+Nipple reconstruction,0.1928072
+Ovulation Induction,0.1928072
+chlorin e6,0.1928072
+Treatment Guidelines,0.0099900
+Fludarabine phosphate,0.1928072
+Cytostat,0.1928072
+DELIVER,0.1928072
+minoxidil topical,0.1928072
+Flavonoids,0.1928072
+PS 341,0.1928072
+Piroxicam,0.0109890
+Antibiotics,0.0419580
+Extraction,0.0419580
+Soy Proteins,0.1928072
+cancer care,0.0419580
+Warfarin,0.0419580
+Endopeptidases|ERVK-7|ERVK-8|ERVK-10|ERVK-9|ERVK-21|ERVK-18|ERVK-25|ERVK-24|ERVK-19,0.1928072
+Clodronic Acid,0.1928072
+enzastaurin,0.0419580
+Immunization,0.1928072
+alpha Tocopherol,0.1928072
+Balloon dilatation catheter,0.1928072
+DDAVP,0.1928072
+Dilatation and Curettage,0.1928072
+bexarotene,0.0419580
+Human Chorionic Gonadotropin,0.0379620
+1-dodecylpyridoxal,0.0419580
+rhenium-186 HEDP,0.1928072
+Tissue Inhibitor of Metalloproteinases,0.1928072
+Recombinant human granulocyte colony stimulating factor,0.0109890
+Paclitaxel,0.0099900
+Chromogranin A|CHGA,0.1928072
+Tube drain,0.1928072
+selective intervention,0.1928072
+Vertebroplasty,0.0419580
+4'-N-benzoylstaurosporine,0.1928072
+Dexverapamil,0.0419580
+Biomedical Monitors,0.1928072
+Vinblastine,0.0099900
+Cytarabine,0.1928072
+Premarin,0.0419580
+edatrexate,0.0419580
+Human Chorionic Gonadotropin|CGA|HTC2|CGB5,0.1928072
+Dexrazoxane,0.0419580
+ABI007,0.0419580
+Guided imagery,0.1928072
+"1,4,7,10-tetraazacyclododecane-1,4,7,10-tetrakis(methylenephosphonic acid)",0.0419580
+Inflammation Mediators,0.1928072
+Compression Bandages,0.1928072
+heme 1,0.0000000
+Cyclosporine,0.0419580
+Antidiabetics,0.1928072
+6-(bromomethylene)tetrahydro-3-(1-naphthaleneyl)-2H-pyran-2-one,0.1928072
+Goserelin 10.8 MG,0.1928072
+Daunorubicn liposome,0.1928072
+cytarabine liposomal,0.1928072
+Medium chain triglycerides,0.0419580
+palonosetron,0.1928072
+vinflunine,0.0419580
+N-terminal pro-B-type natriuretic peptide,0.1928072
+VASCULAR ACCESS,0.1928072
+Clipping,0.1928072
+Topotecan,0.0419580
+Open approach,0.1928072
+Ophthalmic examination and evaluation,0.1928072
+OK-432,0.0419580
+CMF regimen,0.1928072
+8-hydroxy-2'-deoxyguanosine,0.1928072
+Imatinib mesylate,0.0419580
+Dexrazoxane,0.1928072
+Ascorbic Acid,0.1928072
+wound care,0.1928072
+VEGF Trap|VEGFA,0.0419580
+Myofascial release,0.1928072
+"3,4-Methylenedioxyamphetamine",0.1928072
+"SULFUR,COLLOIDAL",0.1928072
+Thomsen-Friedenreich antibodies,0.1928072
+Hook,0.0099900
+Rifampin,0.1928072
+beta-Glucans,0.1928072
+Glutamic Acid,0.1928072
+Paroxetine,0.1928072
+AZD2171,0.1928072
+Desipramine,0.1928072
+Oral supplement,0.1928072
+Zinc,0.1928072
+Moxibustion,0.1928072
+Catheter placement,0.1928072
+Herbal Drugs,0.1928072
+amidronate,0.0419580
+Insulin,0.0419580
+Spironolactone,0.1928072
+SESTAMIBI,0.1928072
+CyberKnife,0.1928072
+Omental flap,0.1928072
+Digitoxin,0.1928072
+artesunate,0.0419580
+Estrogen Receptor alpha,0.1928072
+Indwelling Catheter,0.1928072
+Salpingo-oophorectomy,0.1928072
+Tobacco,0.1928072
+physcione,0.1928072
+zoledronic acid,0.0099900
+Ethylene,0.1928072
+citral,0.1928072
+imiquimod,0.0419580
+Lidocaine,0.1928072
+Risedronate,0.1928072
+Screening mammography,0.0419580
+nimbolide,0.1928072
+Biosensors,0.1928072
+Citalopram,0.1928072
+Fluphenazine Hydrochloride,0.1928072
+Postoperative analgesia,0.1928072
+"EPIDERMAL GROWTH FACTOR, HUMAN",0.0419580
+Thioctic Acid,0.1928072
+Simvastatin,0.1928072
+frullanolide,0.1928072
+Pyruvaldehyde,0.1928072
+exemestane 25 MG,0.0419580
+"tocotrienol, delta",0.1928072
+Dendrimers,0.1928072
+irinotecan,0.1928072
+Preservative free ingredient,0.0419580
+carboapatite,0.1928072
+Navelbine,0.0419580
+dihydroxy-vitamin D3,0.0109890
+equol,0.1928072
+Immunoglobulin G,0.1928072
+"Analyzers, Laboratory, Immunoassay, Chemiluminescent",0.1928072
+Thiosemicarbazones,0.1928072
+oxymatrine,0.1928072
+Analgesics,0.1928072
+Vascular Access Devices,0.1928072
+cabergoline,0.1928072
+Activated Charcoal,0.1928072
+VENOUS ACCESS,0.1928072
+polylactic acid-polyglycolic acid copolymer,0.1928072
+imatinib,0.1928072
+Lesion Localization Wires,0.1928072
+Tumor destruction,0.0439560
+FTY 720,0.1928072
+candesartan,0.1928072
+Ovarian Stimulation,0.0439560
+Harmine,0.1928072
+Primary operation,0.0000000
+Psychological therapies,0.1928072
+Treatment Protocols,0.0019980
+ABT-737,0.0439560
+methyl jasmonate,0.1928072
+Dose Fractionation,0.0059940
+CAPTURE,0.1928072
+adecatumumab,0.0000000
+DS-8201a,0.0089910
+mirtazapine,0.1928072
+68Ga-NOTA-RM26,0.0289710
+nitric oxide,0.1928072
+ANG1005,0.1928072
+nivolumab,0.0000000
+cycloserine,0.1928072
+Antibodies,0.0439560
+Operation on breast,0.0000000
+folic acid,0.0439560
+daunorubicin liposomal,0.1928072
+bicalutamide,0.0439560
+Traction,0.0439560
+Immune Checkpoint Inhibitor,0.0439560
+BYL719,0.0439560
+Lucitanib,0.0089910
+Second line treatment,0.0019980
+paclitaxel,0.0079920
+Conventional Treatment,0.0089910
+Imagery technique,0.1928072
+Capecitabine/Vinorelbine,0.0019980
+ibrutinib,0.1928072
+guar gum,0.0439560
+Emodin,0.0439560
+CDK4/6 Inhibition,0.0089910
+Estrogen Antagonists,0.0089910
+sirolimus,0.0289710
+cabozantinib,0.1928072
+"immunoglobulins, intravenous",0.1928072
+chlorodihydroxypyridine/potassium oxonate/tegafur,0.0289710
+Anti-HER2 Antibody-drug Conjugate|ERBB2,0.0089910
+loratadine,0.1928072
+zoledronic acid,0.0289710
+Estring,0.1928072
+CB-839,0.0439560
+Deep Inspiration Breath Hold,0.1928072
+GSK1210151A,0.0439560
+"glutamate carboxypeptidase II, human",0.1928072
+troxerutin,0.0439560
+ginseng preparation,0.1928072
+Stop brand of fluoride,0.1928072
+Taxotere,0.0089910
+arctigenin,0.0139860
+emu oil,0.1928072
+fatostatin,0.0139860
+Taxanes,0.0439560
+Microspheres,0.0439560
+Sequential Treatment,0.0289710
+Proteins,0.1928072
+sulforafan,0.1928072
+Traditional Chinese Medicine Formulation,0.0439560
+Phosphatidylinositide 3-Kinase Inhibitor,0.0289710
+liquiritigenin,0.0439560
+Tucatinib,0.0289710
+treatment guideline,0.0109890
+indocyanine green,0.1928072
+Stabilization,0.0289710
+filgrastim,0.1928072
+methyl acrylate,0.0439560
+Standardized technique,0.0089910
+"Injections, Intraperitoneal",0.0439560
+metformin,0.0439560
+Estrogen Receptor Inhibitor [EPC],0.0139860
+bazedoxifene,0.0439560
+Induced Hyperthermia,0.0000000
+cinobufagin,0.1928072
+First line treatment,0.0379620
+Bicarbonates,0.1928072
+Docetaxel Regimen,0.1928072
+poly(ethylene glycol)-co-poly(ethyleneimine),0.0439560
+berbamine,0.0439560
+dihydroartemisinin,0.1928072
+complex (molecular entity),0.0109890
+AKT Inhibitor,0.0439560
+Progesterone Antagonist,0.0289710
+Ovarian ablation,0.0139860
+Cannabinoids,0.0139860
+Exercise Intervention,0.1928072
+zoledronic acid,0.0009990
+Histone deacetylase inhibitor|HDAC9,0.0439560
+ruxolitinib,0.0019980
+Phosphatidylinositide 3-Kinase Inhibitor,0.0089910
+Hand endodontic technique,0.1928072
+"Eosinum, eosin, Homeopathic preparation",0.0439560
+Therapeutic regimen,0.0009990
+dendrophenol,0.1928072
+methylene blue,0.1928072
+ursodiol,0.0289710
+fenofibrate,0.0439560
+salinomycin,0.1928072
+vemurafenib,0.0439560
+neratinib,0.0439560
+Primary operation,0.0089910
+Qigong,0.1928072
+pyrotinib,0.0289710
+General Anesthesia,0.1928072
+CDK4/6 Inhibitor FCN-437,0.0089910
+antagonists,0.0139860
+"Tubes, Blood Collection",0.0099900
+zoledronate,0.0079920
+Cardiac rehabilitation,0.1928072
+gedatolisib,0.0439560
+calcium,0.1928072
+nilotinib,0.1928072
+gemcitabine,0.0289710
+erbB-2 Receptor|ERBB2,0.0089910
+irinotecan,0.0439560
+CTCb regimen,0.1928072
+Metal Chelator,0.0439560
+Prebiotics,0.1928072
+Drainage of lymphatics,0.1928072
+Selenite,0.1928072
+Mind-Body Medicine,0.1928072
+Fulvestrant/Ribociclib Regimen,0.0289710
+Compound Kushen Injection,0.0439560
+Pain relief,0.1928072
+4-coumaric acid,0.0439560
+Guanidines,0.1928072
+calcitriol,0.1928072
+Hypnotherapy,0.1928072
+Angiotensin II receptor antagonist,0.1928072
+systemic administration,0.0019980
+Agent,0.0139860
+"Imidazole derivatives, antimycotic for systemic use",0.0439560
+crizotinib,0.0439560
+Parabens,0.1928072
+enzalutamide,0.0439560
+Lipidome,0.0439560
+systemic administration,0.0439560
+Indoles,0.0439560
+cinnamic acid,0.0439560
+palbociclib,0.0139860
+Understanding behavior,0.1928072
+Histone deacetylase inhibitor|HDAC9,0.0019980
+pegfilgrastim,0.0289710
+vexibinol,0.0439560
+BET Inhibitor,0.0439560
+diallyl trisulfide,0.0439560
+Coumestrol,0.0439560
+Mammaplasty,0.0439560
+Dose Regimen,0.1928072
+TAC,0.1928072
+celastrol,0.1928072
+"Therapies, Investigational",0.1928072
+AQ4N,0.0439560
+aspirin,0.1928072
+Nitroglycerin/Sodium Citrate/Ethanol Solution,0.1928072
+Operation on breast,0.0439560
+Oocyte Retrieval,0.1928072
+Polysaccharides,0.0439560
+PD-1-PD-L1 Blockade,0.1928072
+talazoparib,0.0089910
+Detection,0.0089910
+lidocaine,0.1928072
+pigment blue 16,0.0439560
+tretinoin,0.1928072
+sacituzumab govitecan,0.1928072
+Electric stimulation technique,0.0439560
+myricetin,0.0439560
+Detection,0.0439560
+naltrexone,0.0139860
+gemcitabine,0.0109890
+Nonesterified Fatty Acids,0.1928072
+Third line treatment,0.0289710
+N-(2-amino-5-fluorobenzyl)-4-(N-(pyridine-3-acrylyl)aminomethyl)benzamide,0.1928072
+atezolizumab,0.0089910
+irradiation modality,0.1928072
+docosahexaenoic acid,0.0089910
+plasmid vaccine,0.1928072
+"Medicine, Folk",0.1928072
+chlorogenic acid,0.0289710
+Family support,0.0000000
+sodium cantharidate,0.1928072
+nafamostat mesilate,0.0439560
+astragaloside IV,0.1928072
+Prodrugs,0.0439560
+"Tubes, Blood Collection",0.1928072
+Extraction,0.0439560
+margetuximab,0.0289710
+130-nm albumin-bound paclitaxel,0.0089910
+fluorophore,0.0439560
+EC Breast Regimen,0.0089910
+palbociclib,0.0000000
+pirarubicin,0.0439560
+"Oral drug preparation, NOS",0.1928072
+BYL719,0.1928072
+alpha-tocopherol succinate,0.0439560
+Generic Drugs,0.1928072
+Micelles,0.0289710
+paclitaxel protein-bound,0.1928072
+chrysin,0.0439560
+sodium perborate tetrahydrate,0.1928072
+anastrozole,0.0139860
+Responsiveness assessment,0.0019980
+NG-Nitroarginine Methyl Ester,0.1928072
+Glucocorticoids,0.0439560
+Conventional Treatment,0.0139860
+Genomic screening,0.0000000
+sphingosine 1-phosphate,0.0439560
+Xanthones,0.1928072
+ebastine,0.0439560
+Titania,0.1928072
+triptolide,0.0439560
+Exploration procedure,0.0139860
+Active Method,0.1928072
+thymoquinone,0.0439560
+morin,0.1928072
+edoxaban,0.1928072
+capecitabine,0.0019980
+3-methylquercetin,0.1928072
+pyrotinib,0.0009990
+Anthracycline Antibiotics,0.0089910
+morusin,0.1928072
+Application procedure,0.0139860
+ubidecarenone,0.0000000
+Oncolytic Virotherapy,0.0019980
+Caffeine-based Cream,0.1928072
+paclitaxel,0.0000000
+sirolimus,0.0439560
+kaempferol,0.0439560
+cantharidin,0.0439560
+Agomelatine,0.1928072
+palmitic acid,0.0439560
+antagonists,0.0439560
+leptin,0.1928072
+sorafenib,0.0439560
+Single Agent Therapy,0.0379620
+sulindac sulfide,0.0439560
+Anti-HER2 Monoclonal Antibody|ERBB2,0.1928072
+astragaloside IV,0.0439560
+Endocrine drugs,0.1928072
+colloidal silver,0.1928072
+Neurostimulation/modulation,0.1928072
+Lipid Nanoparticles,0.0439560
+Thapsigargin,0.0289710
+naldemedine,0.1928072
+magnesium monoperoxyphthalate,0.1928072
+denosumab,0.0289710
+sinapinic acid,0.1928072
+Coronavirus vaccination,0.1928072
+Oils,0.1928072
+boswellia preparation,0.1928072
+Clinical Breast Examination,0.1928072
+schizandrin B,0.0439560
+Ceralasertib,0.0439560
+Clinical Protocols,0.1928072
+zinc,0.1928072
+WITHANIA SOMNIFERA,0.1928072
+Detection,0.0079920
+Polymers,0.0439560
+eribulin,0.0089910
+ATR Inhibitor,0.0439560
+factor VIII,0.0439560
+Diphosphonates,0.0289710
+gemcitabine,0.0089910
+Taxanes,0.0089910
+Indazoles,0.1928072
+cadexomer iodine,0.0009990
+Ogivri,0.0089910
+apigenin,0.0439560
+CT-P6,0.0089910
+Induced Hyperthermia,0.0439560
+prednisolone,0.0009990
+Ingredient,0.0439560
+Elevation procedure,0.0139860
+Ligation,0.1928072
+Dienoestrol,0.1928072
+Vitamin D Analog,0.1928072
+Glucocorticoids,0.1928072
+B mode ultrasound,0.1928072
+Testosterone Propionate,0.1928072
+Thiobarbituric Acid Reactive Substances,0.1928072
+derivatives,0.0419580
+"3,3',4,5'-tetrahydroxystilbene",0.1928072
+Ketamine,0.1928072
+"SYSTEM, IMAGING, FLUORESCENCE",0.1928072
+TES,0.1928072
+surfactin,0.0419580
+"3,3,4,4-tetramethylsuccinimide",0.1928072
+platycodin D,0.0419580
+evodiamine,0.1928072
+dihydroxyacetone sulfate,0.0419580
+Preventing pain,0.1928072
+Screens,0.1928072
+TLK 286,0.1928072
+Immunotherapeutic agent,0.1928072
+3-(2-phenylethyl)-4-methylsydnone,0.1928072
+indole,0.1928072
+Pentoxifylline,0.1928072
+Aspirin,0.0419580
+Duocarmycin Antibiotic,0.1928072
+fluorodeoxyglucose,0.1928072
+MDX-H210|MAFD2,0.1928072
+RU 58668,0.0419580
+lycopene,0.1928072
+stilbostat,0.1928072
+Monoterpenes,0.1928072
+TP protocol,0.0419580
+Intubation,0.1928072
+Intrauterine Devices,0.1928072
+Ovariectomy,0.0079920
+Isotretinoin,0.1928072
+4-methylcoumarin 7-O-sulfamate,0.1928072
+Adrenalectomy,0.0079920
+Antimetabolites,0.0099900
+RC 160,0.1928072
+Chloroquine,0.1928072
+morpholinoanthracycline MX2,0.0419580
+hyperthermia treatment,0.0379620
+thymostimulin,0.1928072
+Finasteride,0.1928072
+Tomudex,0.1928072
+Taxoids,0.1928072
+Glycyrrhizic Acid,0.1928072
+Ovariectomy,0.0419580
+Placebos,0.0099900
+Haloperidol,0.1928072
+CCNU,0.1928072
+"technetium Tc 99m 1,2-bis(bis(2-ethoxyethyl)phosphino)ethane",0.1928072
+Antioxidants,0.0099900
+aspoxicillin,0.1928072
+"6-methyl-1,3,8-trichlorodibenzofuran",0.1928072
+Penicillins,0.1928072
+Silicone gel implant,0.1928072
+FT-207,0.1928072
+fazarabine,0.0419580
+Fluoxymesterone,0.1928072
+2-butene,0.1928072
+Danazol,0.0419580
+iproplatin,0.0419580
+Vinblastine,0.1928072
+1-(2-chloroethyl)-3-(2-(dimethylaminosulfonyl)ethyl)-1-nitrosourea,0.0419580
+perfosfamide,0.1928072
+low protein,0.0099900
+Mechanotherapy,0.1928072
+Anthrapyrazole Antibiotic,0.1928072
+mitomycin D,0.0419580
+Mass Screening Systems,0.1928072
+Cortisone,0.1928072
+Thoracotomy,0.1928072
+amonafide,0.1928072
+Clomiphene Citrate,0.1928072
+Putrescine,0.1928072
+VP 16-213,0.0419580
+Combination Drug Therapy,0.0079920
+Prosthesis,0.1928072
+Cefotiam,0.1928072
+Purified Protein Derivative of Tuberculin,0.1928072
+Poly A-U,0.1928072
+aclacinomycin,0.1928072
+adozelesin,0.0419580
+Interferon-alpha,0.0379620
+bruceantin,0.0419580
+ICRF-187,0.1928072
+"Drugs, Essential",0.1928072
+Gossypol,0.1928072
+Cardioxane,0.1928072
+Uracil,0.1928072
+Bromocriptine,0.0419580
+Amifostine,0.1928072
+Recombinant human granulocyte colony stimulating factor,0.1928072
+Reserpine,0.1928072
+Miltex,0.1928072
+CMF regimen,0.0419580
+Amputation,0.1928072
+LY 353381,0.1928072
+Arginine,0.1928072
+Strontium-89,0.0419580
+Clodronate,0.0419580
+monoclonal antibody CC49,0.0419580
+herpes simplex thymidine kinase,0.1928072
+sargramostim,0.1928072
+MDX-H210,0.0419580
+Edrecolomab,0.1928072
+Busulfan,0.1928072
+Electrocardiographic monitoring,0.1928072
+Retinoids,0.0419580
+cyclohexylaminoglutethimide,0.1928072
+Metyrapone,0.1928072
+Rolls,0.1928072
+RHENIUM SULFIDE COLLOIDAL,0.1928072
+Farnesyl Transferase Inhibitor,0.0109890
+cycloprodigiosin hydrochloride,0.1928072
+exemestane 25 MG,0.1928072
+Antimetabolites,0.1928072
+perilla alcohol,0.1928072
+Beta-2,0.1928072
+Mouse monoclonal antibody,0.0419580
+flavopiridol,0.1928072
+Dimercaptosuccinic Acid,0.1928072
+Technetium Tc 99m Sestamibi,0.1928072
+Signal Transduction Inhibitor,0.1928072
+trilostane,0.1928072
+Free testosterone,0.1928072
+Pleurodesis,0.1928072
+Catechin,0.1928072
+parthenolide,0.1928072
+systemic administration,0.0419580
+Tetrahydroisoquinolines,0.1928072
+Dose Fractionation,0.1928072
+epothilone B lactam,0.0419580
+Immunomodulators,0.1928072
+PHYSICAL PERFORMANCE,0.1928072
+Procainamide,0.1928072
+Alendronate,0.0419580
+Lamivudine,0.1928072
+growth-promoting factors,0.1928072
+Heparin,0.1928072
+Symptom Management,0.0419580
+ORALIT,0.0099900
+Vancomycin,0.1928072
+Glycine,0.1928072
+miltefosine,0.0419580
+Proto-Oncogene Protein pp60 (c-src)|SRC,0.1928072
+taspine,0.1928072
+4-chlorophenyl methyl sulfide,0.1928072
+Fatty acid glycerol esters,0.1928072
+Tunicamycin,0.1928072
+gemcitabine,0.0099900
+vinpocetine,0.1928072
+Amides,0.1928072
+Creation of ventriculo-peritoneal shunt,0.1928072
+chromophore,0.1928072
+"Oils, Volatile",0.1928072
+cremophor EL,0.1928072
+Coumarins,0.1928072
+"MAGNET, PERMANENT",0.1928072
+fucoidan,0.1928072
+isoalantolactone,0.1928072
+protein kinase inhibitor,0.1928072
+Thyroid extract,0.0419580
+Reproductive Techniques,0.1928072
+Injectables,0.1928072
+trabectedin,0.0419580
+Ultrasound destruction,0.1928072
+Anticonvulsants,0.1928072
+Hampers,0.1928072
+Copolymer,0.0419580
+Stretcher,0.1928072
+Emodin,0.1928072
+pomolic acid,0.0419580
+silybin,0.1928072
+Protamines,0.1928072
+flavone,0.1928072
+Alkaloids,0.1928072
+Pyrimidine,0.1928072
+Ellagic Acid,0.1928072
+flubendazole,0.1928072
+Selenium,0.1928072
+polylactic acid-polyglycolic acid copolymer,0.0419580
+STI571,0.1928072
+Purines,0.1928072
+Skin infiltration,0.0419580
+Mica,0.1928072
+4-anisyltetrazolium blue,0.1928072
+kahweol,0.1928072
+monomethoxypolyethylene glycol,0.1928072
+flubendazole,0.0419580
+Microbubbles,0.0419580
+ABI007,0.1928072
+diazeniumdiolate,0.1928072
+YM 511,0.1928072
+NSC 23766,0.1928072
+DEC regimen,0.1928072
+Tretinoin,0.0419580
+Hysterectomy,0.1928072
+Matrix Metalloproteinase Inhibitor,0.0419580
+Estramustine,0.1928072
+Transducers,0.1928072
+Levonorgestrel,0.1928072
+Interferon Type II,0.0419580
+Shiga-Like Toxin I,0.1928072
+Antithrombins,0.1928072
+Androgenic steroid,0.1928072
+Thiotepa,0.0099900
+Carbamates,0.0419580
+Gadobenate dimeglumine,0.1928072
+Scar management,0.1928072
+Citrate,0.1928072
+RAD 001,0.0419580
+Progesterone,0.0419580
+Epidermal Growth Factor Receptor|EGFR,0.0379620
+iso-sulfan blue,0.1928072
+Operation on brain,0.1928072
+nemorosone,0.1928072
+DMPK|IGHD1-7,0.1928072
+Propranolol,0.1928072
+Progressive muscle relaxation,0.0099900
+Goserelin,0.0099900
+early detection of cervical cancer,0.1928072
+Morphine,0.0099900
+Hyperbaric Oxygenation,0.1928072
+peer counseling,0.1928072
+rituximab,0.1928072
+Valproic Acid,0.1928072
+Magnetic resonance imaging unit,0.1928072
+Albuterol,0.0419580
+"2,3-bis(3'-hydroxybenzyl)butyrolactone",0.0419580
+oncostatin M|OSM,0.1928072
+Premedication,0.1928072
+Alternative Therapies,0.0419580
+Ophthalmic examination and evaluation,0.0419580
+Ficusin,0.1928072
+bolus infusion,0.1928072
+Epidermal Growth Factor|EGF,0.0419580
+cervical cancer prevention,0.1928072
+Self Monitoring,0.1928072
+N-3 fatty acid supplementation,0.1928072
+Vitamin D,0.0099900
+Histamine Antagonists,0.1928072
+Hepatectomy,0.1928072
+Phosphoric Monoester Hydrolases,0.1928072
+Protein Arrays,0.1928072
+Water,0.1928072
+ZOLEDRONIC,0.1928072
+"O,O-diisopropyl-S-benzylthiophosphate",0.1928072
+Positron emission tomography unit,0.1928072
+Total intravenous anesthesia,0.1928072
+Fertility counseling,0.1928072
+Cardiac Monitors,0.1928072
+Risk Reduction,0.0000000
+Gadolinium DTPA,0.1928072
+Vitamin A,0.1928072
+Velcade,0.0419580
+Trimetrexate,0.1928072
+Dinoprostone,0.1928072
+Epoetin Alfa,0.0419580
+rhenium-186 HEDP,0.0419580
+Castor Oil,0.1928072
+Zoladex,0.1928072
+Gastroduodenoscopy,0.0099900
+Botanicals,0.1928072
+imiquimod,0.1928072
+Thiourea,0.1928072
+ST. JOHN'S WORT EXTRACT,0.1928072
+eculizumab,0.0419580
+Organic Chemicals,0.1928072
+icariin,0.1928072
+Polymerase,0.0419580
+Multidrug Resistance Modulator,0.1928072
+Gemtuzumab ozogamicin,0.1928072
+small molecule,0.0419580
+Vitamin supplementation,0.1928072
+Angiopoietin-2|ANGPT2|VPS51,0.0419580
+hydroxytyrosol,0.1928072
+saikosaponin B2,0.1928072
+DNA Methyltransferase Inhibitor,0.1928072
+diosmetin,0.1928072
+Nitric Oxide Donors,0.1928072
+Bands,0.1928072
+Botulinum Toxins,0.1928072
+malvidin-3-O-glucoside-4 vinyl,0.1928072
+nimotuzumab,0.1928072
+losartan,0.1928072
+RO 4929097,0.0439560
+Peptides,0.0439560
+exemestane,0.0289710
+Estriol Vaginal Gel,0.1928072
+veliparib,0.0439560
+folic acid,0.0289710
+Immunoconjugates,0.0439560
+epigallocatechin gallate,0.0439560
+tetrandrine,0.1928072
+fucoidan,0.0439560
+hesperetin,0.0439560
+"N,N-dimethyl-N-hexadecyl-1-octadecylammonium chloride",0.0439560
+pentoxifylline,0.0439560
+Lymphedema Management,0.1928072
+"Perforator flap, free",0.1928072
+First line treatment,0.0079920
+Selective Estrogen Receptor Down Regulator,0.0379620
+Cold Plasma,0.0439560
+Immune Globulin (Human),0.1928072
+Maytansinoid DM1,0.0089910
+oseltamivir phosphate,0.0439560
+AZD9496,0.1928072
+telaprevir,0.1928072
+First line treatment,0.0019980
+silybin,0.0439560
+citral,0.0439560
+chlordiazepoxide,0.1928072
+spironolactone,0.1928072
+copper,0.1928072
+Administration of medication,0.1928072
+derivatives,0.0439560
+Scalp cooling,0.0099900
+ospemifene,0.1928072
+Varlitinib,0.1928072
+oridonin,0.0439560
+resistomycin,0.0439560
+metronidazole,0.1928072
+Systemic Therapy,0.0139860
+CTCb regimen,0.0439560
+aguerin B,0.0289710
+sodium salts,0.1928072
+flubendazole,0.0439560
+LETROZOLE/RIBOCICLIB,0.0089910
+niclosamide,0.0439560
+talazoparib,0.0289710
+Clodronate,0.0289710
+Proprioception awareness work,0.1928072
+podofilox,0.0439560
+bufalin,0.0439560
+PECS II block,0.1928072
+First line treatment,0.0009990
+"Diet, High-Fat",0.1928072
+tripterine,0.0439560
+CDK4/6 Inhibition,0.1928072
+Cryotherapy,0.1928072
+Food Component,0.0439560
+aminoglutethimide,0.1928072
+phenylacetaldehyde,0.1928072
+irinotecan liposomal,0.0289710
+olaparib,0.0019980
+Pulmonary Metastasectomy,0.1928072
+Triterpenoid Compound,0.1928072
+shikonin,0.0439560
+bicalutamide,0.0289710
+cetuximab,0.0439560
+Everolimus/Exemestane Regimen,0.1928072
+Triterpenes,0.0439560
+Delivery care,0.1928072
+eribulin mesylate,0.1928072
+Immunization,0.0289710
+Exercise Intervention,0.0289710
+Debio 0932,0.0439560
+"1-(2-chloroethyl)-3-(1-oxyl-2,2,6,6-tetramethylpiperidinyl)-1-nitrosourea",0.1928072
+genistein,0.0439560
+alpelisib,0.0089910
+Antibodies,0.0289710
+removal technique,0.0139860
+apatinib,0.0000000
+Internalized-arginylglycylaspartic Acid Cyclic Peptide,0.0439560
+Anthracycline Antibiotics,0.0000000
+calcifediol,0.1928072
+Placebos,0.0289710
+vinorelbine,0.0019980
+salubrinal,0.0109890
+temozolomide,0.0289710
+glutathione,0.1928072
+Mind/body Exercise,0.1928072
+dexrazoxane,0.1928072
+"Contraceptives, Oral",0.0439560
+asiatic acid,0.1928072
+Synthetic drug,0.1928072
+avelumab,0.0089910
+Endostatins,0.0439560
+Metal-Organic Frameworks,0.0439560
+Pyrimidine,0.0439560
+Anthraquinones,0.0439560
+Conventional Treatment,0.0009990
+dasatinib,0.1928072
+palbociclib,0.0439560
+Precision Medicine,0.0109890
+Treatment Protocols,0.0139860
+arachidin-1,0.0439560
+gingerol,0.0439560
+lianfang,0.0439560
+polydatin,0.0439560
+Annexin A1,0.1928072
+Pseudomonas aeruginosa Preparation,0.1928072
+ribociclib,0.1928072
+shosaiko-to,0.1928072
+Glycemic Control,0.1928072
+colchicine,0.1928072
+glutamine,0.0439560
+Antioxidants,0.0289710
+etirinotecan pegol,0.0289710
+dihydroartemisinin,0.0289710
+urokinase,0.1928072
+Social counseling,0.1928072
+lonidamine,0.1928072
+losartan,0.0439560
+Antiplasmin,0.0000000
+Hydrogel,0.0439560
+Anisomycin,0.0439560
+Amcenestrant,0.0139860
+protein C,0.1928072
+Fluorides,0.1928072
+cryptolepine,0.1928072
+Paclitaxel Regimen,0.1928072
+4-coumaric acid,0.1928072
+rasagiline,0.0439560
+treatment guideline,0.1928072
+cordycepin,0.0439560
+shikonin,0.1928072
+FGFR Inhibitor,0.0139860
+Compound Kushen Injection,0.1928072
+HSP90 Inhibitor,0.1928072
+propranolol,0.1928072
+Liposomal Curcumin,0.1928072
+N-(2-amino-5-fluorobenzyl)-4-(N-(pyridine-3-acrylyl)aminomethyl)benzamide,0.0019980
+imatinib,0.0289710
+oxaliplatin,0.0289710
+tanshinone II A,0.1928072
+Active Method,0.0289710
+Diphosphonates,0.0089910
+glucomannan,0.1928072
+Microbubbles,0.0439560
+stavudine,0.1928072
+hyaluronic acid,0.0439560
+"MAGNET, PERMANENT",0.0439560
+Janus kinase inhibitor,0.0289710
+"9,10-Dimethyl-1,2-benzanthracene",0.1928072
+alpelisib,0.0139860
+hydroxamate,0.0439560
+Phototherapy,0.0439560
+irinotecan,0.0289710
+saracatinib,0.0289710
+Drug Packaging,0.1928072
+tanshinone II A,0.0439560
+ropinirole,0.1928072
+Perforator,0.1928072
+clofibrate,0.1928072
+dioscin,0.0139860
+KPT-330,0.0439560
+Agent,0.0019980
+CAPTURE,0.0289710
+Prodigiosin,0.1928072
+Kinesio Tape,0.1928072
+NVP BEZ235,0.0439560
+"Histamine H1 Antagonists, Non-Sedating",0.0439560
+capsaicin,0.1928072
+Background Treatment,0.1928072
+Cardiac Glycosides,0.1928072
+Lipids,0.1928072
+Operation on breast,0.0009990
+Sesquiterpene Lactone,0.1928072
+royal jelly,0.1928072
+Micelles,0.0439560
+stage-specific embryonic antigen-4,0.0439560
+Drug Repositioning,0.1928072
+Lower limb exercises,0.0099900
+Tubulin Binding Agent,0.0439560
+nivolumab,0.0089910
+Treatment modification,0.1928072
+nivolumab,0.0019980
+Operation on breast,0.0379620
+epigallocatechin gallate,0.0079920
+BARRIER,0.0439560
+carbamazepine,0.1928072
+pembrolizumab,0.1928072
+trophoblast protein 1,0.0439560
+Adamantane,0.1928072
+cannabidiol,0.0439560
+systemic administration,0.0289710
+telmisartan,0.1928072
+peer support,0.1928072
+GSK2801,0.1928072
+Efbemalenograstim alfa,0.1928072
+Operation on breast,0.0089910
+Partial Breast Irradiation,0.0009990
+pyrotinib,0.0099900
+N-Acetylneuraminic Acid,0.1928072
+Drug Tapering,0.0089910
+delivery method,0.1928072
+mechlorethamine,0.1928072
+bromocriptine,0.1928072
+EZH2 Inhibitor,0.0439560
+Brief Treatment,0.1928072
+pain chronic management,0.1928072
+Conservative Treatment,0.1928072
+anesthesia Techniques,0.0079920
+complex (molecular entity),0.0439560
+Phytochemicals,0.0439560
+astaxanthin,0.1928072
+letrozole,0.0009990
+ononin,0.0439560
+baicalein,0.0439560
+130-nm albumin-bound paclitaxel,0.0379620
+RECONCILE,0.0439560
+lovastatin,0.0439560
+troglitazone,0.1928072
+Gentian Violet,0.1928072
+Suction drain,0.1928072
+Protein Kinase C Inhibitor,0.1928072
+Nucleic Acids,0.1928072
+Cobalamins,0.1928072
+mafosfamide,0.1928072
+costunolide,0.1928072
+Immunoconjugates,0.1928072
+Cysteine,0.1928072
+Disulfides,0.1928072
+Cytochalasin B,0.1928072
+Salicylates,0.1928072
+"enterotoxin B, staphylococcal",0.1928072
+cryptotanshinone,0.1928072
+piperazine,0.1928072
+Alkaloids,0.0419580
+boldine,0.1928072
+Oprelvekin,0.1928072
+Metronidazole,0.1928072
+kinase inhibitor,0.0419580
+Human Chorionic Gonadotropin|CGA|HTC2|CGB5,0.0379620
+Stanolone,0.1928072
+Ancitabine,0.1928072
+polyacrylamide gels,0.1928072
+Bromodeoxyuridine,0.1928072
+DNA topoisomerase II alpha,0.1928072
+Reinfusion,0.0079920
+Epoprostenol,0.1928072
+Dinoprost,0.1928072
+Azacitidine,0.1928072
+Disulfiram,0.0419580
+Vinorelbine tartrate,0.1928072
+Somatostatin analog|SST,0.1928072
+11-Deoxy-17-ketosteroid,0.1928072
+Thiethylperazine,0.1928072
+Anthraquinones,0.1928072
+Fluoxymesterone,0.0419580
+Nitromifene,0.1928072
+AM3,0.1928072
+human leukocyte interferon,0.0419580
+590-S,0.1928072
+Suramin,0.1928072
+Caffeine,0.1928072
+PCNU,0.1928072
+trioxifene,0.1928072
+Cytostatic Agents,0.0099900
+Agar,0.1928072
+Androstenediol,0.1928072
+rogletimide,0.1928072
+Counselling service,0.1928072
+anthracene,0.0419580
+Valproate,0.1928072
+Carubicin,0.1928072
+Debrisoquin,0.1928072
+Venous blood sampling,0.1928072
+Immunization,0.0419580
+Androsterone,0.1928072
+embryonic antigen,0.1928072
+Pericardiotomy,0.0419580
+Somatostatin,0.0419580
+HYB 165,0.1928072
+Testolactone,0.1928072
+Laryngeal Masks,0.1928072
+recombinant human thrombopoietin,0.1928072
+N-desmethyltoremifene,0.1928072
+PROTEIN TEST,0.1928072
+Artificial Arm,0.1928072
+Continuous Intravenous Infusion,0.0419580
+Supplementation,0.0419580
+Vasoactive Intestinal Peptide,0.1928072
+Eflornithine,0.0419580
+Deoxyribonucleases,0.1928072
+Eicosapentaenoic Acid,0.1928072
+Suramin,0.0419580
+cobalt bleomycin,0.1928072
+Hydrogen Peroxide,0.1928072
+THERATOPE,0.0419580
+Endoxan,0.0419580
+Forequarter amputation,0.1928072
+abarelix,0.1928072
+SU 11248,0.1928072
+Epoetin Alfa,0.1928072
+ID-1,0.1928072
+Blood Transfusion,0.0419580
+Alprazolam,0.1928072
+Tacrolimus,0.1928072
+Gemzar,0.1928072
+Transmission Electron Microscopes,0.1928072
+Duet,0.1928072
+Recombinant Epidermal Growth Factor,0.1928072
+Therapeutic regimen,0.0419580
+sargramostim,0.0419580
+Riboflavin,0.1928072
+salmon calcitonin,0.1928072
+Chromogranin A,0.1928072
+Systemic Therapy,0.0079920
+"Hysterectomy, Vaginal",0.1928072
+adduct,0.1928072
+Tranilast,0.1928072
+Quercetin,0.1928072
+Acupressure,0.1928072
+cytarabine liposomal,0.0419580
+Neupogen,0.1928072
+Toremifene Citrate,0.0419580
+halichondrin B,0.1928072
+Controllers,0.1928072
+Scissors,0.1928072
+"Receptors, Progesterone",0.1928072
+Electroretinographs,0.1928072
+furanodiene,0.1928072
+Mesylates,0.1928072
+"Drugs, Investigational",0.0419580
+Triethylenetetramine,0.1928072
+Niclosamide,0.1928072
+lycorine,0.1928072
+Riluzole,0.1928072
+pirfenidone,0.1928072
+"Infusion Pumps, Implantable",0.1928072
+Taurine,0.1928072
+cirsimaritin,0.1928072
+ursolic acid,0.1928072
+testosterone undecanoate,0.1928072
+matrine,0.1928072
+Cyclin-Dependent Kinase Inhibitor 2A|CDK4,0.1928072
+Ally,0.1928072
+TRANSCRIPTION FACTOR,0.1928072
+Versed,0.1928072
+Arsenal,0.0419580
+fisetin,0.0419580
+Nausea care,0.1928072
+Right hemicolectomy,0.1928072
+Potassium Channel Blockers,0.1928072
+Debridement,0.1928072
+Oxygen,0.1928072
+ZD 0473,0.0419580
+Somatostatin analog|SST,0.0419580
+Antithrombin III,0.0379620
+Deoxycholic Acid,0.1928072
+hydrochloride,0.0419580
+Novobiocin,0.0419580
+"5,6-dihydro-5-azacytidine",0.1928072
+Doxil,0.1928072
+Breast neoplasm screening,0.0099900
+low protein,0.0379620
+Activins,0.1928072
+adenovirus p53,0.1928072
+Metoclopramide,0.1928072
+Biofeedback,0.1928072
+Orathecin,0.1928072
+Treatment Guidelines,0.0419580
+Triage,0.1928072
+Dichloroacetate,0.0419580
+Charts,0.0419580
+Phosphorus,0.1928072
+Treatment Protocols,0.0000000
+Minoxidil,0.1928072
+podophyllotoxin,0.1928072
+Charcoal,0.1928072
+Treatment Protocols,0.0079920
+Epidermal growth factor receptor inhibitor,0.0109890
+Oxycodone,0.0419580
+gemifloxacin,0.1928072
+Valine,0.1928072
+indoleamine,0.1928072
+"Insulin, Glargine, Human",0.1928072
+Induced Hyperthermia,0.0419580
+Fentanyl,0.1928072
+Parathyroid Hormones,0.0099900
+donepezil,0.0099900
+mangostin,0.1928072
+geldanamycin analogue,0.1928072
+Samarium SM 153 lexidronam,0.1928072
+Flexor,0.1928072
+Dyes,0.1928072
+Compete,0.0109890
+Matrix Metalloproteinase Inhibitor,0.1928072
+Peripherally inserted central catheter,0.1928072
+Saline,0.1928072
+Dandelion Extract,0.1928072
+"Glycosylation End Products, Advanced",0.1928072
+Signal Transduction Inhibitor,0.0419580
+Pain rehabilitation,0.1928072
+ibandronic acid,0.0419580
+Cellulose sodium phosphate,0.1928072
+cancer prevention,0.1928072
+Exogenous hormones,0.1928072
+Hypothalamic inhibiting factor,0.1928072
+Gadolinium,0.1928072
+Debulking - action,0.1928072
+ginsenoside Rk1,0.1928072
+NanoGel,0.1928072
+EMBRYO EXTRACT,0.1928072
+treatment follow-up,0.1928072
+schisandrin,0.1928072
+anticoagulation,0.1928072
+kaempferol,0.1928072
+Liposomes,0.0419580
+Cartridges,0.1928072
+Oral medication,0.0419580
+Anti-diabetic Agent,0.1928072
+pertuzumab|EREG|ESR1,0.1928072
+Amygdalin,0.1928072
+Polysaccharides,0.0419580
+atezolizumab|CD274,0.0439560
+dan-shen root extract,0.1928072
+Novantrone,0.1928072
+Heterocyclic Compounds,0.1928072
+Lipopolysaccharides,0.1928072
+other medicated shampoos in ATC,0.0009990
+Phosphatidylinositide 3-Kinase Inhibitor,0.0139860
+Rechallenge,0.0089910
+Therapeutic regimen,0.0029970
+everolimus,0.0139860
+Duration,0.0000000
+Implantable Injection/Infusion Ports,0.1928072
+Aromasin,0.0139860
+AZD5363,0.0019980
+Nelipepimut-S,0.1928072
+Maytansinoid DM1,0.0289710
+Extraction,0.0009990
+TAC Regimen,0.0439560
+Antibiotics,0.1928072
+cabozantinib,0.0289710
+Polyamines,0.0439560
+"Administration, Oral",0.0289710
+Osteotomy,0.1928072
+topotecan,0.1928072
+Benzopyrans,0.0439560
+oleandrin,0.1928072
+CIGB-300,0.1928072
+berberine,0.1928072
+8-chloroadenosine,0.1928072
+turmeric extract,0.1928072
+Tomotherapy,0.0009990
+Interventional procedure,0.0139860
+valeric acid,0.1928072
+chlorogenic acid,0.1928072
+Buparlisib,0.1928072
+Clinical Treatment,0.0139860
+novel AODU treatment method,0.0379620
+Precision Medicine,0.0000000
+Resatorvid,0.1928072
+germine,0.1928072
+Dose Regimen,0.0089910
+oleanolic acid,0.0289710
+Platinum Compounds,0.0439560
+notoginsenoside R1,0.1928072
+Letrozole/Palbociclib Regimen,0.1928072
+prednisolone,0.0439560
+edelfosine,0.0439560
+Carbon Dioxide Lasers,0.1928072
+Metastasectomy,0.0289710
+BARRIER,0.0009990
+veliparib,0.0089910
+toremifene,0.0139860
+Diterpenes,0.0439560
+glucose,0.1928072
+Prophylactic treatment,0.0019980
+9-anilinoacridine,0.1928072
+inosine,0.1928072
+rasagiline,0.1928072
+paclitaxel protein-bound,0.0289710
+Whole Breast Irradiation,0.0439560
+lecithin,0.0439560
+Cannabidiol,0.1928072
+FAPI-04,0.1928072
+pegfilgrastim-cbqv,0.1928072
+Dihydroorotate Dehydrogenase Inhibitor,0.0439560
+water,0.1928072
+Peripherally inserted central catheter (physical object),0.0439560
+Clinical Treatment,0.0439560
+elacestrant,0.0289710
+tetrathiomolybdate,0.0439560
+durvalumab,0.0089910
+MDM2 Inhibitor,0.1928072
+Epidermal growth factor receptor inhibitor (product),0.0439560
+130-nm albumin-bound paclitaxel,0.0009990
+Angiotensin II receptor antagonist,0.0059940
+IPI-549,0.1928072
+oleylamine,0.0439560
+phytochlorin,0.1928072
+apigenin,0.1928072
+Small Molecule,0.0089910
+family intervention,0.1928072
+"1,2-di-(4-sulfamidophenyl)-4-butylpyrazolidine-3,5-dione",0.0439560
+Phosphatidylinositide 3-Kinase Inhibitor,0.0019980
+voacamine,0.1928072
+colloid sulfur,0.1928072
+diallyl disulfide,0.0439560
+venetoclax,0.0289710
+andrographolide,0.0139860
+Glycome,0.1928072
+Primary operation,0.0439560
+Alpelisib/Fulvestrant Regimen,0.0089910
+dibenzyl trisulfide,0.0439560
+evodiamine,0.0289710
+pertuzumab,0.0079920
+removal technique,0.0079920
+atezolizumab,0.0079920
+Encequidar,0.0289710
+delphinidin,0.1928072
+etoricoxib,0.1928072
+BIX 02189,0.1928072
+paclitaxel,0.0379620
+afatinib,0.1928072
+cancer care,0.0289710
+omega-3 fatty acids,0.0089910
+gemcitabine,0.0019980
+indocyanine green,0.0139860
+BMS202,0.0439560
+Amino Acids,0.0439560
+Giredestrant,0.0139860
+laser irradiation,0.0439560
+Oxaliplatin Regimen,0.0289710
+Salpingo-oophorectomy,0.0000000
+margetuximab,0.1928072
+gallic acid,0.0439560
+protodioscin,0.0139860
+Taselisib,0.0089910
+anemoside A3,0.0439560
+chlorodihydroxypyridine/potassium oxonate/tegafur,0.0019980
+dipyrromethene,0.0439560
+Third line treatment,0.0089910
+Desensitization,0.0009990
+dioscin,0.0439560
+Thyroid Hormones,0.0099900
+chamomile flower oil,0.0439560
+furosemide,0.1928072
+dopamine,0.1928072
+fosbretabulin,0.1928072
+glyceollin,0.0289710
+gambogic acid,0.0439560
+Century (brand of multivitamin),0.1928072
+Encequidar,0.1928072
+starch,0.1928072
+hydrocortisone,0.1928072
+"Diet, Mediterranean",0.0099900
+Isatin,0.1928072
+Endocrine drugs,0.0089910
+paclitaxel protein-bound,0.0089910
+utomilumab,0.1928072
+monalizumab,0.0089910
+Mammaplasty,0.0000000
+kinase inhibitor,0.0289710
+sacubitril / valsartan,0.1928072
+novel AODU treatment method,0.0000000
+anastrozole,0.0089910
+sesame oil,0.1928072
+BARRIER,0.0019980
+ropivacaine,0.1928072
+protopine,0.0439560
+afimoxifene,0.1928072
+Epoxyeicosatrienoic Acid,0.0379620
+Fulvestrant/Palbociclib Regimen,0.0139860
+Datopotamab deruxtecan,0.0439560
+"Analgesics, Opioid",0.1928072
+ribociclib,0.0099900
+lasiokaurin,0.0439560
+carmustine,0.1928072
+MCC protocol,0.0289710
+Pain relief,0.0289710
+gaillardin,0.1928072
+adapalene,0.1928072
+fluorodeoxyglucose F18,0.0139860
+dacarbazine,0.1928072
+First line treatment,0.0099900
+Ipilimumab/Nivolumab Regimen,0.0439560
+Oxindoles,0.1928072
+High intensity focused ultrasound,0.0439560
+SGN-LIV1A,0.0439560
+serine,0.0439560
+derivatives,0.1928072
+Thiosemicarbazones,0.0439560
+zalcitabine,0.1928072
+cholesterol,0.1928072
+acetaminophen,0.1928072
+dextran 40,0.0029970
+Non-Viral Vector,0.1928072
+andrographolide,0.0419580
+CDRI 85-287,0.1928072
+Coumaric Acids,0.0419580
+Induction,0.0109890
+Deamino Arginine Vasopressin,0.1928072
+Lecithin,0.1928072
+cucurbitacin D,0.1928072
+limonene,0.1928072
+Testing,0.0419580
+Camptothecin,0.0419580
+Dilatation and Curettage,0.0419580
+trabectedin,0.1928072
+ursolic acid,0.0419580
+adalimumab,0.0419580
+Drug eluting stent,0.1928072
+hepatic arterial infusion,0.0419580
+Levodopa,0.1928072
+Lovastatin,0.1928072
+Altretamine,0.1928072
+Somatotropin,0.1928072
+Cordotomy,0.1928072
+"3-(3,5-dichlorophenyl)-1-methyl-2,5-pyrrolidinedione",0.0419580
+3MC,0.1928072
+Antihormone,0.1928072
+Strontium-89,0.1928072
+particle,0.0109890
+port-a-cath,0.1928072
+PRESERVATIVE,0.1928072
+Bromocriptine,0.1928072
+Testosterone,0.0419580
+Wedge resection - action,0.1928072
+gallium nitrate,0.0419580
+Mouse monoclonal antibody,0.1928072
+Recombinant Interferon,0.1928072
+bis(bromoacetyl)hexestrol,0.1928072
+Interferons,0.0419580
+Nolvadex,0.0079920
+trilostane,0.0419580
+Castration,0.0419580
+Teniposide,0.0419580
+Ovariectomy,0.0099900
+Transsphenoidal hypophysectomy,0.1928072
+maxacalcitol,0.1928072
+calusterone,0.1928072
+Oxyphenbutazone,0.1928072
+Amsacrine,0.0419580
+Prostaglandins,0.1928072
+Mantle field irradiation,0.1928072
+vitamin analog,0.1928072
+Toremifene Citrate,0.1928072
+MDL 101731,0.1928072
+Removes,0.1928072
+camptothecin-11,0.1928072
+Orchiectomy,0.1928072
+Floxuridine,0.1928072
+Pentetic Acid,0.0379620
+Somatostatin|SST,0.1928072
+8-chloro-cyclic adenosine monophosphate,0.1928072
+Toremifene 60 MG,0.1928072
+yuehchukene,0.1928072
+Mental health care,0.1928072
+Daunorubicn liposome,0.0419580
+pegfilgrastim,0.0099900
+CI1033,0.1928072
+Agent,0.0099900
+bexarotene,0.1928072
+indole-3-carbinol,0.0419580
+Protein Microarrays,0.1928072
+ICI 182780,0.1928072
+gemcitabine/oxaliplatin,0.0419580
+Extrapleural pneumonectomy,0.1928072
+Oral phenobarbitone,0.1928072
+zoledronate,0.0419580
+Ro 5-4864,0.1928072
+Electrocoagulation,0.1928072
+Gallic acid,0.1928072
+Chest Weights,0.1928072
+Lysine,0.1928072
+Oral form dexamethasone,0.1928072
+Carboxymethylcellulose Sodium,0.1928072
+BMS 310705,0.1928072
+Vitrectomy,0.1928072
+icaritin,0.1928072
+phthalocyanine,0.1928072
+Aldosterone Synthase|CYP11B2,0.1928072
+Guaifenesin,0.1928072
+benzyl isothiocyanate,0.1928072
+Goserelin 3.6 MG,0.1928072
+Glutaral,0.1928072
+diisopropylamine dichloroacetate,0.1928072
+lingzhi,0.1928072
+Polyethyleneimine,0.0419580
+Scopolamine Hydrobromide,0.0419580
+Aloe Emodin,0.1928072
+"Polycyclic Hydrocarbons, Aromatic",0.1928072
+Minocycline,0.1928072
+germacrone,0.1928072
+Iridoids,0.1928072
+Thyroxine,0.1928072
+EUK-134,0.1928072
+ST 1926,0.1928072
+Fluoxetine,0.1928072
+Gases,0.1928072
+hispolon,0.1928072
+"Genes, Viral",0.1928072
+goniothalamin,0.1928072
+LipoDox,0.1928072
+Nelfinavir,0.1928072
+Natural Remedies,0.1928072
+benzothiazole,0.1928072
+Annexin A1|ANXA1,0.1928072
+IgG1,0.1928072
+"Sperm Injections, Intracytoplasmic",0.1928072
+pyrrolidine hydrochloride,0.1928072
+Fluorides,0.0419580
+Continuous Intravenous Infusion,0.1928072
+phthalates,0.1928072
+Ras Inhibitor,0.1928072
+Protective cup,0.1928072
+Bromelains,0.1928072
+Secoiridoids,0.0419580
+Phenolics,0.1928072
+chloroethylnitrosourea,0.1928072
+Virulence Factors,0.1928072
+alitretinoin,0.1928072
+Amifostine,0.0419580
+marimastat,0.0419580
+Allografting,0.1928072
+Somatostatin analog,0.1928072
+Polyamines,0.0419580
+gabapentin,0.1928072
+Halotestin,0.0099900
+Fenretinide,0.0419580
+piroxantrone,0.0419580
+P-2,0.1928072
+Chest wall reconstruction,0.1928072
+Effleurage,0.1928072
+Reduced Glutathione,0.1928072
+Care provision regimes,0.1928072
+Leptin|LEP,0.0419580
+Astemizole,0.1928072
+pyridoxine,0.1928072
+Octreotide,0.1928072
+Mesylates,0.0419580
+"1-phenyl-3,3-dimethyltriazene",0.1928072
+PAMAM dendrimer,0.1928072
+Warfarin,0.1928072
+Treatment Guidelines,0.0109890
+astragaloside IV,0.0419580
+infliximab,0.1928072
+anacardic acid,0.1928072
+"N,N,N',N'-tetrakis(2-pyridylmethyl)ethylenediamine",0.1928072
+vulpinic acid,0.1928072
+Influenza vaccination,0.1928072
+dimer,0.1928072
+"9-methoxy-N,N-dimethyl-5-nitropyrazolo(3,4,5-k)acridine-2(6H)-propanamine",0.0419580
+Antihormone,0.0419580
+celecoxib,0.0099900
+Antithrombin III,0.1928072
+Transurethral Resection of Prostate,0.1928072
+Farnesyl Transferase Inhibitor,0.0419580
+ramosetron,0.1928072
+Ellence,0.1928072
+Tags,0.1928072
+carvedilol,0.1928072
+VEGF gene|VEGFA,0.1928072
+Fluorodeoxyglucose F18,0.0419580
+Lipectomy,0.1928072
+Alar,0.1928072
+cetuximab,0.0419580
+Decompressive incision,0.1928072
+Bolero,0.0419580
+Granulocyte Colony-Stimulating Factor,0.0099900
+CI 1040,0.1928072
+Strut,0.1928072
+cancer care,0.0379620
+MFG,0.1928072
+Paravertebral anesthesia,0.1928072
+Mylotarg,0.1928072
+Tooth Extraction,0.1928072
+Perforators,0.1928072
+Pyrrolidinedithiocarbamate,0.1928072
+thioredoxin peroxidase,0.1928072
+Craniotomy,0.0419580
+Sirolimus (substance),0.0419580
+coenzyme Q10,0.1928072
+Arthroplasty,0.1928072
+exemestane,0.0089910
+docetaxel,0.0000000
+eribulin,0.0029970
+Uprosertib,0.0439560
+liposomal honokiol,0.0289710
+Therapeutic regimen,0.0139860
+Genetic Counseling,0.0439560
+CUDC-907,0.1928072
+neplanocin A,0.0439560
+Free Tissue Transfer,0.1928072
+prexasertib,0.0439560
+tocilizumab,0.0439560
+curcumin,0.0289710
+testosterone,0.1928072
+bruceine D,0.1928072
+Primary operation,0.0059940
+citronellol,0.1928072
+Pedometer,0.1928072
+berbamine,0.1928072
+Adagloxad Simolenin,0.0289710
+Fulvestrant/Palbociclib Regimen,0.0289710
+Investigational New Drugs,0.0089910
+niraparib,0.1928072
+Anti-Fungal,0.1928072
+fibrinogen,0.1928072
+Drug Repositioning,0.0109890
+durvalumab,0.0289710
+"Fatty Acids, Volatile",0.1928072
+jaceosidin,0.1928072
+Indazoles,0.0139860
+Imaging Device,0.0439560
+delta1-Dihydrotestosterone,0.1928072
+Tomotherapy,0.1928072
+ritonavir,0.0439560
+cinnamic aldehyde,0.1928072
+triptonide,0.0439560
+tucatinib,0.1928072
+ritonavir,0.0289710
+Compression garment,0.1928072
+"Synthetic antiestrogen, NOS",0.1928072
+sunitinib,0.0139860
+Hinge (physical object),0.0439560
+Intramedullary rod,0.0289710
+copanlisib,0.0089910
+BARRIER,0.0289710
+verapamil,0.0439560
+nivolumab,0.0289710
+warangalone,0.1928072
+carnosine,0.1928072
+Genomic screening,0.0439560
+triclosan,0.1928072
+mebendazole,0.0439560
+RO5126766,0.0439560
+Zinostatin,0.0439560
+complex (molecular entity),0.1928072
+Lipopeptides,0.0439560
+CPG-ODN,0.0439560
+Biopharmaceuticals,0.0289710
+Steroidal estrogen preparation,0.0139860
+vinblastine,0.1928072
+Fatty Acids,0.0439560
+lurbinectedin,0.0439560
+elacestrant,0.0139860
+Molecular Target,0.0289710
+Small Molecule,0.1928072
+Androgens,0.0439560
+Pheophytins,0.0289710
+Small Molecule,0.0439560
+gypenoside,0.1928072
+alpelisib,0.0439560
+Implants,0.0439560
+corynoline,0.0439560
+apatinib,0.1928072
+fucoxanthin,0.1928072
+cannabidiol,0.1928072
+SARS-CoV-2 vaccination,0.1928072
+Re-Irradiation,0.1928072
+Injection of anesthetic agent into stellate ganglion,0.1928072
+beta-escin,0.0089910
+proxalutamide,0.0289710
+APR-246,0.1928072
+Precision Medicine,0.0289710
+lactoperoxidase,0.1928072
+dimethyl fumarate,0.0439560
+MSX-122,0.1928072
+removal technique,0.0439560
+IR 780,0.0439560
+Purine nucleoside phosphorylase inhibitor,0.1928072
+Platinum Doublet,0.0439560
+turmeric oil,0.1928072
+withaferin A,0.0439560
+Retaspimycin,0.1928072
+Ganetespib,0.1928072
+Primary operation,0.0099900
+zoledronic acid,0.0089910
+carvacrol,0.1928072
+Gases,0.0439560
+complex (molecular entity),0.0379620
+amygdalin,0.0439560
+Single Agent Therapy,0.0009990
+Caffeic Acid Phenethyl Ester,0.1928072
+polysialic acid,0.1928072
+Postoperative rehabilitation,0.1928072
+novel AODU treatment method,0.0139860
+simvastatin,0.0009990
+Liposomes,0.0289710
+"Blood Patch, Epidural",0.1928072
+mifepristone,0.1928072
+Transection (procedure),0.0139860
+Mepitel Film,0.1928072
+simvastatin,0.1928072
+glutathione,0.0439560
+Immunotoxins,0.0089910
+metformin,0.0089910
+pralsetinib,0.1928072
+ONC201,0.0289710
+GDC-0810,0.1928072
+Prodigiosin,0.0439560
+Alleviating anxiety,0.1928072
+riluzole,0.0139860
+rutecarpine,0.0439560
+Antibody-Drug Conjugates,0.0059940
+venetoclax,0.1928072
+boric acid,0.1928072
+sulforafan,0.0439560
+Low-Dose Aspirin,0.1928072
+thrombin,0.0439560
+Interferon-alpha|IFNA1,0.1928072
+kahweol,0.0439560
+Cymarine,0.1928072
+polyphyllin II,0.1928072
+Dalpiciclib,0.0089910
+Creatine Supplementation,0.1928072
+tipiracil / trifluridine,0.0289710
+Protein-tyrosine kinase inhibitor,0.0439560
+Pectins,0.1928072
+Viscum album preparation,0.1928072
+hydroxypropylbetadex (0.58-0.68 MS),0.0439560
+vorinostat,0.0439560
+5-dimethylamiloride,0.1928072
+Esters,0.1928072
+Injection of therapeutic agent,0.1928072
+Adebrelimab,0.0439560
+Ladiratuzumab vedotin,0.1928072
+minocycline,0.0439560
+isobavachalcone,0.0439560
+Adagloxad simolenin,0.0289710
+Motivational Interviewing,0.1928072
+Caloric Restriction,0.0439560
+schizandrin B,0.1928072
+tumor removal,0.1928072
+Elimusertib,0.0439560
+Antibiotics,0.0019980
+"Infusions, Regional Arterial",0.1928072
+Educational Intervention,0.1928072
+Molecular Target,0.0139860
+Tannic Acid,0.0379620
+Endostatins,0.0419580
+glabridin,0.1928072
+Prevention,0.0109890
+naringin,0.1928072
+fotemustine,0.1928072
+triptolide,0.1928072
+Quinazolines,0.1928072
+Durapatite,0.1928072
+diallyl disulfide,0.1928072
+Rubidazone,0.0419580
+Suction Lipectomy,0.1928072
+ESTROGENIC SUBSTANCES,0.1928072
+Methylprednisolone 40 MG,0.1928072
+gamma-tocotrienol,0.0419580
+Methylprednisolone,0.1928072
+Busulfan,0.0419580
+Analog,0.0419580
+Human rabies vaccine|HDC,0.1928072
+polychlorinated dibenzofurans,0.1928072
+Corticotropin|POMC,0.0419580
+Antithymoglobulin,0.1928072
+Transcutaneous Acupoint Electrical Stimulation,0.1928072
+Octreotide,0.0419580
+didemnin B,0.0419580
+Difluoromethylornithine,0.1928072
+Indomethacin,0.1928072
+platinum transferrin,0.1928072
+fludarabine,0.0419580
+Muramidase|LYZ,0.1928072
+VM-26,0.0419580
+Dipyridamole,0.1928072
+ICI-118630,0.1928072
+PCNU,0.0419580
+lipid-associated sialic acid,0.1928072
+Flutamide,0.0419580
+Thymopentin,0.1928072
+Procarbazine,0.0419580
+Zoladex,0.0419580
+Nimustine,0.1928072
+ellipticine,0.1928072
+Laxatives,0.1928072
+Ftorafur,0.0419580
+Estramustinphosphate,0.1928072
+Compresses,0.1928072
+testololactone,0.0419580
+Mitomycins,0.1928072
+Tanderil,0.1928072
+acivicin,0.0419580
+Dinitrochlorobenzene,0.1928072
+adjuvant P40,0.1928072
+Glucocorticoids,0.0419580
+Calcitonin,0.0419580
+festal,0.1928072
+Simonton technique,0.1928072
+Arimidex,0.1928072
+Medrogestone,0.1928072
+Methyl-gag,0.0419580
+Androstenediols,0.1928072
+Hycanthone,0.1928072
+Peptichemio,0.0419580
+Nolvadex,0.1928072
+Corticotropin,0.1928072
+Melphalan|PAM,0.0419580
+Compression bandaging,0.1928072
+thymalfasin,0.1928072
+Continuous infusion,0.0419580
+MST 16,0.1928072
+Intra-Arterial Infusions,0.0419580
+molgramostim,0.1928072
+"Cholecystectomy, Laparoscopic",0.1928072
+Whole blood transfusion,0.0099900
+WARFARIN TREATMENT,0.1928072
+Somatuline,0.1928072
+Folic Acid Antagonists,0.1928072
+Gonadal Steroid Hormones,0.0099900
+Neovastat,0.1928072
+tropisetron,0.1928072
+Filgrastim,0.0099900
+Tyrphostins,0.1928072
+Multidrug Resistance Modulator,0.0419580
+Domperidone,0.1928072
+Procedure on spinal cord,0.0419580
+Disease management program,0.1928072
+Microbicides,0.1928072
+"N,N-Dimethyltryptamine",0.1928072
+Nicotinic Acid,0.1928072
+Anthroposophical medicine,0.1928072
+cognitive technique,0.1928072
+Anesthetics,0.1928072
+Protease Inhibitor,0.1928072
+Gastrin releasing peptide,0.1928072
+"VEGF protein, human|VEGFA",0.1928072
+gemcitabine,0.0079920
+epothilone B,0.1928072
+formononetin,0.1928072
+Communication interventions,0.0099900
+PK 11195,0.1928072
+Ketones,0.1928072
+Pancreatic Polypeptide,0.1928072
+Thermoablation,0.1928072
+sinomenine hydrochloride,0.1928072
+Daclizumab,0.0419580
+Chloroform,0.1928072
+Methanol,0.1928072
+Tolerogen,0.1928072
+"Anesthesia, Conduction",0.1928072
+Isotonic exercise,0.1928072
+Disulfiram,0.0109890
+Treadmill,0.0099900
+Craniotomy,0.1928072
+Norepinephrine,0.1928072
+Antimetastatic Agent,0.0099900
+parecoxib,0.1928072
+Pyrimethamine,0.1928072
+Anchoring,0.1928072
+Flavones,0.1928072
+Organic solvent product,0.1928072
+kadsurenone,0.0419580
+Manifolds,0.1928072
+CpG 7909,0.1928072
+borrelidin,0.0419580
+Intervention regimes,0.1928072
+Mianserin,0.1928072
+Extracorporeal immunoadsorption,0.0419580
+Somatomedins|BP3,0.1928072
+Serotonin,0.1928072
+oblimersen,0.1928072
+benzophenone,0.1928072
+Experimental drug,0.0419580
+Cognitive restructuring,0.0079920
+Ciprofloxacin,0.1928072
+Depreotide,0.1928072
+Early Intervention (Education),0.1928072
+brivudine,0.1928072
+early detection of colorectal cancer,0.1928072
+Recombinant Erythropoietin,0.1928072
+Herbal supplement,0.1928072
+pioglitazone,0.1928072
+lidamycin,0.1928072
+Estramustine Phosphate Sodium,0.0419580
+Angiopoietin-2,0.1928072
+Diclofenac,0.1928072
+Compete,0.0099900
+inhibin B,0.1928072
+Polypharmacy,0.1928072
+wogonoside,0.1928072
+Microdochectomy,0.1928072
+letrozole,0.0099900
+Total Estrogen Blockade,0.1928072
+5-hydroxymethyl-2'-deoxyuridine,0.1928072
+CYTOKERATINS,0.0419580
+Amidone brand of methadone,0.1928072
+talaporfin sodium,0.1928072
+Receptor Protein-Tyrosine Kinases,0.1928072
+VBM protocol,0.1928072
+"5,6-dimethylxanthenoneacetic acid",0.0379620
+Freund's Adjuvant,0.0079920
+Sufentanil,0.1928072
+Losartan,0.1928072
+temozolomide,0.0419580
+Caelyx,0.0419580
+tetrahydrocurcumin,0.1928072
+Emetine,0.1928072
+Phosphotransferases,0.1928072
+Glycerol,0.1928072
+connective tissue-activating peptide,0.1928072
+Orthopedic inserts,0.1928072
+Vaginal Rings,0.1928072
+Reframing,0.1928072
+Psychological counseling,0.1928072
+DNA Sequencers,0.1928072
+Castor Oil,0.0419580
+amidronate,0.0099900
+BETA BLOCKER TREATMENT,0.1928072
+Oral medication,0.1928072
+sinomenine,0.0419580
+Diethylhexyl Phthalate,0.1928072
+garenoxacin,0.1928072
+Fenofibrate,0.1928072
+Lasofoxifene,0.1928072
+Calcifediol,0.1928072
+Explorers,0.1928072
+Sulpiride,0.1928072
+"Fatty Acids, Omega-3",0.1928072
+LG 100268,0.1928072
+Endocannabinoids,0.1928072
+Vitamin K 2,0.1928072
+Traps,0.1928072
+Propranolol,0.0079920
+Advance,0.0000000
+Logotherapy,0.1928072
+Open approach,0.0419580
+Dexmedetomidine,0.1928072
+removal technique,0.0099900
+proxigermanium,0.1928072
+ixabepilone,0.0089910
+afatinib,0.0439560
+arsenite,0.1928072
+Immune Checkpoint Inhibitor,0.1928072
+Navelbine,0.0289710
+tranexamic acid,0.1928072
+sacituzumab govitecan,0.0089910
+antineoplaston A10,0.0439560
+pseurotin,0.1928072
+Recombinant Human Endostatin,0.0079920
+desloratadine,0.1928072
+CDK4/6 Inhibition,0.0439560
+MLN4924,0.1928072
+"Lasers, Semiconductor",0.1928072
+ABT 263,0.1928072
+Definitive Treatment,0.0079920
+LETROZOLE/RIBOCICLIB,0.0289710
+polyphenols,0.0439560
+EC Breast Regimen,0.0139860
+Basis,0.0000000
+First line treatment,0.0000000
+Huaier Extract Granule,0.1928072
+gold,0.0439560
+arglabin,0.1928072
+Spinal instrumentation,0.0289710
+talazoparib,0.0439560
+Cardiac pacemaker replaced,0.1928072
+Creation of ventriculo-peritoneal shunt,0.0289710
+Hematoxylin,0.0439560
+PI103,0.1928072
+Treatment Protocols,0.0009990
+arctigenin,0.0089910
+Duration,0.0289710
+"Eosinum, eosin, Homeopathic preparation",0.1928072
+"Antibodies, Bispecific",0.0089910
+Cold Plasma,0.0289710
+pentoxifylline,0.0289710
+Promegapoietin,0.1928072
+PAMAM dendrimer,0.0089910
+Nerve Block,0.0289710
+sesamol,0.0000000
+"Breast reconstruction with latissimus dorsi flap, without prosthetic implant",0.1928072
+chlorodihydroxypyridine/potassium oxonate/tegafur,0.1928072
+ceramides,0.1928072
+Breast tissue expander,0.1928072
+gefitinib,0.0439560
+GT0918,0.0289710
+Second line treatment,0.1928072
+amentoflavone,0.1928072
+systemic administration,0.0109890
+Stabilization,0.1928072
+Chk1 Inhibitor,0.1928072
+Androgen Suppression,0.1928072
+halofuginone,0.1928072
+folic acid,0.1928072
+anthracene,0.0439560
+genistein,0.1928072
+AS 1411,0.1928072
+Gamma Secretase Inhibitors,0.0439560
+isoeugenol,0.0139860
+Innovative Therapies,0.0439560
+isoeugenol,0.1928072
+Detection,0.0289710
+lysophosphatidic acid,0.0439560
+muconomycin A,0.0439560
+desethylamiodarone,0.0439560
+Recombinant human granulocyte colony stimulating factor|CSF2|LAMC2,0.0099900
+pheophorbide a,0.1928072
+Indirect Treatment,0.1928072
+TAC Regimen,0.0009990
+silicon phthalocyanine,0.0439560
+Whole Breast Irradiation,0.0089910
+von Willebrand factor,0.1928072
+Diterpenes,0.1928072
+acarbose,0.1928072
+adenosine,0.0439560
+phenelzine,0.0289710
+iron,0.0139860
+cabazitaxel,0.0019980
+lurbinectedin,0.0289710
+naringenin,0.0109890
+Purines,0.0089910
+trilaciclib,0.0439560
+DCC-2036,0.0439560
+CP 466722,0.1928072
+Oxadiazoles,0.1928072
+Mind-Body Therapies,0.1928072
+Fibrin,0.0439560
+Implants,0.0000000
+Matrix,0.0439560
+erucylphosphocholine,0.0289710
+niclosamide,0.1928072
+Synthetic Drugs,0.1928072
+Active ingredient,0.1928072
+lipegfilgrastim,0.1928072
+acetylcarnitine,0.1928072
+Single Agent Therapy,0.0019980
+Lobectomy,0.0439560
+Ovariectomy,0.0139860
+diethyldithiocarbamate,0.0289710
+hesperidin,0.1928072
+BARRIER,0.0139860
+bosutinib,0.0289710
+carbopol 934,0.1928072
+nicotinamide adenine dinucleotide (NAD),0.0139860
+altretamine,0.0289710
+4-hydroxy-2-nonenal,0.1928072
+galangin,0.1928072
+RID,0.1928072
+genistin,0.1928072
+Anastrozole/Palbociclib Regimen,0.0139860
+vorinostat,0.1928072
+breviscapine,0.1928072
+brucine,0.0439560
+Second line treatment,0.0139860
+Screening mammography,0.0000000
+quercetin,0.0439560
+Generic Drugs,0.0439560
+gonadorelin|GNRH1,0.0089910
+Amcenestrant,0.1928072
+oxymatrine,0.0439560
+Fluoropyrimidine,0.0289710
+LY 255283,0.0439560
+calcium carbonate / magnesium carbonate,0.0289710
+durvalumab,0.0439560
+adjunctive treatment,0.1928072
+Poziotinib,0.0089910
+nitric oxide,0.0439560
+methamphetamine,0.1928072
+Thiazoles,0.0439560
+ruxolitinib,0.0109890
+Tensionless Vaginal Tape,0.1928072
+baicalin,0.1928072
+omega-3 fatty acids,0.0289710
+Methionine gamma-lyase,0.0089910
+tetraxetan,0.1928072
+piperic acid,0.0439560
+Innovative Therapies,0.0089910
+Folic acid supplementation,0.1928072
+5-Trimethoxyamphetamine,0.1928072
+Dichloroacetate,0.1928072
+Niacinamide,0.1928072
+Fenclonine,0.1928072
+paclitaxel liposome,0.0099900
+Chlorpromazine,0.1928072
+monomer,0.1928072
+Autogenic Training,0.1928072
+atorvastatin,0.0419580
+PD 150606,0.1928072
+Lomustine,0.1928072
+Punch,0.1928072
+Anisomycin,0.1928072
+Diosgenin,0.0419580
+flavone acetic acid,0.0379620
+Adrenalectomy,0.0109890
+CI 973,0.0419580
+Zitazonium,0.1928072
+TP protocol,0.1928072
+Prevention,0.0000000
+antagonists,0.0419580
+Technetium Tc 99m Pyrophosphate,0.1928072
+Talc,0.1928072
+timoptin,0.1928072
+Ellence,0.0419580
+"Cytometers, Automated, Flow",0.1928072
+Artificial cardiac pacemaker,0.1928072
+Metergoline,0.1928072
+Daunorubicin,0.0419580
+Reinfusion,0.0419580
+LY-156758,0.0419580
+Pain control,0.1928072
+homoharringtonine,0.1928072
+Whole-Body Irradiation,0.0419580
+Recombinant Interferon,0.0419580
+VP-16,0.1928072
+pyrogenal,0.1928072
+treatment method,0.0379620
+Ethane,0.1928072
+Adriablastine,0.1928072
+fibrinolysis inhibitor,0.1928072
+Androstadienes,0.1928072
+Miscleron,0.1928072
+Recombinant Granulocyte-Macrophage Colony-Stimulating Factors|CSF2|LAMC2,0.1928072
+FMC protocol,0.0419580
+"Hydrocarbons, Chlorinated",0.1928072
+liarozole,0.1928072
+Endoxan,0.1928072
+Hexestrol,0.0419580
+Blood product,0.0419580
+ALIMTA,0.1928072
+Androstanes,0.1928072
+erbB-2 Receptor,0.1928072
+Sequential Treatment,0.0079920
+Ceftazidime,0.1928072
+CT protocol,0.1928072
+Gemzar,0.0419580
+geldanamycin,0.1928072
+Doxazosin,0.1928072
+ICI-46474,0.1928072
+PD 166793,0.0419580
+indole-3-carbinol,0.1928072
+5-lipoxygenase inhibitor,0.0419580
+Buprenorphine,0.1928072
+GG918,0.1928072
+Recombinant Antibody,0.1928072
+Manual Therapies,0.1928072
+angiogenin|ANG,0.1928072
+magnolol,0.1928072
+kamisyoyo san,0.1928072
+CPG-ODN,0.1928072
+polyphenon E,0.1928072
+Catheterization,0.1928072
+honokiol,0.1928072
+norcantharidin,0.1928072
+Chinese herbs,0.0419580
+beta-hederin,0.0419580
+Escitalopram,0.1928072
+toosendanin,0.1928072
+Propolis,0.1928072
+Lactones,0.1928072
+Intramedullary rod,0.1928072
+ailanthone,0.1928072
+NanoGel,0.0419580
+Tocotrienols,0.1928072
+Protein Microarrays,0.0419580
+Gene Transduction Agent,0.0379620
+Penfluridol,0.0419580
+peoniflorin,0.1928072
+Oncolytic Virotherapy,0.0419580
+Erythropoietin,0.1928072
+DVT prophylaxis,0.1928072
+PS 341,0.0419580
+Interferon-beta|IFNA1,0.1928072
+Supervision,0.1928072
+Strogen,0.1928072
+Denervation,0.1928072
+heme d,0.1928072
+sulindac sulfone,0.0419580
+marimastat,0.1928072
+Dihydropyrimidine Dehydrogenase Inhibitor,0.1928072
+hydroxyurea,0.0419580
+Lymphazurin,0.1928072
+Prostatectomy,0.1928072
+"N(1),N(11)-diethylnorspermine",0.0419580
+ZD 6474,0.0419580
+Traction,0.1928072
+Bilirubin,0.1928072
+"ESR1 protein, human|ESR1",0.1928072
+Syringes,0.1928072
+Blood product,0.1928072
+elsamicin A,0.1928072
+Vitamin A,0.0419580
+Immune Sera,0.1928072
+Chinese herbs,0.1928072
+Topoisomerase-II Inhibitor,0.1928072
+tegafur-uracil,0.0419580
+INTRAVENOUS DRUG,0.0419580
+Recombinant Granulocyte Colony Stimulating Factor|CSF2|LAMC2,0.1928072
+4-Butyrolactone,0.0419580
+"Light Sources, Flash",0.1928072
+Steroid prophylaxis,0.1928072
+tangeretin,0.1928072
+Itraconazole,0.1928072
+Frame,0.0000000
+terminal patient care,0.0419580
+Memantine,0.1928072
+"Scales, Clinical",0.1928072
+Procarbazine,0.1928072
+Cancer Treatment,0.0419580
+Breast neoplasm screening,0.0000000
+PET protocol,0.0419580
+Oral form morphine,0.0419580
+Genexol,0.0419580
+Lutein,0.0419580
+Sodium Selenite,0.1928072
+hydroxamate,0.1928072
+Injection of anesthetic agent into suprascapular nerve,0.1928072
+Endocrine monitoring NOS,0.1928072
+tertiary prevention,0.1928072
+"Therapies, Investigational",0.0419580
+Oocyte recovery NOS,0.1928072
+2-benzyl-3-formylpropanoic acid,0.1928072
+Operation on liver,0.0379620
+topical application,0.1928072
+treosulfan,0.0419580
+4-vinylphenol,0.1928072
+Operation on liver,0.1928072
+lutetium ethylenediaminetetramethylene phosphonic acid,0.1928072
+acridone,0.1928072
+saikosaponin,0.1928072
+resiquimod,0.1928072
+Post Technique,0.0419580
+moxifloxacin,0.1928072
+Pulse Generators,0.1928072
+Sequential Treatment,0.0419580
+Intrinsic factor,0.1928072
+zoledronic acid,0.0109890
+capecitabine,0.0109890
+Daunorubicn liposome,0.0099900
+Somatropin,0.1928072
+hyaluronic acid,0.0379620
+polyethylene glycols,0.0089910
+selenite,0.0439560
+Blood Component Transfusion,0.1928072
+Treatment modification,0.0089910
+CK 17,0.0439560
+hydrocortisone,0.0289710
+Basis,0.0089910
+Zometa,0.0289710
+Metric (substance),0.0289710
+Microwave destruction - action,0.0000000
+Nodule removal,0.1928072
+P-glycoprotein Inhibitor,0.1928072
+Iniparib,0.0439560
+lithium,0.1928072
+rucaparib,0.1928072
+purpurin 18,0.0439560
+systemic administration,0.0000000
+"2,4-Dinitrophenol",0.0439560
+Deoxyglucose,0.1928072
+ipatasertib,0.0289710
+disulfiram,0.1928072
+tumor removal,0.0009990
+telmisartan,0.0439560
+Hemodialysis,0.0289710
+Aurora Kinase Inhibitor,0.0439560
+bis(beta-carboxyethyl)tin dichloride,0.1928072
+odanacatib,0.0289710
+chloroquine,0.0439560
+cryptotanshinone,0.0139860
+ivermectin,0.1928072
+enzalutamide,0.0089910
+sanguinarine,0.0139860
+progesterone,0.1928072
+guanabenz acetate,0.0439560
+Basis,0.0139860
+Nocodazole,0.1928072
+Patch Dosage Form,0.0439560
+Fluorenes,0.1928072
+tucatinib,0.0289710
+Folic Acid Antagonists,0.0439560
+Dihydrotestosterone,0.0289710
+HSP90 Inhibitor,0.0089910
+Ingredient,0.1928072
+azacitidine,0.0289710
+systemic administration,0.0079920
+exemestane,0.0009990
+IDO Inhibitor,0.0439560
+FEC protocol,0.0439560
+reishi mushroom preparation,0.0439560
+rucaparib,0.0089910
+Combination Drug Therapy,0.0019980
+Dendritic cells vaccine,0.0089910
+Estrogen Receptor Antagonists,0.1928072
+Transverse rectus abdominis myocutaneous flap,0.0109890
+opium alkaloids and derivative combination cough suppressants,0.0019980
+vitamin E,0.1928072
+macitentan,0.0439560
+betadex,0.1928072
+capecitabine,0.0000000
+Estrogen Antagonists,0.0139860
+Berberine Alkaloids,0.1928072
+thioctic acid,0.1928072
+urokinase,0.0439560
+artesunate,0.0289710
+green tea extract,0.1928072
+sodium alginate,0.1928072
+collagen,0.0439560
+Central venous cannula insertion,0.1928072
+Protein-tyrosine kinase inhibitor,0.0289710
+pamidronate,0.1928072
+N-(2-amino-5-fluorobenzyl)-4-(N-(pyridine-3-acrylyl)aminomethyl)benzamide,0.0289710
+Ganetespib,0.0019980
+Single Agent Therapy,0.0059940
+Microspheres,0.1928072
+quetiapine,0.1928072
+Estrogenic,0.0139860
+Integrative Oncology,0.1928072
+letrozole,0.0019980
+systemic administration,0.0009990
+NGR peptide,0.1928072
+Bintrafusp alfa,0.0439560
+minoxidil,0.1928072
+sulfoenolpyruvate,0.0439560
+gallic acid,0.1928072
+Boards (medical device),0.0439560
+Statin prophylaxis,0.1928072
+Rechallenge,0.0439560
+Alkaloids,0.0439560
+bufalin,0.1928072
+Fulvestrant/Palbociclib Regimen,0.0089910
+Adrenergic beta-2 Receptor Antagonists,0.1928072
+Preparation of patient,0.1928072
+dihydroartemisinin,0.0439560
+RM-581,0.1928072
+trilaciclib,0.1928072
+Oncolytic Virotherapy,0.0289710
+Tilmanocept,0.1928072
+garlic preparation,0.0139860
+ALK Inhibitor,0.0109890
+gedatolisib,0.0289710
+omega-3 fatty acids,0.1928072
+"SUPPLY, NOT OTHERWISE SPECIFIED",0.0439560
+Freund's Adjuvant,0.0139860
+Mobility aid,0.0439560
+Antimetabolites,0.0439560
+ipilimumab,0.0019980
+pimavanserin tartrate,0.0439560
+Eating practice,0.1928072
+Particle,0.0439560
+Obstetric Delivery,0.1928072
+carbetocin,0.0439560
+Antidiabetics,0.0289710
+casticin,0.0439560
+celecoxib,0.0439560
+ginsenoside Rh2,0.1928072
+mitiglinide,0.0439560
+opium alkaloids and derivative combination cough suppressants,0.0079920
+artesunate,0.0439560
+medical treatment method,0.0439560
+entinostat,0.0289710
+Precision Medicine,0.0089910
+digoxin,0.0439560
+Pain relief,0.0439560
+Blood Component Transfusion,0.0439560
+phosphatase inhibitor,0.1928072
+fluvastatin,0.1928072
+"RETN protein, human|RETN",0.1928072
+Glucosamine,0.1928072
+fangchinoline,0.1928072
+Flax Seed Oil,0.1928072
+ZNF35,0.1928072
+MS 275,0.1928072
+Etodolac,0.1928072
+Benzoates,0.1928072
+Proximal subtotal gastrectomy,0.1928072
+Nafoxidine,0.0419580
+carbon-11 methionine,0.1928072
+Psychotropic Drugs,0.1928072
+Pedicle graft,0.1928072
+Verapamil,0.1928072
+molgramostim,0.0419580
+Tetracycline,0.1928072
+prednisolone,0.0419580
+CB 3717,0.1928072
+Miconazole,0.1928072
+CI 941,0.1928072
+Metergoline,0.0419580
+Intra-Arterial Infusions,0.0379620
+Sulfamethazine,0.1928072
+Spermine,0.1928072
+Isotretinoin,0.0419580
+Rehydration,0.0419580
+Transcatheter arterial embolization,0.1928072
+Pneumonectomy,0.1928072
+spirogermanium,0.0419580
+VP 16-213,0.1928072
+incadronate,0.1928072
+coumarin,0.1928072
+Phenformin,0.1928072
+drug modulation,0.1928072
+Difluoromethylornithine,0.0419580
+doxifluridine,0.0109890
+CMF protocol,0.0419580
+DaunoXome,0.1928072
+"Progestational Hormones, Synthetic",0.1928072
+TAP-144|SCTR,0.1928072
+Bezafibrate,0.1928072
+annamycin liposomal,0.1928072
+Myocet,0.1928072
+adrenomedullin|ADM,0.1928072
+CMF protocol,0.1928072
+Sulfonylurea Compounds,0.1928072
+Collectors,0.1928072
+hecate-chorionic gonadotropin beta-subunit conjugate,0.1928072
+breast cancer prevention,0.0419580
+THERATOPE,0.1928072
+Allografting,0.0419580
+Camera,0.1928072
+efaproxiral,0.0419580
+solamargine,0.1928072
+xanthohumol,0.1928072
+prevention through alternative activities,0.1928072
+Chambers,0.1928072
+Tyrosine,0.1928072
+DNA,0.1928072
+Multiple specialties,0.1928072
+Cancer Treatment,0.0099900
+tripterine,0.1928072
+rhodioloside,0.1928072
+ellipticine,0.0419580
+Antral,0.1928072
+Amyloid,0.1928072
+tectorigenin,0.1928072
+aceclofenac,0.1928072
+Epinephrine,0.1928072
+mangiferin,0.0419580
+Propofol,0.1928072
+cirsimaritin,0.0419580
+"3-(cyclopropylmethoxy)-4-(4-methylsulfonylphenyl)-5,5-dimethylfuranone",0.1928072
+Cytosine deaminase,0.0419580
+exenatide,0.1928072
+S-Adenosylmethionine,0.1928072
+jolkinolide B,0.0419580
+Silver dressing,0.1928072
+Chitosan,0.0419580
+Cancer Treatment,0.0379620
+Polyethyleneimine,0.1928072
+Frozen embryo transfer,0.1928072
+Metal stent,0.1928072
+Cautery operation,0.1928072
+satraplatin,0.0419580
+crocin,0.1928072
+Blood Component Removal,0.0079920
+Oligonucleotide Arrays,0.1928072
+isobavachalcone,0.1928072
+"Analyzers, Laboratory, Immunoassay, Chemiluminescent",0.0419580
+Dextromethorphan,0.1928072
+"2,2-bis(hydroxymethyl)-1-azabicyclo(2,2,2,)octan-3-one",0.1928072
+Homeopathic medicine,0.1928072
+anastrozole 1 MG,0.0419580
+Symptom control,0.0419580
+Treatment Guidelines,0.0379620
+LY353381hydrochloride,0.0419580
+Cyclophosphomide,0.1928072
+Sulfones,0.1928072
+lanreotide,0.1928072
+TNP 470,0.0419580
+"Progesterone, injectable",0.1928072
+Estramustine,0.0419580
+Etanercept,0.0419580
+Imaging Techniques,0.0109890
+Doxycycline,0.1928072
+ZD1839,0.0419580
+piroxantrone,0.1928072
+Halotestin,0.0419580
+MV protocol 2,0.0419580
+Recombinant Erythropoietin|EPO,0.1928072
+Gamma Cameras,0.0419580
+Natriuretic Peptides,0.1928072
+CI1033,0.0419580
+efaproxiral,0.1928072
+Carnoy's solution,0.1928072
+Lupron,0.1928072
+"9 alpha,11 alpha,15 alpha-trihydroxy-16-phenoxy-17,18,19,20-tetranorprosta-4,5,13-trienoic acid",0.1928072
+coenzyme Q10,0.0099900
+NS-1,0.1928072
+Rhenium compound,0.1928072
+cyclooxygenase 2,0.1928072
+Alteplase,0.1928072
+Gentle,0.1928072
+onapristone,0.1928072
+Catheter Injection Ports,0.1928072
+Appendectomy,0.1928072
+Anticipatory guidance,0.1928072
+Fixation - action,0.1928072
+Anticoagulants,0.1928072
+"pregna-4,17-diene-3,16-dione",0.0419580
+rosiglitazone,0.0419580
+Progressive muscle relaxation,0.1928072
+coptisine,0.1928072
+Computed Tomography Scanning Systems,0.1928072
+Thyroid Hormones|TH,0.1928072
+Phosphorus,0.0099900
+Helixor,0.1928072
+Famotidine,0.1928072
+Accelerometers,0.1928072
+Process training,0.1928072
+ALPHA-AMYLASE,0.1928072
+Acolbifene,0.1928072
+flavopiridol,0.0419580
+Breast Cancer Treatment,0.0099900
+ovarian cancer prevention,0.1928072
+terminal patient care,0.1928072
+Protein supplement,0.1928072
+"Diet, Fat-Restricted",0.1928072
+Psychological therapies,0.0419580
+Ibandronate,0.0099900
+Factor IX,0.1928072
+"Scanning Systems, Ultrasonic",0.1928072
+gemcitabine,0.0049950
+Ovarian Stimulation,0.0079920
+TimeLine,0.1928072
+3-(2-carboxypiperazin-4-yl)propyl-1-phosphonic acid,0.1928072
+Cytochrome P450 3A4|CYP3A4,0.1928072
+cinobufotalin,0.1928072
+Selective Estrogen Receptor Down Regulator,0.0419580
+"Antibodies, Anti-Idiotypic",0.1928072
+Therapeutic regimen,0.0109890
+Fenoldopam,0.1928072
+combretastatin A-4,0.0419580
+Incision of axilla,0.1928072
+Rose Bengal,0.1928072
+"N',N''-diacetylspermine",0.1928072
+andrographolide,0.1928072
+nandrolone,0.1928072
+mycophenolic acid,0.1928072
+docetaxel,0.0009990
+elements of cancer genetics risk assessment and counseling,0.0000000
+Investigational New Drugs,0.1928072
+Recombinant Antibody,0.0089910
+ramipril,0.0000000
+arsenic trioxide,0.0439560
+Oncolytic Virotherapy,0.0439560
+Scalp cooling system,0.0289710
+trebananib,0.0019980
+darolutamide,0.0289710
+Administrative record,0.1928072
+Pain relief,0.0099900
+CDK4/6 Inhibition,0.0139860
+Acetoacetates,0.1928072
+ethanol,0.1928072
+goserelin,0.0019980
+sulfasalazine,0.0439560
+Quinazolines,0.0289710
+Pain management,0.0009990
+Segmentectomy,0.1928072
+Tissue Expansion Devices,0.1928072
+wound care,0.0009990
+EC Breast Regimen,0.0439560
+Selective Androgen Receptor Modulator,0.1928072
+Hyaluronidase Injection,0.0089910
+dexamethasone,0.1928072
+Fulvestrant/Ribociclib Regimen,0.0089910
+Indoximod,0.0289710
+opium alkaloids and derivative combination cough suppressants,0.0439560
+Pericardiostomy,0.0289710
+Anthracycline Antibiotics,0.0139860
+sanguinarine,0.0289710
+ponatinib,0.0139860
+fluvastatin,0.0289710
+IMC-A12,0.0089910
+"Steroid, Systemic",0.0289710
+"Heparin, Low-Molecular-Weight",0.0289710
+Antibodies,0.0089910
+cefadroxil,0.1928072
+bisphenol A,0.1928072
+ruxolitinib,0.0289710
+LTX-315,0.1928072
+"Binder, device",0.0000000
+Letrozole/Palbociclib Regimen,0.0289710
+polyethylene glycol 4000,0.0439560
+CYH33,0.1928072
+leuprolide,0.1928072
+Suppressor,0.1928072
+Legend,0.1928072
+rutecarpine,0.1928072
+Placebos,0.0000000
+shiunko,0.1928072
+Preoperative Exercise,0.1928072
+beta-Aminoethylisothiuronium Dihydrobromide,0.1928072
+Psychoactive substance,0.1928072
+Incretins,0.1928072
+fructose,0.1928072
+Anti-HER2 Antibody-drug Conjugate|ERBB2,0.0289710
+Transarterial embolization,0.0109890
+sphingosine 1-phosphate,0.0139860
+ursolic acid,0.0439560
+fosbretabulin,0.0439560
+evodiamine,0.0439560
+biochanin A,0.0139860
+biguanide,0.0439560
+Duration,0.0139860
+propolin G,0.0439560
+berzosertib,0.0439560
+famitinib,0.0439560
+pixantrone,0.0289710
+Schiff Bases,0.1928072
+inermin,0.0439560
+niraparib,0.0439560
+Interferon Type I,0.0139860
+Stilbenes,0.0439560
+niraparib,0.0289710
+cinnamomi cortex,0.1928072
+letrozole,0.0000000
+Tonsillectomy,0.1928072
+methylene dimethanesulfonate,0.1928072
+"Heparin, Low-Molecular-Weight",0.1928072
+dexamethasone,0.0139860
+"bis(tri-n-hexylsiloxy)(2,3-naphthalocyaninato)silicon",0.1928072
+BARRIER,0.0099900
+pitavastatin,0.1928072
+cognitive rehabilitation,0.1928072
+Glycol,0.0439560
+pembrolizumab,0.0019980
+Administration of medication,0.0439560
+TAK-243,0.0439560
+Suppressor,0.0089910
+Peritoneal Dialysis,0.1928072
+gonadorelin,0.1928072
+Permanent pacemaker insertion,0.1928072
+Oral Anti-Cancer Drugs,0.1928072
+Alpelisib/Fulvestrant Regimen,0.0289710
+methylate,0.1928072
+maspin,0.1928072
+ABT 263,0.0439560
+crassolide,0.1928072
+enzalutamide,0.0289710
+Lactates,0.0439560
+paclitaxel,0.0059940
+myricetin,0.1928072
+enasidenib,0.0289710
+capivasertib,0.1928072
+congener,0.0439560
+lonidamine,0.0439560
+Thiazoles,0.1928072
+graphitic carbon nitride,0.0439560
+Lymphovenous anastomosis,0.1928072
+hydnocarpin,0.0439560
+poloxamer 188,0.0439560
+4-toluenesulfonamide,0.0439560
+treatment guideline,0.0289710
+Lipid Peroxides,0.0439560
+Amcenestrant,0.0089910
+cyclodextrins,0.1928072
+cyclosporine,0.0439560
+(18F)FES,0.0289710
+Recombinant Immune Globulin,0.0089910
+palbociclib,0.0099900
+Selective Estrogen Receptor Modulators,0.0379620
+GV1001,0.0289710
+streptozocin,0.1928072
+Danggui Buxue Tang,0.0439560
+capivasertib,0.0439560
+Biologic Disease-Modifying Antirheumatic Drug,0.1928072
+Amine and amine derivative,0.1928072
+buyang huanwu,0.1928072
+2-ethyl-2-oxazoline,0.0439560
+adenosine triphosphate,0.0439560
+sunitinib,0.0289710
+Erianin,0.0439560
+Eye Movement Desensitization Reprocessing,0.1928072
+JAK1 Inhibitor,0.0109890
+futibatinib,0.0289710
+CT-P6,0.0289710
+Prodrugs,0.0289710
+beta-thujaplicin,0.1928072

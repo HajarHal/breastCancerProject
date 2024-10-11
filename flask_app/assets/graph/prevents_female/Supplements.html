@@ -1,0 +1,155 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+            <script src="lib/bindings/utils.js"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/dist/vis-network.min.css" integrity="sha512-WgxfT5LWjfszlPHXRmBWHkV2eceiWTOBvrKCNbdgDYTHrT2AeLCGbF4sZlZw3UMN3WtL0tGUoIAKsu8mllg/XA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/vis-network.min.js" integrity="sha512-LnvoEWDFrqGHlHmDD2101OrLcbsfkrzoSpvtSQtxK3RMnRV0eOkhhBN2dXHKRrUU8p2DGRTk35n4O8nWSVe1mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+        
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+          crossorigin="anonymous"
+        />
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+          crossorigin="anonymous"
+        ></script>
+
+
+        <center>
+          <h1></h1>
+        </center>
+        <style type="text/css">
+
+             #mynetwork {
+                 width: 100%;
+                 height: 600px;
+                 background-color: #ffffff;
+                 border: 1px solid lightgray;
+                 position: relative;
+                 float: left;
+             }
+
+             
+
+             
+
+             
+        </style>
+    </head>
+
+
+    <body>
+        <div class="card" style="width: 100%">
+            
+            
+            <div id="mynetwork" class="card-body"></div>
+        </div>
+
+        
+        
+
+        <script type="text/javascript">
+
+              // initialize global variables.
+              var edges;
+              var nodes;
+              var allNodes;
+              var allEdges;
+              var nodeColors;
+              var originalNodes;
+              var network;
+              var container;
+              var options, data;
+              var filter = {
+                  item : '',
+                  property : '',
+                  value : []
+              };
+
+              
+
+              
+
+              // This method is responsible for drawing the graph, returns the drawn network
+              function drawGraph() {
+                  var container = document.getElementById('mynetwork');
+
+                  
+
+                  // parsing and collecting nodes and edges from the python
+                  nodes = new vis.DataSet([{"color": "lightblue", "id": "Vitamin D", "label": "Vitamin D", "shape": "dot", "size": 15, "title": "Vitamin D"}, {"color": "lightblue", "id": "Female Breast Cancer", "label": "Female Breast Cancer", "shape": "dot", "size": 15, "title": "Female Breast Cancer"}, {"color": "lightblue", "id": "Vitamin E", "label": "Vitamin E", "shape": "dot", "size": 15, "title": "Vitamin E"}, {"color": "lightblue", "id": "Fatty Acids, Omega-3", "label": "Fatty Acids, Omega-3", "shape": "dot", "size": 15, "title": "Fatty Acids, Omega-3"}, {"color": "lightblue", "id": "Vitamins", "label": "Vitamins", "shape": "dot", "size": 15, "title": "Vitamins"}, {"color": "lightblue", "id": "Iron", "label": "Iron", "shape": "dot", "size": 15, "title": "Iron"}, {"color": "lightblue", "id": "Vitamin B 12", "label": "Vitamin B 12", "shape": "dot", "size": 15, "title": "Vitamin B 12"}, {"color": "lightblue", "id": "dihydroxy-vitamin D3", "label": "dihydroxy-vitamin D3", "shape": "dot", "size": 15, "title": "dihydroxy-vitamin D3"}, {"color": "lightblue", "id": "Calcium", "label": "Calcium", "shape": "dot", "size": 15, "title": "Calcium"}, {"color": "lightblue", "id": "Supplementation", "label": "Supplementation", "shape": "dot", "size": 15, "title": "Supplementation"}, {"color": "lightblue", "id": "Vitamin supplementation", "label": "Vitamin supplementation", "shape": "dot", "size": 15, "title": "Vitamin supplementation"}, {"color": "lightblue", "id": "omega-3 fatty acids", "label": "omega-3 fatty acids", "shape": "dot", "size": 15, "title": "omega-3 fatty acids"}, {"color": "lightblue", "id": "vitamin E", "label": "vitamin E", "shape": "dot", "size": 15, "title": "vitamin E"}, {"color": "lightblue", "id": "calcium", "label": "calcium", "shape": "dot", "size": 15, "title": "calcium"}, {"color": "lightblue", "id": "Vitamin A", "label": "Vitamin A", "shape": "dot", "size": 15, "title": "Vitamin A"}, {"color": "lightblue", "id": "anhydrovitamin A", "label": "anhydrovitamin A", "shape": "dot", "size": 15, "title": "anhydrovitamin A"}, {"color": "lightblue", "id": "Environmental Pollutants", "label": "Environmental Pollutants", "shape": "dot", "size": 15, "title": "Environmental Pollutants"}, {"color": "lightblue", "id": "Vitamin B Complex", "label": "Vitamin B Complex", "shape": "dot", "size": 15, "title": "Vitamin B Complex"}, {"color": "lightblue", "id": "Vitamin B6", "label": "Vitamin B6", "shape": "dot", "size": 15, "title": "Vitamin B6"}, {"color": "lightblue", "id": "sodium-dependent vitamin C transporter 2|SLC23A2", "label": "sodium-dependent vitamin C transporter 2|SLC23A2", "shape": "dot", "size": 15, "title": "sodium-dependent vitamin C transporter 2|SLC23A2"}, {"color": "lightblue", "id": "Carcinogens, Environmental", "label": "Carcinogens, Environmental", "shape": "dot", "size": 15, "title": "Carcinogens, Environmental"}, {"color": "lightblue", "id": "Vitamin D3 Receptor", "label": "Vitamin D3 Receptor", "shape": "dot", "size": 15, "title": "Vitamin D3 Receptor"}, {"color": "lightblue", "id": "Calcium Channel Blockers", "label": "Calcium Channel Blockers", "shape": "dot", "size": 15, "title": "Calcium Channel Blockers"}]);
+                  edges = new vis.DataSet([{"color": "gray", "from": "Vitamin D", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Vitamin E", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Fatty Acids, Omega-3", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Vitamins", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Iron", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Vitamin B 12", "to": "Female Breast Cancer"}, {"color": "gray", "from": "dihydroxy-vitamin D3", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Calcium", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Supplementation", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Vitamin supplementation", "to": "Female Breast Cancer"}, {"color": "gray", "from": "omega-3 fatty acids", "to": "Female Breast Cancer"}, {"color": "gray", "from": "vitamin E", "to": "Female Breast Cancer"}, {"color": "gray", "from": "calcium", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Vitamin A", "to": "Female Breast Cancer"}, {"color": "gray", "from": "anhydrovitamin A", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Environmental Pollutants", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Vitamin B Complex", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Vitamin B6", "to": "Female Breast Cancer"}, {"color": "gray", "from": "sodium-dependent vitamin C transporter 2|SLC23A2", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Carcinogens, Environmental", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Vitamin D3 Receptor", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Calcium Channel Blockers", "to": "Female Breast Cancer"}]);
+
+                  nodeColors = {};
+                  allNodes = nodes.get({ returnType: "Object" });
+                  for (nodeId in allNodes) {
+                    nodeColors[nodeId] = allNodes[nodeId].color;
+                  }
+                  allEdges = edges.get({ returnType: "Object" });
+                  // adding nodes and edges to the graph
+                  data = {nodes: nodes, edges: edges};
+
+                  var options = {
+    "configure": {
+        "enabled": false
+    },
+    "edges": {
+        "color": {
+            "inherit": true
+        },
+        "smooth": {
+            "enabled": true,
+            "type": "dynamic"
+        }
+    },
+    "interaction": {
+        "dragNodes": true,
+        "hideEdgesOnDrag": false,
+        "hideNodesOnDrag": false
+    },
+    "physics": {
+        "enabled": true,
+        "stabilization": {
+            "enabled": true,
+            "fit": true,
+            "iterations": 1000,
+            "onlyDynamicEdges": false,
+            "updateInterval": 50
+        }
+    }
+};
+
+                  
+
+
+                  
+
+                  network = new vis.Network(container, data, options);
+
+                  
+
+                  
+
+                  
+
+
+                  
+
+                  return network;
+
+              }
+              drawGraph();
+        </script>
+    </body>
+</html>

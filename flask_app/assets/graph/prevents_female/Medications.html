@@ -1,0 +1,155 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+            <script src="lib/bindings/utils.js"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/dist/vis-network.min.css" integrity="sha512-WgxfT5LWjfszlPHXRmBWHkV2eceiWTOBvrKCNbdgDYTHrT2AeLCGbF4sZlZw3UMN3WtL0tGUoIAKsu8mllg/XA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/vis-network.min.js" integrity="sha512-LnvoEWDFrqGHlHmDD2101OrLcbsfkrzoSpvtSQtxK3RMnRV0eOkhhBN2dXHKRrUU8p2DGRTk35n4O8nWSVe1mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+        
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+          crossorigin="anonymous"
+        />
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+          crossorigin="anonymous"
+        ></script>
+
+
+        <center>
+          <h1></h1>
+        </center>
+        <style type="text/css">
+
+             #mynetwork {
+                 width: 100%;
+                 height: 600px;
+                 background-color: #ffffff;
+                 border: 1px solid lightgray;
+                 position: relative;
+                 float: left;
+             }
+
+             
+
+             
+
+             
+        </style>
+    </head>
+
+
+    <body>
+        <div class="card" style="width: 100%">
+            
+            
+            <div id="mynetwork" class="card-body"></div>
+        </div>
+
+        
+        
+
+        <script type="text/javascript">
+
+              // initialize global variables.
+              var edges;
+              var nodes;
+              var allNodes;
+              var allEdges;
+              var nodeColors;
+              var originalNodes;
+              var network;
+              var container;
+              var options, data;
+              var filter = {
+                  item : '',
+                  property : '',
+                  value : []
+              };
+
+              
+
+              
+
+              // This method is responsible for drawing the graph, returns the drawn network
+              function drawGraph() {
+                  var container = document.getElementById('mynetwork');
+
+                  
+
+                  // parsing and collecting nodes and edges from the python
+                  nodes = new vis.DataSet([{"color": "lightblue", "id": "Chemotherapeutic agent", "label": "Chemotherapeutic agent", "shape": "dot", "size": 15, "title": "Chemotherapeutic agent"}, {"color": "lightblue", "id": "Female Breast Cancer", "label": "Female Breast Cancer", "shape": "dot", "size": 15, "title": "Female Breast Cancer"}, {"color": "lightblue", "id": "Pharmaceutical Preparations", "label": "Pharmaceutical Preparations", "shape": "dot", "size": 15, "title": "Pharmaceutical Preparations"}, {"color": "lightblue", "id": "Metformin", "label": "Metformin", "shape": "dot", "size": 15, "title": "Metformin"}, {"color": "lightblue", "id": "Chemoprevention", "label": "Chemoprevention", "shape": "dot", "size": 15, "title": "Chemoprevention"}, {"color": "lightblue", "id": "Aspirin", "label": "Aspirin", "shape": "dot", "size": 15, "title": "Aspirin"}, {"color": "lightblue", "id": "Chemopreventive Agent", "label": "Chemopreventive Agent", "shape": "dot", "size": 15, "title": "Chemopreventive Agent"}, {"color": "lightblue", "id": "fluvastatin", "label": "fluvastatin", "shape": "dot", "size": 15, "title": "fluvastatin"}, {"color": "lightblue", "id": "Chemotherapy-Oncologic Procedure", "label": "Chemotherapy-Oncologic Procedure", "shape": "dot", "size": 15, "title": "Chemotherapy-Oncologic Procedure"}, {"color": "lightblue", "id": "Non-Aspirin", "label": "Non-Aspirin", "shape": "dot", "size": 15, "title": "Non-Aspirin"}, {"color": "lightblue", "id": "aspirin", "label": "aspirin", "shape": "dot", "size": 15, "title": "aspirin"}, {"color": "lightblue", "id": "metformin", "label": "metformin", "shape": "dot", "size": 15, "title": "metformin"}, {"color": "lightblue", "id": "oncostatin M|OSM", "label": "oncostatin M|OSM", "shape": "dot", "size": 15, "title": "oncostatin M|OSM"}, {"color": "lightblue", "id": "Topical Chemotherapy", "label": "Topical Chemotherapy", "shape": "dot", "size": 15, "title": "Topical Chemotherapy"}, {"color": "lightblue", "id": "Drugs, Non-Prescription", "label": "Drugs, Non-Prescription", "shape": "dot", "size": 15, "title": "Drugs, Non-Prescription"}, {"color": "lightblue", "id": "Drug Delivery Systems", "label": "Drug Delivery Systems", "shape": "dot", "size": 15, "title": "Drug Delivery Systems"}, {"color": "lightblue", "id": "Simvastatin", "label": "Simvastatin", "shape": "dot", "size": 15, "title": "Simvastatin"}, {"color": "lightblue", "id": "Cytotoxic Chemotherapy", "label": "Cytotoxic Chemotherapy", "shape": "dot", "size": 15, "title": "Cytotoxic Chemotherapy"}, {"color": "lightblue", "id": "Chemotherapy, Adjuvant", "label": "Chemotherapy, Adjuvant", "shape": "dot", "size": 15, "title": "Chemotherapy, Adjuvant"}, {"color": "lightblue", "id": "Lovastatin", "label": "Lovastatin", "shape": "dot", "size": 15, "title": "Lovastatin"}]);
+                  edges = new vis.DataSet([{"color": "gray", "from": "Chemotherapeutic agent", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Pharmaceutical Preparations", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Metformin", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Chemoprevention", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Aspirin", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Chemopreventive Agent", "to": "Female Breast Cancer"}, {"color": "gray", "from": "fluvastatin", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Chemotherapy-Oncologic Procedure", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Non-Aspirin", "to": "Female Breast Cancer"}, {"color": "gray", "from": "aspirin", "to": "Female Breast Cancer"}, {"color": "gray", "from": "metformin", "to": "Female Breast Cancer"}, {"color": "gray", "from": "oncostatin M|OSM", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Topical Chemotherapy", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Drugs, Non-Prescription", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Drug Delivery Systems", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Simvastatin", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Cytotoxic Chemotherapy", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Chemotherapy, Adjuvant", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Lovastatin", "to": "Female Breast Cancer"}]);
+
+                  nodeColors = {};
+                  allNodes = nodes.get({ returnType: "Object" });
+                  for (nodeId in allNodes) {
+                    nodeColors[nodeId] = allNodes[nodeId].color;
+                  }
+                  allEdges = edges.get({ returnType: "Object" });
+                  // adding nodes and edges to the graph
+                  data = {nodes: nodes, edges: edges};
+
+                  var options = {
+    "configure": {
+        "enabled": false
+    },
+    "edges": {
+        "color": {
+            "inherit": true
+        },
+        "smooth": {
+            "enabled": true,
+            "type": "dynamic"
+        }
+    },
+    "interaction": {
+        "dragNodes": true,
+        "hideEdgesOnDrag": false,
+        "hideNodesOnDrag": false
+    },
+    "physics": {
+        "enabled": true,
+        "stabilization": {
+            "enabled": true,
+            "fit": true,
+            "iterations": 1000,
+            "onlyDynamicEdges": false,
+            "updateInterval": 50
+        }
+    }
+};
+
+                  
+
+
+                  
+
+                  network = new vis.Network(container, data, options);
+
+                  
+
+                  
+
+                  
+
+
+                  
+
+                  return network;
+
+              }
+              drawGraph();
+        </script>
+    </body>
+</html>

@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Index - Medicio Bootstrap Template</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="/assets/img/favicon.png" rel="icon">
+  <link href="/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="/assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="/assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="/assets/css/main.css" rel="stylesheet">
+
+</head>
+
+
+<header id="header" class="header sticky-top">
+
+
+
+  <div class="branding d-flex align-items-center">
+
+    <div class="container position-relative d-flex align-items-center justify-content-end">
+      <a href="" class="logo d-flex align-items-center me-auto">
+        <img src="/assets/img/logo.png" alt="Logo" >
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="#featured-services">Choose cancer type</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#footer">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+
+  </div>
+
+</header>
+
+<main class="main">
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero section">
+
+    <div id="hero-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+
+      <div class="carousel-item active">
+        <img src="/assets/img/hero-carousel/hero-carousel-1.jpg" alt="">
+        <div class="container">
+          <h2>Welcome to BREASTPULSE</h2>
+          <p>This website is dedicated to breast cancer and offers an interactive platform to explore various aspects of the disease. It is designed to allow users to visualize detailed graphs on the causes of breast cancer, focusing on the specific factors that contribute to the development of the disease in women, men, and recurrent cases. The user-friendly interface guides users through different categories, providing a deep understanding of the associated risk factors.</p>
+          <a href="#about" class="btn-get-started">Read More</a>
+        </div>
+      </div><!-- End Carousel Item -->
+
+      <div class="carousel-item">
+        <img src="/assets/img/hero-carousel/hero-carousel-2.jpg" alt="">
+        <div class="container">
+          <h2>Treatment Options at Your Fingertips</h2>
+          <p>In addition to causes, the site provides visual information on the treatments available for each type of breast cancer. Users can easily navigate between treatment options, preventive therapies, and management strategies for each cancer category. Each graph is carefully designed to present complex information clearly and accessibly, helping patients and healthcare professionals make informed decisions.</p>
+          <a href="#about" class="btn-get-started">Read More</a>
+        </div>
+      </div><!-- End Carousel Item -->
+
+      <div class="carousel-item">
+        <img src="/assets/img/hero-carousel/hero-carousel-3.jpg" alt="">
+        <div class="container">
+          <h2>Prevention and Diagnosis Insights</h2>
+          <p>The site also includes sections dedicated to the prevention and diagnosis of breast cancer. Users can explore how preventive measures and diagnostic techniques vary depending on gender and cancer type. These graphs offer an overview of current and emerging methods for detecting and preventing breast cancer, contributing to better awareness and proactive disease management.</p>
+          <a href="#about" class="btn-get-started">Read More</a>
+        </div>
+      </div><!-- End Carousel Item -->
+
+      <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+      </a>
+
+      <a class="carousel-control-next" href="#hero-carousel" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+      </a>
+
+      <ol class="carousel-indicators"></ol>
+
+    </div>
+
+  </section><!-- /Hero Section -->
+
+  <!-- Featured Services Section -->
+  <section id="featured-services" class="featured-services section">
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Choose cancer type<br></h2>
+  </div>
+  <div class="container">
+
+    <div class="row gy-4 justify-content-center">
+
+      <!-- Female Breast Cancer -->
+      <div class="col-lg-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
+        <div class="service-item position-relative">
+          <div class="icon"><i class="fas fa-female icon"></i></div>
+          <h4>
+            <a href="{{ url_for('cancer_type', cancer_type='female') }}" class="stretched-link">Female breast cancer</a>
+          </h4>
+          <p>The most common form of breast cancer, affecting many women globally. Early detection through regular screenings is vital for improving survival rates. Risk factors include genetics, hormones, and lifestyle choices. Continued advancements in treatment and prevention aim to reduce its impact.</p>
+        </div>
+      </div><!-- End Service Item -->
+
+      <!-- Male Breast Cancer -->
+      <div class="col-lg-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
+        <div class="service-item position-relative">
+          <div class="icon"><i class="fas fa-male icon"></i></div>
+          <h4>
+            <a href="{{ url_for('cancer_type', cancer_type='male') }}" class="stretched-link">Male breast cancer</a>
+          </h4>
+          <p>A rare but serious condition, often diagnosed at a later stage due to low awareness. Key risk factors include genetic mutations like BRCA2, radiation exposure, and hormonal imbalances. Increasing awareness and early screening are crucial for better outcomes.</p>
+        </div>
+      </div><!-- End Service Item -->
+
+      <!-- Recurrent Breast Cancer -->
+      <div class="col-lg-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
+        <div class="service-item position-relative">
+          <div class="icon"><i class="fas fa-ribbon icon"></i></div>
+          <h4>
+            <a href="{{ url_for('cancer_type', cancer_type='reccu') }}" class="stretched-link">Recurrent breast cancer</a>
+          </h4>
+          <p>Occurs when cancer returns after initial treatment, requiring a comprehensive approach to management. It can reappear in the same or opposite breast or spread to other parts of the body. Early detection through continuous monitoring is essential for effective treatment.</p>
+        </div>
+      </div><!-- End Service Item -->
+
+    </div><!-- End Row -->
+
+  </div><!-- End Container -->
+</section><!-- /Featured Services Section -->
+
+
+
+  <!-- About Section -->
+  <section id="about" class="about section">
+
+    <!-- Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+      <h2>About Us<br></h2>
+
+    </div><!-- End Section Title -->
+
+    <div class="container">
+
+      <div class="row gy-4">
+        <div class="col-lg-6 position-relative align-self-start" data-aos="fade-up" data-aos-delay="100">
+          <img src="/assets/img/about.jpg" class="img-fluid" alt="">
+          <a href="https://www.youtube.com/watch?v=LMRhix52hR8" class="glightbox pulsating-play-btn"></a>
+        </div>
+        <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="200">
+          <h3>Welcome to Your Breast Cancer Knowledge Hub</h3>
+          <p class="fst-italic">
+            Welcome to BREASTPULSE, a pioneering project developed by International University Rabat, a globally recognized institution committed to excellence in education and research. This website is designed to be a vital resource for anyone seeking to deepen their understanding of breast cancer. By leveraging advanced data visualization techniques, we present critical insights into the causes, treatments, prevention, and diagnosis of breast cancer, tailored to different populations including women, men, and those facing recurrent cases. Our goal is to empower students, researchers, and healthcare professionals with the knowledge they need to make informed decisions and contribute to the global fight against breast cancer.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section><!-- /About Section -->
+
+  <!-- Features Section -->
+  <section id="features" class="features section">
+
+    <div class="container">
+
+      <div class="row justify-content-around gy-4">
+        <div class="features-image col-lg-6" data-aos="fade-up" data-aos-delay="100"><img src="/assets/img/features.jpg" alt=""></div>
+
+        <div class="col-lg-5 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
+          <h3>Empowering Global Health Education</h3>
+          <p>At BREASTPULSE, we are an initiative of International University Rabat, a leading international university dedicated to advancing global health. Our platform serves as an educational tool designed to provide clear and comprehensive visualizations of breast cancer data. We aim to support students, researchers, and healthcare professionals in understanding the complexities of breast cancer, including its causes, treatments, prevention, and diagnosis, across different demographics. Through this resource, we strive to contribute to global health education and research.</p>
+
+
+          <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="400">
+            <i class="fa-solid fa-suitcase-medical flex-shrink-0"></i>
+            <div>
+              <h4><a href="" class="stretched-link">Our Mission</a></h4>
+              <p>To provide a cutting-edge educational platform that enhances the understanding of breast cancer through data visualization.</p>
+            </div>
+          </div><!-- End Icon Box -->
+
+          <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="500">
+            <i class="fa-solid fa-staff-snake flex-shrink-0"></i>
+            <div>
+              <h4><a href="" class="stretched-link">Our Vision</a></h4>
+              <p>To be a global leader in health education, empowering future professionals with the knowledge to combat breast cancer.</p>
+            </div>
+          </div><!-- End Icon Box -->
+
+          <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="600">
+            <i class="fa-solid fa-lungs flex-shrink-0"></i>
+            <div>
+              <h4><a href="" class="stretched-link">Our Commitment</a></h4>
+              <p>To deliver accurate, research-driven, and accessible resources that support academic learning and professional development in the field of healthcare.</p>
+            </div>
+          </div><!-- End Icon Box -->
+
+        </div>
+      </div>
+
+    </div>
+
+  </section><!-- /Features Section -->
+
+  <!-- Services Section -->
+  <section id="services" class="services section">
+
+    <!-- Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+      <h2>Services</h2>
+    </div><!-- End Section Title -->
+
+    <div class="container">
+
+      <div class="row gy-4">
+
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="service-item  position-relative">
+            <div class="icon">
+              <i class="fas fa-chart-line"></i>
+            </div>
+            <a href="#" class="stretched-link">
+              <h3>Interactive Data Visualizations</h3>
+            </a>
+            <p>Explore detailed graphs and visual representations of breast cancer data, including causes, treatments, prevention, and diagnosis for different demographics.</p>
+          </div>
+        </div><!-- End Service Item -->
+
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+          <div class="service-item position-relative">
+            <div class="icon">
+              <i class="fas fa-graduation-cap "></i>
+            </div>
+            <a href="#" class="stretched-link">
+              <h3>Educational Resources</h3>
+            </a>
+            <p> Access a wide range of materials designed to support learning and research, tailored for students, healthcare professionals, and researchers.</p>
+          </div>
+        </div><!-- End Service Item -->
+
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+          <div class="service-item position-relative">
+            <div class="icon">
+              <i class="fas fa-database "></i>
+            </div>
+            <a href="#" class="stretched-link">
+              <h3>Research Support</h3>
+            </a>
+            <p> Utilize our platform as a tool to enhance your studies, providing accurate and up-to-date data for academic and professional research projects.</p>
+          </div>
+        </div><!-- End Service Item -->
+
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+          <div class="service-item position-relative">
+            <div class="icon">
+              <i class="fas  fa-search "></i>
+            </div>
+            <a href="#" class="stretched-link">
+              <h3>Personalized Insights</h3>
+            </a>
+            <p>Gain a deeper understanding of breast cancer by exploring data specific to female, male, and recurrent cases, helping to inform decisions and strategies in healthcare.</p>
+            <a href="#" class="stretched-link"></a>
+          </div>
+        </div><!-- End Service Item -->
+
+
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+          <div class="service-item position-relative">
+            <div class="icon">
+              <i class="fas fa-handshake "></i>
+            </div>
+            <a href="" class="stretched-link">
+              <h3>Collaborative Opportunities</h3>
+            </a>
+            <p>Engage with a global community of learners and experts through our university-backed platform, fostering collaboration and knowledge sharing in the fight against breast cancer.</p>
+            <a href="" class="stretched-link"></a>
+          </div>
+        </div><!-- End Service Item -->
+
+
+
+  </section><!-- /Services Section -->
+
+ </main>
+
+  <footer id="footer" class="footer light-background">
+
+   <div class="container footer-top">
+  <div class="row gy-4">
+    <!-- Existing About Section -->
+    <div class="col-lg-4 col-md-6 footer-about">
+      <a href="index.html" class="logo d-flex align-items-center">
+        <span class="sitename">BREASTPULSE</span>
+      </a>
+      <div class="footer-contact pt-3">
+        <p> International University of Rabat Technopolis Rabat-Shore Rocade </p>
+        <p>Rabat-Salé </p>
+        <p class="mt-3"><strong>Phone:</strong> <span>+212 (0)5 30 10 30 00</span></p>
+        <p><strong>Email:</strong> <span>contact@uir.ac.ma</span></p>
+      </div>
+
+    </div>
+
+    <!-- New About Social Media Links Column -->
+    <div class="col-lg-4 col-md-6 footer-social-media">
+      <h4>About Social Media Links</h4>
+      <p>Stay connected with us through our social media channels for the latest updates and news.</p>
+      <div class="social-links d-flex mt-4">
+        <a href="https://x.com/UIRabat"><i class="bi bi-twitter-x"></i></a>
+        <a href="https://www.facebook.com/Universite.Internationale.de.Rabat/?locale=fr_FR"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.instagram.com/uir.rabat?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="bi bi-instagram"></i></a>
+        <a href="https://www.linkedin.com/school/universit-internationale-de-rabat/posts/?feedView=all"><i class="bi bi-linkedin"></i></a>
+      </div>
+    </div>
+
+    <!-- Existing Useful Links Section -->
+    <div class="col-lg-2 col-md-3 footer-links">
+      <h4>Useful Links</h4>
+      <ul>
+        <li><a href="#featured-services">Home</a></li>
+        <li><a href="#about">About us</a></li>
+        <li><a href="#services">Services</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">BREASTPULSE</strong> <span>All Rights Reserved</span></p>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

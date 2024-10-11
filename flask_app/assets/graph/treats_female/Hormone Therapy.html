@@ -1,0 +1,155 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+            <script src="lib/bindings/utils.js"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/dist/vis-network.min.css" integrity="sha512-WgxfT5LWjfszlPHXRmBWHkV2eceiWTOBvrKCNbdgDYTHrT2AeLCGbF4sZlZw3UMN3WtL0tGUoIAKsu8mllg/XA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/vis-network.min.js" integrity="sha512-LnvoEWDFrqGHlHmDD2101OrLcbsfkrzoSpvtSQtxK3RMnRV0eOkhhBN2dXHKRrUU8p2DGRTk35n4O8nWSVe1mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+        
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+          crossorigin="anonymous"
+        />
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+          crossorigin="anonymous"
+        ></script>
+
+
+        <center>
+          <h1></h1>
+        </center>
+        <style type="text/css">
+
+             #mynetwork {
+                 width: 100%;
+                 height: 600px;
+                 background-color: #ffffff;
+                 border: 1px solid lightgray;
+                 position: relative;
+                 float: left;
+             }
+
+             
+
+             
+
+             
+        </style>
+    </head>
+
+
+    <body>
+        <div class="card" style="width: 100%">
+            
+            
+            <div id="mynetwork" class="card-body"></div>
+        </div>
+
+        
+        
+
+        <script type="text/javascript">
+
+              // initialize global variables.
+              var edges;
+              var nodes;
+              var allNodes;
+              var allEdges;
+              var nodeColors;
+              var originalNodes;
+              var network;
+              var container;
+              var options, data;
+              var filter = {
+                  item : '',
+                  property : '',
+                  value : []
+              };
+
+              
+
+              
+
+              // This method is responsible for drawing the graph, returns the drawn network
+              function drawGraph() {
+                  var container = document.getElementById('mynetwork');
+
+                  
+
+                  // parsing and collecting nodes and edges from the python
+                  nodes = new vis.DataSet([{"color": "lightblue", "id": "Tamoxifen", "label": "Tamoxifen", "shape": "dot", "size": 15, "title": "Tamoxifen"}, {"color": "lightblue", "id": "Female Breast Cancer", "label": "Female Breast Cancer", "shape": "dot", "size": 15, "title": "Female Breast Cancer"}, {"color": "lightblue", "id": "Hormone replacement therapy", "label": "Hormone replacement therapy", "shape": "dot", "size": 15, "title": "Hormone replacement therapy"}, {"color": "lightblue", "id": "Phytoestrogens", "label": "Phytoestrogens", "shape": "dot", "size": 15, "title": "Phytoestrogens"}, {"color": "lightblue", "id": "Estrogens, Synthetic", "label": "Estrogens, Synthetic", "shape": "dot", "size": 15, "title": "Estrogens, Synthetic"}, {"color": "lightblue", "id": "Aromatase Inhibitors", "label": "Aromatase Inhibitors", "shape": "dot", "size": 15, "title": "Aromatase Inhibitors"}, {"color": "lightblue", "id": "Estrogens", "label": "Estrogens", "shape": "dot", "size": 15, "title": "Estrogens"}, {"color": "lightblue", "id": "estrone sulfate", "label": "estrone sulfate", "shape": "dot", "size": 15, "title": "estrone sulfate"}, {"color": "lightblue", "id": "Progestins", "label": "Progestins", "shape": "dot", "size": 15, "title": "Progestins"}, {"color": "lightblue", "id": "Estrogen Replacement Therapy", "label": "Estrogen Replacement Therapy", "shape": "dot", "size": 15, "title": "Estrogen Replacement Therapy"}, {"color": "lightblue", "id": "Raloxifene", "label": "Raloxifene", "shape": "dot", "size": 15, "title": "Raloxifene"}, {"color": "lightblue", "id": "Diethylstilbestrol", "label": "Diethylstilbestrol", "shape": "dot", "size": 15, "title": "Diethylstilbestrol"}, {"color": "lightblue", "id": "Gonadotropin-Releasing Hormone Analog", "label": "Gonadotropin-Releasing Hormone Analog", "shape": "dot", "size": 15, "title": "Gonadotropin-Releasing Hormone Analog"}, {"color": "lightblue", "id": "Non-Steroidal Aromatase Inhibitor", "label": "Non-Steroidal Aromatase Inhibitor", "shape": "dot", "size": 15, "title": "Non-Steroidal Aromatase Inhibitor"}, {"color": "lightblue", "id": "Buserelin|EREG|ESR1", "label": "Buserelin|EREG|ESR1", "shape": "dot", "size": 15, "title": "Buserelin|EREG|ESR1"}, {"color": "lightblue", "id": "Medroxyprogesterone 17-Acetate", "label": "Medroxyprogesterone 17-Acetate", "shape": "dot", "size": 15, "title": "Medroxyprogesterone 17-Acetate"}, {"color": "lightblue", "id": "Megestrol Acetate", "label": "Megestrol Acetate", "shape": "dot", "size": 15, "title": "Megestrol Acetate"}, {"color": "lightblue", "id": "Estrone", "label": "Estrone", "shape": "dot", "size": 15, "title": "Estrone"}, {"color": "lightblue", "id": "Androgen Antagonists", "label": "Androgen Antagonists", "shape": "dot", "size": 15, "title": "Androgen Antagonists"}, {"color": "lightblue", "id": "Buserelin", "label": "Buserelin", "shape": "dot", "size": 15, "title": "Buserelin"}, {"color": "lightblue", "id": "3-hydroxytamoxifen", "label": "3-hydroxytamoxifen", "shape": "dot", "size": 15, "title": "3-hydroxytamoxifen"}, {"color": "lightblue", "id": "Steroidal Aromatase Inhibitor", "label": "Steroidal Aromatase Inhibitor", "shape": "dot", "size": 15, "title": "Steroidal Aromatase Inhibitor"}, {"color": "lightblue", "id": "Tamoxifen Citrate", "label": "Tamoxifen Citrate", "shape": "dot", "size": 15, "title": "Tamoxifen Citrate"}, {"color": "lightblue", "id": "MEDROXYPROGESTERONE TREATMENT", "label": "MEDROXYPROGESTERONE TREATMENT", "shape": "dot", "size": 15, "title": "MEDROXYPROGESTERONE TREATMENT"}, {"color": "lightblue", "id": "Postmenopausal Hormone Replacement Therapy", "label": "Postmenopausal Hormone Replacement Therapy", "shape": "dot", "size": 15, "title": "Postmenopausal Hormone Replacement Therapy"}, {"color": "lightblue", "id": "hydroxytamoxifen", "label": "hydroxytamoxifen", "shape": "dot", "size": 15, "title": "hydroxytamoxifen"}, {"color": "lightblue", "id": "Tamoxifen 20 MG", "label": "Tamoxifen 20 MG", "shape": "dot", "size": 15, "title": "Tamoxifen 20 MG"}, {"color": "lightblue", "id": "Hormone Therapy", "label": "Hormone Therapy", "shape": "dot", "size": 15, "title": "Hormone Therapy"}, {"color": "lightblue", "id": "tamoxifen", "label": "tamoxifen", "shape": "dot", "size": 15, "title": "tamoxifen"}, {"color": "lightblue", "id": "Tamoxifen therapy", "label": "Tamoxifen therapy", "shape": "dot", "size": 15, "title": "Tamoxifen therapy"}, {"color": "lightblue", "id": "estrogens", "label": "estrogens", "shape": "dot", "size": 15, "title": "estrogens"}, {"color": "lightblue", "id": "Medroxyprogesterone", "label": "Medroxyprogesterone", "shape": "dot", "size": 15, "title": "Medroxyprogesterone"}, {"color": "lightblue", "id": "4-hydroxytamoxifen", "label": "4-hydroxytamoxifen", "shape": "dot", "size": 15, "title": "4-hydroxytamoxifen"}, {"color": "lightblue", "id": "Estrogens, Non-Steroidal", "label": "Estrogens, Non-Steroidal", "shape": "dot", "size": 15, "title": "Estrogens, Non-Steroidal"}, {"color": "lightblue", "id": "pyrrolidino-4-iodotamoxifen", "label": "pyrrolidino-4-iodotamoxifen", "shape": "dot", "size": 15, "title": "pyrrolidino-4-iodotamoxifen"}, {"color": "lightblue", "id": "Progestogen hormone therapy", "label": "Progestogen hormone therapy", "shape": "dot", "size": 15, "title": "Progestogen hormone therapy"}, {"color": "lightblue", "id": "ESTROGENS,VAGINAL", "label": "ESTROGENS,VAGINAL", "shape": "dot", "size": 15, "title": "ESTROGENS,VAGINAL"}, {"color": "lightblue", "id": "raloxifene hydrochloride", "label": "raloxifene hydrochloride", "shape": "dot", "size": 15, "title": "raloxifene hydrochloride"}, {"color": "lightblue", "id": "4-hydroxy-N-desmethyltamoxifen, (Z)-isomer", "label": "4-hydroxy-N-desmethyltamoxifen, (Z)-isomer", "shape": "dot", "size": 15, "title": "4-hydroxy-N-desmethyltamoxifen, (Z)-isomer"}, {"color": "lightblue", "id": "Conjugated Equine Estrogens", "label": "Conjugated Equine Estrogens", "shape": "dot", "size": 15, "title": "Conjugated Equine Estrogens"}, {"color": "lightblue", "id": "Estrogen hormone therapy", "label": "Estrogen hormone therapy", "shape": "dot", "size": 15, "title": "Estrogen hormone therapy"}, {"color": "lightblue", "id": "Exogenous Hormone Therapy", "label": "Exogenous Hormone Therapy", "shape": "dot", "size": 15, "title": "Exogenous Hormone Therapy"}, {"color": "lightblue", "id": "Tamoxifen 40 MG", "label": "Tamoxifen 40 MG", "shape": "dot", "size": 15, "title": "Tamoxifen 40 MG"}, {"color": "lightblue", "id": "tamoxifen citrate", "label": "tamoxifen citrate", "shape": "dot", "size": 15, "title": "tamoxifen citrate"}, {"color": "lightblue", "id": "Ablative hormone therapy", "label": "Ablative hormone therapy", "shape": "dot", "size": 15, "title": "Ablative hormone therapy"}, {"color": "lightblue", "id": "N-desmethyltamoxifen", "label": "N-desmethyltamoxifen", "shape": "dot", "size": 15, "title": "N-desmethyltamoxifen"}, {"color": "lightblue", "id": "Raloxifene Hydrochloride", "label": "Raloxifene Hydrochloride", "shape": "dot", "size": 15, "title": "Raloxifene Hydrochloride"}, {"color": "lightblue", "id": "4-hydroxy-N-desmethyltamoxifen", "label": "4-hydroxy-N-desmethyltamoxifen", "shape": "dot", "size": 15, "title": "4-hydroxy-N-desmethyltamoxifen"}, {"color": "lightblue", "id": "Thyroid hormone replacement therapy", "label": "Thyroid hormone replacement therapy", "shape": "dot", "size": 15, "title": "Thyroid hormone replacement therapy"}, {"color": "lightblue", "id": "raloxifene", "label": "raloxifene", "shape": "dot", "size": 15, "title": "raloxifene"}, {"color": "lightblue", "id": "megestrol acetate", "label": "megestrol acetate", "shape": "dot", "size": 15, "title": "megestrol acetate"}, {"color": "lightblue", "id": "Hydroxyestrones", "label": "Hydroxyestrones", "shape": "dot", "size": 15, "title": "Hydroxyestrones"}, {"color": "lightblue", "id": "estrone", "label": "estrone", "shape": "dot", "size": 15, "title": "estrone"}, {"color": "lightblue", "id": "Oral form medroxyprogesterone", "label": "Oral form medroxyprogesterone", "shape": "dot", "size": 15, "title": "Oral form medroxyprogesterone"}, {"color": "lightblue", "id": "Tamoxifen 10 MG", "label": "Tamoxifen 10 MG", "shape": "dot", "size": 15, "title": "Tamoxifen 10 MG"}, {"color": "lightblue", "id": "diethylstilbestrol", "label": "diethylstilbestrol", "shape": "dot", "size": 15, "title": "diethylstilbestrol"}]);
+                  edges = new vis.DataSet([{"color": "gray", "from": "Tamoxifen", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Hormone replacement therapy", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Phytoestrogens", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Estrogens, Synthetic", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Aromatase Inhibitors", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Estrogens", "to": "Female Breast Cancer"}, {"color": "gray", "from": "estrone sulfate", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Progestins", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Estrogen Replacement Therapy", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Raloxifene", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Diethylstilbestrol", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Gonadotropin-Releasing Hormone Analog", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Non-Steroidal Aromatase Inhibitor", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Buserelin|EREG|ESR1", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Medroxyprogesterone 17-Acetate", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Megestrol Acetate", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Estrone", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Androgen Antagonists", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Buserelin", "to": "Female Breast Cancer"}, {"color": "gray", "from": "3-hydroxytamoxifen", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Steroidal Aromatase Inhibitor", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Tamoxifen Citrate", "to": "Female Breast Cancer"}, {"color": "gray", "from": "MEDROXYPROGESTERONE TREATMENT", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Postmenopausal Hormone Replacement Therapy", "to": "Female Breast Cancer"}, {"color": "gray", "from": "hydroxytamoxifen", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Tamoxifen 20 MG", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Hormone Therapy", "to": "Female Breast Cancer"}, {"color": "gray", "from": "tamoxifen", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Tamoxifen therapy", "to": "Female Breast Cancer"}, {"color": "gray", "from": "estrogens", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Medroxyprogesterone", "to": "Female Breast Cancer"}, {"color": "gray", "from": "4-hydroxytamoxifen", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Estrogens, Non-Steroidal", "to": "Female Breast Cancer"}, {"color": "gray", "from": "pyrrolidino-4-iodotamoxifen", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Progestogen hormone therapy", "to": "Female Breast Cancer"}, {"color": "gray", "from": "ESTROGENS,VAGINAL", "to": "Female Breast Cancer"}, {"color": "gray", "from": "raloxifene hydrochloride", "to": "Female Breast Cancer"}, {"color": "gray", "from": "4-hydroxy-N-desmethyltamoxifen, (Z)-isomer", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Conjugated Equine Estrogens", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Estrogen hormone therapy", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Exogenous Hormone Therapy", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Tamoxifen 40 MG", "to": "Female Breast Cancer"}, {"color": "gray", "from": "tamoxifen citrate", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Ablative hormone therapy", "to": "Female Breast Cancer"}, {"color": "gray", "from": "N-desmethyltamoxifen", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Raloxifene Hydrochloride", "to": "Female Breast Cancer"}, {"color": "gray", "from": "4-hydroxy-N-desmethyltamoxifen", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Thyroid hormone replacement therapy", "to": "Female Breast Cancer"}, {"color": "gray", "from": "raloxifene", "to": "Female Breast Cancer"}, {"color": "gray", "from": "megestrol acetate", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Hydroxyestrones", "to": "Female Breast Cancer"}, {"color": "gray", "from": "estrone", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Oral form medroxyprogesterone", "to": "Female Breast Cancer"}, {"color": "gray", "from": "Tamoxifen 10 MG", "to": "Female Breast Cancer"}, {"color": "gray", "from": "diethylstilbestrol", "to": "Female Breast Cancer"}]);
+
+                  nodeColors = {};
+                  allNodes = nodes.get({ returnType: "Object" });
+                  for (nodeId in allNodes) {
+                    nodeColors[nodeId] = allNodes[nodeId].color;
+                  }
+                  allEdges = edges.get({ returnType: "Object" });
+                  // adding nodes and edges to the graph
+                  data = {nodes: nodes, edges: edges};
+
+                  var options = {
+    "configure": {
+        "enabled": false
+    },
+    "edges": {
+        "color": {
+            "inherit": true
+        },
+        "smooth": {
+            "enabled": true,
+            "type": "dynamic"
+        }
+    },
+    "interaction": {
+        "dragNodes": true,
+        "hideEdgesOnDrag": false,
+        "hideNodesOnDrag": false
+    },
+    "physics": {
+        "enabled": true,
+        "stabilization": {
+            "enabled": true,
+            "fit": true,
+            "iterations": 1000,
+            "onlyDynamicEdges": false,
+            "updateInterval": 50
+        }
+    }
+};
+
+                  
+
+
+                  
+
+                  network = new vis.Network(container, data, options);
+
+                  
+
+                  
+
+                  
+
+
+                  
+
+                  return network;
+
+              }
+              drawGraph();
+        </script>
+    </body>
+</html>

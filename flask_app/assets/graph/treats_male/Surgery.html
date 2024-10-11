@@ -1,0 +1,155 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+            <script src="lib/bindings/utils.js"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/dist/vis-network.min.css" integrity="sha512-WgxfT5LWjfszlPHXRmBWHkV2eceiWTOBvrKCNbdgDYTHrT2AeLCGbF4sZlZw3UMN3WtL0tGUoIAKsu8mllg/XA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/vis-network.min.js" integrity="sha512-LnvoEWDFrqGHlHmDD2101OrLcbsfkrzoSpvtSQtxK3RMnRV0eOkhhBN2dXHKRrUU8p2DGRTk35n4O8nWSVe1mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+        
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+          crossorigin="anonymous"
+        />
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+          crossorigin="anonymous"
+        ></script>
+
+
+        <center>
+          <h1></h1>
+        </center>
+        <style type="text/css">
+
+             #mynetwork {
+                 width: 100%;
+                 height: 600px;
+                 background-color: #ffffff;
+                 border: 1px solid lightgray;
+                 position: relative;
+                 float: left;
+             }
+
+             
+
+             
+
+             
+        </style>
+    </head>
+
+
+    <body>
+        <div class="card" style="width: 100%">
+            
+            
+            <div id="mynetwork" class="card-body"></div>
+        </div>
+
+        
+        
+
+        <script type="text/javascript">
+
+              // initialize global variables.
+              var edges;
+              var nodes;
+              var allNodes;
+              var allEdges;
+              var nodeColors;
+              var originalNodes;
+              var network;
+              var container;
+              var options, data;
+              var filter = {
+                  item : '',
+                  property : '',
+                  value : []
+              };
+
+              
+
+              
+
+              // This method is responsible for drawing the graph, returns the drawn network
+              function drawGraph() {
+                  var container = document.getElementById('mynetwork');
+
+                  
+
+                  // parsing and collecting nodes and edges from the python
+                  nodes = new vis.DataSet([{"color": "lightblue", "id": "Therapeutic procedure", "label": "Therapeutic procedure", "shape": "dot", "size": 15, "title": "Therapeutic procedure"}, {"color": "lightblue", "id": "Male Breast Cancer", "label": "Male Breast Cancer", "shape": "dot", "size": 15, "title": "Male Breast Cancer"}, {"color": "lightblue", "id": "Paclitaxel", "label": "Paclitaxel", "shape": "dot", "size": 15, "title": "Paclitaxel"}, {"color": "lightblue", "id": "Systemic Therapy", "label": "Systemic Therapy", "shape": "dot", "size": 15, "title": "Systemic Therapy"}, {"color": "lightblue", "id": "Orchiectomy", "label": "Orchiectomy", "shape": "dot", "size": 15, "title": "Orchiectomy"}, {"color": "lightblue", "id": "Radicals (chemistry)", "label": "Radicals (chemistry)", "shape": "dot", "size": 15, "title": "Radicals (chemistry)"}, {"color": "lightblue", "id": "Mastectomy", "label": "Mastectomy", "shape": "dot", "size": 15, "title": "Mastectomy"}, {"color": "lightblue", "id": "anastrozole", "label": "anastrozole", "shape": "dot", "size": 15, "title": "anastrozole"}, {"color": "lightblue", "id": "Toremifene", "label": "Toremifene", "shape": "dot", "size": 15, "title": "Toremifene"}, {"color": "lightblue", "id": "docetaxel", "label": "docetaxel", "shape": "dot", "size": 15, "title": "docetaxel"}, {"color": "lightblue", "id": "Simple mastectomy", "label": "Simple mastectomy", "shape": "dot", "size": 15, "title": "Simple mastectomy"}, {"color": "lightblue", "id": "Operative Surgical Procedures", "label": "Operative Surgical Procedures", "shape": "dot", "size": 15, "title": "Operative Surgical Procedures"}, {"color": "lightblue", "id": "Local Therapy", "label": "Local Therapy", "shape": "dot", "size": 15, "title": "Local Therapy"}, {"color": "lightblue", "id": "Proton therapy", "label": "Proton therapy", "shape": "dot", "size": 15, "title": "Proton therapy"}, {"color": "lightblue", "id": "Luteinizing Hormone-releasing Hormone Agonist", "label": "Luteinizing Hormone-releasing Hormone Agonist", "shape": "dot", "size": 15, "title": "Luteinizing Hormone-releasing Hormone Agonist"}, {"color": "lightblue", "id": "Letrozole/Palbociclib Regimen", "label": "Letrozole/Palbociclib Regimen", "shape": "dot", "size": 15, "title": "Letrozole/Palbociclib Regimen"}, {"color": "lightblue", "id": "Contralateral Prophylactic Mastectomy", "label": "Contralateral Prophylactic Mastectomy", "shape": "dot", "size": 15, "title": "Contralateral Prophylactic Mastectomy"}, {"color": "lightblue", "id": "Reconstructive Surgical Procedures", "label": "Reconstructive Surgical Procedures", "shape": "dot", "size": 15, "title": "Reconstructive Surgical Procedures"}, {"color": "lightblue", "id": "Proton Therapy", "label": "Proton Therapy", "shape": "dot", "size": 15, "title": "Proton Therapy"}, {"color": "lightblue", "id": "Antiandrogen therapy", "label": "Antiandrogen therapy", "shape": "dot", "size": 15, "title": "Antiandrogen therapy"}, {"color": "lightblue", "id": "exemestane", "label": "exemestane", "shape": "dot", "size": 15, "title": "exemestane"}, {"color": "lightblue", "id": "Flutamide", "label": "Flutamide", "shape": "dot", "size": 15, "title": "Flutamide"}, {"color": "lightblue", "id": "Ketoconazole", "label": "Ketoconazole", "shape": "dot", "size": 15, "title": "Ketoconazole"}, {"color": "lightblue", "id": "Finasteride", "label": "Finasteride", "shape": "dot", "size": 15, "title": "Finasteride"}, {"color": "lightblue", "id": "Detection", "label": "Detection", "shape": "dot", "size": 15, "title": "Detection"}, {"color": "lightblue", "id": "Agent", "label": "Agent", "shape": "dot", "size": 15, "title": "Agent"}, {"color": "lightblue", "id": "Breast surgery", "label": "Breast surgery", "shape": "dot", "size": 15, "title": "Breast surgery"}, {"color": "lightblue", "id": "Modified radical mastectomy", "label": "Modified radical mastectomy", "shape": "dot", "size": 15, "title": "Modified radical mastectomy"}, {"color": "lightblue", "id": "Breast-Conserving Surgery", "label": "Breast-Conserving Surgery", "shape": "dot", "size": 15, "title": "Breast-Conserving Surgery"}, {"color": "lightblue", "id": "Screening mammography", "label": "Screening mammography", "shape": "dot", "size": 15, "title": "Screening mammography"}, {"color": "lightblue", "id": "METHYLATE", "label": "METHYLATE", "shape": "dot", "size": 15, "title": "METHYLATE"}, {"color": "lightblue", "id": "Treatment Protocols", "label": "Treatment Protocols", "shape": "dot", "size": 15, "title": "Treatment Protocols"}, {"color": "lightblue", "id": "Leuprolide", "label": "Leuprolide", "shape": "dot", "size": 15, "title": "Leuprolide"}, {"color": "lightblue", "id": "Axillary Lymph Node Dissection", "label": "Axillary Lymph Node Dissection", "shape": "dot", "size": 15, "title": "Axillary Lymph Node Dissection"}, {"color": "lightblue", "id": "Preservative free ingredient", "label": "Preservative free ingredient", "shape": "dot", "size": 15, "title": "Preservative free ingredient"}, {"color": "lightblue", "id": "palbociclib", "label": "palbociclib", "shape": "dot", "size": 15, "title": "palbociclib"}, {"color": "lightblue", "id": "Prophylactic treatment", "label": "Prophylactic treatment", "shape": "dot", "size": 15, "title": "Prophylactic treatment"}, {"color": "lightblue", "id": "Current Therapy", "label": "Current Therapy", "shape": "dot", "size": 15, "title": "Current Therapy"}, {"color": "lightblue", "id": "Combined Modality Therapy", "label": "Combined Modality Therapy", "shape": "dot", "size": 15, "title": "Combined Modality Therapy"}, {"color": "lightblue", "id": "Cyproterone Acetate", "label": "Cyproterone Acetate", "shape": "dot", "size": 15, "title": "Cyproterone Acetate"}, {"color": "lightblue", "id": "radical mastectomy", "label": "radical mastectomy", "shape": "dot", "size": 15, "title": "radical mastectomy"}, {"color": "lightblue", "id": "Compete", "label": "Compete", "shape": "dot", "size": 15, "title": "Compete"}, {"color": "lightblue", "id": "letrozole", "label": "letrozole", "shape": "dot", "size": 15, "title": "letrozole"}, {"color": "lightblue", "id": "Excision", "label": "Excision", "shape": "dot", "size": 15, "title": "Excision"}, {"color": "lightblue", "id": "Emotional support", "label": "Emotional support", "shape": "dot", "size": 15, "title": "Emotional support"}, {"color": "lightblue", "id": "ORALIT", "label": "ORALIT", "shape": "dot", "size": 15, "title": "ORALIT"}, {"color": "lightblue", "id": "Treatment Guidelines", "label": "Treatment Guidelines", "shape": "dot", "size": 15, "title": "Treatment Guidelines"}, {"color": "lightblue", "id": "Lymphovenous anastomosis", "label": "Lymphovenous anastomosis", "shape": "dot", "size": 15, "title": "Lymphovenous anastomosis"}, {"color": "lightblue", "id": "Antibody-Drug Conjugates", "label": "Antibody-Drug Conjugates", "shape": "dot", "size": 15, "title": "Antibody-Drug Conjugates"}, {"color": "lightblue", "id": "agonists", "label": "agonists", "shape": "dot", "size": 15, "title": "agonists"}, {"color": "lightblue", "id": "cancer surgery", "label": "cancer surgery", "shape": "dot", "size": 15, "title": "cancer surgery"}, {"color": "lightblue", "id": "Androgens", "label": "Androgens", "shape": "dot", "size": 15, "title": "Androgens"}, {"color": "lightblue", "id": "Follicle Stimulating Hormone|BRD2", "label": "Follicle Stimulating Hormone|BRD2", "shape": "dot", "size": 15, "title": "Follicle Stimulating Hormone|BRD2"}, {"color": "lightblue", "id": "Segmental Mastectomy", "label": "Segmental Mastectomy", "shape": "dot", "size": 15, "title": "Segmental Mastectomy"}, {"color": "lightblue", "id": "fulvestrant", "label": "fulvestrant", "shape": "dot", "size": 15, "title": "fulvestrant"}, {"color": "lightblue", "id": "Excision of axillary lymph nodes group", "label": "Excision of axillary lymph nodes group", "shape": "dot", "size": 15, "title": "Excision of axillary lymph nodes group"}]);
+                  edges = new vis.DataSet([{"color": "gray", "from": "Therapeutic procedure", "to": "Male Breast Cancer"}, {"color": "gray", "from": "Paclitaxel", "to": "Male Breast Cancer"}, {"color": "gray", "from": "Systemic Therapy", "to": "Male Breast Cancer"}, {"color": "gray", "from": "Orchiectomy", "to": "Male Breast Cancer"}, {"color": "gray", "from": "Radicals (chemistry)", "to": "Male Breast Cancer"}, {"color": "gray", "from": "Mastectomy", "to": "Male Breast Cancer"}, {"color": "gray", "from": "anastrozole", "to": "Male Breast Cancer"}, {"color": "gray", "from": "Toremifene", "to": "Male Breast Cancer"}, {"color": "gray", "from": "docetaxel", "to": "Male Breast Cancer"}, {"color": "gray", "from": "Simple mastectomy", "to": "Male Breast Cancer"}, {"color": "gray", "from": "Operative Surgical Procedures", "to": "Male Breast Cancer"}, {"color": "gray", "from": "Local Therapy", "to": "Male Breast Cancer"}, {"color": "gray", "from": "Proton therapy", "to": "Male Breast Cancer"}, {"color": "gray", "from": "Luteinizing Hormone-releasing Hormone Agonist", "to": "Male Breast Cancer"}, {"color": "gray", "from": "Letrozole/Palbociclib Regimen", "to": "Male Breast Cancer"}, {"color": "gray", "from": "Contralateral Prophylactic Mastectomy", "to": "Male Breast Cancer"}, {"color": "gray", "from": "Reconstructive Surgical Procedures", "to": "Male Breast Cancer"}, {"color": "gray", "from": "Proton Therapy", "to": "Male Breast Cancer"}, {"color": "gray", "from": "Antiandrogen therapy", "to": "Male Breast Cancer"}, {"color": "gray", "from": "exemestane", "to": "Male Breast Cancer"}, {"color": "gray", "from": "Flutamide", "to": "Male Breast Cancer"}, {"color": "gray", "from": "Ketoconazole", "to": "Male Breast Cancer"}, {"color": "gray", "from": "Finasteride", "to": "Male Breast Cancer"}, {"color": "gray", "from": "Detection", "to": "Male Breast Cancer"}, {"color": "gray", "from": "Agent", "to": "Male Breast Cancer"}, {"color": "gray", "from": "Breast surgery", "to": "Male Breast Cancer"}, {"color": "gray", "from": "Modified radical mastectomy", "to": "Male Breast Cancer"}, {"color": "gray", "from": "Breast-Conserving Surgery", "to": "Male Breast Cancer"}, {"color": "gray", "from": "Screening mammography", "to": "Male Breast Cancer"}, {"color": "gray", "from": "METHYLATE", "to": "Male Breast Cancer"}, {"color": "gray", "from": "Treatment Protocols", "to": "Male Breast Cancer"}, {"color": "gray", "from": "Leuprolide", "to": "Male Breast Cancer"}, {"color": "gray", "from": "Axillary Lymph Node Dissection", "to": "Male Breast Cancer"}, {"color": "gray", "from": "Preservative free ingredient", "to": "Male Breast Cancer"}, {"color": "gray", "from": "palbociclib", "to": "Male Breast Cancer"}, {"color": "gray", "from": "Prophylactic treatment", "to": "Male Breast Cancer"}, {"color": "gray", "from": "Current Therapy", "to": "Male Breast Cancer"}, {"color": "gray", "from": "Combined Modality Therapy", "to": "Male Breast Cancer"}, {"color": "gray", "from": "Cyproterone Acetate", "to": "Male Breast Cancer"}, {"color": "gray", "from": "radical mastectomy", "to": "Male Breast Cancer"}, {"color": "gray", "from": "Compete", "to": "Male Breast Cancer"}, {"color": "gray", "from": "letrozole", "to": "Male Breast Cancer"}, {"color": "gray", "from": "Excision", "to": "Male Breast Cancer"}, {"color": "gray", "from": "Emotional support", "to": "Male Breast Cancer"}, {"color": "gray", "from": "ORALIT", "to": "Male Breast Cancer"}, {"color": "gray", "from": "Treatment Guidelines", "to": "Male Breast Cancer"}, {"color": "gray", "from": "Lymphovenous anastomosis", "to": "Male Breast Cancer"}, {"color": "gray", "from": "Antibody-Drug Conjugates", "to": "Male Breast Cancer"}, {"color": "gray", "from": "agonists", "to": "Male Breast Cancer"}, {"color": "gray", "from": "cancer surgery", "to": "Male Breast Cancer"}, {"color": "gray", "from": "Androgens", "to": "Male Breast Cancer"}, {"color": "gray", "from": "Follicle Stimulating Hormone|BRD2", "to": "Male Breast Cancer"}, {"color": "gray", "from": "Segmental Mastectomy", "to": "Male Breast Cancer"}, {"color": "gray", "from": "fulvestrant", "to": "Male Breast Cancer"}, {"color": "gray", "from": "Excision of axillary lymph nodes group", "to": "Male Breast Cancer"}]);
+
+                  nodeColors = {};
+                  allNodes = nodes.get({ returnType: "Object" });
+                  for (nodeId in allNodes) {
+                    nodeColors[nodeId] = allNodes[nodeId].color;
+                  }
+                  allEdges = edges.get({ returnType: "Object" });
+                  // adding nodes and edges to the graph
+                  data = {nodes: nodes, edges: edges};
+
+                  var options = {
+    "configure": {
+        "enabled": false
+    },
+    "edges": {
+        "color": {
+            "inherit": true
+        },
+        "smooth": {
+            "enabled": true,
+            "type": "dynamic"
+        }
+    },
+    "interaction": {
+        "dragNodes": true,
+        "hideEdgesOnDrag": false,
+        "hideNodesOnDrag": false
+    },
+    "physics": {
+        "enabled": true,
+        "stabilization": {
+            "enabled": true,
+            "fit": true,
+            "iterations": 1000,
+            "onlyDynamicEdges": false,
+            "updateInterval": 50
+        }
+    }
+};
+
+                  
+
+
+                  
+
+                  network = new vis.Network(container, data, options);
+
+                  
+
+                  
+
+                  
+
+
+                  
+
+                  return network;
+
+              }
+              drawGraph();
+        </script>
+    </body>
+</html>
