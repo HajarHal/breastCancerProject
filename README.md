@@ -41,7 +41,7 @@ Flask Application
 Une application web a été développée avec Flask pour afficher les graphes générés. L'interface utilisateur est conçue pour être intuitive et interactive, permettant aux utilisateurs d'explorer facilement les différentes visualisations.
 
 Usage
-Accédez à l'application via votre navigateur à l'adresse https://breast-cancer-app-g9za.vercel.app/ .
+Accédez à l'application via votre navigateur à l'adresse https://breast-cancer-app-ri64.vercel.app/ .
 Explorez les graphes en fonction des différents types de cancer et des catégories.
 
 
