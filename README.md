@@ -1,14 +1,6 @@
 
-Breast Cancer Knowledge Graph Visualization
-#Table of Contents
-#Description
-Technologies
-Installation
-ETL Pipeline
-Database Setup
-Graph Visualization
-Flask Application
-Usage
+#Breast Cancer Knowledge Graph Visualization
+
 
 
 Description
